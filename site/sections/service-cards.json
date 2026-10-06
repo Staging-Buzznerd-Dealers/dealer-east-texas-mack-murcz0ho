@@ -1,0 +1,247 @@
+{
+  "version": 2,
+  "id": "service-cards",
+  "name": "What we do",
+  "description": "Dark band of numbered department cards — icon, title, one line and a link — under a heading with a link to all services.",
+  "css": "[data-bz-section=\"service-cards\"] .bz-block { padding-block: 0; }\n[data-bz-section=\"service-cards\"] .bz-block p { margin: 0; }\n[data-bz-section=\"service-cards\"] .bz-block .bz-eyebrow { color: #8fa3d1; font: 700 13px / 1.4 var(--font-body); letter-spacing: 1.5px; margin-bottom: 10px; }\n[data-bz-section=\"service-cards\"] [data-bz-node=\"svc-heading\"] h2 { max-width: 640px; margin: 0; }\n[data-bz-section=\"service-cards\"] .bz-btns { margin: 0; }\n[data-bz-section=\"service-cards\"] [data-bz-node=\"svc-all\"] .bz-btns { justify-content: flex-end; }\n[data-bz-section=\"service-cards\"] [data-bz-node^=\"svc-num\"] p { font: 400 14px / 1 var(--font-heading); color: var(--muted); }\n[data-bz-section=\"service-cards\"] [data-bz-node^=\"svc-icon\"] img { width: 44px; height: 44px; object-fit: contain; border-radius: 0; filter: brightness(0) invert(1); opacity: .9; }\n[data-bz-section=\"service-cards\"] [data-bz-node^=\"svc-title\"] h3 { font-size: 20px; margin: 0; color: var(--card); }\n[data-bz-section=\"service-cards\"] .bz-block[data-bz-node^=\"svc-desc\"] { flex: 1; }\n[data-bz-section=\"service-cards\"] [data-bz-node^=\"svc-desc\"] p { font-size: 14px; line-height: 1.5; color: #9a9da3; }\n[data-bz-section=\"service-cards\"] .bz-btn { font: 600 14px / 1.2 var(--font-body); }\n@media (max-width: 640px) { [data-bz-section=\"service-cards\"] [data-bz-node=\"svc-all\"] .bz-btns { justify-content: flex-start; } }",
+  "props": [
+    {
+      "key": "eyebrow",
+      "type": "text",
+      "label": "Label above the heading",
+      "default": "What We Do"
+    },
+    {
+      "key": "heading",
+      "type": "text",
+      "label": "Heading",
+      "default": "Everything Your Fleet Needs Under One Roof"
+    },
+    {
+      "key": "cards",
+      "type": "list",
+      "label": "Cards",
+      "fields": [
+        {
+          "key": "num",
+          "type": "text",
+          "label": "Number"
+        },
+        {
+          "key": "icon",
+          "type": "image",
+          "label": "Icon"
+        },
+        {
+          "key": "title",
+          "type": "text",
+          "label": "Title"
+        },
+        {
+          "key": "desc",
+          "type": "textarea",
+          "label": "Description"
+        },
+        {
+          "key": "linkLabel",
+          "type": "text",
+          "label": "Link text"
+        },
+        {
+          "key": "linkUrl",
+          "type": "url",
+          "label": "Link goes to"
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "id": "svc",
+      "type": "section",
+      "props": {
+        "width": "full",
+        "background": "ink",
+        "paddingY": 0,
+        "anchor": "services"
+      },
+      "styles": {
+        "base": {
+          "paddingTop": 90,
+          "paddingBottom": 90,
+          "paddingLeft": 40,
+          "paddingRight": 40
+        },
+        "tablet": {
+          "paddingLeft": 24,
+          "paddingRight": 24
+        },
+        "mobile": {
+          "paddingTop": 64,
+          "paddingBottom": 64,
+          "paddingLeft": 20,
+          "paddingRight": 20
+        }
+      },
+      "children": [
+        {
+          "id": "svc-head",
+          "type": "row",
+          "props": {
+            "gap": 5,
+            "align": "end",
+            "stackOn": "mobile"
+          },
+          "styles": {
+            "base": {
+              "marginBottom": 48
+            }
+          },
+          "children": [
+            {
+              "id": "svc-head-copy",
+              "type": "column",
+              "props": {
+                "span": 9
+              },
+              "children": [
+                {
+                  "id": "svc-heading",
+                  "type": "heading",
+                  "props": {
+                    "eyebrow": "{{eyebrow}}",
+                    "text": "{{heading}}",
+                    "headingLevel": 2
+                  }
+                }
+              ]
+            },
+            {
+              "id": "svc-head-link",
+              "type": "column",
+              "props": {
+                "span": 3
+              },
+              "children": [
+                {
+                  "id": "svc-all",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "ctaId": "all-services"
+                      }
+                    ]
+                  },
+                  "styles": {
+                    "base": {
+                      "buttonTextColor": "#8fa3d1"
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "svc-grid",
+          "type": "row",
+          "props": {
+            "gap": 5,
+            "stackOn": "never"
+          },
+          "styles": {
+            "base": {
+              "gridColumns": "1fr 1fr 1fr 1fr",
+              "gap": 24
+            },
+            "tablet": {
+              "gridColumns": "1fr 1fr"
+            },
+            "mobile": {
+              "gridColumns": "1fr"
+            }
+          },
+          "children": [
+            {
+              "id": "svc-card",
+              "type": "column",
+              "props": {
+                "span": 1,
+                "repeat": "cards"
+              },
+              "styles": {
+                "base": {
+                  "borderWidth": 0,
+                  "background": "#1c1d22",
+                  "radius": 8,
+                  "paddingTop": 32,
+                  "paddingBottom": 32,
+                  "paddingLeft": 26,
+                  "paddingRight": 26,
+                  "display": "flex",
+                  "flexDirection": "column",
+                  "gap": 18,
+                  "borderTopWidth": 4,
+                  "borderColor": "accent"
+                }
+              },
+              "children": [
+                {
+                  "id": "svc-num",
+                  "type": "text",
+                  "props": {
+                    "text": "{{num}}",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "svc-icon",
+                  "type": "image",
+                  "props": {
+                    "image": "{{icon}}"
+                  }
+                },
+                {
+                  "id": "svc-title",
+                  "type": "heading",
+                  "props": {
+                    "text": "{{title}}",
+                    "headingLevel": 3
+                  }
+                },
+                {
+                  "id": "svc-desc",
+                  "type": "text",
+                  "props": {
+                    "text": "{{desc}}",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "svc-link",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "label": "{{linkLabel}}",
+                        "url": "{{linkUrl}}",
+                        "style": "link",
+                        "intent": "services"
+                      }
+                    ]
+                  },
+                  "styles": {
+                    "base": {
+                      "buttonTextColor": "#8fa3d1"
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

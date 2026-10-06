@@ -1,43 +1,40 @@
 {
   "$schema": "./dealer.config.schema.json",
   "contractVersion": "5.0.0",
-  "name": "BuzzNerd Dealer",
-  "shortName": "BuzzNerd",
+  "name": "East Texas Mack",
+  "shortName": "East Texas Mack",
   "channelToken": "east-texas-mack-murcz0ho",
   "domain": "dealer-east-texas-mack-murcz0ho.vercel.app",
   "url": "https://dealer-east-texas-mack-murcz0ho.vercel.app",
   "storefrontOrigin": "https://east-texas-mack.ai4dealerships.com",
   "storefrontPrefix": "store",
-  "logo": "/logo.svg",
-  "favicon": "/favicon.svg",
+  "logo": "/images/logo-est-mack.webp",
+  "favicon": "/images/logo-est-mack.png",
   "analytics": {
     "loaderUrl": null,
     "loaderVersion": null
   },
   "business": {
     "type": "AutoDealer",
-    "legalName": "BuzzNerd Trucks LLC",
-    "phone": "+1-800-555-0100",
+    "legalName": "East Texas Mack Sales",
+    "phone": "+1-903-758-9994",
     "email": "sales@example.com",
-    "streetAddress": "1234 Highway Dr",
-    "addressLocality": "Salt Lake City",
-    "addressRegion": "UT",
-    "postalCode": "84101",
+    "streetAddress": "2934 Hwy 31 N.",
+    "addressLocality": "Longview",
+    "addressRegion": "TX",
+    "postalCode": "75603",
     "addressCountry": "US",
-    "latitude": 40.7608,
-    "longitude": -111.891,
     "priceRange": "$$",
     "openingHours": [
-      "Mo-Fr 08:00-18:00",
-      "Sa 09:00-16:00"
+      "Mo-Fr 07:30-17:30"
     ]
   },
   "seo": {
-    "defaultTitle": "BuzzNerd Dealer | Trucks, Parts & Service",
-    "titleTemplate": "%s | BuzzNerd Dealer",
-    "defaultDescription": "New and used trucks, expert service, genuine parts, financing and leasing from a dealer you can trust.",
+    "defaultTitle": "East Texas Mack | New & Pre-Owned Mack Trucks in Longview, TX",
+    "titleTemplate": "%s | East Texas Mack",
+    "defaultDescription": "Three-time Mack Trucks National Dealer of the Year. New and pre-owned Mack trucks, factory-certified service, 120,000+ parts in stock, and leasing & rental in Longview, TX.",
     "ogImage": "/og-default.jpg",
     "locale": "en_US",
-    "themeColor": "#111c3a"
+    "themeColor": "#14151a"
   }
 }

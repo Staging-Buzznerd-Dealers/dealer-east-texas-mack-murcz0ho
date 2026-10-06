@@ -1,106 +1,666 @@
 {
-  "version": 1,
-  "blocks": [
+  "version": 2,
+  "nodes": [
     {
       "id": "hero",
-      "type": "hero",
+      "type": "section",
       "props": {
-        "headingLevel": 1,
-        "eyebrow": "Trucks · Parts · Service",
-        "headline": "Your trusted partner on the road.",
-        "subhead": "New and used trucks, expert service, and genuine parts — all from one dealer you can rely on.",
-        "showSearch": true,
-        "ctas": [{ "ctaId": "browse-inventory" }, { "ctaId": "request-quote", "style": "secondary" }]
-      }
-    },
-    {
-      "id": "quick",
-      "type": "iconGrid",
-      "props": {
-        "heading": "How can we help?",
-        "items": [
-          {
-            "label": "In-stock inventory",
-            "desc": "New and used trucks and trailers, priced and ready to move.",
-            "url": "/store"
+        "width": "full",
+        "paddingY": 0
+      },
+      "styles": {
+        "base": {
+          "display": "flex",
+          "alignItems": "center",
+          "minHeight": 620,
+          "paddingLeft": 40,
+          "paddingRight": 40,
+          "background": "inkDark",
+          "backgroundImage": "/images/hero-anthem.webp",
+          "backgroundSize": "cover",
+          "backgroundPosition": "center"
+        },
+        "tablet": {
+          "minHeight": 480,
+          "paddingTop": 40,
+          "paddingBottom": 40,
+          "paddingLeft": 20,
+          "paddingRight": 20
+        }
+      },
+      "children": [
+        {
+          "id": "hero-row",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "stackOn": "never"
           },
-          {
-            "label": "Parts counter",
-            "desc": "OEM and aftermarket parts, shipped or ready at the counter.",
-            "url": "/store"
-          },
-          {
-            "label": "Service & repair",
-            "desc": "Factory-trained technicians for inspections, warranty and repair.",
-            "url": "/contact"
-          },
-          {
-            "label": "Financing",
-            "desc": "Flexible terms for owner-operators, with fast pre-approval.",
-            "url": "/contact"
-          }
-        ]
-      }
-    },
-    {
-      "id": "featured",
-      "type": "widget",
-      "props": {
-        "widget": "inventory-carousel",
-        "config": { "heading": "Featured inventory", "limit": 4 }
-      }
-    },
-    {
-      "id": "band",
-      "type": "statBand",
-      "props": {
-        "heading": "Keeping your fleet on the road",
-        "body": "Every unit we sell is inspected in our own shop. When you buy from us you get a direct line to the people who worked on it.",
-        "ctas": [{ "ctaId": "about-us" }],
-        "stats": [
-          { "value": "39", "label": "Years in business" },
-          { "value": "12k+", "label": "Units delivered" },
-          { "value": "4", "label": "Sales & service centers" },
-          { "value": "48hr", "label": "Avg. parts turnaround" }
-        ]
-      }
-    },
-    {
-      "id": "locations",
-      "type": "widget",
-      "props": {
-        "widget": "locations-map",
-        "config": { "heading": "Find a location", "showMap": true }
-      }
-    },
-    {
-      "id": "contact-row",
-      "type": "row",
-      "props": {
-        "align": "start",
-        "columns": [
-          [
-            {
-              "id": "contact-copy",
-              "type": "heading",
-              "props": { "text": "Talk to someone who knows the equipment", "headingLevel": 2 }
-            },
-            {
-              "id": "contact-text",
-              "type": "text",
-              "props": {
-                "text": "Tell us what the job needs and we will spec it, price it and tell you honestly what is in stock.\n\nPrefer the phone? <a href=\"tel:+15551234567\">Call us</a> during business hours."
-              }
+          "styles": {
+            "base": {
+              "width": "100%"
             }
-          ],
-          [
+          },
+          "children": [
             {
-              "id": "contact-form",
-              "type": "form",
-              "props": { "formId": "request-info" }
+              "id": "hero-copy",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "styles": {
+                "base": {
+                  "maxWidth": 540
+                }
+              },
+              "children": [
+                {
+                  "id": "hero-h",
+                  "type": "heading",
+                  "props": {
+                    "eyebrow": "3× Mack National Dealer of the Year",
+                    "text": "Large Selection of New and Pre‑Owned Inventory",
+                    "headingLevel": 1
+                  },
+                  "styles": {
+                    "base": {
+                      "textColor": "card"
+                    }
+                  }
+                },
+                {
+                  "id": "hero-sub",
+                  "type": "text",
+                  "props": {
+                    "text": "Come see why we are a three-time Mack Trucks National Dealer of the Year.",
+                    "width": "full"
+                  },
+                  "styles": {
+                    "base": {
+                      "textColor": "#c9cbd0"
+                    }
+                  }
+                },
+                {
+                  "id": "hero-cta",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "ctaId": "browse-inventory"
+                      }
+                    ]
+                  }
+                }
+              ]
             }
           ]
-        ]
+        }
+      ]
+    },
+    {
+      "id": "about",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "card",
+        "paddingY": 0,
+        "anchor": "about"
+      },
+      "styles": {
+        "base": {
+          "paddingTop": 90,
+          "paddingBottom": 90
+        },
+        "mobile": {
+          "paddingTop": 64,
+          "paddingBottom": 64
+        }
+      },
+      "children": [
+        {
+          "id": "about-row",
+          "type": "row",
+          "props": {
+            "gap": 6,
+            "align": "center",
+            "stackOn": "tablet"
+          },
+          "styles": {
+            "base": {
+              "columnGap": 60,
+              "rowGap": 40
+            },
+            "tablet": {
+              "columnGap": 0
+            }
+          },
+          "children": [
+            {
+              "id": "about-copy",
+              "type": "column",
+              "props": {
+                "span": 6
+              },
+              "children": [
+                {
+                  "id": "about-h",
+                  "type": "heading",
+                  "props": {
+                    "eyebrow": "Who We Are",
+                    "text": "Welcome to East Texas Mack",
+                    "headingLevel": 2
+                  }
+                },
+                {
+                  "id": "about-body",
+                  "type": "text",
+                  "props": {
+                    "text": "East Texas Mack has served fleets and owner-operators across the region for over 50 years, earning recognition as a three-time Mack Trucks National Dealer of the Year. Our Longview facility offers a full line of new and pre-owned Mack trucks, factory-certified service, a stocked parts warehouse, and flexible leasing and rental programs.\n\nWhether you're running a single truck or managing a large fleet, our team is here to keep you on the road with the equipment, parts, and support you need.",
+                    "width": "full"
+                  },
+                  "styles": {
+                    "base": {
+                      "textColor": "#4a4d52"
+                    }
+                  }
+                },
+                {
+                  "id": "about-stats",
+                  "type": "statBand",
+                  "props": {
+                    "stats": [
+                      {
+                        "value": "50+",
+                        "label": "Years in East Texas"
+                      },
+                      {
+                        "value": "3×",
+                        "label": "Mack Dealer of the Year"
+                      },
+                      {
+                        "value": "120K+",
+                        "label": "Parts SKUs in Stock"
+                      }
+                    ]
+                  },
+                  "styles": {
+                    "base": {
+                      "background": "card",
+                      "paddingTop": 0,
+                      "paddingBottom": 0
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "id": "about-media",
+              "type": "column",
+              "props": {
+                "span": 6
+              },
+              "children": [
+                {
+                  "id": "about-img",
+                  "type": "image",
+                  "props": {
+                    "image": {
+                      "src": "/images/about-trucks.webp",
+                      "alt": "East Texas Mack trucks",
+                      "width": 1569,
+                      "height": 1045
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "brands",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "paddingY": 0
+      },
+      "styles": {
+        "base": {
+          "background": "#f2f0eb",
+          "paddingTop": 64,
+          "paddingBottom": 64
+        },
+        "mobile": {
+          "paddingTop": 48,
+          "paddingBottom": 48
+        }
+      },
+      "children": [
+        {
+          "id": "brands-h",
+          "type": "heading",
+          "props": {
+            "eyebrow": "Brands We Carry",
+            "text": "Our Brands",
+            "headingLevel": 2,
+            "align": "center"
+          },
+          "styles": {
+            "base": {
+              "marginBottom": 40
+            }
+          }
+        },
+        {
+          "id": "brands-logos",
+          "type": "logoStrip",
+          "props": {
+            "logos": [
+              {
+                "name": "Mack",
+                "image": {
+                  "src": "/images/logo-mack.png",
+                  "alt": "Mack",
+                  "width": 778,
+                  "height": 431
+                }
+              },
+              {
+                "name": "Volvo",
+                "image": {
+                  "src": "/images/logo-volvo.png",
+                  "alt": "Volvo",
+                  "width": 777,
+                  "height": 387
+                }
+              },
+              {
+                "name": "Isuzu",
+                "image": {
+                  "src": "/images/logo-isuzu.png",
+                  "alt": "Isuzu",
+                  "width": 780,
+                  "height": 387
+                }
+              },
+              {
+                "name": "Hino",
+                "image": {
+                  "src": "/images/logo-hino.png",
+                  "alt": "Hino",
+                  "width": 780,
+                  "height": 387
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "featured-band",
+      "type": "section",
+      "props": {
+        "width": "full",
+        "background": "paper",
+        "paddingY": 0
+      },
+      "styles": {
+        "base": {
+          "paddingTop": 90,
+          "paddingBottom": 90,
+          "paddingLeft": 40,
+          "paddingRight": 40
+        },
+        "tablet": {
+          "paddingLeft": 24,
+          "paddingRight": 24
+        },
+        "mobile": {
+          "paddingTop": 64,
+          "paddingBottom": 64,
+          "paddingLeft": 20,
+          "paddingRight": 20
+        }
+      },
+      "children": [
+        {
+          "id": "featured-head",
+          "type": "row",
+          "props": {
+            "gap": 5,
+            "align": "end",
+            "stackOn": "mobile"
+          },
+          "styles": {
+            "base": {
+              "marginBottom": 40
+            }
+          },
+          "children": [
+            {
+              "id": "featured-copy",
+              "type": "column",
+              "props": {
+                "span": 8
+              },
+              "children": [
+                {
+                  "id": "featured-h",
+                  "type": "heading",
+                  "props": {
+                    "eyebrow": "The Lineup",
+                    "text": "Featured Inventory",
+                    "headingLevel": 2
+                  }
+                },
+                {
+                  "id": "featured-sub",
+                  "type": "text",
+                  "props": {
+                    "text": "Handpicked trucks you can trust",
+                    "width": "full"
+                  },
+                  "styles": {
+                    "base": {
+                      "textColor": "muted"
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "id": "featured-link",
+              "type": "column",
+              "props": {
+                "span": 4
+              },
+              "children": [
+                {
+                  "id": "featured-all",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "ctaId": "all-inventory"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "featured",
+          "type": "widget",
+          "props": {
+            "widget": "inventory-carousel",
+            "config": {
+              "limit": 5
+            },
+            "behaviour": "carousel",
+            "behaviourOptions": "{\"label\":\"Featured inventory\",\"perMove\":1}"
+          }
+        }
+      ]
+    },
+    {
+      "id": "services",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "service-cards",
+        "values": {
+          "cards": [
+            {
+              "num": "01",
+              "icon": {
+                "src": "https://d1uvrqrn2epoo1.cloudfront.net/efs/wp/domains/www.easttexasmack.com/wp-content/uploads/2026/05/Truck-1.png",
+                "alt": ""
+              },
+              "title": "Trucks",
+              "desc": "Specializing in Mack heavy-duty and medium-duty trucks.",
+              "linkLabel": "View Inventory →",
+              "linkUrl": "/store/inventory"
+            },
+            {
+              "num": "02",
+              "icon": {
+                "src": "https://d1uvrqrn2epoo1.cloudfront.net/efs/wp/domains/www.easttexasmack.com/wp-content/uploads/2026/05/Group-1.png",
+                "alt": ""
+              },
+              "title": "Service",
+              "desc": "Heavy-duty repair, preventive maintenance, mobile dispatch and warranty work performed by certified technicians.",
+              "linkLabel": "Schedule Service →",
+              "linkUrl": "/contact#form-request-info"
+            },
+            {
+              "num": "03",
+              "icon": {
+                "src": "https://d1uvrqrn2epoo1.cloudfront.net/efs/wp/domains/www.easttexasmack.com/wp-content/uploads/2026/05/parts-1.png",
+                "alt": ""
+              },
+              "title": "Parts",
+              "desc": "120,000+ OEM and aftermarket SKUs in stock for Mack & all other OEMs. Same-day shipping on orders.",
+              "linkLabel": "Shop Parts →",
+              "linkUrl": "/store/parts"
+            },
+            {
+              "num": "04",
+              "icon": {
+                "src": "https://d1uvrqrn2epoo1.cloudfront.net/efs/wp/domains/www.easttexasmack.com/wp-content/uploads/2026/05/Leasing-Rental.png",
+                "alt": ""
+              },
+              "title": "Leasing & Rental",
+              "desc": "Customized leasing and rental programs to keep fleets moving from owner-operators to enterprise.",
+              "linkLabel": "Get a Quote →",
+              "linkUrl": "/contact#form-rental-request"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "mack-banner",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "card",
+        "paddingY": 0
+      },
+      "styles": {
+        "base": {
+          "paddingTop": 100,
+          "paddingBottom": 100
+        },
+        "tablet": {
+          "paddingTop": 50,
+          "paddingBottom": 50
+        }
+      },
+      "children": [
+        {
+          "id": "mack-row",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "align": "center",
+            "stackOn": "never"
+          },
+          "styles": {
+            "base": {
+              "display": "flex",
+              "flexWrap": "wrap",
+              "justifyContent": "center",
+              "alignItems": "center",
+              "gap": 80
+            },
+            "tablet": {
+              "gap": 28,
+              "flexDirection": "column"
+            }
+          },
+          "children": [
+            {
+              "id": "mack-logo-col",
+              "type": "column",
+              "props": {
+                "span": 4
+              },
+              "children": [
+                {
+                  "id": "mack-logo",
+                  "type": "image",
+                  "props": {
+                    "image": {
+                      "src": "https://d1uvrqrn2epoo1.cloudfront.net/efs/wp/domains/www.easttexasmack.com/wp-content/uploads/2026/05/mack-Image-elementor-io-optimized.webp",
+                      "alt": "Mack"
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "id": "mack-copy-col",
+              "type": "column",
+              "props": {
+                "span": 8
+              },
+              "styles": {
+                "base": {
+                  "maxWidth": 641,
+                  "borderWidth": 0,
+                  "borderLeftWidth": 1,
+                  "borderColor": "#d8d6ce",
+                  "paddingLeft": 80
+                },
+                "tablet": {
+                  "borderLeftWidth": 0,
+                  "paddingLeft": 0,
+                  "textAlign": "center"
+                }
+              },
+              "children": [
+                {
+                  "id": "mack-statement",
+                  "type": "heading",
+                  "props": {
+                    "text": "Factory‑certified Mack dealer serving East Texas fleets for over 50 years.",
+                    "headingLevel": 2
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "reviews",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "accent",
+        "paddingY": 0
+      },
+      "styles": {
+        "base": {
+          "paddingTop": 80,
+          "paddingBottom": 80,
+          "textAlign": "center"
+        },
+        "mobile": {
+          "paddingTop": 64,
+          "paddingBottom": 64
+        }
+      },
+      "children": [
+        {
+          "id": "reviews-h",
+          "type": "heading",
+          "props": {
+            "eyebrow": "Longview, Texas",
+            "text": "Share Your Experience with East Texas Mack",
+            "headingLevel": 2,
+            "align": "center"
+          }
+        },
+        {
+          "id": "reviews-row",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "stackOn": "never"
+          },
+          "children": [
+            {
+              "id": "reviews-ctas",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "styles": {
+                "base": {
+                  "display": "flex",
+                  "flexWrap": "wrap",
+                  "justifyContent": "center",
+                  "gap": 16
+                }
+              },
+              "children": [
+                {
+                  "id": "reviews-leave",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "ctaId": "leave-review"
+                      }
+                    ]
+                  },
+                  "styles": {
+                    "base": {
+                      "buttonTextColor": "accentDark",
+                      "buttonBorderColor": "card"
+                    }
+                  }
+                },
+                {
+                  "id": "reviews-contact",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "ctaId": "contact-us"
+                      }
+                    ]
+                  },
+                  "styles": {
+                    "base": {
+                      "buttonBackground": "#000000@0",
+                      "buttonTextColor": "card",
+                      "buttonBorderColor": "#ffffff@60"
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "location",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "location-band",
+        "values": {
+          "rooftop": {
+            "source": "locations"
+          }
+        }
       }
     }
   ]
