@@ -1,0 +1,383 @@
+{
+  "version": 2,
+  "id": "site-footer",
+  "name": "Site footer",
+  "description": "Brand blurb, two link columns, the rooftop's contact details and a legal bar.",
+  "css": "[data-bz-section=\"site-footer\"] { color: #9a9da3; line-height: normal; }\n[data-bz-section=\"site-footer\"] .bz-block { padding-block: 0; }\n[data-bz-section=\"site-footer\"] .bz-block p { margin: 0; font-size: 14px; line-height: 1.6; }\n[data-bz-section=\"site-footer\"] .bz-block a { color: inherit; text-decoration: none; }\n[data-bz-section=\"site-footer\"] .bz-block a:hover { color: var(--card); }\n[data-bz-section=\"site-footer\"] .bz-block h2 { font: 700 14px / 1.3 var(--font-body); letter-spacing: 1px; text-transform: uppercase; color: var(--card); margin: 0 0 var(--space-4); }\n[data-bz-section=\"site-footer\"] .bz-logo__word { font: 700 22px / 1 var(--font-heading); color: var(--card); letter-spacing: 0; }\n[data-bz-section=\"site-footer\"] .bz-menu--vertical .bz-nav { gap: 10px; }\n[data-bz-section=\"site-footer\"] .bz-nav { gap: 20px; }\n[data-bz-section=\"site-footer\"] .bz-navitem > a { font: 400 14px / normal var(--font-body); padding-block: 0; color: #9a9da3; }\n[data-bz-section=\"site-footer\"] [data-bz-node=\"ft-legal-menu\"] .bz-navitem > a { font-size: 13px; }\n[data-bz-section=\"site-footer\"] .bz-navitem > a:hover { color: var(--card); }\n[data-bz-section=\"site-footer\"] .bz-container { width: auto; }\n[data-bz-section=\"site-footer\"] .bz-logo__img { width: 40px; height: 40px; object-fit: contain; }\n/* Repeated over the Locations binding, so styled here rather than on the node. */\n[data-bz-section=\"site-footer\"] .bz-col[data-bz-node^=\"ft-contact-lines\"] { display: flex; flex-direction: column; gap: 10px; }\n[data-bz-section=\"site-footer\"] [data-bz-node^=\"ft-contact-lines\"] p { line-height: normal; }\n[data-bz-section=\"site-footer\"] [data-bz-node=\"ft-bottom\"] p { line-height: normal; }",
+  "props": [
+    {
+      "key": "tagline",
+      "type": "textarea",
+      "label": "About the business",
+      "default": "Proudly serving East Texas fleets for over 50 years. New & pre-owned Mack trucks, full service, parts, and body shop all in Longview, TX."
+    },
+    {
+      "key": "copyright",
+      "type": "text",
+      "label": "Copyright line",
+      "default": "© 2026 East Texas Mack. All rights reserved."
+    },
+    {
+      "key": "rooftop",
+      "type": "list",
+      "label": "Contact details",
+      "fields": [
+        {
+          "key": "phone",
+          "type": "text",
+          "label": "Phone"
+        },
+        {
+          "key": "phoneUrl",
+          "type": "url",
+          "label": "Phone link"
+        },
+        {
+          "key": "streetAddress",
+          "type": "text",
+          "label": "Street address"
+        },
+        {
+          "key": "city",
+          "type": "text",
+          "label": "City"
+        },
+        {
+          "key": "region",
+          "type": "text",
+          "label": "State"
+        },
+        {
+          "key": "postalCode",
+          "type": "text",
+          "label": "ZIP"
+        },
+        {
+          "key": "hoursRows",
+          "type": "list",
+          "label": "Opening hours",
+          "fields": [
+            {
+              "key": "department",
+              "type": "text",
+              "label": "Department"
+            },
+            {
+              "key": "summary",
+              "type": "text",
+              "label": "Hours"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "id": "ft",
+      "type": "section",
+      "props": {
+        "width": "full",
+        "paddingY": 0
+      },
+      "styles": {
+        "base": {
+          "background": "inkDark",
+          "paddingTop": 64,
+          "paddingBottom": 30,
+          "paddingLeft": 40,
+          "paddingRight": 40
+        },
+        "tablet": {
+          "paddingLeft": 24,
+          "paddingRight": 24
+        },
+        "mobile": {
+          "paddingTop": 48,
+          "paddingLeft": 20,
+          "paddingRight": 20
+        }
+      },
+      "children": [
+        {
+          "id": "ft-cols",
+          "type": "row",
+          "props": {
+            "gap": 6,
+            "align": "start",
+            "stackOn": "never"
+          },
+          "styles": {
+            "base": {
+              "gridColumns": "1.6fr 1fr 1fr 1fr",
+              "gap": 40,
+              "marginBottom": 48
+            },
+            "tablet": {
+              "gridColumns": "1fr 1fr"
+            },
+            "mobile": {
+              "gridColumns": "1fr"
+            }
+          },
+          "children": [
+            {
+              "id": "ft-brand",
+              "type": "column",
+              "props": {
+                "span": 1
+              },
+              "children": [
+                {
+                  "id": "ft-mark",
+                  "type": "row",
+                  "props": {
+                    "gap": 0,
+                    "stackOn": "never"
+                  },
+                  "styles": {
+                    "base": {
+                      "display": "flex",
+                      "alignItems": "center",
+                      "gap": 10,
+                      "marginBottom": 16
+                    }
+                  },
+                  "children": [
+                    {
+                      "id": "ft-mark-img",
+                      "type": "column",
+                      "props": {
+                        "span": 2
+                      },
+                      "children": [
+                        {
+                          "id": "ft-logo",
+                          "type": "logo",
+                          "props": {
+                            "image": {
+                              "src": "/images/logo-est-mack.webp",
+                              "alt": "East Texas Mack Sales",
+                              "width": 408,
+                              "height": 408
+                            },
+                            "url": "/",
+                            "height": 40
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "id": "ft-mark-word",
+                      "type": "column",
+                      "props": {
+                        "span": 10
+                      },
+                      "children": [
+                        {
+                          "id": "ft-wordmark",
+                          "type": "logo",
+                          "props": {
+                            "text": "EAST TEXAS MACK",
+                            "url": "/"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "ft-tagline",
+                  "type": "text",
+                  "props": {
+                    "text": "{{tagline}}"
+                  },
+                  "styles": {
+                    "base": {
+                      "maxWidth": 320
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "id": "ft-trucks",
+              "type": "column",
+              "props": {
+                "span": 1
+              },
+              "children": [
+                {
+                  "id": "ft-trucks-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Trucks",
+                    "headingLevel": 2
+                  }
+                },
+                {
+                  "id": "ft-trucks-menu",
+                  "type": "menu",
+                  "props": {
+                    "menuId": "footer-trucks",
+                    "layout": "vertical",
+                    "depth": 1
+                  }
+                }
+              ]
+            },
+            {
+              "id": "ft-quick",
+              "type": "column",
+              "props": {
+                "span": 1
+              },
+              "children": [
+                {
+                  "id": "ft-quick-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Quick Links",
+                    "headingLevel": 2
+                  }
+                },
+                {
+                  "id": "ft-quick-menu",
+                  "type": "menu",
+                  "props": {
+                    "menuId": "footer-quick",
+                    "layout": "vertical",
+                    "depth": 1
+                  }
+                }
+              ]
+            },
+            {
+              "id": "ft-contact",
+              "type": "column",
+              "props": {
+                "span": 1
+              },
+              "children": [
+                {
+                  "id": "ft-contact-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Contact",
+                    "headingLevel": 2
+                  }
+                },
+                {
+                  "id": "ft-contact-rooftop",
+                  "type": "row",
+                  "props": {
+                    "gap": 0,
+                    "stackOn": "never",
+                    "repeat": "rooftop"
+                  },
+                  "children": [
+                    {
+                      "id": "ft-contact-lines",
+                      "type": "column",
+                      "props": {
+                        "span": 12
+                      },
+                      "children": [
+                        {
+                          "id": "ft-phone",
+                          "type": "text",
+                          "props": {
+                            "text": "<a href=\"{{phoneUrl}}\">{{phone}}</a>"
+                          }
+                        },
+                        {
+                          "id": "ft-address",
+                          "type": "text",
+                          "props": {
+                            "text": "{{streetAddress}}<br>{{city}}, {{region}} {{postalCode}}"
+                          }
+                        },
+                        {
+                          "id": "ft-hours",
+                          "type": "text",
+                          "props": {
+                            "text": "{{department}}: {{summary}}",
+                            "repeat": "hoursRows"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "ft-bottom",
+          "type": "row",
+          "props": {
+            "gap": 4,
+            "align": "center",
+            "stackOn": "mobile"
+          },
+          "styles": {
+            "base": {
+              "borderWidth": 0,
+              "borderTopWidth": 1,
+              "borderColor": "#23242a",
+              "paddingTop": 24
+            }
+          },
+          "children": [
+            {
+              "id": "ft-copy",
+              "type": "column",
+              "props": {
+                "span": 6
+              },
+              "children": [
+                {
+                  "id": "ft-copyright",
+                  "type": "text",
+                  "props": {
+                    "text": "{{copyright}}"
+                  },
+                  "styles": {
+                    "base": {
+                      "fontSize": 13
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "id": "ft-legal",
+              "type": "column",
+              "props": {
+                "span": 6
+              },
+              "children": [
+                {
+                  "id": "ft-legal-menu",
+                  "type": "menu",
+                  "props": {
+                    "menuId": "legal",
+                    "layout": "horizontal",
+                    "align": "end",
+                    "depth": 1
+                  }
+                }
+              ],
+              "styles": {
+                "mobile": {
+                  "marginTop": 12
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -3,38 +3,50 @@
   "menus": [
     {
       "id": "main",
-      "name": "Main menu",
+      "name": "Main navigation",
       "items": [
-        { "id": "home", "label": "Home", "type": "page", "ref": "home" },
         { "id": "inventory", "label": "Inventory", "type": "inventory", "ref": "inventory" },
-        {
-          "id": "about",
-          "label": "About",
-          "type": "url",
-          "url": "/about",
-          "children": [
-            { "id": "about-team", "label": "Our team", "type": "url", "url": "/about#team" },
-            { "id": "about-history", "label": "History", "type": "url", "url": "/about#history" }
-          ]
-        },
-        { "id": "contact", "label": "Contact", "type": "url", "url": "/contact" }
+        { "id": "leasing", "label": "Leasing & Rental", "type": "url", "url": "/leasing-rental" },
+        { "id": "parts", "label": "Parts", "type": "inventory", "ref": "parts" },
+        { "id": "service", "label": "Service", "type": "url", "url": "/service" },
+        { "id": "about", "label": "About Us", "type": "url", "url": "/#about" }
       ]
     },
     {
-      "id": "footer",
-      "name": "Footer menu",
+      "id": "utility",
+      "name": "Utility bar",
       "items": [
-        { "id": "f-inventory", "label": "Inventory", "type": "inventory", "ref": "inventory" },
-        { "id": "f-about", "label": "About", "type": "url", "url": "/about" },
-        { "id": "f-contact", "label": "Contact", "type": "url", "url": "/contact" }
+        { "id": "u-careers", "label": "Careers", "type": "url", "url": "/careers" },
+        { "id": "u-contact", "label": "Contact", "type": "page", "ref": "contact" }
+      ]
+    },
+    {
+      "id": "footer-trucks",
+      "name": "Footer — Trucks",
+      "items": [
+        { "id": "ft-new", "label": "New Inventory", "type": "inventory", "ref": "inventory?condition=new" },
+        { "id": "ft-used", "label": "Pre-Owned Inventory", "type": "inventory", "ref": "inventory?condition=used" },
+        { "id": "ft-leasing", "label": "Leasing & Rental", "type": "url", "url": "/leasing-rental" },
+        { "id": "ft-showroom", "label": "Showroom", "type": "url", "url": "/showroom" }
+      ]
+    },
+    {
+      "id": "footer-quick",
+      "name": "Footer — Quick links",
+      "items": [
+        { "id": "fq-about", "label": "About Us", "type": "url", "url": "/#about" },
+        { "id": "fq-service", "label": "Service", "type": "url", "url": "/service" },
+        { "id": "fq-financing", "label": "Financing", "type": "url", "url": "/financing" },
+        { "id": "fq-rigging", "label": "Rigging & Fabrication", "type": "url", "url": "/rigging-fabrication" }
       ]
     },
     {
       "id": "legal",
       "name": "Legal",
       "items": [
-        { "id": "privacy", "label": "Privacy", "type": "url", "url": "/privacy" },
-        { "id": "terms", "label": "Terms", "type": "url", "url": "/terms" }
+        { "id": "privacy", "label": "Privacy Policy", "type": "url", "url": "/privacy-policy" },
+        { "id": "terms", "label": "Terms of Use", "type": "url", "url": "/terms-of-use" },
+        { "id": "accessibility", "label": "Accessibility", "type": "url", "url": "/accessibility" }
       ]
     }
   ]

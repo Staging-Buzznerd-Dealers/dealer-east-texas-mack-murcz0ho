@@ -1,0 +1,9 @@
+/* Contact page. Scoped to this page's own nodes. */
+[data-bz-node="contact-intro"] .bz-block { padding-block: 0; }
+[data-bz-node="contact-h"] h1 { font-size: 48px; margin: 0 0 16px; }
+[data-bz-node="contact-text"] p { color: #4a4d52; max-width: 640px; }
+[data-bz-node="contact-forms"] .bz-formblock h2 { font-size: 22px; }
+[data-bz-node="contact-forms"] .bz-form { max-width: none; }
+@media (max-width: 640px) {
+  [data-bz-node="contact-h"] h1 { font-size: 34px; }
+}

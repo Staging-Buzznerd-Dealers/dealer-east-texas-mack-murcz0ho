@@ -1,0 +1,233 @@
+{
+  "version": 2,
+  "id": "location-band",
+  "name": "Visit our location",
+  "description": "One card per rooftop: address, phone, opening hours by department and a directions button beside a map picture.",
+  "css": "[data-bz-section=\"location-band\"] { line-height: normal; }\n[data-bz-section=\"location-band\"] .bz-block { padding-block: 0; }\n[data-bz-section=\"location-band\"] .bz-block h2 { font-size: 32px; margin: 0; color: var(--card); }\n[data-bz-section=\"location-band\"] .bz-block .bz-eyebrow { color: #8fa3d1; font: 700 13px / 1.4 var(--font-body); letter-spacing: 1.5px; margin-bottom: 10px; }\n[data-bz-section=\"location-band\"] .bz-block p { margin: 0; font-size: 15px; line-height: normal; color: #9a9da3; }\n[data-bz-section=\"location-band\"] .bz-block p strong { display: block; color: var(--card); font-weight: 600; margin-bottom: 4px; }\n[data-bz-section=\"location-band\"] .bz-block a { color: inherit; text-decoration: none; }\n[data-bz-section=\"location-band\"] .bz-btns { margin: 0; }\n[data-bz-section=\"location-band\"] .bz-btn { font: 600 15px / 1 var(--font-body); padding: 14px 28px; }\n[data-bz-section=\"location-band\"] .bz-block[data-bz-node^=\"loc-map-img\"],\n[data-bz-section=\"location-band\"] [data-bz-node^=\"loc-map-img\"] .bz-container,\n[data-bz-section=\"location-band\"] [data-bz-node^=\"loc-map-img\"] figure,\n[data-bz-section=\"location-band\"] [data-bz-node^=\"loc-map-img\"] a { display: block; height: 100%; }\n[data-bz-section=\"location-band\"] [data-bz-node^=\"loc-map-img\"] img { width: 100%; height: 100%; min-height: 360px; object-fit: cover; border-radius: 0; }\n/* The card repeats over the Locations binding, and the renderer does not compile\n   node styles inside a data-bound repeat, so its styling lives here. */\n[data-bz-section=\"location-band\"] .bz-row[data-bz-node^=\"loc-card\"] { border-radius: var(--radius-card); overflow: hidden; box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3); margin-bottom: 24px; }\n[data-bz-section=\"location-band\"] .bz-row[data-bz-node^=\"loc-card\"]:last-child { margin-bottom: 0; }\n[data-bz-section=\"location-band\"] .bz-col[data-bz-node^=\"loc-info\"] { background: #1c1d22; padding: 56px 48px; display: flex; flex-direction: column; justify-content: center; gap: 28px; }\n[data-bz-section=\"location-band\"] .bz-col[data-bz-node^=\"loc-facts-col\"] { display: flex; flex-direction: column; gap: 20px; }\n[data-bz-section=\"location-band\"] [data-bz-node^=\"loc-cta\"] .bz-btn { background: var(--bad); color: var(--card); }\n[data-bz-section=\"location-band\"] [data-bz-node^=\"loc-cta\"] .bz-btn:hover { opacity: .9; }\n@media (max-width: 640px) { [data-bz-section=\"location-band\"] .bz-col[data-bz-node^=\"loc-info\"] { padding: 40px 24px; } }",
+  "props": [
+    {
+      "key": "eyebrow",
+      "type": "text",
+      "label": "Label above the heading",
+      "default": "Find Us"
+    },
+    {
+      "key": "mapImage",
+      "type": "image",
+      "label": "Map picture",
+      "default": {
+        "src": "/images/map.png",
+        "alt": "Map showing the East Texas Mack location in Longview, TX",
+        "width": 2049,
+        "height": 507
+      }
+    },
+    {
+      "key": "rooftop",
+      "type": "list",
+      "label": "Rooftops",
+      "fields": [
+        {
+          "key": "city",
+          "type": "text",
+          "label": "City"
+        },
+        {
+          "key": "streetAddress",
+          "type": "text",
+          "label": "Street address"
+        },
+        {
+          "key": "region",
+          "type": "text",
+          "label": "State"
+        },
+        {
+          "key": "postalCode",
+          "type": "text",
+          "label": "ZIP"
+        },
+        {
+          "key": "phone",
+          "type": "text",
+          "label": "Phone"
+        },
+        {
+          "key": "phoneUrl",
+          "type": "url",
+          "label": "Phone link"
+        },
+        {
+          "key": "mapUrl",
+          "type": "url",
+          "label": "Directions link"
+        },
+        {
+          "key": "hoursRows",
+          "type": "list",
+          "label": "Opening hours",
+          "fields": [
+            {
+              "key": "department",
+              "type": "text",
+              "label": "Department"
+            },
+            {
+              "key": "summary",
+              "type": "text",
+              "label": "Hours"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "id": "loc",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "ink",
+        "paddingY": 0
+      },
+      "styles": {
+        "base": {
+          "paddingTop": 90,
+          "paddingBottom": 90
+        },
+        "mobile": {
+          "paddingTop": 56,
+          "paddingBottom": 56
+        }
+      },
+      "children": [
+        {
+          "id": "loc-card",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "stackOn": "tablet",
+            "repeat": "rooftop"
+          },
+          "children": [
+            {
+              "id": "loc-info",
+              "type": "column",
+              "props": {
+                "span": 6
+              },
+              "children": [
+                {
+                  "id": "loc-heading",
+                  "type": "heading",
+                  "props": {
+                    "eyebrow": "{{eyebrow}}",
+                    "text": "Visit Our {{city}} Location",
+                    "headingLevel": 2
+                  }
+                },
+                {
+                  "id": "loc-facts",
+                  "type": "row",
+                  "props": {
+                    "gap": 0,
+                    "stackOn": "never"
+                  },
+                  "children": [
+                    {
+                      "id": "loc-facts-col",
+                      "type": "column",
+                      "props": {
+                        "span": 12
+                      },
+                      "children": [
+                        {
+                          "id": "loc-address",
+                          "type": "text",
+                          "props": {
+                            "text": "<strong>Address</strong>{{streetAddress}} {{city}}, {{region}} {{postalCode}}"
+                          }
+                        },
+                        {
+                          "id": "loc-phone",
+                          "type": "text",
+                          "props": {
+                            "text": "<strong>Phone</strong><a href=\"{{phoneUrl}}\">{{phone}}</a>"
+                          }
+                        },
+                        {
+                          "id": "loc-hours",
+                          "type": "row",
+                          "props": {
+                            "gap": 0,
+                            "stackOn": "never"
+                          },
+                          "children": [
+                            {
+                              "id": "loc-hours-col",
+                              "type": "column",
+                              "props": {
+                                "span": 12
+                              },
+                              "children": [
+                                {
+                                  "id": "loc-hours-h",
+                                  "type": "text",
+                                  "props": {
+                                    "text": "<strong>Hours</strong>"
+                                  }
+                                },
+                                {
+                                  "id": "loc-hours-row",
+                                  "type": "text",
+                                  "props": {
+                                    "text": "{{department}}: {{summary}}",
+                                    "repeat": "hoursRows"
+                                  }
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "loc-cta",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "ctaId": "get-directions",
+                        "url": "{{mapUrl}}"
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "id": "loc-map",
+              "type": "column",
+              "props": {
+                "span": 6
+              },
+              "children": [
+                {
+                  "id": "loc-map-img",
+                  "type": "image",
+                  "props": {
+                    "image": "{{mapImage}}",
+                    "url": "{{mapUrl}}"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

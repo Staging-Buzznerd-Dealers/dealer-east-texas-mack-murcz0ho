@@ -2,7 +2,7 @@
   {
     "slug": "home",
     "title": "Home",
-    "description": "New and used trucks, service and parts from a dealer you can trust.",
+    "description": "Three-time Mack Trucks National Dealer of the Year. New and pre-owned Mack trucks, factory-certified service, 120,000+ parts in stock, and leasing & rental in Longview, TX.",
     "path": "/",
     "out": "index.html",
     "dir": "home",
@@ -17,5 +17,23 @@
       "utilityNav": null
     },
     "pageType": "Home"
+  },
+  {
+    "slug": "contact",
+    "title": "Contact Us",
+    "description": "Contact East Texas Mack in Longview, TX — request a quote, schedule service, or ask about leasing and rental.",
+    "path": "/contact",
+    "out": "contact/index.html",
+    "dir": "contact",
+    "status": "published",
+    "seo": {
+      "ogImage": null,
+      "noindex": false
+    },
+    "templates": {
+      "header": null,
+      "footer": null,
+      "utilityNav": null
+    }
   }
 ]
