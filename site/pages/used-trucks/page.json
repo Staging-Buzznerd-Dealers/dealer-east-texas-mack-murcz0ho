@@ -1,0 +1,619 @@
+{
+  "version": 2,
+  "nodes": [
+    {
+      "id": "hero",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "pg-banner",
+        "values": {
+          "crumb": "Used Trucks for Sale in Longview, TX",
+          "eyebrow": "Pre-Owned Inventory",
+          "headline": "Used Trucks for Sale in Longview, TX",
+          "tagline": "Mack Certified Inventory. Inspected. Ready for Work.",
+          "image": {
+            "src": "/images/pages/used-banner.jpg",
+            "alt": "Mack truck hauling logs",
+            "width": 1024,
+            "height": 576
+          }
+        }
+      }
+    },
+    {
+      "id": "intro",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "pg-text",
+        "values": {
+          "bg": "card",
+          "copy": [
+            {
+              "text": "At East Texas Mack, we offer a selection of high-quality pre-owned commercial trucks designed for fleets and owner-operators across East Texas."
+            },
+            {
+              "text": "Every truck we sell is backed by inspection, reconditioning, and real-world fleet experience so customers can purchase with confidence."
+            },
+            {
+              "text": "We provide:",
+              "bullets": [
+                {
+                  "item": "150-point Mack Certified inspections"
+                },
+                {
+                  "item": "Fleet-maintained inventory"
+                },
+                {
+                  "item": "Warranty options on qualifying units"
+                },
+                {
+                  "item": "Expert support for truck selection and application matching"
+                }
+              ],
+              "label": true,
+              "bars": true
+            },
+            {
+              "text": "Our inventory is focused on dependable, work-ready commercial trucks rather than unknown auction equipment."
+            }
+          ],
+          "links": [
+            {
+              "label": "Browse New Mack Trucks →",
+              "url": "/new-trucks",
+              "style": "primary"
+            },
+            {
+              "label": "Explore Fleet Maintenance Strategies",
+              "url": "/fleet-maintenance-strategies",
+              "style": "link"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "sourcing",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "pg-split",
+        "values": {
+          "bg": "paper",
+          "sides": [
+            {
+              "eyebrow": "Inventory Sourcing",
+              "heading": "Explore Our Pre-Owned Truck Inventory",
+              "copy": [
+                {
+                  "text": "Our inventory is built around real working trucks with known history and documented maintenance practices."
+                },
+                {
+                  "text": "Most units come from:",
+                  "bullets": [
+                    {
+                      "item": "Fleet turnover"
+                    },
+                    {
+                      "item": "Trade-ins from long-term customers"
+                    },
+                    {
+                      "item": "Structured fleet maintenance programs"
+                    }
+                  ],
+                  "label": true
+                },
+                {
+                  "text": "This allows us to offer trucks with known service history, proven reliability, and better long-term ownership potential. Buying from a trusted commercial truck dealership helps reduce uncertainty and improves confidence in equipment condition."
+                }
+              ],
+              "links": [
+                {
+                  "label": "Explore Used Trucks",
+                  "url": "/used-trucks",
+                  "style": "link"
+                }
+              ]
+            },
+            {
+              "panel": "ink",
+              "image": {
+                "src": "/images/pages/used-sourcing-anthem.jpg",
+                "alt": "Mack Anthem truck",
+                "width": 1024,
+                "height": 751
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "types",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "pg-cards",
+        "values": {
+          "bg": "ink",
+          "span": 6,
+          "eyebrow": "Our Inventory",
+          "heading": "Types of Used Trucks Available",
+          "intro": "We regularly stock a variety of pre-owned commercial truck configurations for different applications and industries.",
+          "cards": [
+            {
+              "title": "Day Cab Tractors",
+              "copy": [
+                {
+                  "text": "Day cab tractors are ideal for:",
+                  "bullets": [
+                    {
+                      "item": "Regional hauling"
+                    },
+                    {
+                      "item": "Local delivery operations"
+                    },
+                    {
+                      "item": "High-frequency routes"
+                    },
+                    {
+                      "item": "Fleet applications requiring maneuverability and efficiency"
+                    }
+                  ]
+                },
+                {
+                  "text": "These trucks are commonly selected for operations focused on uptime, fuel efficiency, and daily route consistency."
+                }
+              ],
+              "image": {
+                "src": "/images/pages/used-day-cab.jpg",
+                "alt": "Mack day cab tractor",
+                "width": 800,
+                "height": 500
+              },
+              "link1Label": "Explore Fleet Maintenance Guide",
+              "link1Url": "/fleet-maintenance-strategies"
+            },
+            {
+              "title": "Dump Trucks",
+              "copy": [
+                {
+                  "text": "We regularly stock dump trucks including:",
+                  "bullets": [
+                    {
+                      "item": "Low-mileage municipal units"
+                    },
+                    {
+                      "item": "One-year-old fleet-maintained equipment"
+                    },
+                    {
+                      "item": "Heavy-duty vocational configurations"
+                    }
+                  ]
+                },
+                {
+                  "text": "Built for demanding applications including construction, municipal operations, infrastructure projects, and heavy hauling environments. Many units come from structured fleet programs with documented maintenance history."
+                }
+              ],
+              "image": {
+                "src": "/images/pages/used-dump-truck.jpg",
+                "alt": "Mack dump truck",
+                "width": 800,
+                "height": 500
+              },
+              "link1Label": "View Truck Service Department",
+              "link1Url": "/service"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "inspection",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "pg-split",
+        "values": {
+          "bg": "card",
+          "sides": [
+            {
+              "eyebrow": "Quality Assurance",
+              "heading": "Mack Certified Inspection Process",
+              "copy": [
+                {
+                  "text": "Every qualifying unit goes through a comprehensive 150-point Mack Certified Inspection process including:",
+                  "bullets": [
+                    {
+                      "item": "Engine and drivetrain evaluation"
+                    },
+                    {
+                      "item": "Emissions system inspection"
+                    },
+                    {
+                      "item": "Brake, suspension, and safety checks"
+                    },
+                    {
+                      "item": "Electrical and diagnostic review"
+                    },
+                    {
+                      "item": "Performance verification"
+                    }
+                  ]
+                },
+                {
+                  "text": "This inspection process helps ensure the truck is prepared for real-world operation, not simply resale presentation. Accurate diagnostics and proper inspection procedures are critical when evaluating pre-owned commercial trucks."
+                }
+              ],
+              "links": [
+                {
+                  "label": "Explore Engine Diagnostics Guide",
+                  "url": "/engine-diagnostics-guide",
+                  "style": "link"
+                },
+                {
+                  "label": "View DPF & Emissions Guide",
+                  "url": "/dpf-emissions-guide",
+                  "style": "link"
+                }
+              ]
+            },
+            {
+              "panel": "paper",
+              "heading": "Warranty & Peace of Mind",
+              "copy": [
+                {
+                  "text": "We provide additional protection options for qualifying pre-owned trucks including:",
+                  "bullets": [
+                    {
+                      "item": "Mack Certified Warranty coverage"
+                    },
+                    {
+                      "item": "90-day / 25,000-mile factory-backed warranty on eligible units"
+                    },
+                    {
+                      "item": "Additional warranty options depending on truck configuration and eligibility"
+                    }
+                  ]
+                },
+                {
+                  "text": "Warranty coverage helps provide added confidence and operational protection when purchasing used commercial equipment. Proper maintenance and inspection also play an important role in protecting long-term reliability after purchase."
+                }
+              ],
+              "links": [
+                {
+                  "label": "Explore Preventative Maintenance Planning",
+                  "url": "/preventative-maintenance-planning",
+                  "style": "link"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "buying",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "pg-split",
+        "values": {
+          "bg": "paper",
+          "sides": [
+            {
+              "eyebrow": "Buying Guide",
+              "heading": "How to Choose the Right Used Truck",
+              "copy": [
+                {
+                  "text": "Buying pre-owned commercial equipment requires more than comparing purchase price alone. Working with a trusted dealership helps ensure:",
+                  "bullets": [
+                    {
+                      "item": "Proper inspection"
+                    },
+                    {
+                      "item": "Accurate condition assessment"
+                    },
+                    {
+                      "item": "Reduced risk of unexpected repairs"
+                    },
+                    {
+                      "item": "Better long-term operating value"
+                    }
+                  ]
+                },
+                {
+                  "text": "We help customers evaluate trucks based on:",
+                  "bullets": [
+                    {
+                      "item": "Application requirements"
+                    },
+                    {
+                      "item": "Expected workload and duty cycle"
+                    },
+                    {
+                      "item": "Fleet compatibility"
+                    },
+                    {
+                      "item": "Long-term ownership goals"
+                    },
+                    {
+                      "item": "Maintenance expectations"
+                    }
+                  ]
+                },
+                {
+                  "text": "Common applications include construction, refuse operations, regional hauling, municipal work, and oil & gas operations."
+                }
+              ],
+              "links": [
+                {
+                  "label": "View Fleet Maintenance Guide",
+                  "url": "/fleet-maintenance-strategies",
+                  "style": "link"
+                },
+                {
+                  "label": "Explore Truck Financing Options",
+                  "url": "/financing",
+                  "style": "link"
+                }
+              ]
+            },
+            {
+              "panel": "ink",
+              "image": {
+                "src": "/images/pages/used-guide-anthem.jpg",
+                "alt": "Mack Anthem truck",
+                "width": 1024,
+                "height": 751
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "mistakes",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "pg-text",
+        "values": {
+          "bg": "ink",
+          "eyebrow": "Avoid These Pitfalls",
+          "heading": "Common Mistakes When Buying Used Trucks",
+          "copy": [
+            {
+              "text": "Many buyers focus only on upfront purchase price instead of long-term operating costs and truck condition. Common mistakes include:",
+              "bullets": [
+                {
+                  "item": "Purchasing from unknown sources without proper inspection"
+                },
+                {
+                  "item": "Ignoring emissions system condition"
+                },
+                {
+                  "item": "Overlooking maintenance history"
+                },
+                {
+                  "item": "Skipping diagnostic evaluations"
+                },
+                {
+                  "item": "Failing to match the truck to the intended application"
+                }
+              ]
+            },
+            {
+              "text": "Proper diagnostics and inspection are essential when evaluating used commercial trucks."
+            }
+          ],
+          "links": [
+            {
+              "label": "Explore Engine Diagnostics Guide",
+              "url": "/engine-diagnostics-guide",
+              "style": "link"
+            },
+            {
+              "label": "View DPF & Emissions Guide",
+              "url": "/dpf-emissions-guide",
+              "style": "link"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "support",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "pg-text",
+        "values": {
+          "bg": "card",
+          "eyebrow": "After You Buy",
+          "heading": "Support After the Sale",
+          "copy": [
+            {
+              "text": "When you purchase from East Texas Mack, you gain access to ongoing operational support including:",
+              "bullets": [
+                {
+                  "item": "Certified service and repair"
+                },
+                {
+                  "item": "Full parts availability"
+                },
+                {
+                  "item": "Mobile service support"
+                },
+                {
+                  "item": "Fleet maintenance programs"
+                },
+                {
+                  "item": "OEM and aftermarket replacement parts"
+                }
+              ]
+            },
+            {
+              "text": "Long-term support helps customers reduce downtime and maintain truck reliability after purchase."
+            }
+          ],
+          "links": [
+            {
+              "label": "Explore Truck Service & Repair",
+              "url": "/service",
+              "style": "link"
+            },
+            {
+              "label": "View Truck Parts Department",
+              "url": "/store/parts",
+              "style": "link"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "why",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "pg-cards",
+        "values": {
+          "bg": "paper",
+          "span": 4,
+          "eyebrow": "Why Choose Us",
+          "heading": "Why Buy Used Trucks from East Texas Mack",
+          "cards": [
+            {
+              "title": "Certified Inspection Process",
+              "copy": [
+                {
+                  "text": "Every truck is evaluated by manufacturer-trained technicians using a structured inspection process."
+                }
+              ]
+            },
+            {
+              "title": "Fleet-Sourced Inventory",
+              "copy": [
+                {
+                  "text": "Most inventory comes from trusted fleet partners and long-term customer relationships rather than unknown auction sources."
+                }
+              ]
+            },
+            {
+              "title": "Industry Experience You Can Trust",
+              "copy": [
+                {
+                  "text": "Nearly 50 years in business, with a strong presence across commercial fleet operations and long-term relationships with major operators across East Texas."
+                }
+              ],
+              "link1Label": "About East Texas Mack",
+              "link1Url": "/#about"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "coverage",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "pg-text",
+        "values": {
+          "bg": "card",
+          "eyebrow": "Coverage",
+          "heading": "Serving Longview & East Texas",
+          "phoneLine": {
+            "source": "locations"
+          },
+          "copy": [
+            {
+              "text": "We serve customers across:"
+            }
+          ],
+          "chips": [
+            {
+              "label": "Longview"
+            },
+            {
+              "label": "Tyler"
+            },
+            {
+              "label": "Marshall"
+            },
+            {
+              "label": "Shreveport"
+            },
+            {
+              "label": "Surrounding East Texas region"
+            }
+          ],
+          "links": [
+            {
+              "label": "View Locations",
+              "url": "/locations",
+              "style": "link"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "cta",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "pg-cta",
+        "values": {
+          "heading": "Browse Used Truck Inventory or Request Information",
+          "body": "If you're looking for a dependable pre-owned commercial truck, our team is ready to help.",
+          "phoneLine": {
+            "source": "locations"
+          },
+          "points": [
+            {
+              "label": "Certified inspected trucks"
+            },
+            {
+              "label": "Warranty options"
+            },
+            {
+              "label": "Fleet-ready inventory"
+            },
+            {
+              "label": "Financing assistance"
+            },
+            {
+              "label": "Truck application guidance"
+            }
+          ],
+          "ctaLabel": "Contact East Texas Mack",
+          "ctaUrl": "/contact"
+        }
+      }
+    },
+    {
+      "id": "faq",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "pg-faq",
+        "values": {
+          "items": [
+            {
+              "q": "How are your used trucks inspected?",
+              "a": "Each qualifying unit goes through a comprehensive 150-point Mack Certified inspection."
+            },
+            {
+              "q": "Do your used trucks come with a warranty?",
+              "a": "Yes. Many units qualify for a 90-day / 25,000-mile factory-backed warranty, with additional options available depending on eligibility."
+            },
+            {
+              "q": "Where do your used trucks come from?",
+              "a": "Most inventory comes from fleet turnover and trade-ins rather than auction purchases."
+            },
+            {
+              "q": "What types of used trucks do you sell most?",
+              "a": "Day cab tractors and low-mileage dump trucks are among the most common inventory types."
+            },
+            {
+              "q": "How do I avoid buying the wrong used truck?",
+              "a": "Work with a trusted dealership, verify inspection quality, review maintenance history, and ensure the truck matches your operational application."
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

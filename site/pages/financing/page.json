@@ -1,0 +1,558 @@
+{
+  "version": 2,
+  "nodes": [
+    {
+      "id": "hero",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "pg-hero",
+        "values": {
+          "crumb": "Finance",
+          "eyebrow": "Finance",
+          "headline": "Truck Financing in Longview, TX",
+          "subhead": "Fast Approvals. Flexible Options. Built for Commercial Truck Buyers.",
+          "body": "At East Texas Mack, we provide comprehensive financing and leasing solutions for new and used commercial trucks across East Texas. Whether you are an independent owner-operator purchasing your first rig or a fleet manager acquiring multiple Class 8 tractors, our experienced finance specialists secure customized capital structures that align with your cash flow, tax strategy, and operational goals.",
+          "image": {
+            "src": "/images/pages/finance-hero.jpg",
+            "alt": "Mack Anthem truck",
+            "width": 1363,
+            "height": 1000
+          }
+        }
+      }
+    },
+    {
+      "id": "intro",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "pg-text",
+        "values": {
+          "bg": "card",
+          "copy": [
+            {
+              "text": "We streamline the acquisition process by offering same-day approvals for qualified buyers and equipment delivery in as little as 24 to 48 hours following approval. Through direct relationships with Mack Financial Services and an extensive network of specialized commercial lenders, we deliver flexible commercial financing and leasing programs tailored to a broad range of credit profiles."
+            },
+            {
+              "text": "Choosing the right financing structure is an important part of managing long-term operating costs, fleet growth, and equipment reliability."
+            }
+          ],
+          "links": [
+            {
+              "label": "Explore Fleet Maintenance Strategies",
+              "url": "/fleet-maintenance-strategies",
+              "style": "primary"
+            },
+            {
+              "label": "View New Mack Trucks",
+              "url": "/new-trucks",
+              "style": "link"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "options",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "pg-cards",
+        "values": {
+          "bg": "paper",
+          "look": "center",
+          "span": 6,
+          "eyebrow": "Options",
+          "heading": "Financing Options for Commercial Trucks",
+          "intro": "We offer multiple financing structures depending on your operational needs and business goals.",
+          "cards": [
+            {
+              "title": "Commercial Truck Loans",
+              "copy": [
+                {
+                  "text": "Commercial truck loans represent the most popular financing avenue for owner-operators and small fleet operations focused on building long-term equity. A traditional loan provides predictable, fixed-term monthly payments with complete asset ownership at the end of the term. Long-term ownership is ideal for businesses that prefer to hold assets over several years, utilize tax depreciation benefits, and customize equipment for specific job applications."
+                }
+              ],
+              "link1Label": "View New Truck Inventory",
+              "link1Url": "/store/inventory?condition=new",
+              "link2Label": "Browse Used Truck Inventory",
+              "link2Url": "/store/inventory?condition=used"
+            },
+            {
+              "title": "Commercial Leasing Programs",
+              "copy": [
+                {
+                  "text": "Leasing structures provide strategic operational flexibility for growing commercial fleets and companies looking to preserve working capital. By minimizing upfront capital outlay and lowering monthly obligations, leasing enables fleets to shorten equipment replacement cycles, maintain factory warranty coverage, and easily scale vehicle numbers up or down based on contract demands."
+                }
+              ],
+              "link1Label": "Explore Fleet Planning Strategies",
+              "link1Url": "/fleet-maintenance-strategies"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "fleet",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "pg-split",
+        "values": {
+          "bg": "card",
+          "sides": [
+            {
+              "eyebrow": "Fleet Solutions",
+              "heading": "Fleet Financing Solutions",
+              "copy": [
+                {
+                  "text": "We support commercial fleet operators with tailored multi-unit purchasing programs, structured payment schedules, and flexible capital arrangements. Our team designs fleet-focused financing strategies that accommodate seasonal cash flow variations while ensuring your business can quickly acquire reliable trucks to sustain high operational uptime and expand service capacity."
+                }
+              ],
+              "links": [
+                {
+                  "label": "View Fleet Maintenance Guide",
+                  "url": "/fleet-maintenance-strategies",
+                  "style": "link"
+                },
+                {
+                  "label": "Browse New Truck Inventory",
+                  "url": "/store/inventory?condition=new",
+                  "style": "link"
+                }
+              ]
+            },
+            {
+              "panel": "ink",
+              "image": {
+                "src": "/images/pages/finance-chassis-cab.jpg",
+                "alt": "Mack chassis cab truck",
+                "width": 800,
+                "height": 500
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "credit",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "pg-text",
+        "values": {
+          "bg": "ink",
+          "eyebrow": "All Credit Tiers",
+          "heading": "Financing for All Credit Profiles",
+          "copy": [
+            {
+              "text": "We partner with a diverse panel of commercial lending institutions to provide accessible capital solutions across every credit tier. While down payment requirements vary depending on business history, financial strength, and transaction structure, our finance team works closely with every client to build a viable, practical payment plan rather than relying on rigid, one-size-fits-all criteria."
+            },
+            {
+              "text": "",
+              "bullets": [
+                {
+                  "item": "<strong>A & B Credit:</strong> Strong credit profiles frequently qualify for 0% down financing options."
+                },
+                {
+                  "item": "<strong>C Credit:</strong> Typical structures generally require 10–15% down payments."
+                },
+                {
+                  "item": "<strong>D Credit:</strong> Challenged credit profiles usually range around 25% down, depending on asset age and overall deal structure."
+                }
+              ],
+              "bars": true
+            }
+          ],
+          "links": [
+            {
+              "label": "Contact Our Financing Team",
+              "url": "/contact",
+              "style": "primary"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "process",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "pg-cards",
+        "values": {
+          "bg": "paper",
+          "span": 3,
+          "eyebrow": "Process",
+          "heading": "Fast Approval & Delivery Process",
+          "intro": "We know that every day a truck sits off the road represents lost revenue. Our streamlined four-step application and underwriting pipeline is designed to eliminate bureaucratic delays and get your trucks working as fast as possible.",
+          "cards": [
+            {
+              "title": "Submit Financing Information",
+              "copy": [
+                {
+                  "text": "Provide basic business, financial, and equipment details to our finance desk."
+                }
+              ],
+              "number": "1"
+            },
+            {
+              "title": "Lender Matching",
+              "copy": [
+                {
+                  "text": "Our specialists match your application with the commercial lender offering the best rates and terms."
+                }
+              ],
+              "number": "2"
+            },
+            {
+              "title": "Rapid Approval",
+              "copy": [
+                {
+                  "text": "Well-qualified buyers frequently receive same-day credit approval, with fast turnarounds across all credit tiers."
+                }
+              ],
+              "number": "3"
+            },
+            {
+              "title": "Equipment Delivery",
+              "copy": [
+                {
+                  "text": "Most in-stock trucks can be delivered within 24–48 hours following approval, assuming no additional specialized body upfitting is required."
+                }
+              ],
+              "number": "4"
+            }
+          ],
+          "links": [
+            {
+              "label": "Browse New Truck Inventory",
+              "url": "/store/inventory?condition=new",
+              "style": "link"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "partners",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "pg-text",
+        "values": {
+          "bg": "card",
+          "eyebrow": "Lending Partners",
+          "heading": "Preferred Financing Partners",
+          "copy": [
+            {
+              "text": "Our primary lending alliance is with Mack Financial Services, enabling us to offer specialized programs, competitive interest rates, flexible payment schedules, and model-specific rate buy-downs. In addition to our factory lender, we maintain strong relationships with leading third-party commercial institutions, giving our team the flexibility to secure competitive terms for non-Mack used inventory or unique credit circumstances."
+            }
+          ],
+          "boxes": [
+            {
+              "title": "Online Financing Applications Coming Soon via TRNSACT",
+              "text": "To make equipment procurement even faster, East Texas Mack is currently partnering with TRNSACT to launch a state-of-the-art digital financing platform. Once live, this secure portal will allow fleet managers and owner-operators to submit digital applications, upload supporting documentation, track lender approval statuses in real time, and complete financing paperwork electronically. In the meantime, our in-house finance specialists are available by phone or in person to guide you through the process seamlessly.",
+              "linkLabel": "Contact Our Financing Team",
+              "linkUrl": "/contact"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "choose",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "pg-split",
+        "values": {
+          "bg": "paper",
+          "sides": [
+            {
+              "eyebrow": "Loan vs. Lease",
+              "heading": "How to Choose the Right Financing Option",
+              "copy": [
+                {
+                  "text": "Deciding between a commercial loan and an operating lease comes down to your capital management strategy, fleet replacement cycle, and long-term operating goals. Most owner-operators prefer loans because they build equity and allow for long-term utilization. Conversely, larger fleet operators frequently choose leasing to manage balance sheets, lower upfront costs, and maintain a modern, fuel-efficient fleet under continuous warranty coverage."
+                }
+              ],
+              "links": [
+                {
+                  "label": "Explore Fleet Strategy Guide",
+                  "url": "/fleet-maintenance-strategies",
+                  "style": "link"
+                }
+              ]
+            },
+            {
+              "eyebrow": "Working Together",
+              "heading": "Financing + Truck Selection Work Together",
+              "copy": [
+                {
+                  "text": "Securing capital is only one component of a successful truck purchase. Our sales and finance specialists work in tandem to align your financing structure with technical specifications, application demands, expected duty cycles, and overall fleet growth strategy. Specifying the correct chassis and powertrain setup up front protects your equipment investment and ensures long-term operational efficiency."
+                }
+              ],
+              "links": [
+                {
+                  "label": "View New Mack Trucks",
+                  "url": "/new-trucks",
+                  "style": "link"
+                },
+                {
+                  "label": "Browse Used Trucks",
+                  "url": "/used-trucks",
+                  "style": "link"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "support",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "pg-split",
+        "values": {
+          "bg": "card",
+          "sides": [
+            {
+              "eyebrow": "After You Buy",
+              "heading": "Support After Purchase",
+              "copy": [
+                {
+                  "text": "Financing your truck at East Texas Mack is the beginning of a long-term operational partnership. Beyond the initial sale, we protect your investment through our master-certified service department, $3M+ parts inventory, mobile repair units, and proactive fleet maintenance contracts designed to minimize unexpected downtime and sustain asset value."
+                },
+                {
+                  "text": "Reliable service and maintenance support are essential for protecting your truck investment and reducing downtime."
+                }
+              ],
+              "links": [
+                {
+                  "label": "Explore Truck Service & Repair",
+                  "url": "/service",
+                  "style": "link"
+                },
+                {
+                  "label": "View Truck Parts Department",
+                  "url": "/store/parts",
+                  "style": "link"
+                }
+              ]
+            },
+            {
+              "panel": "none",
+              "image": {
+                "src": "/images/pages/finance-cab-interior.jpg",
+                "alt": "Mack truck interior",
+                "width": 1600,
+                "height": 684
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "resources",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "pg-cards",
+        "values": {
+          "bg": "ink",
+          "span": 4,
+          "eyebrow": "Resources",
+          "heading": "Explore Our Truck Financing & Fleet Resources",
+          "cards": [
+            {
+              "title": "Fleet Maintenance Strategy Guide",
+              "copy": [
+                {
+                  "text": "Learn how preventative maintenance planning reduces downtime and improves fleet reliability."
+                }
+              ],
+              "link1Label": "Explore Fleet Maintenance Strategies",
+              "link1Url": "/fleet-maintenance-strategies"
+            },
+            {
+              "title": "New Mack Truck Inventory",
+              "copy": [
+                {
+                  "text": "Explore available heavy-duty truck inventory and commercial vehicle configurations."
+                }
+              ],
+              "link1Label": "Browse New Mack Trucks",
+              "link1Url": "/new-trucks"
+            },
+            {
+              "title": "Used Truck Inventory",
+              "copy": [
+                {
+                  "text": "View available used commercial trucks for cost-conscious purchasing strategies."
+                }
+              ],
+              "link1Label": "Browse Used Truck Inventory",
+              "link1Url": "/store/inventory?condition=used"
+            },
+            {
+              "title": "Truck Service & Diagnostics Guide",
+              "copy": [
+                {
+                  "text": "Learn how certified diagnostics and preventative maintenance support long-term truck performance."
+                }
+              ],
+              "link1Label": "Explore Truck Service & Repair",
+              "link1Url": "/service"
+            },
+            {
+              "title": "Heavy-Duty Truck Parts Department",
+              "copy": [
+                {
+                  "text": "Explore OEM and aftermarket parts availability for commercial truck operations."
+                }
+              ],
+              "link1Label": "View Truck Parts Department",
+              "link1Url": "/store/parts"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "strip",
+      "type": "section",
+      "props": {
+        "width": "full",
+        "paddingY": 0
+      },
+      "children": [
+        {
+          "id": "strip-img",
+          "type": "image",
+          "props": {
+            "image": {
+              "src": "/images/pages/finance-lineup.jpg",
+              "alt": "Mack truck lineup",
+              "width": 800,
+              "height": 500
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "coverage",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "pg-text",
+        "values": {
+          "bg": "card",
+          "eyebrow": "Coverage",
+          "heading": "Serving Longview & East Texas",
+          "addressLine": {
+            "source": "locations"
+          },
+          "copy": [
+            {
+              "text": "We provide truck financing solutions for customers across:"
+            }
+          ],
+          "chips": [
+            {
+              "label": "Longview"
+            },
+            {
+              "label": "Tyler"
+            },
+            {
+              "label": "Kilgore"
+            },
+            {
+              "label": "Marshall"
+            },
+            {
+              "label": "Sulphur Springs"
+            },
+            {
+              "label": "Mt. Pleasant"
+            },
+            {
+              "label": "Paris"
+            },
+            {
+              "label": "Surrounding East Texas region"
+            }
+          ],
+          "links": [
+            {
+              "label": "View Service Locations",
+              "url": "/locations",
+              "style": "link"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "cta",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "pg-cta",
+        "values": {
+          "heading": "Contact Our Financing Team",
+          "body": "If you are ready to acquire a new or used commercial truck, our financial specialists are ready to build a program around your business.",
+          "phoneLine": {
+            "source": "locations"
+          },
+          "points": [
+            {
+              "label": "Same-day approvals"
+            },
+            {
+              "label": "Flexible loan and lease structures"
+            },
+            {
+              "label": "Commercial fleet capital programs"
+            },
+            {
+              "label": "Rapid delivery on in-stock inventory"
+            }
+          ],
+          "ctaLabel": "Contact Our Financing Team",
+          "ctaUrl": "/contact"
+        }
+      }
+    },
+    {
+      "id": "faq",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "pg-faq",
+        "values": {
+          "items": [
+            {
+              "q": "Do I need perfect credit to get approved?",
+              "a": "No. We work with multiple lenders and support financing across a range of credit profiles."
+            },
+            {
+              "q": "How fast can I get approved?",
+              "a": "Many customers with strong credit receive same-day approval."
+            },
+            {
+              "q": "How soon can I get my truck after approval?",
+              "a": "Most trucks can typically be delivered within 24–48 hours depending on availability and setup requirements."
+            },
+            {
+              "q": "What is the typical down payment?",
+              "a": "0% for A & B credit, 10–15% for C credit, and approximately 25% for D credit."
+            },
+            {
+              "q": "Do you offer leasing options?",
+              "a": "Yes. Leasing is a common solution for fleet operations seeking flexibility and scalability."
+            },
+            {
+              "q": "Will I be able to apply online?",
+              "a": "Yes. East Texas Mack is currently implementing a new online financing platform through TRNSACT. Once available, customers will be able to submit financing applications securely online and track the approval process digitally."
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

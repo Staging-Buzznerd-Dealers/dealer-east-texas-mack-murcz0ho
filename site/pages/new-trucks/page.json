@@ -1,0 +1,498 @@
+{
+  "version": 2,
+  "nodes": [
+    {
+      "id": "hero",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "pg-hero",
+        "values": {
+          "crumb": "Mack Truck Dealer in Longview, TX",
+          "eyebrow": "New Trucks",
+          "headline": "Mack Truck Dealer in Longview, TX",
+          "subhead": "In-Stock Inventory. Expert Guidance. Built for Your Application.",
+          "body": "At East Texas Mack, we maintain one of the region's largest selections of new Mack commercial trucks, featuring premium units ready for immediate job site deployment. Whether you are expanding a regional freight fleet, scaling a municipal refuse operation, or upgrading oilfield service rigs, our application-focused sales team works closely with you to match your business with the precise spec for the job.",
+          "image": {
+            "src": "/images/pages/new-truck-anthem.jpg",
+            "alt": "Mack Anthem truck",
+            "width": 1024,
+            "height": 751
+          }
+        }
+      }
+    },
+    {
+      "id": "intro",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "pg-text",
+        "values": {
+          "bg": "card",
+          "copy": [
+            {
+              "text": "We streamline your asset acquisition from end to end. By combining deep on-lot inventory for same-day delivery with an accelerated custom factory ordering process delivered in as little as 90 days, we keep your acquisition timelines tight. Furthermore, our tailored fleet financing including in-house leasing programs and custom Mack Financial Services structures works alongside our certified heavy-duty mechanics and high-volume OEM parts replacement network to ensure long-term asset protection and maximum uptime."
+            },
+            {
+              "text": "Choosing the right commercial truck configuration is critical for uptime, efficiency, and long-term operating performance."
+            }
+          ],
+          "links": [
+            {
+              "label": "Explore Fleet Maintenance Strategies",
+              "url": "/fleet-maintenance-strategies",
+              "style": "primary"
+            },
+            {
+              "label": "Browse Used Truck Inventory",
+              "url": "/store/inventory?condition=used",
+              "style": "link"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "inventory",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "pg-split",
+        "values": {
+          "bg": "paper",
+          "sides": [
+            {
+              "eyebrow": "Inventory",
+              "heading": "Explore Our New Mack Truck Inventory",
+              "copy": [
+                {
+                  "text": "We stock a comprehensive line of new Mack truck models specifically engineered for diverse industries and demanding duty cycles. Rather than simply pushing on-lot inventory, our team emphasizes application-based truck selection. We carefully analyze your operational requirements to recommend configurations that directly elevate operational efficiency, driver productivity, fuel economy, long-term reliability, and overall fleet uptime."
+                }
+              ],
+              "links": [
+                {
+                  "label": "Explore New Mack Trucks Inventory",
+                  "url": "/store/inventory?condition=new",
+                  "style": "link"
+                }
+              ]
+            },
+            {
+              "panel": "none",
+              "image": {
+                "src": "/images/pages/new-truck-showroom.jpg",
+                "alt": "Mack truck lineup in showroom",
+                "width": 1024,
+                "height": 459
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "lineup",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "pg-cards",
+        "values": {
+          "bg": "ink",
+          "span": 6,
+          "eyebrow": "Model Lineup",
+          "heading": "High-Performance Mack Truck Models & Applications",
+          "cards": [
+            {
+              "title": "Mack Keystone™",
+              "copy": [
+                {
+                  "text": "The all-new Mack Keystone is a purpose-built Class 8 vocational tractor engineered to transition seamlessly from demanding, unpaved job sites to high-speed interstate corridors. It is ideal for construction, agriculture, logging, livestock hauling, and heavy-haul fleets needing maximum terrain flexibility. The Keystone features higher ground clearance, aggressive approach angles, the available Mack MaxRide™ suspension, and an ultra-modern, driver-centric steel cab offered in both axle-forward and axle-back configurations."
+                }
+              ],
+              "image": {
+                "src": "/images/pages/model-keystone.jpg",
+                "alt": "Mack Keystone truck hauling logs",
+                "width": 1024,
+                "height": 576
+              },
+              "kicker": "Terrain Versatility"
+            },
+            {
+              "title": "Mack Anthem®",
+              "copy": [
+                {
+                  "text": "The Mack Anthem is a statement-making highway truck engineered to slice through wind resistance while delivering heavy-duty ruggedness on regional haul and long-distance routes. Built primarily for regional distribution, long-haul freight lanes, and bulk transport across major Texas highway corridors, the Anthem features highly aerodynamic profiling, high-efficiency mDRIVE™ automated manual transmissions, and premium sleeper comforts that maximize fuel economy and support driver retention."
+                }
+              ],
+              "image": {
+                "src": "/images/pages/new-truck-anthem.jpg",
+                "alt": "Mack Anthem truck",
+                "width": 1024,
+                "height": 751
+              },
+              "kicker": "Built for the Driver"
+            },
+            {
+              "title": "Mack Granite®",
+              "copy": [
+                {
+                  "text": "The toughest jobs in the Texas oil patches and construction sectors demand an unyielding chassis, and the Mack Granite is engineered to survive those demanding, severe-duty environments. The Granite serves as the benchmark for dump trucks, concrete mixers, aggregate hauling, and oilfield support operations. Key specifications include high-tensile steel frames, robust corner-to-corner visibility, and severe-duty axles optimized for high-payload stability."
+                }
+              ],
+              "image": {
+                "src": "/images/pages/model-granite.jpg",
+                "alt": "Mack trucks at a construction site",
+                "width": 1024,
+                "height": 576
+              },
+              "kicker": "Construction & Vocational",
+              "link1Label": "View Truck Service Department",
+              "link1Url": "/service"
+            },
+            {
+              "title": "Mack LR & TerraPro®",
+              "copy": [
+                {
+                  "text": "Built to withstand the relentless cycle of stop-and-go municipal environments, the Mack LR and TerraPro represent the gold standard in vocational refuse management. Designed specifically for residential and commercial refuse collection including front-loaders, rear-loaders, and automated side-loaders, these models feature unmatched low-entry cab ergonomics, specialized visibility layouts, and rugged drivetrains built for high-cycle operating hours."
+                }
+              ],
+              "image": {
+                "src": "/images/pages/model-terrapro.jpg",
+                "alt": "Mack TerraPro refuse truck",
+                "width": 457,
+                "height": 437
+              },
+              "kicker": "Refuse & Municipal",
+              "link1Label": "Explore Fleet Maintenance Strategies",
+              "link1Url": "/fleet-maintenance-strategies"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "procurement",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "pg-cards",
+        "values": {
+          "bg": "card",
+          "span": 6,
+          "eyebrow": "Procurement",
+          "heading": "In-Stock vs. Custom Factory Orders",
+          "intro": "Choosing how to acquire your next commercial truck depends directly on your operational timeline and duty-cycle requirements. We provide two streamlined procurement pathways to suit your business model.",
+          "cards": [
+            {
+              "title": "Option 1: In-Stock Inventory",
+              "copy": [
+                {
+                  "text": "The majority of our customers purchase directly from our available on-lot inventory because it provides the fastest path to deployment, minimizes operational downtime, and eliminates waiting periods. Immediate delivery makes in-stock purchasing the ideal route for rapid fleet expansion or quickly replacing downed vehicles to avoid costly contract penalties."
+                },
+                {
+                  "text": "Timeline: Same-day lot availability.",
+                  "note": true
+                }
+              ],
+              "link1Label": "Browse New Mack Truck Inventory",
+              "link1Url": "/store/inventory?condition=new"
+            },
+            {
+              "title": "Option 2: Custom Factory Orders",
+              "copy": [
+                {
+                  "text": "For specialized applications with unique duty-cycle demands, we provide custom factory truck ordering solutions. Every custom order is built to your exact engineering specifications, configured around your precise operational requirements, and tailored specifically for optimal driver usability and load distribution."
+                },
+                {
+                  "text": "Timeline: Approximately 90 days, depending on configuration and factory production schedules.",
+                  "note": true
+                }
+              ],
+              "link1Label": "Request Custom Truck Information",
+              "link1Url": "/contact#form-request-a-quote"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "guide",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "pg-text",
+        "values": {
+          "bg": "paper",
+          "eyebrow": "Buying Guide",
+          "heading": "How We Help You Choose the Right Truck",
+          "copy": [
+            {
+              "text": "Purchasing a commercial asset involves far more than simply selecting a chassis off the lot. Our consultative process guides you through every variable, evaluating your specific application type, driver pool ergonomics, expected ownership timeline, duty-cycle intensity, and long-term maintenance planning."
+            },
+            {
+              "text": "By taking this application-first approach across industries like construction, refuse collection, highway hauling, municipal services, and oil & gas operations, we ensure every truck in your fleet is optimized for maximum daily performance, long-term reliability, total cost efficiency, and sustained uptime."
+            }
+          ],
+          "links": [
+            {
+              "label": "Explore Fleet Maintenance Guide",
+              "url": "/fleet-maintenance-strategies",
+              "style": "link"
+            },
+            {
+              "label": "View Truck Service & Repair",
+              "url": "/service",
+              "style": "link"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "financing",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "pg-text",
+        "values": {
+          "bg": "ink",
+          "eyebrow": "Financing",
+          "heading": "Flexible Commercial Financing & Leasing Structures",
+          "copy": [
+            {
+              "text": "Acquiring a high-tier vocational or highway asset requires smart capital management and flexible payment terms. We offer comprehensive purchasing solutions, including traditional commercial truck financing, flexible in-house leasing structures, specialized Mack Financial Services financing, and tailored fleet purchasing programs."
+            },
+            {
+              "text": "Most fleet operators select loan structures for long-term asset ownership to take advantage of valuable tax and depreciation benefits. Alternatively, many choose operating leases to maintain fleet flexibility, simplify vehicle rotation, and scale up cash flow. Our finance specialists work directly with your management team to align payment structures with your operational budget and broader business goals."
+            }
+          ],
+          "links": [
+            {
+              "label": "Explore Truck Financing Options",
+              "url": "/financing",
+              "style": "link"
+            },
+            {
+              "label": "Browse Used Truck Inventory",
+              "url": "/store/inventory?condition=used",
+              "style": "link"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "support",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "pg-text",
+        "values": {
+          "bg": "card",
+          "eyebrow": "After You Buy",
+          "heading": "Support After the Sale",
+          "copy": [
+            {
+              "text": "Your partnership with East Texas Mack continues long after your new truck leaves our lot. Every vehicle purchase is backed by our full suite of operational support, including certified service and master diagnostics, high-availability OEM parts inventory, rapid mobile repair units, proactive fleet maintenance contracts, and complete aftermarket component support. Providing robust post-sale support is essential for protecting your equipment investment and maximizing asset utilization over the long haul."
+            }
+          ],
+          "links": [
+            {
+              "label": "Explore Truck Service & Repair",
+              "url": "/service",
+              "style": "link"
+            },
+            {
+              "label": "View Truck Parts Department",
+              "url": "/store/parts",
+              "style": "link"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "why",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "pg-cards",
+        "values": {
+          "bg": "paper",
+          "span": 4,
+          "eyebrow": "Why Choose Us",
+          "heading": "Why Regional Fleets Choose East Texas Mack",
+          "cards": [
+            {
+              "title": "One of the Largest Stocking Dealers in the Region",
+              "copy": [
+                {
+                  "text": "We maintain one of the largest inventories of new Mack commercial trucks in East Texas, allowing customers to secure equipment rapidly and avoid costly operational delays."
+                }
+              ]
+            },
+            {
+              "title": "Application-Based Expertise",
+              "copy": [
+                {
+                  "text": "We operate as trusted fleet advisors, helping evaluate axle positioning, frame strength, engine horsepower, transmission ratios, and driver comfort for a stronger return on investment."
+                }
+              ]
+            },
+            {
+              "title": "Proven Industry Experience",
+              "copy": [
+                {
+                  "text": "A long-standing presence across East Texas refuse, construction, oil & gas, and municipal sectors, built on honest technical guidance and dependable service."
+                }
+              ],
+              "link1Label": "About East Texas Mack",
+              "link1Url": "/#about"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "resources",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "pg-cards",
+        "values": {
+          "bg": "ink",
+          "span": 4,
+          "eyebrow": "Resources",
+          "heading": "Explore Our Truck Sales, Service & Fleet Resources",
+          "cards": [
+            {
+              "title": "Fleet Maintenance Strategy Guide",
+              "copy": [
+                {
+                  "text": "Learn how preventative maintenance planning improves reliability and reduces downtime."
+                }
+              ],
+              "link1Label": "Explore Fleet Maintenance Strategies",
+              "link1Url": "/fleet-maintenance-strategies"
+            },
+            {
+              "title": "Truck Financing & Leasing Options",
+              "copy": [
+                {
+                  "text": "Explore financing structures, leasing programs, and fleet purchasing support."
+                }
+              ],
+              "link1Label": "Explore Truck Financing",
+              "link1Url": "/financing"
+            },
+            {
+              "title": "Truck Service & Diagnostics Guide",
+              "copy": [
+                {
+                  "text": "Learn about preventative maintenance, diagnostics, mobile repair, and heavy-duty truck service support."
+                }
+              ],
+              "link1Label": "Explore Truck Service & Repair",
+              "link1Url": "/service"
+            },
+            {
+              "title": "Heavy-Duty Truck Parts Department",
+              "copy": [
+                {
+                  "text": "View OEM and aftermarket truck parts inventory and delivery support."
+                }
+              ],
+              "link1Label": "View Truck Parts Department",
+              "link1Url": "/store/parts"
+            },
+            {
+              "title": "Used Truck Inventory",
+              "copy": [
+                {
+                  "text": "Browse certified inspected pre-owned commercial truck inventory."
+                }
+              ],
+              "link1Label": "Browse Used Trucks",
+              "link1Url": "/used-trucks"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "coverage",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "pg-text",
+        "values": {
+          "bg": "card",
+          "eyebrow": "Coverage",
+          "heading": "Serving Longview & East Texas",
+          "phoneLine": {
+            "source": "locations"
+          },
+          "copy": [
+            {
+              "text": "We serve customers across Longview, Tyler, Kilgore, Marshall, Sulphur Springs, Mt. Pleasant, Paris, and the surrounding East Texas region. Our central location provides convenient access for fleets and owner-operators across a wide regional service area."
+            }
+          ],
+          "links": [
+            {
+              "label": "View Locations",
+              "url": "/locations",
+              "style": "link"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "cta",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "pg-cta",
+        "values": {
+          "heading": "Browse New Truck Inventory or Request Information",
+          "body": "If you are looking for a new Mack truck, our team is ready to help you find the right fit for your operation.",
+          "phoneLine": {
+            "source": "locations"
+          },
+          "points": [
+            {
+              "label": "In-stock truck inventory selection"
+            },
+            {
+              "label": "Custom factory truck ordering"
+            },
+            {
+              "label": "Commercial financing and leasing solutions"
+            },
+            {
+              "label": "Fleet purchasing guidance"
+            }
+          ],
+          "ctaLabel": "Contact East Texas Mack",
+          "ctaUrl": "/contact"
+        }
+      }
+    },
+    {
+      "id": "faq",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "pg-faq",
+        "values": {
+          "items": [
+            {
+              "q": "Which Mack trucks do you sell the most?",
+              "a": "The next-generation Mack Keystone and aerodynamic Mack Anthem are highly favored by regional freight haulers and aggregate movers, while the Mack Granite remains a top-selling vocational truck for local oilfield and construction operations."
+            },
+            {
+              "q": "Can I secure fleet-wide financing directly through the dealership?",
+              "a": "Yes. We offer fully integrated commercial financing solutions, including customized fleet programs through Mack Financial Services, encompassing both retail loans and flexible operating leases."
+            },
+            {
+              "q": "What is the typical lead time for a custom-ordered Mack truck?",
+              "a": "While on-lot inventory can be driven away the same day, custom factory configurations are typically delivered within approximately 90 days, depending on factory production capacity and components requested."
+            },
+            {
+              "q": "Do you support specialized municipal and vocational setups?",
+              "a": "Absolutely. We specialize in outfitting heavy-duty chassis for municipal fleets, waste management operations, and specialized vocational applications using the industry-proven Mack LR and TerraPro models."
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

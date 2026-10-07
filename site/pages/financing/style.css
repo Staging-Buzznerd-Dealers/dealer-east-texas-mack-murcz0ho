@@ -1,0 +1,5 @@
+/* Financing — the full-width photo between the resource cards and the coverage band. */
+.bz-section[data-bz-node="strip"] .bz-block { padding-block: 0; }
+.bz-section[data-bz-node="strip"] .bz-figure { margin: 0; }
+.bz-section[data-bz-node="strip"] img { display: block; width: 100%; height: 420px; object-fit: cover; border-radius: 0; }
+@media (max-width: 640px) { .bz-section[data-bz-node="strip"] img { height: 240px; } }
