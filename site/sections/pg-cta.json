@@ -1,0 +1,192 @@
+{
+  "version": 2,
+  "id": "pg-cta",
+  "name": "Call-to-action band",
+  "description": "Navy band: heading, short paragraph, the rooftop city and phone from Locations, a dot-separated list of points and one button.",
+  "css": "[data-bz-section=\"pg-cta\"] .bz-section { color: var(--card); text-align: center; }\n[data-bz-section=\"pg-cta\"] .bz-headingblock h2 { font-size: 32px; margin: 0 0 16px; color: var(--card); }\n[data-bz-section=\"pg-cta\"] [data-bz-node=\"pcta-body\"] p { font-size: 17px; line-height: 1.5; color: rgba(255, 255, 255, 0.85); max-width: 620px; margin: 0 auto; }\n[data-bz-section=\"pg-cta\"] [data-bz-node^=\"pcta-line\"] p { font-size: 17px; line-height: 1.5; color: rgba(255, 255, 255, 0.85); max-width: 620px; margin: 0 auto 24px; }\n[data-bz-section=\"pg-cta\"] .bz-block[data-bz-node=\"pcta-body\"]:not(:has(p)) { display: none; }\n[data-bz-section=\"pg-cta\"] .bz-col[data-bz-node=\"pcta-points\"] { display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 14px; margin-bottom: 28px; }\n[data-bz-section=\"pg-cta\"] [data-bz-node^=\"pcta-point\"] p { font-size: 14px; line-height: normal; color: #c9cbd0; margin: 0; }\n[data-bz-section=\"pg-cta\"] [data-bz-node^=\"pcta-point\"] + [data-bz-node^=\"pcta-point\"] p::before { content: \"•\"; margin-right: 14px; color: rgba(255, 255, 255, 0.55); }\n[data-bz-section=\"pg-cta\"] .bz-btns { justify-content: center; margin: 0; }\n[data-bz-section=\"pg-cta\"] .bz-btn { font: 700 16px / normal var(--font-body); padding: 16px 32px; background: var(--card); color: var(--accent-dark); border-color: var(--card); }",
+  "props": [
+    {
+      "key": "heading",
+      "type": "text",
+      "label": "Heading"
+    },
+    {
+      "key": "body",
+      "type": "textarea",
+      "label": "Paragraph"
+    },
+    {
+      "key": "phoneLine",
+      "type": "list",
+      "label": "City and phone line (from Locations)",
+      "fields": [
+        {
+          "key": "city",
+          "type": "text",
+          "label": "City"
+        },
+        {
+          "key": "region",
+          "type": "text",
+          "label": "State"
+        },
+        {
+          "key": "phone",
+          "type": "text",
+          "label": "Phone"
+        }
+      ]
+    },
+    {
+      "key": "points",
+      "type": "list",
+      "label": "Points (shown with dots between)",
+      "fields": [
+        {
+          "key": "label",
+          "type": "text",
+          "label": "Point"
+        }
+      ]
+    },
+    {
+      "key": "ctaLabel",
+      "type": "text",
+      "label": "Button text"
+    },
+    {
+      "key": "ctaUrl",
+      "type": "url",
+      "label": "Button goes to",
+      "default": "/contact"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "pcta",
+      "type": "section",
+      "props": {
+        "width": "full",
+        "background": "accent",
+        "paddingY": 0
+      },
+      "styles": {
+        "base": {
+          "paddingTop": 80,
+          "paddingBottom": 80,
+          "paddingLeft": 40,
+          "paddingRight": 40
+        },
+        "tablet": {
+          "paddingLeft": 24,
+          "paddingRight": 24
+        },
+        "mobile": {
+          "paddingTop": 46,
+          "paddingBottom": 46,
+          "paddingLeft": 20,
+          "paddingRight": 20
+        }
+      },
+      "children": [
+        {
+          "id": "pcta-row",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "stackOn": "never"
+          },
+          "styles": {
+            "base": {
+              "maxWidth": 1360,
+              "marginLeft": "auto",
+              "marginRight": "auto"
+            }
+          },
+          "children": [
+            {
+              "id": "pcta-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "pcta-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "{{heading}}",
+                    "headingLevel": 2,
+                    "align": "center"
+                  }
+                },
+                {
+                  "id": "pcta-body",
+                  "type": "text",
+                  "props": {
+                    "text": "{{body}}",
+                    "width": "full",
+                    "align": "center"
+                  }
+                },
+                {
+                  "id": "pcta-line",
+                  "type": "text",
+                  "props": {
+                    "text": "{{city}}, {{region}} — Phone: {{phone}}",
+                    "width": "full",
+                    "align": "center",
+                    "repeat": "phoneLine"
+                  }
+                },
+                {
+                  "id": "pcta-points-row",
+                  "type": "row",
+                  "props": {
+                    "gap": 0,
+                    "stackOn": "never"
+                  },
+                  "children": [
+                    {
+                      "id": "pcta-points",
+                      "type": "column",
+                      "props": {
+                        "span": 12
+                      },
+                      "children": [
+                        {
+                          "id": "pcta-point",
+                          "type": "text",
+                          "props": {
+                            "text": "{{label}}",
+                            "width": "full",
+                            "repeat": "points"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "pcta-button",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "label": "{{ctaLabel}}",
+                        "url": "{{ctaUrl}}",
+                        "style": "secondary",
+                        "intent": "contact"
+                      }
+                    ],
+                    "align": "center"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

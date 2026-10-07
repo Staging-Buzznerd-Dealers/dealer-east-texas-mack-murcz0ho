@@ -1,0 +1,287 @@
+{
+  "version": 2,
+  "id": "pg-split",
+  "name": "Split band (columns)",
+  "description": "Two columns side by side. Each column can hold a heading, copy, links and a photo — and can sit on its own coloured panel.",
+  "css": "[data-bz-section=\"pg-split\"] .bz-headingblock h2 { margin-bottom: 20px; }\n[data-bz-section=\"pg-split\"] .bz-col:empty { display: none; }\n[data-bz-section=\"pg-split\"] .bz-photo--empty { display: none; }\n[data-bz-section=\"pg-split\"] .bz-col--bg-ink { background: var(--ink); border-radius: var(--radius-card); padding: 22px; }\n[data-bz-section=\"pg-split\"] .bz-col--bg-paper { background: var(--band-tan); border-radius: var(--radius-card); padding: 36px; }\n[data-bz-section=\"pg-split\"] .bz-col--bg-paper .bz-headingblock h2 { font-size: 20px; font-weight: 600; text-transform: none; margin-bottom: 16px; }\n[data-bz-section=\"pg-split\"] .bz-col--bg-paper .bz-block .copy__p, [data-bz-section=\"pg-split\"] .bz-col--bg-paper .bz-block .copy__ul { font-size: 15px; }\n[data-bz-section=\"pg-split\"] .bz-figure { margin: 0; }\n[data-bz-section=\"pg-split\"] .bz-figure img { width: 100%; height: 340px; object-fit: cover; border-radius: var(--radius-card); }\n[data-bz-section=\"pg-split\"] .bz-col--bg-ink .bz-figure img { border-radius: 4px; }\n@media (max-width: 640px) { [data-bz-section=\"pg-split\"] .bz-figure img { height: 240px; } [data-bz-section=\"pg-split\"] .bz-col--bg-paper { padding: 24px; } }",
+  "props": [
+    {
+      "key": "bg",
+      "type": "select",
+      "label": "Background",
+      "options": [
+        {
+          "value": "card",
+          "label": "White"
+        },
+        {
+          "value": "paper",
+          "label": "Sand"
+        },
+        {
+          "value": "ink",
+          "label": "Dark"
+        }
+      ],
+      "default": "card"
+    },
+    {
+      "key": "span",
+      "type": "number",
+      "label": "Column width (out of 12)",
+      "default": 6
+    },
+    {
+      "key": "sides",
+      "type": "list",
+      "label": "Sides",
+      "fields": [
+        {
+          "key": "panel",
+          "type": "select",
+          "label": "Column background",
+          "options": [
+            {
+              "value": "none",
+              "label": "None"
+            },
+            {
+              "value": "paper",
+              "label": "Sand box"
+            },
+            {
+              "value": "ink",
+              "label": "Dark frame (for a photo)"
+            }
+          ]
+        },
+        {
+          "key": "eyebrow",
+          "type": "text",
+          "label": "Label above the heading"
+        },
+        {
+          "key": "heading",
+          "type": "text",
+          "label": "Heading"
+        },
+        {
+          "key": "copy",
+          "type": "list",
+          "label": "Body copy (paragraph, then optional bullets)",
+          "fields": [
+            {
+              "key": "text",
+              "type": "textarea",
+              "label": "Paragraph"
+            },
+            {
+              "key": "label",
+              "type": "boolean",
+              "label": "Show as a small bold lead-in (e.g. \"We provide:\")"
+            },
+            {
+              "key": "note",
+              "type": "boolean",
+              "label": "Show as a bold highlighted note (e.g. \"Timeline: …\")"
+            },
+            {
+              "key": "bars",
+              "type": "boolean",
+              "label": "Bullets use a line on the left instead of dots"
+            },
+            {
+              "key": "bullets",
+              "type": "list",
+              "label": "Bullets",
+              "fields": [
+                {
+                  "key": "item",
+                  "type": "text",
+                  "label": "Bullet"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "key": "links",
+          "type": "list",
+          "label": "Links and buttons",
+          "fields": [
+            {
+              "key": "label",
+              "type": "text",
+              "label": "Link text"
+            },
+            {
+              "key": "url",
+              "type": "url",
+              "label": "Goes to"
+            },
+            {
+              "key": "style",
+              "type": "select",
+              "label": "Look",
+              "options": [
+                {
+                  "value": "link",
+                  "label": "Text link"
+                },
+                {
+                  "value": "primary",
+                  "label": "Red button"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "key": "image",
+          "type": "image",
+          "label": "Photo"
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "id": "ps",
+      "type": "section",
+      "props": {
+        "width": "full",
+        "background": "{{bg}}",
+        "paddingY": 0
+      },
+      "styles": {
+        "base": {
+          "paddingTop": 90,
+          "paddingBottom": 90,
+          "paddingLeft": 40,
+          "paddingRight": 40
+        },
+        "tablet": {
+          "paddingLeft": 24,
+          "paddingRight": 24
+        },
+        "mobile": {
+          "paddingTop": 56,
+          "paddingBottom": 56,
+          "paddingLeft": 20,
+          "paddingRight": 20
+        }
+      },
+      "children": [
+        {
+          "id": "ps-row",
+          "type": "row",
+          "props": {
+            "gap": 7,
+            "align": "center",
+            "stackOn": "tablet"
+          },
+          "styles": {
+            "base": {
+              "maxWidth": 1200,
+              "marginLeft": "auto",
+              "marginRight": "auto",
+              "columnGap": 60
+            },
+            "tablet": {
+              "rowGap": 32,
+              "columnGap": 0
+            }
+          },
+          "children": [
+            {
+              "id": "ps-col",
+              "type": "column",
+              "props": {
+                "span": "{{span}}",
+                "background": "{{panel}}",
+                "repeat": "sides"
+              },
+              "children": [
+                {
+                  "id": "ps-h",
+                  "type": "heading",
+                  "props": {
+                    "eyebrow": "{{eyebrow}}",
+                    "text": "{{heading}}",
+                    "headingLevel": 2
+                  }
+                },
+                {
+                  "id": "ps-copy",
+                  "type": "copy-block",
+                  "props": {
+                    "text": "{{text}}",
+                    "label": "{{label}}",
+                    "note": "{{note}}",
+                    "bars": "{{bars}}",
+                    "bullets": "{{bullets}}",
+                    "repeat": "copy"
+                  }
+                },
+                {
+                  "id": "ps-links-row",
+                  "type": "row",
+                  "props": {
+                    "gap": 0,
+                    "stackOn": "never"
+                  },
+                  "styles": {
+                    "base": {
+                      "marginTop": 16
+                    }
+                  },
+                  "children": [
+                    {
+                      "id": "ps-links-col",
+                      "type": "column",
+                      "props": {
+                        "span": 12
+                      },
+                      "styles": {
+                        "base": {
+                          "display": "flex",
+                          "flexWrap": "wrap",
+                          "alignItems": "center",
+                          "columnGap": 16,
+                          "rowGap": 12
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "ps-links",
+                          "type": "buttons",
+                          "props": {
+                            "items": [
+                              {
+                                "label": "{{label}}",
+                                "url": "{{url}}",
+                                "style": "{{style}}"
+                              }
+                            ],
+                            "repeat": "links"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "ps-img",
+                  "type": "image",
+                  "props": {
+                    "image": "{{image}}"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

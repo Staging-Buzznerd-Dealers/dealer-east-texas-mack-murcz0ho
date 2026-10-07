@@ -1,0 +1,2 @@
+/* New trucks. The Anthem is a cut-out on white, so it sits inside its dark card instead of being cropped. */
+.bz-block--image img[src*="new-truck-anthem"] { object-fit: contain; background: var(--ink); }

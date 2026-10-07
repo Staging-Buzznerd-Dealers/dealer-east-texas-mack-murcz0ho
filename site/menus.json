@@ -5,48 +5,138 @@
       "id": "main",
       "name": "Main navigation",
       "items": [
-        { "id": "inventory", "label": "Inventory", "type": "inventory", "ref": "inventory" },
-        { "id": "leasing", "label": "Leasing & Rental", "type": "url", "url": "/leasing-rental" },
-        { "id": "parts", "label": "Parts", "type": "inventory", "ref": "parts" },
-        { "id": "service", "label": "Service", "type": "url", "url": "/service" },
-        { "id": "about", "label": "About Us", "type": "url", "url": "/#about" }
+        {
+          "id": "inventory",
+          "label": "Inventory",
+          "type": "inventory",
+          "ref": "inventory"
+        },
+        {
+          "id": "leasing",
+          "label": "Leasing & Rental",
+          "type": "url",
+          "url": "/leasing-rental"
+        },
+        {
+          "id": "parts",
+          "label": "Parts",
+          "type": "inventory",
+          "ref": "parts"
+        },
+        {
+          "id": "service",
+          "label": "Service",
+          "type": "url",
+          "url": "/service"
+        },
+        {
+          "id": "about",
+          "label": "About Us",
+          "type": "url",
+          "url": "/#about"
+        }
       ]
     },
     {
       "id": "utility",
       "name": "Utility bar",
       "items": [
-        { "id": "u-careers", "label": "Careers", "type": "url", "url": "/careers" },
-        { "id": "u-contact", "label": "Contact", "type": "page", "ref": "contact" }
+        {
+          "id": "u-careers",
+          "label": "Careers",
+          "type": "url",
+          "url": "/careers"
+        },
+        {
+          "id": "u-contact",
+          "label": "Contact",
+          "type": "page",
+          "ref": "contact"
+        }
       ]
     },
     {
       "id": "footer-trucks",
       "name": "Footer — Trucks",
       "items": [
-        { "id": "ft-new", "label": "New Inventory", "type": "inventory", "ref": "inventory?condition=new" },
-        { "id": "ft-used", "label": "Pre-Owned Inventory", "type": "inventory", "ref": "inventory?condition=used" },
-        { "id": "ft-leasing", "label": "Leasing & Rental", "type": "url", "url": "/leasing-rental" },
-        { "id": "ft-showroom", "label": "Showroom", "type": "url", "url": "/showroom" }
+        {
+          "id": "ft-new",
+          "label": "New Inventory",
+          "type": "inventory",
+          "ref": "inventory?condition=new"
+        },
+        {
+          "id": "ft-used",
+          "label": "Pre-Owned Inventory",
+          "type": "inventory",
+          "ref": "inventory?condition=used"
+        },
+        {
+          "id": "ft-leasing",
+          "label": "Leasing & Rental",
+          "type": "url",
+          "url": "/leasing-rental"
+        },
+        {
+          "id": "ft-showroom",
+          "label": "Showroom",
+          "type": "url",
+          "url": "/showroom"
+        }
       ]
     },
     {
       "id": "footer-quick",
       "name": "Footer — Quick links",
       "items": [
-        { "id": "fq-about", "label": "About Us", "type": "url", "url": "/#about" },
-        { "id": "fq-service", "label": "Service", "type": "url", "url": "/service" },
-        { "id": "fq-financing", "label": "Financing", "type": "url", "url": "/financing" },
-        { "id": "fq-rigging", "label": "Rigging & Fabrication", "type": "url", "url": "/rigging-fabrication" }
+        {
+          "id": "fq-about",
+          "label": "About Us",
+          "type": "url",
+          "url": "/#about"
+        },
+        {
+          "id": "fq-service",
+          "label": "Service",
+          "type": "url",
+          "url": "/service"
+        },
+        {
+          "id": "fq-financing",
+          "label": "Financing",
+          "type": "page",
+          "ref": "financing"
+        },
+        {
+          "id": "fq-rigging",
+          "label": "Rigging & Fabrication",
+          "type": "url",
+          "url": "/rigging-fabrication"
+        }
       ]
     },
     {
       "id": "legal",
       "name": "Legal",
       "items": [
-        { "id": "privacy", "label": "Privacy Policy", "type": "url", "url": "/privacy-policy" },
-        { "id": "terms", "label": "Terms of Use", "type": "url", "url": "/terms-of-use" },
-        { "id": "accessibility", "label": "Accessibility", "type": "url", "url": "/accessibility" }
+        {
+          "id": "privacy",
+          "label": "Privacy Policy",
+          "type": "url",
+          "url": "/privacy-policy"
+        },
+        {
+          "id": "terms",
+          "label": "Terms of Use",
+          "type": "url",
+          "url": "/terms-of-use"
+        },
+        {
+          "id": "accessibility",
+          "label": "Accessibility",
+          "type": "url",
+          "url": "/accessibility"
+        }
       ]
     }
   ]

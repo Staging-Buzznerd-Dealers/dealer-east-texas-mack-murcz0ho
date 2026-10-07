@@ -1,0 +1,115 @@
+{
+  "version": 2,
+  "id": "pg-faq",
+  "name": "FAQ band",
+  "description": "Frequently asked questions, with FAQ structured data for search results.",
+  "css": "[data-bz-section=\"pg-faq\"] .bz-headingblock h2 { margin-bottom: 40px; }\n[data-bz-section=\"pg-faq\"] .bz-faqs { gap: 0; }\n[data-bz-section=\"pg-faq\"] .bz-faq { background: none; border: 0; border-bottom: 1px solid #eee; border-radius: 0; padding: 20px 0; }\n[data-bz-section=\"pg-faq\"] .bz-faq:first-child { padding-top: 0; }\n[data-bz-section=\"pg-faq\"] .bz-faq:last-child { border-bottom: 0; }\n[data-bz-section=\"pg-faq\"] .bz-faq summary { font: 700 17px / 1.4 var(--font-heading); color: var(--ink); list-style: none; }\n[data-bz-section=\"pg-faq\"] .bz-faq summary::-webkit-details-marker { display: none; }\n[data-bz-section=\"pg-faq\"] .bz-faq__a { font-size: 15px; line-height: 24px; color: var(--copy); margin-top: 10px; }\n[data-bz-section=\"pg-faq\"] .bz-faq::details-content { content-visibility: visible; }",
+  "js": "// The design shows every answer open. Open them once the page is live; without script (or in the editor) they stay a normal accordion.\ndocument.querySelectorAll('[data-bz-section=\"pg-faq\"] details.bz-faq').forEach(function (item) {\n  item.open = true;\n  var summary = item.querySelector('summary');\n  if (summary) summary.addEventListener('click', function (event) { event.preventDefault(); });\n});",
+  "props": [
+    {
+      "key": "eyebrow",
+      "type": "text",
+      "label": "Label above the heading",
+      "default": "FAQ"
+    },
+    {
+      "key": "heading",
+      "type": "text",
+      "label": "Heading",
+      "default": "Frequently Asked Questions"
+    },
+    {
+      "key": "items",
+      "type": "list",
+      "label": "Questions",
+      "fields": [
+        {
+          "key": "q",
+          "type": "text",
+          "label": "Question"
+        },
+        {
+          "key": "a",
+          "type": "textarea",
+          "label": "Answer"
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "id": "pf",
+      "type": "section",
+      "props": {
+        "width": "full",
+        "background": "card",
+        "paddingY": 0
+      },
+      "styles": {
+        "base": {
+          "paddingTop": 90,
+          "paddingBottom": 90,
+          "paddingLeft": 40,
+          "paddingRight": 40
+        },
+        "tablet": {
+          "paddingLeft": 24,
+          "paddingRight": 24
+        },
+        "mobile": {
+          "paddingTop": 56,
+          "paddingBottom": 56,
+          "paddingLeft": 20,
+          "paddingRight": 20
+        }
+      },
+      "children": [
+        {
+          "id": "pf-row",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "stackOn": "never"
+          },
+          "styles": {
+            "base": {
+              "maxWidth": 820,
+              "marginLeft": "auto",
+              "marginRight": "auto"
+            }
+          },
+          "children": [
+            {
+              "id": "pf-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "pf-h",
+                  "type": "heading",
+                  "props": {
+                    "eyebrow": "{{eyebrow}}",
+                    "text": "{{heading}}",
+                    "headingLevel": 2
+                  }
+                },
+                {
+                  "id": "pf-faq",
+                  "type": "widget",
+                  "props": {
+                    "widget": "faq",
+                    "config": {
+                      "items": "{{items}}"
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

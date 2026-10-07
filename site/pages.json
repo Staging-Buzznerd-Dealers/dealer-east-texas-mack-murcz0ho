@@ -35,5 +35,77 @@
       "footer": null,
       "utilityNav": null
     }
+  },
+  {
+    "slug": "new-trucks",
+    "title": "Mack Truck Dealer in Longview, TX",
+    "description": "East Texas Mack stocks one of the region's largest selections of new Mack commercial trucks — Keystone, Anthem, Granite, LR and TerraPro — with custom factory ordering, fleet financing and full service support in Longview, TX.",
+    "path": "/new-trucks",
+    "out": "new-trucks/index.html",
+    "dir": "new-trucks",
+    "status": "published",
+    "seo": {
+      "ogImage": null,
+      "noindex": false
+    },
+    "templates": {
+      "header": null,
+      "footer": null,
+      "utilityNav": null
+    }
+  },
+  {
+    "slug": "used-trucks",
+    "title": "Used Trucks for Sale in Longview, TX",
+    "description": "Mack Certified pre-owned trucks in Longview, TX: 150-point inspections, fleet-maintained inventory, warranty options and expert application matching from East Texas Mack.",
+    "path": "/used-trucks",
+    "out": "used-trucks/index.html",
+    "dir": "used-trucks",
+    "status": "published",
+    "seo": {
+      "ogImage": null,
+      "noindex": false
+    },
+    "templates": {
+      "header": null,
+      "footer": null,
+      "utilityNav": null
+    }
+  },
+  {
+    "slug": "used-commercial-trucks",
+    "title": "Quality Pre-Owned Commercial Trucks in Longview, TX",
+    "description": "Thoroughly inspected pre-owned commercial trucks in Longview, TX — day cabs, sleepers and vocational trucks backed by factory-certified mechanics, financing and full post-sale support.",
+    "path": "/used-commercial-trucks",
+    "out": "used-commercial-trucks/index.html",
+    "dir": "used-commercial-trucks",
+    "status": "published",
+    "seo": {
+      "ogImage": null,
+      "noindex": false
+    },
+    "templates": {
+      "header": null,
+      "footer": null,
+      "utilityNav": null
+    }
+  },
+  {
+    "slug": "financing",
+    "title": "Truck Financing in Longview, TX",
+    "description": "Commercial truck loans and leasing for new and used trucks in Longview, TX — same-day approvals for qualified buyers, all credit tiers, and delivery in as little as 24 to 48 hours.",
+    "path": "/financing",
+    "out": "financing/index.html",
+    "dir": "financing",
+    "status": "published",
+    "seo": {
+      "ogImage": null,
+      "noindex": false
+    },
+    "templates": {
+      "header": null,
+      "footer": null,
+      "utilityNav": null
+    }
   }
 ]

@@ -1,0 +1,394 @@
+{
+  "version": 2,
+  "nodes": [
+    {
+      "id": "hero",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "pg-hero",
+        "values": {
+          "crumb": "Used Commercial Trucks for Sale in Longview, TX",
+          "eyebrow": "Pre-Owned Inventory",
+          "headline": "Quality Pre-Owned Commercial Trucks in Longview, TX",
+          "subhead": "Thoroughly Inspected. Ready for Work. Built for Fleet Reliability.",
+          "body": "At East Texas Mack, we offer a select inventory of high-quality pre-owned commercial trucks designed to give fleet operators and owner-operators a cost-effective alternative to new equipment. Every used truck on our Longview lot undergoes a rigorous technical inspection by our factory-certified mechanics before being cleared for sale. Whether you are expanding a regional haul fleet, replacing an out-of-service rig, or buying your first vocational truck, our used inventory delivers dependable performance without the new-asset price tag.",
+          "image": {
+            "src": "/images/pages/used-commercial-hero.jpg",
+            "alt": "Mack Anthem truck",
+            "width": 1024,
+            "height": 751
+          }
+        }
+      }
+    },
+    {
+      "id": "intro",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "pg-text",
+        "values": {
+          "bg": "card",
+          "copy": [
+            {
+              "text": "Acquiring pre-owned commercial equipment allows smart operators to preserve working capital while securing dependable haul capacity. We back our used truck inventory with tailored commercial financing options, flexible leasing structures, and full post-sale support through our master-certified service department and $3M+ parts warehouse."
+            }
+          ],
+          "links": [
+            {
+              "label": "Explore Fleet Maintenance Strategies",
+              "url": "/fleet-maintenance-strategies",
+              "style": "primary"
+            },
+            {
+              "label": "View New Mack Trucks",
+              "url": "/new-trucks",
+              "style": "link"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "selection",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "pg-cards",
+        "values": {
+          "bg": "paper",
+          "look": "center",
+          "span": 4,
+          "eyebrow": "Selection",
+          "heading": "Our Pre-Owned Commercial Truck Selection",
+          "intro": "We continuously source and stock pre-owned heavy-duty trucks across multiple vocational and highway configurations to support diverse regional industries in East Texas.",
+          "cards": [
+            {
+              "title": "Used Day Cabs & Regional Haulers",
+              "copy": [
+                {
+                  "text": "The all-new Mack Keystone is a purpose-built Class 8 vocational tractor engineered to transition seamlessly from demanding, unpaved job sites to high-speed interstate corridors. It is ideal for construction, agriculture, logging, livestock hauling, and heavy-haul fleets needing maximum terrain flexibility. The Keystone features higher ground clearance, aggressive approach angles, the available Mack MaxRide™ suspension, and an ultra-modern, driver-centric steel cab offered in both axle-forward and axle-back configurations."
+                }
+              ]
+            },
+            {
+              "title": "Used Sleeper Trucks",
+              "copy": [
+                {
+                  "text": "For long-haul carriers and regional drivers requiring comfortable over-the-road accommodations, our pre-owned sleeper inventory provides premium driver comforts paired with proven aerodynamic efficiency. Built to slice through wind resistance on long interstate corridors, these highway haulers help owner-operators maximize fuel economy and maintain driver retention on multi-day freight routes."
+                }
+              ]
+            },
+            {
+              "title": "Used Vocational & Severe-Duty Trucks",
+              "copy": [
+                {
+                  "text": "Heavy-duty jobs across Texas construction sites, aggregate quarries, refuse routes, and oilfields demand an unyielding chassis. We stock pre-owned vocational trucks including heavy-duty dump trucks, concrete mixers, roll-off refuse units, and oilfield support rigs engineered with high-tensile steel frames, robust suspension setups, and severe-duty axles to handle high-payload demands."
+                }
+              ],
+              "link1Label": "View Truck Service Department",
+              "link1Url": "/service"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "inspection",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "pg-cards",
+        "values": {
+          "bg": "ink",
+          "span": 6,
+          "eyebrow": "Quality Assurance",
+          "heading": "Multi-Point Rigorous Inspection Process",
+          "intro": "Buying a used commercial truck should never involve guesswork. Every pre-owned truck entering our Longview inventory undergoes a comprehensive technical evaluation by our factory-certified mechanics to ensure it meets strict operational standards before joining your fleet.",
+          "cards": [
+            {
+              "title": "Powertrain & Mechanical Audit",
+              "copy": [
+                {
+                  "text": "Technicians perform deep mechanical checks on the engine, transmission, high-pressure fuel system, and differential units, testing oil quality, boost pressures, and fluid seal integrity."
+                }
+              ]
+            },
+            {
+              "title": "Electronic Diagnostics & Fault Logging",
+              "copy": [
+                {
+                  "text": "We connect advanced diagnostic software to evaluate active and historical ECM fault codes, checking sensor calibrations, emissions history, and control module health."
+                }
+              ]
+            },
+            {
+              "title": "Emissions & Aftertreatment Health",
+              "copy": [
+                {
+                  "text": "Exhaust aftertreatment systems including the DPF, SCR catalyst, and DEF dosing units are tested for differential pressure, active regeneration efficiency, and fluid delivery accuracy."
+                }
+              ]
+            },
+            {
+              "title": "Safety, Chassis & Wear Inspection",
+              "copy": [
+                {
+                  "text": "Our shop evaluates brake friction thickness, drum and rotor integrity, tire tread depth, suspension geometry, steering linkage tight tolerances, and chassis frame alignment."
+                }
+              ]
+            }
+          ],
+          "links": [
+            {
+              "label": "Explore Engine Diagnostics Guide",
+              "url": "/engine-diagnostics-guide",
+              "style": "link"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "case",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "pg-cards",
+        "values": {
+          "bg": "card",
+          "look": "end",
+          "span": 4,
+          "eyebrow": "The Case for Used",
+          "heading": "Why Choose Pre-Owned Equipment for Your Fleet?",
+          "cards": [
+            {
+              "title": "Immediate Job-Site Deployment",
+              "copy": [
+                {
+                  "text": "Unlike custom factory orders that require lead times, pre-owned trucks on our Longview lot are fully inspected, serviced, and ready for immediate deployment. Sourcing in-stock used inventory allows you to accept new hauling contracts instantly or quickly replace downed vehicles to avoid contract downtime penalties."
+                }
+              ]
+            },
+            {
+              "title": "Lower Capital Outlay",
+              "copy": [
+                {
+                  "text": "Purchasing pre-owned machinery significantly reduces initial capital investment while avoiding the steep first-year depreciation hit associated with new equipment. Lower acquisition costs translate to smaller monthly loan payments, improved cash flow, and faster return on investment for growing fleets."
+                }
+              ]
+            },
+            {
+              "title": "Proven Real-World Reliability",
+              "copy": [
+                {
+                  "text": "Late-model pre-owned trucks offer a track record of established operational performance. Sourcing a well-maintained, pre-owned vehicle with verified service records gives fleet managers confidence that the asset will deliver steady performance across demanding duty cycles."
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "financing",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "pg-text",
+        "values": {
+          "bg": "paper",
+          "eyebrow": "Financing",
+          "heading": "Flexible Commercial Financing for Used Trucks",
+          "copy": [
+            {
+              "text": "Acquiring pre-owned commercial machinery requires flexible financing structures tailored to your operational budget. At East Texas Mack, our finance team works closely with owner-operators and fleet managers to build accessible loan and lease packages for pre-owned equipment."
+            },
+            {
+              "text": "We offer direct access to Mack Financial Services as well as specialized commercial lending partners that accommodate a wide spectrum of credit profiles. Well-qualified buyers frequently secure same-day credit approvals with minimal down payment requirements, allowing you to complete your truck purchase quickly and get on the road."
+            }
+          ],
+          "links": [
+            {
+              "label": "Explore Truck Financing Options",
+              "url": "/financing",
+              "style": "link"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "support",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "pg-text",
+        "values": {
+          "bg": "card",
+          "eyebrow": "After You Buy",
+          "heading": "Long-Term Fleet Support After the Sale",
+          "copy": [
+            {
+              "text": "Your relationship with East Texas Mack extends far beyond the sales lot. Every pre-owned truck purchase is backed by our full suite of dealership resources, ensuring your investment remains protected over the long haul. Fleet operators gain direct access to our 22-bay service facility, master-certified mechanics, mobile roadside repair units, $3M+ OEM and aftermarket parts warehouse, and custom preventative maintenance contracts designed to sustain peak asset availability."
+            }
+          ],
+          "links": [
+            {
+              "label": "View Truck Parts Department",
+              "url": "/store/parts",
+              "style": "link"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "resources",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "pg-cards",
+        "values": {
+          "bg": "ink",
+          "span": 4,
+          "eyebrow": "Resources",
+          "heading": "Explore Our Commercial Sales, Service & Fleet Resources",
+          "cards": [
+            {
+              "title": "New Mack Truck Inventory",
+              "copy": [
+                {
+                  "text": "Browse all-new Mack Keystone, Anthem, Granite, LR, and TerraPro commercial models."
+                }
+              ],
+              "link1Label": "Browse New Mack Trucks",
+              "link1Url": "/new-trucks"
+            },
+            {
+              "title": "Truck Financing & Leasing Options",
+              "copy": [
+                {
+                  "text": "Explore commercial loan structures, leasing options, and fleet purchasing support."
+                }
+              ],
+              "link1Label": "Explore Truck Financing",
+              "link1Url": "/financing"
+            },
+            {
+              "title": "Truck Service & Diagnostics Guide",
+              "copy": [
+                {
+                  "text": "Learn about preventative maintenance, master diagnostics, mobile repair, and heavy-duty truck service."
+                }
+              ],
+              "link1Label": "Explore Truck Service & Repair",
+              "link1Url": "/service"
+            },
+            {
+              "title": "Heavy-Duty Truck Parts Department",
+              "copy": [
+                {
+                  "text": "View OEM and aftermarket truck parts inventory, VIN verification, and regional delivery options."
+                }
+              ],
+              "link1Label": "View Truck Parts Department",
+              "link1Url": "/store/parts"
+            },
+            {
+              "title": "Fleet Maintenance Strategy Guide",
+              "copy": [
+                {
+                  "text": "Discover proven strategies for hour-based service scheduling, uptime planning, and breakdown prevention."
+                }
+              ],
+              "link1Label": "Explore Fleet Maintenance Strategies",
+              "link1Url": "/fleet-maintenance-strategies"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "coverage",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "pg-text",
+        "values": {
+          "bg": "card",
+          "eyebrow": "Coverage",
+          "heading": "Serving Longview & East Texas",
+          "addressLine": {
+            "source": "locations"
+          },
+          "copy": [
+            {
+              "text": "Our pre-owned truck lot serves commercial haulers, regional fleets, and owner-operators across Longview, Tyler, Kilgore, Marshall, Sulphur Springs, Mt. Pleasant, Paris, and the surrounding East Texas region."
+            }
+          ],
+          "links": [
+            {
+              "label": "View Locations",
+              "url": "/locations",
+              "style": "link"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "cta",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "pg-cta",
+        "values": {
+          "heading": "Browse Pre-Owned Truck Inventory or Contact Us Today",
+          "body": "If you are looking for a reliable pre-owned commercial truck or want to discuss upcoming inventory arrivals, our sales team is standing by to assist you.",
+          "phoneLine": {
+            "source": "locations"
+          },
+          "points": [
+            {
+              "label": "In-stock used truck selection and spec reviews"
+            },
+            {
+              "label": "Commercial loan and lease structuring"
+            },
+            {
+              "label": "Trade-in evaluations"
+            },
+            {
+              "label": "Application-based truck recommendations"
+            }
+          ],
+          "ctaLabel": "Contact East Texas Mack",
+          "ctaUrl": "/contact"
+        }
+      }
+    },
+    {
+      "id": "faq",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "pg-faq",
+        "values": {
+          "items": [
+            {
+              "q": "Do you inspect used trucks before selling them?",
+              "a": "Yes. Every pre-owned vehicle undergoes a comprehensive multi-point mechanical, electronic, emissions, and safety inspection conducted by our certified technicians before being listed for sale."
+            },
+            {
+              "q": "Do you sell used commercial trucks from brands other than Mack?",
+              "a": "Yes. While we specialize in pre-owned Mack trucks, our used inventory frequently features high-quality heavy-duty day cabs, sleepers, and vocational trucks from other major commercial manufacturers."
+            },
+            {
+              "q": "Can I get commercial financing for a used truck?",
+              "a": "Yes. We offer commercial truck financing and leasing options for pre-owned equipment through Mack Financial Services and our network of commercial lending partners, catering to various credit profiles."
+            },
+            {
+              "q": "Can I trade in my current truck toward a used truck purchase?",
+              "a": "Yes. We accept commercial truck trade-ins and can evaluate your current equipment to apply its value directly toward your pre-owned purchase."
+            },
+            {
+              "q": "How quickly can I take delivery of a used truck?",
+              "a": "Because our pre-owned inventory is kept fully inspected and work-ready on our lot, most buyers can take delivery within 24 to 48 hours following financing approval."
+            }
+          ]
+        }
+      }
+    }
+  ]
+}
