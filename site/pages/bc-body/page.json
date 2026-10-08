@@ -1,0 +1,54 @@
+{
+  "version": 2,
+  "nodes": [
+    {
+      "id": "head",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "pg-form-head",
+        "values": {
+          "trail": [],
+          "crumb": "B&C Body",
+          "headline": "B&C Body"
+        }
+      }
+    },
+    {
+      "id": "intro",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "pg-split",
+        "values": {
+          "bg": "card",
+          "sides": [
+            {
+              "eyebrow": "Galbreath Hoist Dealer",
+              "heading": "B & C Body Company",
+              "copy": [
+                {
+                  "text": "<em>\"Come Visit Us and See Why We are one of the largest Galbreath Hoist Dealers in the Nation\"</em>"
+                }
+              ],
+              "links": [
+                {
+                  "label": "Contact Us →",
+                  "url": "/contact",
+                  "style": "primary"
+                }
+              ]
+            },
+            {
+              "panel": "none",
+              "image": {
+                "src": "/images/pages/bc-body.jpg",
+                "alt": "B&C Body Company Mack trucks",
+                "width": 1024,
+                "height": 683
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

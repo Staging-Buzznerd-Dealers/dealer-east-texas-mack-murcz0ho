@@ -1,0 +1,129 @@
+{
+  "version": 2,
+  "nodes": [
+    {
+      "id": "head",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "pg-form-head",
+        "values": {
+          "trail": [],
+          "crumb": "Rigging & Fabrication",
+          "headline": "Rigging & Fabrication"
+        }
+      }
+    },
+    {
+      "id": "intro",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "pg-split",
+        "values": {
+          "bg": "card",
+          "sides": [
+            {
+              "eyebrow": "Custom Builds",
+              "heading": "Rigging Shop",
+              "copy": [
+                {
+                  "text": "Some of the applications we rig/fabricate are:",
+                  "bullets": [
+                    {
+                      "item": "Vacuum Trucks"
+                    },
+                    {
+                      "item": "Heavy Haul Winch Trucks"
+                    },
+                    {
+                      "item": "Gin Pole Trucks"
+                    },
+                    {
+                      "item": "Wet-Line Kits"
+                    },
+                    {
+                      "item": "Roll-Off Mounting"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "panel": "none",
+              "image": {
+                "src": "/images/pages/rigging-chassis.jpg",
+                "alt": "Mack truck chassis",
+                "width": 1024,
+                "height": 683
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "work-head",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "pg-text",
+        "values": {
+          "bg": "ink",
+          "eyebrow": "Our Work",
+          "heading": "Recent Rigging & Fabrication"
+        }
+      }
+    },
+    {
+      "id": "work",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "pg-split",
+        "values": {
+          "bg": "ink",
+          "span": 4,
+          "sides": [
+            {
+              "panel": "none",
+              "image": {
+                "src": "/images/pages/rigging-flatbed.jpg",
+                "alt": "Flatbed Mack truck rig",
+                "width": 1024,
+                "height": 683
+              }
+            },
+            {
+              "panel": "none",
+              "image": {
+                "src": "/images/pages/rigging-chassis.jpg",
+                "alt": "Mack truck chassis",
+                "width": 1024,
+                "height": 683
+              }
+            },
+            {
+              "panel": "none",
+              "image": {
+                "src": "/images/pages/rigging-rear.jpg",
+                "alt": "Mack truck rear rigging detail",
+                "width": 1024,
+                "height": 683
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "cta",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "pg-cta",
+        "values": {
+          "heading": "Need a Custom Rig?",
+          "body": "Call us at 903-758-9994 or come by today and experience our superior service and selection! We look forward to serving you!",
+          "ctaLabel": "Contact Us",
+          "ctaUrl": "/contact"
+        }
+      }
+    }
+  ]
+}

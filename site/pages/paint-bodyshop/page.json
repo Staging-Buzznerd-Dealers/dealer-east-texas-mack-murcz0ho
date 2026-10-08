@@ -1,0 +1,58 @@
+{
+  "version": 2,
+  "nodes": [
+    {
+      "id": "head",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "pg-form-head",
+        "values": {
+          "trail": [],
+          "crumb": "Paint & Bodyshop",
+          "headline": "Paint & Bodyshop"
+        }
+      }
+    },
+    {
+      "id": "intro",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "pg-split",
+        "values": {
+          "bg": "card",
+          "sides": [
+            {
+              "eyebrow": "Body Shop",
+              "heading": "East Texas Mack Bodyshop",
+              "copy": [
+                {
+                  "text": "Our 4 professionally trained PPG technicians are the best in the business."
+                },
+                {
+                  "text": "<strong>Body Shop Manager: James Coates</strong>Please call or visit us today for a quote.",
+                  "box": true
+                }
+              ],
+              "links": [
+                {
+                  "label": "Contact Us →",
+                  "url": "/contact",
+                  "style": "primary"
+                }
+              ]
+            },
+            {
+              "panel": "none",
+              "image": {
+                "src": "/images/pages/paint-body.jpg",
+                "alt": "Mack truck",
+                "width": 1024,
+                "height": 683
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}
