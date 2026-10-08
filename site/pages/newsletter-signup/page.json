@@ -1,0 +1,96 @@
+{
+  "version": 2,
+  "nodes": [
+    {
+      "id": "head",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "pg-form-head",
+        "values": {
+          "trail": [],
+          "crumb": "Newsletter Signup",
+          "headline": "Newsletter Signup"
+        }
+      }
+    },
+    {
+      "id": "form-band",
+      "type": "section",
+      "props": {
+        "width": "full",
+        "background": "card",
+        "paddingY": 0
+      },
+      "styles": {
+        "base": {
+          "paddingTop": 90,
+          "paddingBottom": 160,
+          "paddingLeft": 40,
+          "paddingRight": 40
+        },
+        "tablet": {
+          "paddingLeft": 24,
+          "paddingRight": 24
+        },
+        "mobile": {
+          "paddingTop": 48,
+          "paddingBottom": 56,
+          "paddingLeft": 16,
+          "paddingRight": 16
+        }
+      },
+      "children": [
+        {
+          "id": "form-row",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "stackOn": "never"
+          },
+          "styles": {
+            "base": {
+              "maxWidth": 560,
+              "marginLeft": "auto",
+              "marginRight": "auto"
+            }
+          },
+          "children": [
+            {
+              "id": "form-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "form-h",
+                  "type": "heading",
+                  "props": {
+                    "eyebrow": "Stay Informed",
+                    "text": "Sign Up for Our Newsletter",
+                    "headingLevel": 2
+                  }
+                },
+                {
+                  "id": "form-text",
+                  "type": "text",
+                  "props": {
+                    "text": "Get the latest updates on new trucks, special deals, and news from East Texas Mack delivered to your inbox.",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "form",
+                  "type": "form",
+                  "props": {
+                    "formId": "newsletter-signup"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

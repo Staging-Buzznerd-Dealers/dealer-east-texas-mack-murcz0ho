@@ -359,5 +359,23 @@
       "footer": null,
       "utilityNav": null
     }
+  },
+  {
+    "slug": "newsletter-signup",
+    "title": "Newsletter Signup",
+    "description": "Sign up for East Texas Mack news: new trucks, special deals and updates delivered to your inbox.",
+    "path": "/newsletter-signup",
+    "out": "newsletter-signup/index.html",
+    "dir": "newsletter-signup",
+    "status": "published",
+    "seo": {
+      "ogImage": null,
+      "noindex": false
+    },
+    "templates": {
+      "header": null,
+      "footer": null,
+      "utilityNav": null
+    }
   }
 ]
