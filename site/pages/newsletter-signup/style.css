@@ -1,0 +1,8 @@
+/* Newsletter Signup: narrow centred sign-up card. The form band is styled site-wide (custom code). */
+.bz-sharedsection[data-bz-section="pg-form-head"] .bz-row[data-bz-node="pfh-row"] { max-width: 700px; }
+.bz-sharedsection[data-bz-section="pg-form-head"] .bz-block[data-bz-node="pfh-h"] h1 { margin-bottom: 0; }
+.bz-section[data-bz-node="form-band"] .bz-col[data-bz-node="form-col"] { text-align: center; }
+.bz-section[data-bz-node="form-band"] .bz-block[data-bz-node="form-h"] h2 { font-size: 28px; margin: 0 0 16px; }
+.bz-section[data-bz-node="form-band"] .bz-block[data-bz-node="form-text"] p { margin: 0 0 36px; font-size: 16px; line-height: 1.7; color: var(--copy); }
+.bz-section[data-bz-node="form-band"] .bz-form { padding: 36px; gap: 20px; text-align: left; }
+.bz-section[data-bz-node="form-band"] .bz-btn[type="submit"] { width: 100%; flex: 1 1 100%; padding: 15px 30px; text-transform: uppercase; letter-spacing: 0.5px; }

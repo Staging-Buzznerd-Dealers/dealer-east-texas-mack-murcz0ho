@@ -1,0 +1,35 @@
+{
+  "id": "newsletter-signup",
+  "name": "Newsletter Signup",
+  "status": "live",
+  "surfaces": [
+    "page"
+  ],
+  "intent": "newsletter",
+  "submitLabel": "Subscribe",
+  "successMessage": "Thanks — you are subscribed. Watch your inbox for news from East Texas Mack.",
+  "consent": {
+    "enabled": false,
+    "required": false,
+    "text": ""
+  },
+  "fields": [
+    {
+      "id": "ns-email",
+      "type": "email",
+      "label": "Email Address",
+      "required": true
+    }
+  ],
+  "notifications": [
+    {
+      "id": "ns-default",
+      "name": "Default",
+      "logic": "AND",
+      "rules": [],
+      "targetType": "role",
+      "roleId": "marketing-manager",
+      "scopeMode": "dynamic"
+    }
+  ]
+}
