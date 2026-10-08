@@ -20,14 +20,14 @@
         {
           "id": "parts",
           "label": "Parts",
-          "type": "inventory",
+          "type": "page",
           "ref": "parts"
         },
         {
           "id": "service",
           "label": "Service",
-          "type": "url",
-          "url": "/service"
+          "type": "page",
+          "ref": "service"
         },
         {
           "id": "about",
@@ -98,8 +98,8 @@
         {
           "id": "fq-service",
           "label": "Service",
-          "type": "url",
-          "url": "/service"
+          "type": "page",
+          "ref": "service"
         },
         {
           "id": "fq-financing",

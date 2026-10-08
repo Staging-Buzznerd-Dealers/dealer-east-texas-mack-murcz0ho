@@ -297,7 +297,7 @@
             },
             {
               "label": "View Truck Parts Department",
-              "url": "/store/parts",
+              "url": "/parts",
               "style": "link"
             }
           ]
@@ -394,7 +394,7 @@
                 }
               ],
               "link1Label": "View Truck Parts Department",
-              "link1Url": "/store/parts"
+              "link1Url": "/parts"
             },
             {
               "title": "Used Truck Inventory",

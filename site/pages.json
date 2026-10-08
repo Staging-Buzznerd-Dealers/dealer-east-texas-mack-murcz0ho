@@ -107,5 +107,95 @@
       "footer": null,
       "utilityNav": null
     }
+  },
+  {
+    "slug": "service",
+    "title": "Heavy-Duty Truck Service & Repair in Longview, TX",
+    "description": "Certified heavy-duty truck service and repair in Longview, TX — same-day preventative maintenance and diagnostics, 22 service bays, mobile repair trucks, fabrication and body shop.",
+    "path": "/service",
+    "out": "service/index.html",
+    "dir": "service",
+    "status": "published",
+    "seo": {
+      "ogImage": null,
+      "noindex": false
+    },
+    "templates": {
+      "header": null,
+      "footer": null,
+      "utilityNav": null
+    }
+  },
+  {
+    "slug": "parts",
+    "title": "Heavy-Duty Truck Parts in Longview, TX",
+    "description": "OEM and aftermarket heavy-duty truck parts in Longview, TX — over $3 million in local inventory, a 95% fill rate and same-day regional delivery for orders placed before noon.",
+    "path": "/parts",
+    "out": "parts/index.html",
+    "dir": "parts",
+    "status": "published",
+    "seo": {
+      "ogImage": null,
+      "noindex": false
+    },
+    "templates": {
+      "header": null,
+      "footer": null,
+      "utilityNav": null
+    }
+  },
+  {
+    "slug": "parts-request",
+    "title": "Parts Request",
+    "description": "Request heavy-duty truck parts from East Texas Mack in Longview, TX — send your VIN, part number or description and our parts team will respond.",
+    "path": "/parts-request",
+    "out": "parts-request/index.html",
+    "dir": "parts-request",
+    "status": "published",
+    "seo": {
+      "ogImage": null,
+      "noindex": false
+    },
+    "templates": {
+      "header": null,
+      "footer": null,
+      "utilityNav": null
+    }
+  },
+  {
+    "slug": "service-appointments",
+    "title": "Service Appointments",
+    "description": "Schedule heavy-duty truck service at East Texas Mack in Longview, TX — tell us about your truck and the problem and we will confirm your appointment.",
+    "path": "/service-appointments",
+    "out": "service-appointments/index.html",
+    "dir": "service-appointments",
+    "status": "published",
+    "seo": {
+      "ogImage": null,
+      "noindex": false
+    },
+    "templates": {
+      "header": null,
+      "footer": null,
+      "utilityNav": null
+    }
+  },
+  {
+    "slug": "finance-credit-application",
+    "title": "Finance Credit Application",
+    "description": "Apply for commercial truck financing with East Texas Mack — individual and business credit applications for new and used truck purchases.",
+    "path": "/finance-credit-application",
+    "out": "finance-credit-application/index.html",
+    "dir": "finance-credit-application",
+    "status": "published",
+    "seo": {
+      "ogImage": null,
+      "noindex": false
+    },
+    "templates": {
+      "header": null,
+      "footer": null,
+      "utilityNav": null
+    }
   }
 ]

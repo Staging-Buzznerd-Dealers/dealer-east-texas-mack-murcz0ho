@@ -1,0 +1,408 @@
+{
+  "version": 2,
+  "nodes": [
+    {
+      "id": "hero",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "pg-hero",
+        "values": {
+          "crumb": "Parts",
+          "eyebrow": "Parts",
+          "headline": "Heavy-Duty Truck Parts in Longview, TX",
+          "subhead": "OEM & Aftermarket Parts. Fast Availability. Built for Fleet Uptime.",
+          "body": "At East Texas Mack, we supply high-quality commercial truck parts for fleets, owner-operators, and vocational operations across East Texas. Our focus is simple: get you the right part fast and keep your trucks moving. To support high-demand regional operations, we maintain over $3 million in on-the-ground local inventory, achieving a consistent 95% parts fill rate. For urgent repair needs, we offer same-day regional delivery for orders placed before noon.",
+          "image": {
+            "src": "/images/pages/parts-hero.jpg",
+            "alt": "Mack Anthem truck",
+            "width": 1024,
+            "height": 751
+          }
+        }
+      }
+    },
+    {
+      "id": "intro",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "pg-text",
+        "values": {
+          "bg": "card",
+          "copy": [
+            {
+              "text": "Proper diagnostics, preventative maintenance, and parts planning all play a major role in reducing downtime and improving long-term fleet performance."
+            }
+          ],
+          "links": [
+            {
+              "label": "Explore Fleet Maintenance Strategies",
+              "url": "/fleet-maintenance-strategies",
+              "style": "link"
+            },
+            {
+              "label": "View Mack MP Engine Guide",
+              "url": "/mack-mp-engine-guide",
+              "style": "link"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "inventory",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "pg-text",
+        "values": {
+          "bg": "card",
+          "eyebrow": "Inventory",
+          "heading": "Complete Truck Parts Inventory",
+          "copy": [
+            {
+              "text": "We supply genuine OEM components and high-grade replacement parts for Mack trucks as well as all makes and models of heavy-duty vehicles. Our extensive warehouse inventory encompasses engine and fuel delivery system components, suspension assemblies, brake hardware, steering systems, electrical controls, electronic modules, filters, fluids, and routine maintenance supplies. Built to support heavy-duty fleet operations rather than just occasional spot repairs, our parts department ensures immediate access to the components required to sustain peak asset utilization."
+            },
+            {
+              "text": "Many parts-related failures are actually maintenance-related failures. Proper diagnostics, preventative maintenance, and routine inspections help identify worn components before they cause breakdowns, reducing downtime and lowering long-term operating costs."
+            }
+          ],
+          "links": [
+            {
+              "label": "View Truck Service Department",
+              "url": "/service",
+              "style": "link"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "categories",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "pg-cards",
+        "values": {
+          "bg": "paper",
+          "look": "center",
+          "span": 6,
+          "eyebrow": "What We Stock",
+          "heading": "Parts by Category",
+          "cards": [
+            {
+              "title": "Engine & Performance Components",
+              "copy": [
+                {
+                  "text": "Engine components operate under intense heat and pressure, making high-spec replacement parts vital for vehicle longevity. We stock and source critical performance items including high-pressure fuel injectors, fuel pumps, turbocharger assemblies, position sensors, and electronic control units."
+                }
+              ],
+              "link1Label": "Explore Mack MP Engine Guide",
+              "link1Url": "/mack-mp-engine-guide"
+            },
+            {
+              "title": "Emissions System Parts (DPF & SCR)",
+              "copy": [
+                {
+                  "text": "For modern diesel trucks, aftertreatment networks are tightly integrated with engine management and fuel economy. We support complete emissions systems with stocked Diesel Particulate Filters (DPF), Diesel Exhaust Fluid (DEF) system pumps and dosers, NOx sensors, and electronic emissions controls."
+                }
+              ],
+              "link1Label": "Explore DPF & Emissions Guide",
+              "link1Url": "/dpf-emissions-guide"
+            },
+            {
+              "title": "Maintenance & Wear Parts",
+              "copy": [
+                {
+                  "text": "Routine component replacement is one of the most effective strategies for preventing major roadside breakdowns and extending asset life. We provide a full inventory of essential wear items, including high-efficiency oil, air, and fuel filters, brake shoes, drums, pads, drive belts, coolant hoses, and approved engine fluids."
+                }
+              ],
+              "link1Label": "Explore Preventative Maintenance Planning",
+              "link1Url": "/preventative-maintenance-planning"
+            },
+            {
+              "title": "OEM & Aftermarket Parts Options",
+              "copy": [
+                {
+                  "text": "To give our customers total flexibility, we offer both genuine OEM Mack parts for exact factory fit and warranty preservation, alongside premium aftermarket solutions for cost-effective lifecycle management. Our specialists help you choose based on application, workload, equipment age, and long-term performance expectations."
+                }
+              ],
+              "link1Label": "Compare OEM vs Aftermarket Parts",
+              "link1Url": "/oem-vs-aftermarket-parts"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "delivery",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "pg-split",
+        "values": {
+          "bg": "card",
+          "sides": [
+            {
+              "eyebrow": "Delivery",
+              "heading": "Fast Parts Availability & Delivery",
+              "copy": [
+                {
+                  "text": "Speed and technical precision define our parts operation. Backed by a 95% inventory fill rate, our dedicated delivery network features outside sales representatives and delivery drivers serving a 150-mile radius across East Texas. Orders placed before noon qualify for same-day delivery, ensuring rapid access to critical components so your fleet can resolve repairs quickly and return to revenue-generating operation."
+                }
+              ],
+              "links": [
+                {
+                  "label": "Explore Fleet Uptime Strategies",
+                  "url": "/fleet-uptime-strategies",
+                  "style": "link"
+                }
+              ]
+            },
+            {
+              "panel": "none",
+              "image": {
+                "src": "/images/pages/parts-delivery.jpg",
+                "alt": "Mack chassis cab truck",
+                "width": 800,
+                "height": 500
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "fleet",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "pg-text",
+        "values": {
+          "bg": "ink",
+          "eyebrow": "Fleet Support",
+          "heading": "Fleet Parts Programs & Support",
+          "copy": [
+            {
+              "text": "We partner closely with commercial fleets to streamline procurement and reduce maintenance headaches. Qualified fleets can access preferred Mack fleet pricing programs, high credit limits, flexible purchasing terms, and dedicated account management. By coordinating maintenance schedules, diagnostic inputs, and replacement parts staging, we help fleet managers simplify ordering and optimize vehicle uptime."
+            }
+          ],
+          "links": [
+            {
+              "label": "View Fleet Maintenance Guide",
+              "url": "/fleet-maintenance-strategies",
+              "style": "link"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "why",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "pg-cards",
+        "values": {
+          "bg": "card",
+          "look": "end",
+          "span": 4,
+          "eyebrow": "Why Choose Us",
+          "heading": "Why East Texas Mack Parts Department",
+          "cards": [
+            {
+              "title": "Inventory Built for Demand",
+              "copy": [
+                {
+                  "text": "Local inventory specifically stocked for high-demand commercial applications, ensuring high availability for critical repair and maintenance parts."
+                }
+              ],
+              "number": "$3M+"
+            },
+            {
+              "title": "Experience You Can Rely On",
+              "copy": [
+                {
+                  "text": "Our parts desk is staffed by technical experts with over 150 years of combined experience across heavy-duty systems."
+                }
+              ],
+              "number": "150+ yrs"
+            },
+            {
+              "title": "Fastest Delivery in the Region",
+              "copy": [
+                {
+                  "text": "4 outside sales representatives and 5 dedicated delivery drivers covering a 150-mile radius across East Texas."
+                }
+              ],
+              "number": "4 + 5"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "process",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "pg-cards",
+        "values": {
+          "bg": "paper",
+          "span": 4,
+          "eyebrow": "Process",
+          "heading": "How to Order Truck Parts",
+          "cards": [
+            {
+              "title": "Contact Our Parts Team",
+              "copy": [
+                {
+                  "text": "Provide your VIN, part number, or component description."
+                }
+              ],
+              "number": "1"
+            },
+            {
+              "title": "Parts Identification",
+              "copy": [
+                {
+                  "text": "Our team verifies compatibility and availability."
+                }
+              ],
+              "number": "2"
+            },
+            {
+              "title": "Pickup or Delivery",
+              "copy": [
+                {
+                  "text": "Select same-day counter pickup at our Longview facility or same-day delivery for orders placed before noon."
+                }
+              ],
+              "number": "3"
+            }
+          ],
+          "links": [
+            {
+              "label": "Order Truck Parts",
+              "url": "/parts-request",
+              "style": "primary"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "coverage",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "pg-text",
+        "values": {
+          "bg": "card",
+          "eyebrow": "Coverage",
+          "heading": "Serving Longview & East Texas",
+          "addressLine": {
+            "source": "locations"
+          },
+          "copy": [
+            {
+              "text": "We serve commercial haulers and fleets across:"
+            }
+          ],
+          "chips": [
+            {
+              "label": "Longview"
+            },
+            {
+              "label": "Tyler"
+            },
+            {
+              "label": "Kilgore"
+            },
+            {
+              "label": "Marshall"
+            },
+            {
+              "label": "Sulphur Springs"
+            },
+            {
+              "label": "Mt. Pleasant"
+            },
+            {
+              "label": "Paris"
+            },
+            {
+              "label": "Surrounding East Texas region"
+            }
+          ],
+          "copyAfter": [
+            {
+              "text": "Our delivery network supports customers across a 150-mile radius."
+            }
+          ],
+          "links": [
+            {
+              "label": "View Service Locations",
+              "url": "/locations",
+              "style": "link"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "cta",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "pg-cta",
+        "values": {
+          "heading": "Order Truck Parts Today",
+          "body": "If you need heavy-duty truck parts delivered quickly and accurately, our team is standing by to assist.",
+          "phoneLine": {
+            "source": "locations"
+          },
+          "points": [
+            {
+              "label": "Same-day regional delivery"
+            },
+            {
+              "label": "Fleet pricing programs & credit terms"
+            },
+            {
+              "label": "OEM Mack and premium aftermarket parts"
+            },
+            {
+              "label": "Expert VIN verification and component identification"
+            }
+          ],
+          "ctaLabel": "Contact Parts Department",
+          "ctaUrl": "/parts-request",
+          "ctaLook": "primary"
+        }
+      }
+    },
+    {
+      "id": "faq",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "pg-faq",
+        "values": {
+          "items": [
+            {
+              "q": "Do you only sell Mack truck parts?",
+              "a": "No. We supply parts for all makes and models of heavy-duty trucks."
+            },
+            {
+              "q": "Do you have parts in stock?",
+              "a": "Yes. We maintain a high inventory with a 95% fill rate."
+            },
+            {
+              "q": "Do you offer same-day delivery?",
+              "a": "Yes. Orders placed before noon qualify for same-day delivery."
+            },
+            {
+              "q": "Can you help identify parts without a part number?",
+              "a": "Yes. Our team can identify parts using VIN or truck details."
+            },
+            {
+              "q": "Do you offer fleet pricing?",
+              "a": "Yes. Qualified fleets can access preferred pricing and credit programs."
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

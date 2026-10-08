@@ -556,7 +556,7 @@
               "title": "Service",
               "desc": "Heavy-duty repair, preventive maintenance, mobile dispatch and warranty work performed by certified technicians.",
               "linkLabel": "Schedule Service →",
-              "linkUrl": "/contact#form-request-info"
+              "linkUrl": "/service-appointments"
             },
             {
               "num": "03",
@@ -567,7 +567,7 @@
               "title": "Parts",
               "desc": "120,000+ OEM and aftermarket SKUs in stock for Mack & all other OEMs. Same-day shipping on orders.",
               "linkLabel": "Shop Parts →",
-              "linkUrl": "/store/parts"
+              "linkUrl": "/parts"
             },
             {
               "num": "04",

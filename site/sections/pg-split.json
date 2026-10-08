@@ -3,7 +3,7 @@
   "id": "pg-split",
   "name": "Split band (columns)",
   "description": "Two columns side by side. Each column can hold a heading, copy, links and a photo — and can sit on its own coloured panel.",
-  "css": "[data-bz-section=\"pg-split\"] .bz-headingblock h2 { margin-bottom: 20px; }\n[data-bz-section=\"pg-split\"] .bz-col:empty { display: none; }\n[data-bz-section=\"pg-split\"] .bz-photo--empty { display: none; }\n[data-bz-section=\"pg-split\"] .bz-col--bg-ink { background: var(--ink); border-radius: var(--radius-card); padding: 22px; }\n[data-bz-section=\"pg-split\"] .bz-col--bg-paper { background: var(--band-tan); border-radius: var(--radius-card); padding: 36px; }\n[data-bz-section=\"pg-split\"] .bz-col--bg-paper .bz-headingblock h2 { font-size: 20px; font-weight: 600; text-transform: none; margin-bottom: 16px; }\n[data-bz-section=\"pg-split\"] .bz-col--bg-paper .bz-block .copy__p, [data-bz-section=\"pg-split\"] .bz-col--bg-paper .bz-block .copy__ul { font-size: 15px; }\n[data-bz-section=\"pg-split\"] .bz-figure { margin: 0; }\n[data-bz-section=\"pg-split\"] .bz-figure img { width: 100%; height: 340px; object-fit: cover; border-radius: var(--radius-card); }\n[data-bz-section=\"pg-split\"] .bz-col--bg-ink .bz-figure img { border-radius: 4px; }\n@media (max-width: 640px) { [data-bz-section=\"pg-split\"] .bz-figure img { height: 240px; } [data-bz-section=\"pg-split\"] .bz-col--bg-paper { padding: 24px; } }",
+  "css": "[data-bz-section=\"pg-split\"] .bz-headingblock h2 { margin-bottom: 20px; }\n[data-bz-section=\"pg-split\"] .bz-col:empty { display: none; }\n[data-bz-section=\"pg-split\"] .bz-photo--empty { display: none; }\n[data-bz-section=\"pg-split\"] .bz-col--bg-ink { background: var(--ink); border-radius: var(--radius-card); padding: 22px; }\n[data-bz-section=\"pg-split\"] .bz-col--bg-card { background: var(--ink-raised); border-radius: var(--radius-card); padding: 22px; }\n[data-bz-section=\"pg-split\"] .bz-col--bg-paper { background: var(--band-tan); border-radius: var(--radius-card); padding: 36px; }\n[data-bz-section=\"pg-split\"] .bz-col--bg-paper .bz-headingblock h2 { font-size: 20px; font-weight: 600; text-transform: none; margin-bottom: 16px; }\n[data-bz-section=\"pg-split\"] .bz-col--bg-paper .bz-block .copy__p, [data-bz-section=\"pg-split\"] .bz-col--bg-paper .bz-block .copy__ul { font-size: 15px; }\n[data-bz-section=\"pg-split\"] .bz-figure { margin: 0; }\n[data-bz-section=\"pg-split\"] .bz-figure img { width: 100%; height: 340px; object-fit: cover; border-radius: var(--radius-card); }\n[data-bz-section=\"pg-split\"] .bz-col--bg-ink .bz-figure img, [data-bz-section=\"pg-split\"] .bz-col--bg-card .bz-figure img { border-radius: 4px; }\n@media (max-width: 640px) { [data-bz-section=\"pg-split\"] .bz-figure img { height: 240px; } [data-bz-section=\"pg-split\"] .bz-col--bg-paper { padding: 24px; } }",
   "props": [
     {
       "key": "bg",
@@ -52,6 +52,10 @@
             {
               "value": "ink",
               "label": "Dark frame (for a photo)"
+            },
+            {
+              "value": "card",
+              "label": "Raised dark box (on a dark band)"
             }
           ]
         },

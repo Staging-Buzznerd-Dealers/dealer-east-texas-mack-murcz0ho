@@ -1,0 +1,149 @@
+{
+  "id": "parts-request",
+  "name": "Parts Request",
+  "status": "live",
+  "surfaces": [
+    "page"
+  ],
+  "intent": "parts-request",
+  "submitLabel": "Submit",
+  "successMessage": "Thanks — our parts team has your request and will be in touch shortly.",
+  "consent": {
+    "enabled": true,
+    "required": false,
+    "text": "Subscribe to Newsletter"
+  },
+  "fields": [
+    {
+      "id": "pr-first",
+      "type": "first_name",
+      "label": "First name",
+      "required": true,
+      "width": "half"
+    },
+    {
+      "id": "pr-last",
+      "type": "last_name",
+      "label": "Last name",
+      "required": true,
+      "width": "half"
+    },
+    {
+      "id": "pr-phone",
+      "type": "phone",
+      "label": "Phone number",
+      "required": true,
+      "width": "half"
+    },
+    {
+      "id": "pr-email",
+      "type": "email",
+      "label": "Email address",
+      "required": true,
+      "width": "half"
+    },
+    {
+      "id": "pr-street",
+      "type": "single_line",
+      "label": "Street address",
+      "required": false
+    },
+    {
+      "id": "pr-city",
+      "type": "single_line",
+      "label": "City",
+      "required": false
+    },
+    {
+      "id": "pr-state",
+      "type": "single_line",
+      "label": "State / Province / Region",
+      "required": false,
+      "width": "half"
+    },
+    {
+      "id": "pr-zip",
+      "type": "single_line",
+      "label": "ZIP / Postal code",
+      "required": false,
+      "width": "half"
+    },
+    {
+      "id": "pr-country",
+      "type": "dropdown",
+      "label": "Country",
+      "required": false,
+      "options": [
+        {
+          "value": "us",
+          "label": "United States"
+        },
+        {
+          "value": "ca",
+          "label": "Canada"
+        },
+        {
+          "value": "mx",
+          "label": "Mexico"
+        }
+      ]
+    },
+    {
+      "id": "pr-make",
+      "type": "single_line",
+      "label": "Vehicle make",
+      "required": true,
+      "width": "half"
+    },
+    {
+      "id": "pr-model",
+      "type": "single_line",
+      "label": "Vehicle model",
+      "required": false,
+      "width": "half"
+    },
+    {
+      "id": "pr-year",
+      "type": "single_line",
+      "label": "Vehicle year",
+      "required": true,
+      "width": "half"
+    },
+    {
+      "id": "pr-vin",
+      "type": "single_line",
+      "label": "VIN #",
+      "required": false,
+      "width": "half"
+    },
+    {
+      "id": "pr-miles",
+      "type": "number",
+      "label": "Miles",
+      "required": false
+    },
+    {
+      "id": "pr-partno",
+      "type": "single_line",
+      "label": "Do you have a part number?",
+      "required": false
+    },
+    {
+      "id": "pr-parts",
+      "type": "paragraph",
+      "label": "What kind of parts are needed?",
+      "required": false
+    }
+  ],
+  "notifications": [
+    {
+      "id": "pr-default",
+      "name": "Default",
+      "logic": "AND",
+      "rules": [],
+      "targetType": "role",
+      "roleId": "parts-manager",
+      "scopeMode": "dynamic"
+    }
+  ]
+}

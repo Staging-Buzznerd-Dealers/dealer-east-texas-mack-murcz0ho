@@ -1,0 +1,3697 @@
+{
+  "id": "credit-application",
+  "name": "Finance Credit Application",
+  "status": "live",
+  "surfaces": [
+    "page"
+  ],
+  "intent": "credit-application",
+  "submitLabel": "Submit Application",
+  "successMessage": "Thanks — our finance team has received your application and will be in touch.",
+  "consent": {
+    "enabled": false
+  },
+  "fields": [
+    {
+      "id": "ca-type",
+      "type": "radio",
+      "label": "Application type",
+      "required": true,
+      "options": [
+        {
+          "value": "individual",
+          "label": "Individual Credit Application"
+        },
+        {
+          "value": "business",
+          "label": "Business Credit Application"
+        }
+      ]
+    },
+    {
+      "id": "ca-location",
+      "type": "dropdown",
+      "label": "Dealership location",
+      "required": true,
+      "width": "half",
+      "options": [
+        {
+          "value": "longview",
+          "label": "East Texas Mack — Longview, TX"
+        }
+      ],
+      "placeholder": "Select a Location"
+    },
+    {
+      "id": "ca-rep",
+      "type": "single_line",
+      "label": "Sales rep",
+      "required": true,
+      "width": "half"
+    },
+    {
+      "id": "ca-b-legal",
+      "type": "single_line",
+      "label": "Business / customer — exact legal name",
+      "required": true,
+      "logic": {
+        "logic": "AND",
+        "action": "show",
+        "rules": [
+          {
+            "fieldId": "ca-type",
+            "operator": "is",
+            "value": "business"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ca-b-dba",
+      "type": "single_line",
+      "label": "Tradestyle / DBA if different",
+      "required": false,
+      "logic": {
+        "logic": "AND",
+        "action": "show",
+        "rules": [
+          {
+            "fieldId": "ca-type",
+            "operator": "is",
+            "value": "business"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ca-b-street",
+      "type": "single_line",
+      "label": "Business address — street (no PO boxes)",
+      "required": true,
+      "logic": {
+        "logic": "AND",
+        "action": "show",
+        "rules": [
+          {
+            "fieldId": "ca-type",
+            "operator": "is",
+            "value": "business"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ca-b-city",
+      "type": "single_line",
+      "label": "Business address — city",
+      "required": true,
+      "width": "half",
+      "logic": {
+        "logic": "AND",
+        "action": "show",
+        "rules": [
+          {
+            "fieldId": "ca-type",
+            "operator": "is",
+            "value": "business"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ca-b-state",
+      "type": "dropdown",
+      "label": "Business address — state",
+      "required": true,
+      "width": "half",
+      "options": [
+        {
+          "value": "alabama",
+          "label": "Alabama"
+        },
+        {
+          "value": "alaska",
+          "label": "Alaska"
+        },
+        {
+          "value": "arizona",
+          "label": "Arizona"
+        },
+        {
+          "value": "arkansas",
+          "label": "Arkansas"
+        },
+        {
+          "value": "california",
+          "label": "California"
+        },
+        {
+          "value": "colorado",
+          "label": "Colorado"
+        },
+        {
+          "value": "connecticut",
+          "label": "Connecticut"
+        },
+        {
+          "value": "delaware",
+          "label": "Delaware"
+        },
+        {
+          "value": "district-of-columbia",
+          "label": "District of Columbia"
+        },
+        {
+          "value": "florida",
+          "label": "Florida"
+        },
+        {
+          "value": "georgia",
+          "label": "Georgia"
+        },
+        {
+          "value": "hawaii",
+          "label": "Hawaii"
+        },
+        {
+          "value": "idaho",
+          "label": "Idaho"
+        },
+        {
+          "value": "illinois",
+          "label": "Illinois"
+        },
+        {
+          "value": "indiana",
+          "label": "Indiana"
+        },
+        {
+          "value": "iowa",
+          "label": "Iowa"
+        },
+        {
+          "value": "kansas",
+          "label": "Kansas"
+        },
+        {
+          "value": "kentucky",
+          "label": "Kentucky"
+        },
+        {
+          "value": "louisiana",
+          "label": "Louisiana"
+        },
+        {
+          "value": "maine",
+          "label": "Maine"
+        },
+        {
+          "value": "maryland",
+          "label": "Maryland"
+        },
+        {
+          "value": "massachusetts",
+          "label": "Massachusetts"
+        },
+        {
+          "value": "michigan",
+          "label": "Michigan"
+        },
+        {
+          "value": "minnesota",
+          "label": "Minnesota"
+        },
+        {
+          "value": "mississippi",
+          "label": "Mississippi"
+        },
+        {
+          "value": "missouri",
+          "label": "Missouri"
+        },
+        {
+          "value": "montana",
+          "label": "Montana"
+        },
+        {
+          "value": "nebraska",
+          "label": "Nebraska"
+        },
+        {
+          "value": "nevada",
+          "label": "Nevada"
+        },
+        {
+          "value": "new-hampshire",
+          "label": "New Hampshire"
+        },
+        {
+          "value": "new-jersey",
+          "label": "New Jersey"
+        },
+        {
+          "value": "new-mexico",
+          "label": "New Mexico"
+        },
+        {
+          "value": "new-york",
+          "label": "New York"
+        },
+        {
+          "value": "north-carolina",
+          "label": "North Carolina"
+        },
+        {
+          "value": "north-dakota",
+          "label": "North Dakota"
+        },
+        {
+          "value": "ohio",
+          "label": "Ohio"
+        },
+        {
+          "value": "oklahoma",
+          "label": "Oklahoma"
+        },
+        {
+          "value": "oregon",
+          "label": "Oregon"
+        },
+        {
+          "value": "pennsylvania",
+          "label": "Pennsylvania"
+        },
+        {
+          "value": "rhode-island",
+          "label": "Rhode Island"
+        },
+        {
+          "value": "south-carolina",
+          "label": "South Carolina"
+        },
+        {
+          "value": "south-dakota",
+          "label": "South Dakota"
+        },
+        {
+          "value": "tennessee",
+          "label": "Tennessee"
+        },
+        {
+          "value": "texas",
+          "label": "Texas"
+        },
+        {
+          "value": "utah",
+          "label": "Utah"
+        },
+        {
+          "value": "vermont",
+          "label": "Vermont"
+        },
+        {
+          "value": "virginia",
+          "label": "Virginia"
+        },
+        {
+          "value": "washington",
+          "label": "Washington"
+        },
+        {
+          "value": "west-virginia",
+          "label": "West Virginia"
+        },
+        {
+          "value": "wisconsin",
+          "label": "Wisconsin"
+        },
+        {
+          "value": "wyoming",
+          "label": "Wyoming"
+        }
+      ],
+      "placeholder": "Select State",
+      "logic": {
+        "logic": "AND",
+        "action": "show",
+        "rules": [
+          {
+            "fieldId": "ca-type",
+            "operator": "is",
+            "value": "business"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ca-b-zip",
+      "type": "single_line",
+      "label": "Business address — ZIP code",
+      "required": true,
+      "width": "half",
+      "logic": {
+        "logic": "AND",
+        "action": "show",
+        "rules": [
+          {
+            "fieldId": "ca-type",
+            "operator": "is",
+            "value": "business"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ca-b-phone",
+      "type": "phone",
+      "label": "Business phone number",
+      "required": true,
+      "width": "half",
+      "logic": {
+        "logic": "AND",
+        "action": "show",
+        "rules": [
+          {
+            "fieldId": "ca-type",
+            "operator": "is",
+            "value": "business"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ca-b-vocation",
+      "type": "dropdown",
+      "label": "Primary business vocation / nature of business",
+      "required": true,
+      "width": "half",
+      "options": [
+        {
+          "value": "general-freight",
+          "label": "General Freight"
+        },
+        {
+          "value": "construction",
+          "label": "Construction"
+        },
+        {
+          "value": "logging",
+          "label": "Logging"
+        },
+        {
+          "value": "refuse-recycling",
+          "label": "Refuse / Recycling"
+        },
+        {
+          "value": "other",
+          "label": "Other"
+        }
+      ],
+      "placeholder": "Select Vocation",
+      "logic": {
+        "logic": "AND",
+        "action": "show",
+        "rules": [
+          {
+            "fieldId": "ca-type",
+            "operator": "is",
+            "value": "business"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ca-b-fein",
+      "type": "single_line",
+      "label": "Federal Tax-ID # (FEIN)",
+      "required": true,
+      "width": "half",
+      "logic": {
+        "logic": "AND",
+        "action": "show",
+        "rules": [
+          {
+            "fieldId": "ca-type",
+            "operator": "is",
+            "value": "business"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ca-b-formation",
+      "type": "dropdown",
+      "label": "State of formation",
+      "required": true,
+      "width": "half",
+      "options": [
+        {
+          "value": "alabama",
+          "label": "Alabama"
+        },
+        {
+          "value": "alaska",
+          "label": "Alaska"
+        },
+        {
+          "value": "arizona",
+          "label": "Arizona"
+        },
+        {
+          "value": "arkansas",
+          "label": "Arkansas"
+        },
+        {
+          "value": "california",
+          "label": "California"
+        },
+        {
+          "value": "colorado",
+          "label": "Colorado"
+        },
+        {
+          "value": "connecticut",
+          "label": "Connecticut"
+        },
+        {
+          "value": "delaware",
+          "label": "Delaware"
+        },
+        {
+          "value": "district-of-columbia",
+          "label": "District of Columbia"
+        },
+        {
+          "value": "florida",
+          "label": "Florida"
+        },
+        {
+          "value": "georgia",
+          "label": "Georgia"
+        },
+        {
+          "value": "hawaii",
+          "label": "Hawaii"
+        },
+        {
+          "value": "idaho",
+          "label": "Idaho"
+        },
+        {
+          "value": "illinois",
+          "label": "Illinois"
+        },
+        {
+          "value": "indiana",
+          "label": "Indiana"
+        },
+        {
+          "value": "iowa",
+          "label": "Iowa"
+        },
+        {
+          "value": "kansas",
+          "label": "Kansas"
+        },
+        {
+          "value": "kentucky",
+          "label": "Kentucky"
+        },
+        {
+          "value": "louisiana",
+          "label": "Louisiana"
+        },
+        {
+          "value": "maine",
+          "label": "Maine"
+        },
+        {
+          "value": "maryland",
+          "label": "Maryland"
+        },
+        {
+          "value": "massachusetts",
+          "label": "Massachusetts"
+        },
+        {
+          "value": "michigan",
+          "label": "Michigan"
+        },
+        {
+          "value": "minnesota",
+          "label": "Minnesota"
+        },
+        {
+          "value": "mississippi",
+          "label": "Mississippi"
+        },
+        {
+          "value": "missouri",
+          "label": "Missouri"
+        },
+        {
+          "value": "montana",
+          "label": "Montana"
+        },
+        {
+          "value": "nebraska",
+          "label": "Nebraska"
+        },
+        {
+          "value": "nevada",
+          "label": "Nevada"
+        },
+        {
+          "value": "new-hampshire",
+          "label": "New Hampshire"
+        },
+        {
+          "value": "new-jersey",
+          "label": "New Jersey"
+        },
+        {
+          "value": "new-mexico",
+          "label": "New Mexico"
+        },
+        {
+          "value": "new-york",
+          "label": "New York"
+        },
+        {
+          "value": "north-carolina",
+          "label": "North Carolina"
+        },
+        {
+          "value": "north-dakota",
+          "label": "North Dakota"
+        },
+        {
+          "value": "ohio",
+          "label": "Ohio"
+        },
+        {
+          "value": "oklahoma",
+          "label": "Oklahoma"
+        },
+        {
+          "value": "oregon",
+          "label": "Oregon"
+        },
+        {
+          "value": "pennsylvania",
+          "label": "Pennsylvania"
+        },
+        {
+          "value": "rhode-island",
+          "label": "Rhode Island"
+        },
+        {
+          "value": "south-carolina",
+          "label": "South Carolina"
+        },
+        {
+          "value": "south-dakota",
+          "label": "South Dakota"
+        },
+        {
+          "value": "tennessee",
+          "label": "Tennessee"
+        },
+        {
+          "value": "texas",
+          "label": "Texas"
+        },
+        {
+          "value": "utah",
+          "label": "Utah"
+        },
+        {
+          "value": "vermont",
+          "label": "Vermont"
+        },
+        {
+          "value": "virginia",
+          "label": "Virginia"
+        },
+        {
+          "value": "washington",
+          "label": "Washington"
+        },
+        {
+          "value": "west-virginia",
+          "label": "West Virginia"
+        },
+        {
+          "value": "wisconsin",
+          "label": "Wisconsin"
+        },
+        {
+          "value": "wyoming",
+          "label": "Wyoming"
+        }
+      ],
+      "placeholder": "Select State",
+      "logic": {
+        "logic": "AND",
+        "action": "show",
+        "rules": [
+          {
+            "fieldId": "ca-type",
+            "operator": "is",
+            "value": "business"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ca-b-established",
+      "type": "date",
+      "label": "Date established",
+      "required": true,
+      "width": "half",
+      "logic": {
+        "logic": "AND",
+        "action": "show",
+        "rules": [
+          {
+            "fieldId": "ca-type",
+            "operator": "is",
+            "value": "business"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ca-b-entity",
+      "type": "checkboxes",
+      "label": "Legal entity",
+      "required": true,
+      "options": [
+        {
+          "value": "corporation",
+          "label": "Corporation"
+        },
+        {
+          "value": "individual-sole-proprietor",
+          "label": "Individual / Sole Proprietor"
+        },
+        {
+          "value": "s-corp",
+          "label": "S-Corp"
+        },
+        {
+          "value": "partnership",
+          "label": "Partnership"
+        },
+        {
+          "value": "llc",
+          "label": "LLC"
+        },
+        {
+          "value": "non-profit",
+          "label": "Non-Profit"
+        },
+        {
+          "value": "municipal",
+          "label": "Municipal"
+        },
+        {
+          "value": "llp",
+          "label": "LLP"
+        }
+      ],
+      "logic": {
+        "logic": "AND",
+        "action": "show",
+        "rules": [
+          {
+            "fieldId": "ca-type",
+            "operator": "is",
+            "value": "business"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ca-b-medium",
+      "type": "number",
+      "label": "# of medium-duty trucks",
+      "required": true,
+      "width": "half",
+      "logic": {
+        "logic": "AND",
+        "action": "show",
+        "rules": [
+          {
+            "fieldId": "ca-type",
+            "operator": "is",
+            "value": "business"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ca-b-heavy",
+      "type": "number",
+      "label": "# of heavy-duty trucks",
+      "required": true,
+      "width": "half",
+      "logic": {
+        "logic": "AND",
+        "action": "show",
+        "rules": [
+          {
+            "fieldId": "ca-type",
+            "operator": "is",
+            "value": "business"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ca-b-revenue",
+      "type": "radio",
+      "label": "Annual revenue over $1 million",
+      "required": true,
+      "options": [
+        {
+          "value": "yes",
+          "label": "Yes"
+        },
+        {
+          "value": "no",
+          "label": "No"
+        }
+      ],
+      "logic": {
+        "logic": "AND",
+        "action": "show",
+        "rules": [
+          {
+            "fieldId": "ca-type",
+            "operator": "is",
+            "value": "business"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ca-b-g-name",
+      "type": "single_line",
+      "label": "Guarantor — full name w/ middle initial",
+      "required": false,
+      "logic": {
+        "logic": "AND",
+        "action": "show",
+        "rules": [
+          {
+            "fieldId": "ca-type",
+            "operator": "is",
+            "value": "business"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ca-b-g-title",
+      "type": "single_line",
+      "label": "Guarantor — title / position with applicant",
+      "required": false,
+      "width": "half",
+      "logic": {
+        "logic": "AND",
+        "action": "show",
+        "rules": [
+          {
+            "fieldId": "ca-type",
+            "operator": "is",
+            "value": "business"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ca-b-g-dob",
+      "type": "date",
+      "label": "Guarantor — date of birth",
+      "required": false,
+      "width": "half",
+      "logic": {
+        "logic": "AND",
+        "action": "show",
+        "rules": [
+          {
+            "fieldId": "ca-type",
+            "operator": "is",
+            "value": "business"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ca-b-g-street",
+      "type": "single_line",
+      "label": "Guarantor — street address (no PO boxes)",
+      "required": false,
+      "logic": {
+        "logic": "AND",
+        "action": "show",
+        "rules": [
+          {
+            "fieldId": "ca-type",
+            "operator": "is",
+            "value": "business"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ca-b-g-city",
+      "type": "single_line",
+      "label": "Guarantor — city",
+      "required": false,
+      "width": "half",
+      "logic": {
+        "logic": "AND",
+        "action": "show",
+        "rules": [
+          {
+            "fieldId": "ca-type",
+            "operator": "is",
+            "value": "business"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ca-b-g-state",
+      "type": "dropdown",
+      "label": "Guarantor — state",
+      "required": false,
+      "width": "half",
+      "options": [
+        {
+          "value": "alabama",
+          "label": "Alabama"
+        },
+        {
+          "value": "alaska",
+          "label": "Alaska"
+        },
+        {
+          "value": "arizona",
+          "label": "Arizona"
+        },
+        {
+          "value": "arkansas",
+          "label": "Arkansas"
+        },
+        {
+          "value": "california",
+          "label": "California"
+        },
+        {
+          "value": "colorado",
+          "label": "Colorado"
+        },
+        {
+          "value": "connecticut",
+          "label": "Connecticut"
+        },
+        {
+          "value": "delaware",
+          "label": "Delaware"
+        },
+        {
+          "value": "district-of-columbia",
+          "label": "District of Columbia"
+        },
+        {
+          "value": "florida",
+          "label": "Florida"
+        },
+        {
+          "value": "georgia",
+          "label": "Georgia"
+        },
+        {
+          "value": "hawaii",
+          "label": "Hawaii"
+        },
+        {
+          "value": "idaho",
+          "label": "Idaho"
+        },
+        {
+          "value": "illinois",
+          "label": "Illinois"
+        },
+        {
+          "value": "indiana",
+          "label": "Indiana"
+        },
+        {
+          "value": "iowa",
+          "label": "Iowa"
+        },
+        {
+          "value": "kansas",
+          "label": "Kansas"
+        },
+        {
+          "value": "kentucky",
+          "label": "Kentucky"
+        },
+        {
+          "value": "louisiana",
+          "label": "Louisiana"
+        },
+        {
+          "value": "maine",
+          "label": "Maine"
+        },
+        {
+          "value": "maryland",
+          "label": "Maryland"
+        },
+        {
+          "value": "massachusetts",
+          "label": "Massachusetts"
+        },
+        {
+          "value": "michigan",
+          "label": "Michigan"
+        },
+        {
+          "value": "minnesota",
+          "label": "Minnesota"
+        },
+        {
+          "value": "mississippi",
+          "label": "Mississippi"
+        },
+        {
+          "value": "missouri",
+          "label": "Missouri"
+        },
+        {
+          "value": "montana",
+          "label": "Montana"
+        },
+        {
+          "value": "nebraska",
+          "label": "Nebraska"
+        },
+        {
+          "value": "nevada",
+          "label": "Nevada"
+        },
+        {
+          "value": "new-hampshire",
+          "label": "New Hampshire"
+        },
+        {
+          "value": "new-jersey",
+          "label": "New Jersey"
+        },
+        {
+          "value": "new-mexico",
+          "label": "New Mexico"
+        },
+        {
+          "value": "new-york",
+          "label": "New York"
+        },
+        {
+          "value": "north-carolina",
+          "label": "North Carolina"
+        },
+        {
+          "value": "north-dakota",
+          "label": "North Dakota"
+        },
+        {
+          "value": "ohio",
+          "label": "Ohio"
+        },
+        {
+          "value": "oklahoma",
+          "label": "Oklahoma"
+        },
+        {
+          "value": "oregon",
+          "label": "Oregon"
+        },
+        {
+          "value": "pennsylvania",
+          "label": "Pennsylvania"
+        },
+        {
+          "value": "rhode-island",
+          "label": "Rhode Island"
+        },
+        {
+          "value": "south-carolina",
+          "label": "South Carolina"
+        },
+        {
+          "value": "south-dakota",
+          "label": "South Dakota"
+        },
+        {
+          "value": "tennessee",
+          "label": "Tennessee"
+        },
+        {
+          "value": "texas",
+          "label": "Texas"
+        },
+        {
+          "value": "utah",
+          "label": "Utah"
+        },
+        {
+          "value": "vermont",
+          "label": "Vermont"
+        },
+        {
+          "value": "virginia",
+          "label": "Virginia"
+        },
+        {
+          "value": "washington",
+          "label": "Washington"
+        },
+        {
+          "value": "west-virginia",
+          "label": "West Virginia"
+        },
+        {
+          "value": "wisconsin",
+          "label": "Wisconsin"
+        },
+        {
+          "value": "wyoming",
+          "label": "Wyoming"
+        }
+      ],
+      "placeholder": "Select State",
+      "logic": {
+        "logic": "AND",
+        "action": "show",
+        "rules": [
+          {
+            "fieldId": "ca-type",
+            "operator": "is",
+            "value": "business"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ca-b-g-zip",
+      "type": "single_line",
+      "label": "Guarantor — ZIP code",
+      "required": false,
+      "width": "half",
+      "logic": {
+        "logic": "AND",
+        "action": "show",
+        "rules": [
+          {
+            "fieldId": "ca-type",
+            "operator": "is",
+            "value": "business"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ca-b-g-ssn",
+      "type": "single_line",
+      "label": "Guarantor — SSN",
+      "required": false,
+      "width": "half",
+      "logic": {
+        "logic": "AND",
+        "action": "show",
+        "rules": [
+          {
+            "fieldId": "ca-type",
+            "operator": "is",
+            "value": "business"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ca-b-g-phone",
+      "type": "phone",
+      "label": "Guarantor — cell phone number",
+      "required": false,
+      "width": "half",
+      "logic": {
+        "logic": "AND",
+        "action": "show",
+        "rules": [
+          {
+            "fieldId": "ca-type",
+            "operator": "is",
+            "value": "business"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ca-b-g-email",
+      "type": "email",
+      "label": "Guarantor — email address",
+      "required": true,
+      "width": "half",
+      "logic": {
+        "logic": "AND",
+        "action": "show",
+        "rules": [
+          {
+            "fieldId": "ca-type",
+            "operator": "is",
+            "value": "business"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ca-b-g-cdl",
+      "type": "dropdown",
+      "label": "Guarantor — have CDL?",
+      "required": false,
+      "width": "half",
+      "options": [
+        {
+          "value": "yes",
+          "label": "Yes"
+        },
+        {
+          "value": "no",
+          "label": "No"
+        }
+      ],
+      "placeholder": "Select",
+      "logic": {
+        "logic": "AND",
+        "action": "show",
+        "rules": [
+          {
+            "fieldId": "ca-type",
+            "operator": "is",
+            "value": "business"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ca-b-oo-years",
+      "type": "number",
+      "label": "Owner / operators only — # yrs as owner operator",
+      "required": false,
+      "width": "half",
+      "logic": {
+        "logic": "AND",
+        "action": "show",
+        "rules": [
+          {
+            "fieldId": "ca-type",
+            "operator": "is",
+            "value": "business"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ca-b-oo-driving",
+      "type": "number",
+      "label": "Owner / operators only — # yrs of driving experience",
+      "required": false,
+      "width": "half",
+      "logic": {
+        "logic": "AND",
+        "action": "show",
+        "rules": [
+          {
+            "fieldId": "ca-type",
+            "operator": "is",
+            "value": "business"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ca-b-cg-name",
+      "type": "single_line",
+      "label": "Co-guarantor or corporate guarantor (optional) — full name, or exact legal name if business",
+      "required": false,
+      "logic": {
+        "logic": "AND",
+        "action": "show",
+        "rules": [
+          {
+            "fieldId": "ca-type",
+            "operator": "is",
+            "value": "business"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ca-b-cg-title",
+      "type": "single_line",
+      "label": "Co-guarantor — title / position with applicant",
+      "required": false,
+      "width": "half",
+      "logic": {
+        "logic": "AND",
+        "action": "show",
+        "rules": [
+          {
+            "fieldId": "ca-type",
+            "operator": "is",
+            "value": "business"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ca-b-cg-dob",
+      "type": "date",
+      "label": "Co-guarantor — date of birth",
+      "required": false,
+      "width": "half",
+      "logic": {
+        "logic": "AND",
+        "action": "show",
+        "rules": [
+          {
+            "fieldId": "ca-type",
+            "operator": "is",
+            "value": "business"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ca-b-cg-street",
+      "type": "single_line",
+      "label": "Co-guarantor — street address",
+      "required": false,
+      "logic": {
+        "logic": "AND",
+        "action": "show",
+        "rules": [
+          {
+            "fieldId": "ca-type",
+            "operator": "is",
+            "value": "business"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ca-b-cg-city",
+      "type": "single_line",
+      "label": "Co-guarantor — city",
+      "required": false,
+      "width": "half",
+      "logic": {
+        "logic": "AND",
+        "action": "show",
+        "rules": [
+          {
+            "fieldId": "ca-type",
+            "operator": "is",
+            "value": "business"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ca-b-cg-state",
+      "type": "dropdown",
+      "label": "Co-guarantor — state",
+      "required": false,
+      "width": "half",
+      "options": [
+        {
+          "value": "alabama",
+          "label": "Alabama"
+        },
+        {
+          "value": "alaska",
+          "label": "Alaska"
+        },
+        {
+          "value": "arizona",
+          "label": "Arizona"
+        },
+        {
+          "value": "arkansas",
+          "label": "Arkansas"
+        },
+        {
+          "value": "california",
+          "label": "California"
+        },
+        {
+          "value": "colorado",
+          "label": "Colorado"
+        },
+        {
+          "value": "connecticut",
+          "label": "Connecticut"
+        },
+        {
+          "value": "delaware",
+          "label": "Delaware"
+        },
+        {
+          "value": "district-of-columbia",
+          "label": "District of Columbia"
+        },
+        {
+          "value": "florida",
+          "label": "Florida"
+        },
+        {
+          "value": "georgia",
+          "label": "Georgia"
+        },
+        {
+          "value": "hawaii",
+          "label": "Hawaii"
+        },
+        {
+          "value": "idaho",
+          "label": "Idaho"
+        },
+        {
+          "value": "illinois",
+          "label": "Illinois"
+        },
+        {
+          "value": "indiana",
+          "label": "Indiana"
+        },
+        {
+          "value": "iowa",
+          "label": "Iowa"
+        },
+        {
+          "value": "kansas",
+          "label": "Kansas"
+        },
+        {
+          "value": "kentucky",
+          "label": "Kentucky"
+        },
+        {
+          "value": "louisiana",
+          "label": "Louisiana"
+        },
+        {
+          "value": "maine",
+          "label": "Maine"
+        },
+        {
+          "value": "maryland",
+          "label": "Maryland"
+        },
+        {
+          "value": "massachusetts",
+          "label": "Massachusetts"
+        },
+        {
+          "value": "michigan",
+          "label": "Michigan"
+        },
+        {
+          "value": "minnesota",
+          "label": "Minnesota"
+        },
+        {
+          "value": "mississippi",
+          "label": "Mississippi"
+        },
+        {
+          "value": "missouri",
+          "label": "Missouri"
+        },
+        {
+          "value": "montana",
+          "label": "Montana"
+        },
+        {
+          "value": "nebraska",
+          "label": "Nebraska"
+        },
+        {
+          "value": "nevada",
+          "label": "Nevada"
+        },
+        {
+          "value": "new-hampshire",
+          "label": "New Hampshire"
+        },
+        {
+          "value": "new-jersey",
+          "label": "New Jersey"
+        },
+        {
+          "value": "new-mexico",
+          "label": "New Mexico"
+        },
+        {
+          "value": "new-york",
+          "label": "New York"
+        },
+        {
+          "value": "north-carolina",
+          "label": "North Carolina"
+        },
+        {
+          "value": "north-dakota",
+          "label": "North Dakota"
+        },
+        {
+          "value": "ohio",
+          "label": "Ohio"
+        },
+        {
+          "value": "oklahoma",
+          "label": "Oklahoma"
+        },
+        {
+          "value": "oregon",
+          "label": "Oregon"
+        },
+        {
+          "value": "pennsylvania",
+          "label": "Pennsylvania"
+        },
+        {
+          "value": "rhode-island",
+          "label": "Rhode Island"
+        },
+        {
+          "value": "south-carolina",
+          "label": "South Carolina"
+        },
+        {
+          "value": "south-dakota",
+          "label": "South Dakota"
+        },
+        {
+          "value": "tennessee",
+          "label": "Tennessee"
+        },
+        {
+          "value": "texas",
+          "label": "Texas"
+        },
+        {
+          "value": "utah",
+          "label": "Utah"
+        },
+        {
+          "value": "vermont",
+          "label": "Vermont"
+        },
+        {
+          "value": "virginia",
+          "label": "Virginia"
+        },
+        {
+          "value": "washington",
+          "label": "Washington"
+        },
+        {
+          "value": "west-virginia",
+          "label": "West Virginia"
+        },
+        {
+          "value": "wisconsin",
+          "label": "Wisconsin"
+        },
+        {
+          "value": "wyoming",
+          "label": "Wyoming"
+        }
+      ],
+      "placeholder": "Select State",
+      "logic": {
+        "logic": "AND",
+        "action": "show",
+        "rules": [
+          {
+            "fieldId": "ca-type",
+            "operator": "is",
+            "value": "business"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ca-b-cg-zip",
+      "type": "single_line",
+      "label": "Co-guarantor — ZIP code",
+      "required": false,
+      "width": "half",
+      "logic": {
+        "logic": "AND",
+        "action": "show",
+        "rules": [
+          {
+            "fieldId": "ca-type",
+            "operator": "is",
+            "value": "business"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ca-b-cg-ssn",
+      "type": "single_line",
+      "label": "Co-guarantor — SSN, or Federal Tax-ID # if business",
+      "required": false,
+      "width": "half",
+      "logic": {
+        "logic": "AND",
+        "action": "show",
+        "rules": [
+          {
+            "fieldId": "ca-type",
+            "operator": "is",
+            "value": "business"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ca-b-cg-credit",
+      "type": "single_line",
+      "label": "Co-guarantor — high credit $",
+      "required": false,
+      "width": "half",
+      "logic": {
+        "logic": "AND",
+        "action": "show",
+        "rules": [
+          {
+            "fieldId": "ca-type",
+            "operator": "is",
+            "value": "business"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ca-b-cg-acct",
+      "type": "single_line",
+      "label": "Co-guarantor — account #",
+      "required": false,
+      "width": "half",
+      "logic": {
+        "logic": "AND",
+        "action": "show",
+        "rules": [
+          {
+            "fieldId": "ca-type",
+            "operator": "is",
+            "value": "business"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ca-b-cg-phone",
+      "type": "phone",
+      "label": "Co-guarantor — cell phone number",
+      "required": false,
+      "width": "half",
+      "logic": {
+        "logic": "AND",
+        "action": "show",
+        "rules": [
+          {
+            "fieldId": "ca-type",
+            "operator": "is",
+            "value": "business"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ca-b-cg-email",
+      "type": "email",
+      "label": "Co-guarantor — email address",
+      "required": false,
+      "width": "half",
+      "logic": {
+        "logic": "AND",
+        "action": "show",
+        "rules": [
+          {
+            "fieldId": "ca-type",
+            "operator": "is",
+            "value": "business"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ca-b-cg-contact",
+      "type": "single_line",
+      "label": "Co-guarantor — contact name",
+      "required": false,
+      "logic": {
+        "logic": "AND",
+        "action": "show",
+        "rules": [
+          {
+            "fieldId": "ca-type",
+            "operator": "is",
+            "value": "business"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ca-b-haul1-name",
+      "type": "single_line",
+      "label": "Haul / revenue source 1 — business name",
+      "required": true,
+      "width": "half",
+      "logic": {
+        "logic": "AND",
+        "action": "show",
+        "rules": [
+          {
+            "fieldId": "ca-type",
+            "operator": "is",
+            "value": "business"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ca-b-haul1-material",
+      "type": "single_line",
+      "label": "Haul / revenue source 1 — material hauled",
+      "required": true,
+      "width": "half",
+      "logic": {
+        "logic": "AND",
+        "action": "show",
+        "rules": [
+          {
+            "fieldId": "ca-type",
+            "operator": "is",
+            "value": "business"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ca-b-haul1-start",
+      "type": "date",
+      "label": "Haul / revenue source 1 — start date",
+      "required": false,
+      "width": "half",
+      "logic": {
+        "logic": "AND",
+        "action": "show",
+        "rules": [
+          {
+            "fieldId": "ca-type",
+            "operator": "is",
+            "value": "business"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ca-b-haul1-contact",
+      "type": "single_line",
+      "label": "Haul / revenue source 1 — contact name",
+      "required": false,
+      "width": "half",
+      "logic": {
+        "logic": "AND",
+        "action": "show",
+        "rules": [
+          {
+            "fieldId": "ca-type",
+            "operator": "is",
+            "value": "business"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ca-b-haul1-phone",
+      "type": "phone",
+      "label": "Haul / revenue source 1 — contact phone #",
+      "required": false,
+      "logic": {
+        "logic": "AND",
+        "action": "show",
+        "rules": [
+          {
+            "fieldId": "ca-type",
+            "operator": "is",
+            "value": "business"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ca-b-haul2-name",
+      "type": "single_line",
+      "label": "Haul / revenue source 2 — business name",
+      "required": false,
+      "width": "half",
+      "logic": {
+        "logic": "AND",
+        "action": "show",
+        "rules": [
+          {
+            "fieldId": "ca-type",
+            "operator": "is",
+            "value": "business"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ca-b-haul2-material",
+      "type": "single_line",
+      "label": "Haul / revenue source 2 — material hauled",
+      "required": false,
+      "width": "half",
+      "logic": {
+        "logic": "AND",
+        "action": "show",
+        "rules": [
+          {
+            "fieldId": "ca-type",
+            "operator": "is",
+            "value": "business"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ca-b-haul2-start",
+      "type": "date",
+      "label": "Haul / revenue source 2 — start date",
+      "required": false,
+      "width": "half",
+      "logic": {
+        "logic": "AND",
+        "action": "show",
+        "rules": [
+          {
+            "fieldId": "ca-type",
+            "operator": "is",
+            "value": "business"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ca-b-haul2-contact",
+      "type": "single_line",
+      "label": "Haul / revenue source 2 — contact name",
+      "required": false,
+      "width": "half",
+      "logic": {
+        "logic": "AND",
+        "action": "show",
+        "rules": [
+          {
+            "fieldId": "ca-type",
+            "operator": "is",
+            "value": "business"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ca-b-haul2-phone",
+      "type": "phone",
+      "label": "Haul / revenue source 2 — contact phone #",
+      "required": false,
+      "logic": {
+        "logic": "AND",
+        "action": "show",
+        "rules": [
+          {
+            "fieldId": "ca-type",
+            "operator": "is",
+            "value": "business"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ca-b-eq1-lender",
+      "type": "single_line",
+      "label": "Equipment finance history 1 — lender name",
+      "required": false,
+      "width": "half",
+      "logic": {
+        "logic": "AND",
+        "action": "show",
+        "rules": [
+          {
+            "fieldId": "ca-type",
+            "operator": "is",
+            "value": "business"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ca-b-eq1-credit",
+      "type": "single_line",
+      "label": "Equipment finance history 1 — high credit $",
+      "required": false,
+      "width": "half",
+      "logic": {
+        "logic": "AND",
+        "action": "show",
+        "rules": [
+          {
+            "fieldId": "ca-type",
+            "operator": "is",
+            "value": "business"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ca-b-eq1-acct",
+      "type": "single_line",
+      "label": "Equipment finance history 1 — account #",
+      "required": false,
+      "width": "half",
+      "logic": {
+        "logic": "AND",
+        "action": "show",
+        "rules": [
+          {
+            "fieldId": "ca-type",
+            "operator": "is",
+            "value": "business"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ca-b-eq1-contact",
+      "type": "single_line",
+      "label": "Equipment finance history 1 — contact name",
+      "required": false,
+      "width": "half",
+      "logic": {
+        "logic": "AND",
+        "action": "show",
+        "rules": [
+          {
+            "fieldId": "ca-type",
+            "operator": "is",
+            "value": "business"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ca-b-eq1-phone",
+      "type": "phone",
+      "label": "Equipment finance history 1 — contact phone #",
+      "required": false,
+      "logic": {
+        "logic": "AND",
+        "action": "show",
+        "rules": [
+          {
+            "fieldId": "ca-type",
+            "operator": "is",
+            "value": "business"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ca-b-eq2-lender",
+      "type": "single_line",
+      "label": "Equipment finance history 2 — lender name",
+      "required": false,
+      "width": "half",
+      "logic": {
+        "logic": "AND",
+        "action": "show",
+        "rules": [
+          {
+            "fieldId": "ca-type",
+            "operator": "is",
+            "value": "business"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ca-b-eq2-credit",
+      "type": "single_line",
+      "label": "Equipment finance history 2 — high credit $",
+      "required": false,
+      "width": "half",
+      "logic": {
+        "logic": "AND",
+        "action": "show",
+        "rules": [
+          {
+            "fieldId": "ca-type",
+            "operator": "is",
+            "value": "business"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ca-b-eq2-acct",
+      "type": "single_line",
+      "label": "Equipment finance history 2 — account #",
+      "required": false,
+      "width": "half",
+      "logic": {
+        "logic": "AND",
+        "action": "show",
+        "rules": [
+          {
+            "fieldId": "ca-type",
+            "operator": "is",
+            "value": "business"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ca-b-eq2-contact",
+      "type": "single_line",
+      "label": "Equipment finance history 2 — contact name",
+      "required": false,
+      "width": "half",
+      "logic": {
+        "logic": "AND",
+        "action": "show",
+        "rules": [
+          {
+            "fieldId": "ca-type",
+            "operator": "is",
+            "value": "business"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ca-b-eq2-phone",
+      "type": "phone",
+      "label": "Equipment finance history 2 — contact phone #",
+      "required": false,
+      "logic": {
+        "logic": "AND",
+        "action": "show",
+        "rules": [
+          {
+            "fieldId": "ca-type",
+            "operator": "is",
+            "value": "business"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ca-b-sig",
+      "type": "single_line",
+      "label": "Signature",
+      "required": true,
+      "width": "half",
+      "help": "The following authorization(s) shall apply to this application and subsequently for the purposes of update, renewal, or extension of such credit and for reviewing or collecting the resulting account. A photo, scan, fax, or electronic submission of this authorization shall be valid as the original. By signing below, applicant(s) hereby authorize the release of credit, banking, and insurance information to East Texas Mack, and/or its designee(s) from any source including credit bureau reporting agencies, applicant's bank, and/or any other entity which applicant has a current or former business relationship. I hereby represent that all of the information contained in this credit application is true, correct, and complete. Applicant authorizes East Texas Mack to execute and file any UCC financing statements in its name upon approval of the loan and/or lease. ECOA NOTICE: The Federal Equal Credit Opportunity Act prohibits creditors from discriminating against credit applicants on the basis of race, color, religion, national origin, sex, marital status, age (provided the applicant has the capacity to enter into a binding contract), because all or part of the applicant's income derives from any public assistance, or because the applicant has in good faith exercised any right under the Consumer Credit Protection Act. The federal agency that administers compliance with this law is the Federal Trade Commission, Equal Credit Opportunity, Washington DC 20580. If your application for business credit is denied or conditionally approved, you have the right to a written statement of the specific reasons for the denial or the conditional approval. To obtain the statement, please contact East Texas Mack within 60 days from the date you are notified of such denial or condition. We will send you a written statement of reasons for the denial within 30 days of receiving your request.",
+      "logic": {
+        "logic": "AND",
+        "action": "show",
+        "rules": [
+          {
+            "fieldId": "ca-type",
+            "operator": "is",
+            "value": "business"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ca-b-sig-name",
+      "type": "single_line",
+      "label": "Name",
+      "required": true,
+      "width": "half",
+      "logic": {
+        "logic": "AND",
+        "action": "show",
+        "rules": [
+          {
+            "fieldId": "ca-type",
+            "operator": "is",
+            "value": "business"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ca-b-sig-title",
+      "type": "single_line",
+      "label": "Title",
+      "required": true,
+      "width": "half",
+      "logic": {
+        "logic": "AND",
+        "action": "show",
+        "rules": [
+          {
+            "fieldId": "ca-type",
+            "operator": "is",
+            "value": "business"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ca-b-sig-date",
+      "type": "date",
+      "label": "Date",
+      "required": true,
+      "width": "half",
+      "logic": {
+        "logic": "AND",
+        "action": "show",
+        "rules": [
+          {
+            "fieldId": "ca-type",
+            "operator": "is",
+            "value": "business"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ca-b-sig2",
+      "type": "single_line",
+      "label": "Guarantor #2 sign here, if applicable — signature",
+      "required": false,
+      "width": "half",
+      "logic": {
+        "logic": "AND",
+        "action": "show",
+        "rules": [
+          {
+            "fieldId": "ca-type",
+            "operator": "is",
+            "value": "business"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ca-b-sig2-name",
+      "type": "single_line",
+      "label": "Guarantor #2 — name",
+      "required": false,
+      "width": "half",
+      "logic": {
+        "logic": "AND",
+        "action": "show",
+        "rules": [
+          {
+            "fieldId": "ca-type",
+            "operator": "is",
+            "value": "business"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ca-b-sig2-title",
+      "type": "single_line",
+      "label": "Guarantor #2 — title",
+      "required": false,
+      "width": "half",
+      "logic": {
+        "logic": "AND",
+        "action": "show",
+        "rules": [
+          {
+            "fieldId": "ca-type",
+            "operator": "is",
+            "value": "business"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ca-b-sig2-date",
+      "type": "date",
+      "label": "Guarantor #2 — date",
+      "required": false,
+      "width": "half",
+      "logic": {
+        "logic": "AND",
+        "action": "show",
+        "rules": [
+          {
+            "fieldId": "ca-type",
+            "operator": "is",
+            "value": "business"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ca-i-legal",
+      "type": "single_line",
+      "label": "Applicant — full legal name w/ middle initial",
+      "required": true,
+      "logic": {
+        "logic": "AND",
+        "action": "show",
+        "rules": [
+          {
+            "fieldId": "ca-type",
+            "operator": "is",
+            "value": "individual"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ca-i-dba",
+      "type": "single_line",
+      "label": "Tradestyle / DBA if different",
+      "required": false,
+      "logic": {
+        "logic": "AND",
+        "action": "show",
+        "rules": [
+          {
+            "fieldId": "ca-type",
+            "operator": "is",
+            "value": "individual"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ca-i-street",
+      "type": "single_line",
+      "label": "Home address — street (no PO boxes)",
+      "required": true,
+      "logic": {
+        "logic": "AND",
+        "action": "show",
+        "rules": [
+          {
+            "fieldId": "ca-type",
+            "operator": "is",
+            "value": "individual"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ca-i-city",
+      "type": "single_line",
+      "label": "Home address — city",
+      "required": true,
+      "width": "half",
+      "logic": {
+        "logic": "AND",
+        "action": "show",
+        "rules": [
+          {
+            "fieldId": "ca-type",
+            "operator": "is",
+            "value": "individual"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ca-i-state",
+      "type": "dropdown",
+      "label": "Home address — state",
+      "required": true,
+      "width": "half",
+      "options": [
+        {
+          "value": "alabama",
+          "label": "Alabama"
+        },
+        {
+          "value": "alaska",
+          "label": "Alaska"
+        },
+        {
+          "value": "arizona",
+          "label": "Arizona"
+        },
+        {
+          "value": "arkansas",
+          "label": "Arkansas"
+        },
+        {
+          "value": "california",
+          "label": "California"
+        },
+        {
+          "value": "colorado",
+          "label": "Colorado"
+        },
+        {
+          "value": "connecticut",
+          "label": "Connecticut"
+        },
+        {
+          "value": "delaware",
+          "label": "Delaware"
+        },
+        {
+          "value": "district-of-columbia",
+          "label": "District of Columbia"
+        },
+        {
+          "value": "florida",
+          "label": "Florida"
+        },
+        {
+          "value": "georgia",
+          "label": "Georgia"
+        },
+        {
+          "value": "hawaii",
+          "label": "Hawaii"
+        },
+        {
+          "value": "idaho",
+          "label": "Idaho"
+        },
+        {
+          "value": "illinois",
+          "label": "Illinois"
+        },
+        {
+          "value": "indiana",
+          "label": "Indiana"
+        },
+        {
+          "value": "iowa",
+          "label": "Iowa"
+        },
+        {
+          "value": "kansas",
+          "label": "Kansas"
+        },
+        {
+          "value": "kentucky",
+          "label": "Kentucky"
+        },
+        {
+          "value": "louisiana",
+          "label": "Louisiana"
+        },
+        {
+          "value": "maine",
+          "label": "Maine"
+        },
+        {
+          "value": "maryland",
+          "label": "Maryland"
+        },
+        {
+          "value": "massachusetts",
+          "label": "Massachusetts"
+        },
+        {
+          "value": "michigan",
+          "label": "Michigan"
+        },
+        {
+          "value": "minnesota",
+          "label": "Minnesota"
+        },
+        {
+          "value": "mississippi",
+          "label": "Mississippi"
+        },
+        {
+          "value": "missouri",
+          "label": "Missouri"
+        },
+        {
+          "value": "montana",
+          "label": "Montana"
+        },
+        {
+          "value": "nebraska",
+          "label": "Nebraska"
+        },
+        {
+          "value": "nevada",
+          "label": "Nevada"
+        },
+        {
+          "value": "new-hampshire",
+          "label": "New Hampshire"
+        },
+        {
+          "value": "new-jersey",
+          "label": "New Jersey"
+        },
+        {
+          "value": "new-mexico",
+          "label": "New Mexico"
+        },
+        {
+          "value": "new-york",
+          "label": "New York"
+        },
+        {
+          "value": "north-carolina",
+          "label": "North Carolina"
+        },
+        {
+          "value": "north-dakota",
+          "label": "North Dakota"
+        },
+        {
+          "value": "ohio",
+          "label": "Ohio"
+        },
+        {
+          "value": "oklahoma",
+          "label": "Oklahoma"
+        },
+        {
+          "value": "oregon",
+          "label": "Oregon"
+        },
+        {
+          "value": "pennsylvania",
+          "label": "Pennsylvania"
+        },
+        {
+          "value": "rhode-island",
+          "label": "Rhode Island"
+        },
+        {
+          "value": "south-carolina",
+          "label": "South Carolina"
+        },
+        {
+          "value": "south-dakota",
+          "label": "South Dakota"
+        },
+        {
+          "value": "tennessee",
+          "label": "Tennessee"
+        },
+        {
+          "value": "texas",
+          "label": "Texas"
+        },
+        {
+          "value": "utah",
+          "label": "Utah"
+        },
+        {
+          "value": "vermont",
+          "label": "Vermont"
+        },
+        {
+          "value": "virginia",
+          "label": "Virginia"
+        },
+        {
+          "value": "washington",
+          "label": "Washington"
+        },
+        {
+          "value": "west-virginia",
+          "label": "West Virginia"
+        },
+        {
+          "value": "wisconsin",
+          "label": "Wisconsin"
+        },
+        {
+          "value": "wyoming",
+          "label": "Wyoming"
+        }
+      ],
+      "placeholder": "Select State",
+      "logic": {
+        "logic": "AND",
+        "action": "show",
+        "rules": [
+          {
+            "fieldId": "ca-type",
+            "operator": "is",
+            "value": "individual"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ca-i-zip",
+      "type": "single_line",
+      "label": "Home address — ZIP code",
+      "required": true,
+      "width": "half",
+      "logic": {
+        "logic": "AND",
+        "action": "show",
+        "rules": [
+          {
+            "fieldId": "ca-type",
+            "operator": "is",
+            "value": "individual"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ca-i-phone",
+      "type": "phone",
+      "label": "Cell phone number",
+      "required": true,
+      "width": "half",
+      "logic": {
+        "logic": "AND",
+        "action": "show",
+        "rules": [
+          {
+            "fieldId": "ca-type",
+            "operator": "is",
+            "value": "individual"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ca-i-email",
+      "type": "email",
+      "label": "Email address",
+      "required": true,
+      "width": "half",
+      "logic": {
+        "logic": "AND",
+        "action": "show",
+        "rules": [
+          {
+            "fieldId": "ca-type",
+            "operator": "is",
+            "value": "individual"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ca-i-ssn",
+      "type": "single_line",
+      "label": "SSN",
+      "required": true,
+      "width": "half",
+      "logic": {
+        "logic": "AND",
+        "action": "show",
+        "rules": [
+          {
+            "fieldId": "ca-type",
+            "operator": "is",
+            "value": "individual"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ca-i-dob",
+      "type": "date",
+      "label": "DOB",
+      "required": true,
+      "width": "half",
+      "logic": {
+        "logic": "AND",
+        "action": "show",
+        "rules": [
+          {
+            "fieldId": "ca-type",
+            "operator": "is",
+            "value": "individual"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ca-i-vocation",
+      "type": "dropdown",
+      "label": "Primary business vocation",
+      "required": true,
+      "width": "half",
+      "options": [
+        {
+          "value": "general-freight",
+          "label": "General Freight"
+        },
+        {
+          "value": "construction",
+          "label": "Construction"
+        },
+        {
+          "value": "logging",
+          "label": "Logging"
+        },
+        {
+          "value": "refuse-recycling",
+          "label": "Refuse / Recycling"
+        },
+        {
+          "value": "other",
+          "label": "Other"
+        }
+      ],
+      "placeholder": "Select Vocation",
+      "logic": {
+        "logic": "AND",
+        "action": "show",
+        "rules": [
+          {
+            "fieldId": "ca-type",
+            "operator": "is",
+            "value": "individual"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ca-i-medium",
+      "type": "number",
+      "label": "# of medium-duty trucks",
+      "required": true,
+      "width": "half",
+      "logic": {
+        "logic": "AND",
+        "action": "show",
+        "rules": [
+          {
+            "fieldId": "ca-type",
+            "operator": "is",
+            "value": "individual"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ca-i-heavy",
+      "type": "number",
+      "label": "# of heavy-duty trucks",
+      "required": true,
+      "width": "half",
+      "logic": {
+        "logic": "AND",
+        "action": "show",
+        "rules": [
+          {
+            "fieldId": "ca-type",
+            "operator": "is",
+            "value": "individual"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ca-i-revenue",
+      "type": "radio",
+      "label": "Annual revenue over $1 million",
+      "required": true,
+      "options": [
+        {
+          "value": "yes",
+          "label": "Yes"
+        },
+        {
+          "value": "no",
+          "label": "No"
+        }
+      ],
+      "logic": {
+        "logic": "AND",
+        "action": "show",
+        "rules": [
+          {
+            "fieldId": "ca-type",
+            "operator": "is",
+            "value": "individual"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ca-i-oo-years",
+      "type": "number",
+      "label": "Owner / operators — # yrs as owner / operator",
+      "required": false,
+      "width": "half",
+      "logic": {
+        "logic": "AND",
+        "action": "show",
+        "rules": [
+          {
+            "fieldId": "ca-type",
+            "operator": "is",
+            "value": "individual"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ca-i-oo-driving",
+      "type": "number",
+      "label": "Owner / operators — # yrs of driving experience",
+      "required": false,
+      "width": "half",
+      "logic": {
+        "logic": "AND",
+        "action": "show",
+        "rules": [
+          {
+            "fieldId": "ca-type",
+            "operator": "is",
+            "value": "individual"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ca-i-oo-cdl",
+      "type": "dropdown",
+      "label": "Owner / operators — have CDL?",
+      "required": false,
+      "width": "half",
+      "options": [
+        {
+          "value": "yes",
+          "label": "Yes"
+        },
+        {
+          "value": "no",
+          "label": "No"
+        }
+      ],
+      "placeholder": "Select",
+      "logic": {
+        "logic": "AND",
+        "action": "show",
+        "rules": [
+          {
+            "fieldId": "ca-type",
+            "operator": "is",
+            "value": "individual"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ca-i-cg-name",
+      "type": "single_line",
+      "label": "Co-guarantor / co-signor (optional) — full name w/ middle initial",
+      "required": false,
+      "width": "half",
+      "logic": {
+        "logic": "AND",
+        "action": "show",
+        "rules": [
+          {
+            "fieldId": "ca-type",
+            "operator": "is",
+            "value": "individual"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ca-i-cg-dba",
+      "type": "single_line",
+      "label": "Co-guarantor — tradestyle / DBA if different",
+      "required": false,
+      "width": "half",
+      "logic": {
+        "logic": "AND",
+        "action": "show",
+        "rules": [
+          {
+            "fieldId": "ca-type",
+            "operator": "is",
+            "value": "individual"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ca-i-cg-street",
+      "type": "single_line",
+      "label": "Co-guarantor — street address (no PO boxes)",
+      "required": false,
+      "logic": {
+        "logic": "AND",
+        "action": "show",
+        "rules": [
+          {
+            "fieldId": "ca-type",
+            "operator": "is",
+            "value": "individual"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ca-i-cg-city",
+      "type": "single_line",
+      "label": "Co-guarantor — city",
+      "required": false,
+      "width": "half",
+      "logic": {
+        "logic": "AND",
+        "action": "show",
+        "rules": [
+          {
+            "fieldId": "ca-type",
+            "operator": "is",
+            "value": "individual"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ca-i-cg-state",
+      "type": "dropdown",
+      "label": "Co-guarantor — state",
+      "required": false,
+      "width": "half",
+      "options": [
+        {
+          "value": "alabama",
+          "label": "Alabama"
+        },
+        {
+          "value": "alaska",
+          "label": "Alaska"
+        },
+        {
+          "value": "arizona",
+          "label": "Arizona"
+        },
+        {
+          "value": "arkansas",
+          "label": "Arkansas"
+        },
+        {
+          "value": "california",
+          "label": "California"
+        },
+        {
+          "value": "colorado",
+          "label": "Colorado"
+        },
+        {
+          "value": "connecticut",
+          "label": "Connecticut"
+        },
+        {
+          "value": "delaware",
+          "label": "Delaware"
+        },
+        {
+          "value": "district-of-columbia",
+          "label": "District of Columbia"
+        },
+        {
+          "value": "florida",
+          "label": "Florida"
+        },
+        {
+          "value": "georgia",
+          "label": "Georgia"
+        },
+        {
+          "value": "hawaii",
+          "label": "Hawaii"
+        },
+        {
+          "value": "idaho",
+          "label": "Idaho"
+        },
+        {
+          "value": "illinois",
+          "label": "Illinois"
+        },
+        {
+          "value": "indiana",
+          "label": "Indiana"
+        },
+        {
+          "value": "iowa",
+          "label": "Iowa"
+        },
+        {
+          "value": "kansas",
+          "label": "Kansas"
+        },
+        {
+          "value": "kentucky",
+          "label": "Kentucky"
+        },
+        {
+          "value": "louisiana",
+          "label": "Louisiana"
+        },
+        {
+          "value": "maine",
+          "label": "Maine"
+        },
+        {
+          "value": "maryland",
+          "label": "Maryland"
+        },
+        {
+          "value": "massachusetts",
+          "label": "Massachusetts"
+        },
+        {
+          "value": "michigan",
+          "label": "Michigan"
+        },
+        {
+          "value": "minnesota",
+          "label": "Minnesota"
+        },
+        {
+          "value": "mississippi",
+          "label": "Mississippi"
+        },
+        {
+          "value": "missouri",
+          "label": "Missouri"
+        },
+        {
+          "value": "montana",
+          "label": "Montana"
+        },
+        {
+          "value": "nebraska",
+          "label": "Nebraska"
+        },
+        {
+          "value": "nevada",
+          "label": "Nevada"
+        },
+        {
+          "value": "new-hampshire",
+          "label": "New Hampshire"
+        },
+        {
+          "value": "new-jersey",
+          "label": "New Jersey"
+        },
+        {
+          "value": "new-mexico",
+          "label": "New Mexico"
+        },
+        {
+          "value": "new-york",
+          "label": "New York"
+        },
+        {
+          "value": "north-carolina",
+          "label": "North Carolina"
+        },
+        {
+          "value": "north-dakota",
+          "label": "North Dakota"
+        },
+        {
+          "value": "ohio",
+          "label": "Ohio"
+        },
+        {
+          "value": "oklahoma",
+          "label": "Oklahoma"
+        },
+        {
+          "value": "oregon",
+          "label": "Oregon"
+        },
+        {
+          "value": "pennsylvania",
+          "label": "Pennsylvania"
+        },
+        {
+          "value": "rhode-island",
+          "label": "Rhode Island"
+        },
+        {
+          "value": "south-carolina",
+          "label": "South Carolina"
+        },
+        {
+          "value": "south-dakota",
+          "label": "South Dakota"
+        },
+        {
+          "value": "tennessee",
+          "label": "Tennessee"
+        },
+        {
+          "value": "texas",
+          "label": "Texas"
+        },
+        {
+          "value": "utah",
+          "label": "Utah"
+        },
+        {
+          "value": "vermont",
+          "label": "Vermont"
+        },
+        {
+          "value": "virginia",
+          "label": "Virginia"
+        },
+        {
+          "value": "washington",
+          "label": "Washington"
+        },
+        {
+          "value": "west-virginia",
+          "label": "West Virginia"
+        },
+        {
+          "value": "wisconsin",
+          "label": "Wisconsin"
+        },
+        {
+          "value": "wyoming",
+          "label": "Wyoming"
+        }
+      ],
+      "placeholder": "Select State",
+      "logic": {
+        "logic": "AND",
+        "action": "show",
+        "rules": [
+          {
+            "fieldId": "ca-type",
+            "operator": "is",
+            "value": "individual"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ca-i-cg-zip",
+      "type": "single_line",
+      "label": "Co-guarantor — ZIP code",
+      "required": false,
+      "width": "half",
+      "logic": {
+        "logic": "AND",
+        "action": "show",
+        "rules": [
+          {
+            "fieldId": "ca-type",
+            "operator": "is",
+            "value": "individual"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ca-i-cg-ssn",
+      "type": "single_line",
+      "label": "Co-guarantor — SSN",
+      "required": false,
+      "width": "half",
+      "logic": {
+        "logic": "AND",
+        "action": "show",
+        "rules": [
+          {
+            "fieldId": "ca-type",
+            "operator": "is",
+            "value": "individual"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ca-i-cg-phone",
+      "type": "phone",
+      "label": "Co-guarantor — cell phone number",
+      "required": false,
+      "width": "half",
+      "logic": {
+        "logic": "AND",
+        "action": "show",
+        "rules": [
+          {
+            "fieldId": "ca-type",
+            "operator": "is",
+            "value": "individual"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ca-i-cg-email",
+      "type": "email",
+      "label": "Co-guarantor — email address",
+      "required": false,
+      "width": "half",
+      "logic": {
+        "logic": "AND",
+        "action": "show",
+        "rules": [
+          {
+            "fieldId": "ca-type",
+            "operator": "is",
+            "value": "individual"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ca-i-cg-dob",
+      "type": "date",
+      "label": "Co-guarantor — date of birth",
+      "required": false,
+      "width": "half",
+      "logic": {
+        "logic": "AND",
+        "action": "show",
+        "rules": [
+          {
+            "fieldId": "ca-type",
+            "operator": "is",
+            "value": "individual"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ca-i-cg-cdl",
+      "type": "dropdown",
+      "label": "Co-guarantor — have CDL?",
+      "required": false,
+      "width": "half",
+      "options": [
+        {
+          "value": "yes",
+          "label": "Yes"
+        },
+        {
+          "value": "no",
+          "label": "No"
+        }
+      ],
+      "placeholder": "Select",
+      "logic": {
+        "logic": "AND",
+        "action": "show",
+        "rules": [
+          {
+            "fieldId": "ca-type",
+            "operator": "is",
+            "value": "individual"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ca-i-haul1-name",
+      "type": "single_line",
+      "label": "Haul / revenue source 1 — business name",
+      "required": true,
+      "width": "half",
+      "logic": {
+        "logic": "AND",
+        "action": "show",
+        "rules": [
+          {
+            "fieldId": "ca-type",
+            "operator": "is",
+            "value": "individual"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ca-i-haul1-material",
+      "type": "single_line",
+      "label": "Haul / revenue source 1 — material hauled",
+      "required": true,
+      "width": "half",
+      "logic": {
+        "logic": "AND",
+        "action": "show",
+        "rules": [
+          {
+            "fieldId": "ca-type",
+            "operator": "is",
+            "value": "individual"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ca-i-haul1-start",
+      "type": "date",
+      "label": "Haul / revenue source 1 — start date",
+      "required": false,
+      "width": "half",
+      "logic": {
+        "logic": "AND",
+        "action": "show",
+        "rules": [
+          {
+            "fieldId": "ca-type",
+            "operator": "is",
+            "value": "individual"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ca-i-haul1-contact",
+      "type": "single_line",
+      "label": "Haul / revenue source 1 — contact name",
+      "required": false,
+      "width": "half",
+      "logic": {
+        "logic": "AND",
+        "action": "show",
+        "rules": [
+          {
+            "fieldId": "ca-type",
+            "operator": "is",
+            "value": "individual"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ca-i-haul1-phone",
+      "type": "phone",
+      "label": "Haul / revenue source 1 — contact phone #",
+      "required": false,
+      "logic": {
+        "logic": "AND",
+        "action": "show",
+        "rules": [
+          {
+            "fieldId": "ca-type",
+            "operator": "is",
+            "value": "individual"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ca-i-haul2-name",
+      "type": "single_line",
+      "label": "Haul / revenue source 2 — business name",
+      "required": false,
+      "width": "half",
+      "logic": {
+        "logic": "AND",
+        "action": "show",
+        "rules": [
+          {
+            "fieldId": "ca-type",
+            "operator": "is",
+            "value": "individual"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ca-i-haul2-material",
+      "type": "single_line",
+      "label": "Haul / revenue source 2 — material hauled",
+      "required": false,
+      "width": "half",
+      "logic": {
+        "logic": "AND",
+        "action": "show",
+        "rules": [
+          {
+            "fieldId": "ca-type",
+            "operator": "is",
+            "value": "individual"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ca-i-haul2-start",
+      "type": "date",
+      "label": "Haul / revenue source 2 — start date",
+      "required": false,
+      "width": "half",
+      "logic": {
+        "logic": "AND",
+        "action": "show",
+        "rules": [
+          {
+            "fieldId": "ca-type",
+            "operator": "is",
+            "value": "individual"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ca-i-haul2-contact",
+      "type": "single_line",
+      "label": "Haul / revenue source 2 — contact name",
+      "required": false,
+      "width": "half",
+      "logic": {
+        "logic": "AND",
+        "action": "show",
+        "rules": [
+          {
+            "fieldId": "ca-type",
+            "operator": "is",
+            "value": "individual"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ca-i-haul2-phone",
+      "type": "phone",
+      "label": "Haul / revenue source 2 — contact phone #",
+      "required": false,
+      "logic": {
+        "logic": "AND",
+        "action": "show",
+        "rules": [
+          {
+            "fieldId": "ca-type",
+            "operator": "is",
+            "value": "individual"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ca-i-eq1-lender",
+      "type": "single_line",
+      "label": "Equipment finance history 1 — lender name",
+      "required": false,
+      "width": "half",
+      "logic": {
+        "logic": "AND",
+        "action": "show",
+        "rules": [
+          {
+            "fieldId": "ca-type",
+            "operator": "is",
+            "value": "individual"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ca-i-eq1-credit",
+      "type": "single_line",
+      "label": "Equipment finance history 1 — high credit $",
+      "required": false,
+      "width": "half",
+      "logic": {
+        "logic": "AND",
+        "action": "show",
+        "rules": [
+          {
+            "fieldId": "ca-type",
+            "operator": "is",
+            "value": "individual"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ca-i-eq1-acct",
+      "type": "single_line",
+      "label": "Equipment finance history 1 — account #",
+      "required": false,
+      "width": "half",
+      "logic": {
+        "logic": "AND",
+        "action": "show",
+        "rules": [
+          {
+            "fieldId": "ca-type",
+            "operator": "is",
+            "value": "individual"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ca-i-eq1-contact",
+      "type": "single_line",
+      "label": "Equipment finance history 1 — contact name",
+      "required": false,
+      "width": "half",
+      "logic": {
+        "logic": "AND",
+        "action": "show",
+        "rules": [
+          {
+            "fieldId": "ca-type",
+            "operator": "is",
+            "value": "individual"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ca-i-eq1-phone",
+      "type": "phone",
+      "label": "Equipment finance history 1 — contact phone #",
+      "required": false,
+      "logic": {
+        "logic": "AND",
+        "action": "show",
+        "rules": [
+          {
+            "fieldId": "ca-type",
+            "operator": "is",
+            "value": "individual"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ca-i-eq2-lender",
+      "type": "single_line",
+      "label": "Equipment finance history 2 — lender name",
+      "required": false,
+      "width": "half",
+      "logic": {
+        "logic": "AND",
+        "action": "show",
+        "rules": [
+          {
+            "fieldId": "ca-type",
+            "operator": "is",
+            "value": "individual"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ca-i-eq2-credit",
+      "type": "single_line",
+      "label": "Equipment finance history 2 — high credit $",
+      "required": false,
+      "width": "half",
+      "logic": {
+        "logic": "AND",
+        "action": "show",
+        "rules": [
+          {
+            "fieldId": "ca-type",
+            "operator": "is",
+            "value": "individual"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ca-i-eq2-acct",
+      "type": "single_line",
+      "label": "Equipment finance history 2 — account #",
+      "required": false,
+      "width": "half",
+      "logic": {
+        "logic": "AND",
+        "action": "show",
+        "rules": [
+          {
+            "fieldId": "ca-type",
+            "operator": "is",
+            "value": "individual"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ca-i-eq2-contact",
+      "type": "single_line",
+      "label": "Equipment finance history 2 — contact name",
+      "required": false,
+      "width": "half",
+      "logic": {
+        "logic": "AND",
+        "action": "show",
+        "rules": [
+          {
+            "fieldId": "ca-type",
+            "operator": "is",
+            "value": "individual"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ca-i-eq2-phone",
+      "type": "phone",
+      "label": "Equipment finance history 2 — contact phone #",
+      "required": false,
+      "logic": {
+        "logic": "AND",
+        "action": "show",
+        "rules": [
+          {
+            "fieldId": "ca-type",
+            "operator": "is",
+            "value": "individual"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ca-i-down",
+      "type": "single_line",
+      "label": "Notes / comments — down payment amount",
+      "required": false,
+      "width": "half",
+      "logic": {
+        "logic": "AND",
+        "action": "show",
+        "rules": [
+          {
+            "fieldId": "ca-type",
+            "operator": "is",
+            "value": "individual"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ca-i-tax",
+      "type": "dropdown",
+      "label": "Notes / comments — tax exempt",
+      "required": false,
+      "width": "half",
+      "options": [
+        {
+          "value": "yes",
+          "label": "Yes"
+        },
+        {
+          "value": "no",
+          "label": "No"
+        }
+      ],
+      "placeholder": "Select",
+      "logic": {
+        "logic": "AND",
+        "action": "show",
+        "rules": [
+          {
+            "fieldId": "ca-type",
+            "operator": "is",
+            "value": "individual"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ca-i-notes",
+      "type": "paragraph",
+      "label": "Notes / comments",
+      "required": false,
+      "placeholder": "Additional notes or comments",
+      "logic": {
+        "logic": "AND",
+        "action": "show",
+        "rules": [
+          {
+            "fieldId": "ca-type",
+            "operator": "is",
+            "value": "individual"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ca-i-sig",
+      "type": "single_line",
+      "label": "Signature",
+      "required": true,
+      "width": "half",
+      "help": "By signing below, I hereby certify that the information provided in this credit application is true, accurate, and complete to the best of my knowledge. I understand that this application will be used by East Texas Mack (\"the Company\") to assess my creditworthiness. I authorize the Company to use the information provided in this credit application to evaluate my credit history and financial capacity. This evaluation may include sharing this application with, and obtaining information from, one or more credit bureaus, financial institutions, or other parties (\"Creditors\") for the purpose of assessing my creditworthiness. I understand that false or misleading information provided in this credit application may result in the rejection of my application or termination of any subsequent agreement. I agree to promptly inform the Company in writing of any material changes to the information provided in this application. ECOA NOTICE: The Federal Equal Credit Opportunity Act prohibits creditors from discriminating against credit applicants on the basis of race, color, religion, national origin, sex, marital status, age (provided the applicant has the capacity to enter into a binding contract), because all or part of the applicant's income derives from any public assistance, or because the applicant has in good faith exercised any right under the Consumer Credit Protection Act. The federal agency that administers compliance with this law is the Federal Trade Commission, Equal Credit Opportunity, Washington DC 20580. If your application for business credit is denied or conditionally approved, you have the right to a written statement of the specific reasons for the denial or the conditional approval. To obtain the statement, please contact East Texas Mack within 60 days from the date you are notified of such denial or condition. We will send you a written statement of reasons for the denial within 30 days of receiving your request.",
+      "logic": {
+        "logic": "AND",
+        "action": "show",
+        "rules": [
+          {
+            "fieldId": "ca-type",
+            "operator": "is",
+            "value": "individual"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ca-i-sig-name",
+      "type": "single_line",
+      "label": "Name and title",
+      "required": true,
+      "width": "half",
+      "logic": {
+        "logic": "AND",
+        "action": "show",
+        "rules": [
+          {
+            "fieldId": "ca-type",
+            "operator": "is",
+            "value": "individual"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ca-i-sig-date",
+      "type": "date",
+      "label": "Date",
+      "required": true,
+      "width": "half",
+      "logic": {
+        "logic": "AND",
+        "action": "show",
+        "rules": [
+          {
+            "fieldId": "ca-type",
+            "operator": "is",
+            "value": "individual"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ca-i-sig2",
+      "type": "single_line",
+      "label": "Guarantor #2 sign here, if applicable — signature",
+      "required": false,
+      "width": "half",
+      "logic": {
+        "logic": "AND",
+        "action": "show",
+        "rules": [
+          {
+            "fieldId": "ca-type",
+            "operator": "is",
+            "value": "individual"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ca-i-sig2-name",
+      "type": "single_line",
+      "label": "Guarantor #2 — name",
+      "required": false,
+      "width": "half",
+      "logic": {
+        "logic": "AND",
+        "action": "show",
+        "rules": [
+          {
+            "fieldId": "ca-type",
+            "operator": "is",
+            "value": "individual"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ca-i-sig2-date",
+      "type": "date",
+      "label": "Guarantor #2 — date",
+      "required": false,
+      "width": "half",
+      "logic": {
+        "logic": "AND",
+        "action": "show",
+        "rules": [
+          {
+            "fieldId": "ca-type",
+            "operator": "is",
+            "value": "individual"
+          }
+        ]
+      }
+    }
+  ],
+  "notifications": [
+    {
+      "id": "ca-default",
+      "name": "Default",
+      "logic": "AND",
+      "rules": [],
+      "targetType": "role",
+      "roleId": "finance-manager",
+      "scopeMode": "dynamic"
+    }
+  ]
+}

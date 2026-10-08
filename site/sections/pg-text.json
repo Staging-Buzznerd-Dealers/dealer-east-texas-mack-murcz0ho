@@ -3,7 +3,7 @@
   "id": "pg-text",
   "name": "Text band",
   "description": "A centred column of copy: label, heading, paragraphs and bullets, optional phone/address line from Locations, pill list, highlighted box and links.",
-  "css": "[data-bz-section=\"pg-text\"] .bz-section:not(:has(h2)) { padding-block: 70px; }\n[data-bz-section=\"pg-text\"] .bz-headingblock h2 { margin-bottom: 20px; }\n[data-bz-section=\"pg-text\"] [data-bz-node^=\"pt-line\"] p { font-size: 16px; line-height: 1.7; margin: 0 0 16px; color: var(--copy); }\n[data-bz-section=\"pg-text\"] .bz-section--bg-ink [data-bz-node^=\"pt-line\"] p { color: var(--copy-on-dark); }\n[data-bz-section=\"pg-text\"] .bz-col[data-bz-node=\"pt-chips\"] { display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 20px; }\n[data-bz-section=\"pg-text\"] .bz-col[data-bz-node=\"pt-chips\"]:empty { display: none; }\n[data-bz-section=\"pg-text\"] [data-bz-node^=\"pt-chip\"] p { font-size: 13px; line-height: normal; padding: 8px 16px; border: 1px solid var(--line); border-radius: 999px; color: #2a2b2f; margin: 0; }\n[data-bz-section=\"pg-text\"] .bz-col[data-bz-node^=\"pt-box\"] { background: var(--band-tan); border-radius: var(--radius-card); padding: 32px; margin-top: 8px; }\n[data-bz-section=\"pg-text\"] .bz-section--bg-ink .bz-col[data-bz-node^=\"pt-box\"] { background: var(--ink-raised); }\n[data-bz-section=\"pg-text\"] [data-bz-node^=\"pt-box-h\"] h3 { font-size: 18px; margin: 0 0 12px; }\n[data-bz-section=\"pg-text\"] [data-bz-node^=\"pt-box-p\"] p { font-size: 14px; line-height: 1.7; margin: 0 0 16px; }",
+  "css": "[data-bz-section=\"pg-text\"] .bz-section:not(:has(h2)) { padding-block: 70px; }\n[data-bz-section=\"pg-text\"] .bz-headingblock h2 { margin-bottom: 20px; }\n[data-bz-section=\"pg-text\"] [data-bz-node^=\"pt-line\"] p { font-size: 16px; line-height: 1.7; margin: 0 0 16px; color: var(--copy); }\n[data-bz-section=\"pg-text\"] .bz-section--bg-ink [data-bz-node^=\"pt-line\"] p { color: var(--copy-on-dark); }\n[data-bz-section=\"pg-text\"] .bz-col[data-bz-node=\"pt-chips\"] { display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 20px; }\n[data-bz-section=\"pg-text\"] .bz-col[data-bz-node=\"pt-chips\"]:empty { display: none; }\n[data-bz-section=\"pg-text\"] [data-bz-node^=\"pt-chip\"] p { font-size: 13px; line-height: normal; padding: 8px 16px; border: 1px solid var(--line); border-radius: 999px; color: #2a2b2f; margin: 0; }\n[data-bz-section=\"pg-text\"] .bz-col[data-bz-node^=\"pt-box\"] { display: block; background: var(--band-tan); border-radius: var(--radius-card); padding: 32px; margin-top: 8px; }\n[data-bz-section=\"pg-text\"] .bz-section--bg-ink .bz-col[data-bz-node^=\"pt-box\"] { background: var(--ink-raised); }\n[data-bz-section=\"pg-text\"] .bz-block[data-bz-node^=\"pt-box-link\"] { display: inline-block; margin-right: 16px; }\n[data-bz-section=\"pg-text\"] [data-bz-node^=\"pt-box-h\"] h3 { font-size: 18px; margin: 0 0 12px; }\n[data-bz-section=\"pg-text\"] [data-bz-node^=\"pt-box-p\"] p { font-size: 14px; line-height: 1.7; margin: 0 0 16px; }",
   "props": [
     {
       "key": "bg",
@@ -136,29 +136,14 @@
       ]
     },
     {
-      "key": "boxes",
+      "key": "copyAfter",
       "type": "list",
-      "label": "Highlighted box",
+      "label": "Body copy after the pills",
       "fields": [
-        {
-          "key": "title",
-          "type": "text",
-          "label": "Title"
-        },
         {
           "key": "text",
           "type": "textarea",
-          "label": "Text"
-        },
-        {
-          "key": "linkLabel",
-          "type": "text",
-          "label": "Link text"
-        },
-        {
-          "key": "linkUrl",
-          "type": "url",
-          "label": "Link goes to"
+          "label": "Paragraph"
         }
       ]
     },
@@ -191,6 +176,43 @@
               "label": "Red button"
             }
           ]
+        }
+      ]
+    },
+    {
+      "key": "boxes",
+      "type": "list",
+      "label": "Highlighted box",
+      "fields": [
+        {
+          "key": "title",
+          "type": "text",
+          "label": "Title"
+        },
+        {
+          "key": "text",
+          "type": "textarea",
+          "label": "Text"
+        },
+        {
+          "key": "linkLabel",
+          "type": "text",
+          "label": "Link text"
+        },
+        {
+          "key": "linkUrl",
+          "type": "url",
+          "label": "Link goes to"
+        },
+        {
+          "key": "link2Label",
+          "type": "text",
+          "label": "Second link text"
+        },
+        {
+          "key": "link2Url",
+          "type": "url",
+          "label": "Second link goes to"
         }
       ]
     }
@@ -313,6 +335,61 @@
                   ]
                 },
                 {
+                  "id": "pt-after",
+                  "type": "copy-block",
+                  "props": {
+                    "text": "{{text}}",
+                    "repeat": "copyAfter"
+                  }
+                },
+                {
+                  "id": "pt-links-row",
+                  "type": "row",
+                  "props": {
+                    "gap": 0,
+                    "stackOn": "never"
+                  },
+                  "styles": {
+                    "base": {
+                      "marginTop": 16
+                    }
+                  },
+                  "children": [
+                    {
+                      "id": "pt-links-col",
+                      "type": "column",
+                      "props": {
+                        "span": 12
+                      },
+                      "styles": {
+                        "base": {
+                          "display": "flex",
+                          "flexWrap": "wrap",
+                          "alignItems": "center",
+                          "columnGap": 16,
+                          "rowGap": 12
+                        }
+                      },
+                      "children": [
+                        {
+                          "id": "pt-links",
+                          "type": "buttons",
+                          "props": {
+                            "items": [
+                              {
+                                "label": "{{label}}",
+                                "url": "{{url}}",
+                                "style": "{{style}}"
+                              }
+                            ],
+                            "repeat": "links"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
                   "id": "pt-boxes-row",
                   "type": "row",
                   "props": {
@@ -356,52 +433,18 @@
                               }
                             ]
                           }
-                        }
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "id": "pt-links-row",
-                  "type": "row",
-                  "props": {
-                    "gap": 0,
-                    "stackOn": "never"
-                  },
-                  "styles": {
-                    "base": {
-                      "marginTop": 16
-                    }
-                  },
-                  "children": [
-                    {
-                      "id": "pt-links-col",
-                      "type": "column",
-                      "props": {
-                        "span": 12
-                      },
-                      "styles": {
-                        "base": {
-                          "display": "flex",
-                          "flexWrap": "wrap",
-                          "alignItems": "center",
-                          "columnGap": 16,
-                          "rowGap": 12
-                        }
-                      },
-                      "children": [
+                        },
                         {
-                          "id": "pt-links",
+                          "id": "pt-box-link2",
                           "type": "buttons",
                           "props": {
                             "items": [
                               {
-                                "label": "{{label}}",
-                                "url": "{{url}}",
-                                "style": "{{style}}"
+                                "label": "{{link2Label}}",
+                                "url": "{{link2Url}}",
+                                "style": "link"
                               }
-                            ],
-                            "repeat": "links"
+                            ]
                           }
                         }
                       ]

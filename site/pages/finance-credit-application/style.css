@@ -1,0 +1,2 @@
+/* The form band is styled site-wide (custom code); only the upper-case Submit label is set here. */
+.bz-section[data-bz-node="form-band"] .bz-btn[type="submit"] { text-transform: uppercase; }

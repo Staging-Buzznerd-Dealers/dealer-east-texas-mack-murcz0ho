@@ -1,0 +1,153 @@
+{
+  "id": "service-appointment",
+  "name": "Service Appointment",
+  "status": "live",
+  "surfaces": [
+    "page"
+  ],
+  "intent": "service-appointment",
+  "submitLabel": "Submit",
+  "successMessage": "Thanks — our service department has your request and will confirm your appointment.",
+  "consent": {
+    "enabled": true,
+    "required": false,
+    "text": "Subscribe to Newsletter"
+  },
+  "fields": [
+    {
+      "id": "sa-first",
+      "type": "first_name",
+      "label": "First name",
+      "required": true,
+      "width": "half"
+    },
+    {
+      "id": "sa-last",
+      "type": "last_name",
+      "label": "Last name",
+      "required": true,
+      "width": "half"
+    },
+    {
+      "id": "sa-company",
+      "type": "single_line",
+      "label": "Company name",
+      "required": true,
+      "width": "half"
+    },
+    {
+      "id": "sa-auth",
+      "type": "single_line",
+      "label": "Repair auth contact",
+      "required": true,
+      "width": "half"
+    },
+    {
+      "id": "sa-phone",
+      "type": "phone",
+      "label": "Phone",
+      "required": true,
+      "width": "half"
+    },
+    {
+      "id": "sa-mobile",
+      "type": "phone",
+      "label": "Mobile",
+      "required": false,
+      "width": "half"
+    },
+    {
+      "id": "sa-email",
+      "type": "email",
+      "label": "Email",
+      "required": true,
+      "width": "half"
+    },
+    {
+      "id": "sa-contact",
+      "type": "dropdown",
+      "label": "How may we contact you?",
+      "required": true,
+      "width": "half",
+      "options": [
+        {
+          "value": "phone",
+          "label": "Phone"
+        },
+        {
+          "value": "mobile",
+          "label": "Mobile"
+        },
+        {
+          "value": "email",
+          "label": "Email"
+        }
+      ]
+    },
+    {
+      "id": "sa-year",
+      "type": "single_line",
+      "label": "Vehicle year",
+      "required": false,
+      "width": "half"
+    },
+    {
+      "id": "sa-make",
+      "type": "single_line",
+      "label": "Vehicle make",
+      "required": true,
+      "width": "half"
+    },
+    {
+      "id": "sa-model",
+      "type": "single_line",
+      "label": "Vehicle model",
+      "required": true,
+      "width": "half"
+    },
+    {
+      "id": "sa-vin",
+      "type": "single_line",
+      "label": "VIN #",
+      "required": true,
+      "width": "half"
+    },
+    {
+      "id": "sa-unit",
+      "type": "single_line",
+      "label": "Unit number",
+      "required": false,
+      "width": "half"
+    },
+    {
+      "id": "sa-mileage",
+      "type": "number",
+      "label": "Mileage",
+      "required": false,
+      "width": "half"
+    },
+    {
+      "id": "sa-date",
+      "type": "date",
+      "label": "Requested appointment date",
+      "required": true
+    },
+    {
+      "id": "sa-complaint",
+      "type": "paragraph",
+      "label": "Complaint",
+      "required": true
+    }
+  ],
+  "notifications": [
+    {
+      "id": "sa-default",
+      "name": "Default",
+      "logic": "AND",
+      "rules": [],
+      "targetType": "role",
+      "roleId": "service-advisor",
+      "scopeMode": "dynamic"
+    }
+  ]
+}

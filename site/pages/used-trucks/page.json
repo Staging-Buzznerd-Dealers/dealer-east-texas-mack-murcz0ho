@@ -459,7 +459,7 @@
             },
             {
               "label": "View Truck Parts Department",
-              "url": "/store/parts",
+              "url": "/parts",
               "style": "link"
             }
           ]
