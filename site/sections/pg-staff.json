@@ -1,0 +1,152 @@
+{
+  "version": 2,
+  "id": "pg-staff",
+  "name": "Staff directory",
+  "description": "Groups of people: a heading per department and a grid of photo, name and job title.",
+  "css": "[data-bz-section=\"pg-staff\"] .bz-block { padding-block: 0; }\n[data-bz-section=\"pg-staff\"] .bz-headingblock h2 { font-size: 24px; margin: 0 0 28px; color: var(--ink); }\n[data-bz-section=\"pg-staff\"] .bz-col[data-bz-node^=\"pst-group\"] { margin-bottom: 64px; }\n[data-bz-section=\"pg-staff\"] .bz-col[data-bz-node^=\"pst-group\"]:last-child { margin-bottom: 0; }\n/* Five across is not a divisor of the 12-column grid, so it is its own grid (same approach as pg-cards). */\n[data-bz-section=\"pg-staff\"] .bz-row:has(> .bz-col[data-bz-node^=\"pst-person\"]) { grid-template-columns: repeat(5, minmax(0, 1fr)); column-gap: 28px; row-gap: 32px; }\n[data-bz-section=\"pg-staff\"] .bz-row > .bz-col[data-bz-node^=\"pst-person\"] { grid-column: auto; }\n[data-bz-section=\"pg-staff\"] .bz-figure { margin: 0 0 12px; }\n[data-bz-section=\"pg-staff\"] .bz-figure img { display: block; width: 100%; aspect-ratio: 1; height: auto; object-fit: cover; object-position: top; border-radius: 6px; border: 1px solid #eee; background: #f0f0f0; }\n[data-bz-section=\"pg-staff\"] [data-bz-node^=\"pst-name\"] p { margin: 0; font: 600 15px / 1.4 var(--font-body); color: var(--ink); }\n[data-bz-section=\"pg-staff\"] [data-bz-node^=\"pst-role\"] p { margin: 0; font: italic 400 13px / 1.4 var(--font-body); color: var(--muted); }\n@media (max-width: 1100px) { [data-bz-section=\"pg-staff\"] .bz-row:has(> .bz-col[data-bz-node^=\"pst-person\"]) { grid-template-columns: repeat(3, minmax(0, 1fr)); column-gap: 20px; } }\n@media (max-width: 640px) { [data-bz-section=\"pg-staff\"] .bz-row:has(> .bz-col[data-bz-node^=\"pst-person\"]) { grid-template-columns: repeat(2, minmax(0, 1fr)); } [data-bz-section=\"pg-staff\"] .bz-col[data-bz-node^=\"pst-group\"] { margin-bottom: 44px; } }",
+  "props": [
+    {
+      "key": "groups",
+      "type": "list",
+      "label": "Departments",
+      "fields": [
+        {
+          "key": "heading",
+          "type": "text",
+          "label": "Department"
+        },
+        {
+          "key": "people",
+          "type": "list",
+          "label": "People",
+          "fields": [
+            {
+              "key": "name",
+              "type": "text",
+              "label": "Name"
+            },
+            {
+              "key": "title",
+              "type": "text",
+              "label": "Job title"
+            },
+            {
+              "key": "photo",
+              "type": "image",
+              "label": "Photo"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "id": "pst",
+      "type": "section",
+      "props": {
+        "width": "full",
+        "background": "card",
+        "paddingY": 0
+      },
+      "styles": {
+        "base": {
+          "paddingTop": 70,
+          "paddingBottom": 70,
+          "paddingLeft": 40,
+          "paddingRight": 40
+        },
+        "tablet": {
+          "paddingLeft": 24,
+          "paddingRight": 24
+        },
+        "mobile": {
+          "paddingTop": 44,
+          "paddingBottom": 44,
+          "paddingLeft": 16,
+          "paddingRight": 16
+        }
+      },
+      "children": [
+        {
+          "id": "pst-wrap",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "stackOn": "never"
+          },
+          "styles": {
+            "base": {
+              "maxWidth": 1200,
+              "marginLeft": "auto",
+              "marginRight": "auto"
+            }
+          },
+          "children": [
+            {
+              "id": "pst-group",
+              "type": "column",
+              "props": {
+                "span": 12,
+                "repeat": "groups"
+              },
+              "children": [
+                {
+                  "id": "pst-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "{{heading}}",
+                    "headingLevel": 2
+                  }
+                },
+                {
+                  "id": "pst-people",
+                  "type": "row",
+                  "props": {
+                    "gap": 5,
+                    "stackOn": "never"
+                  },
+                  "children": [
+                    {
+                      "id": "pst-person",
+                      "type": "column",
+                      "props": {
+                        "span": 5,
+                        "repeat": "people"
+                      },
+                      "children": [
+                        {
+                          "id": "pst-photo",
+                          "type": "image",
+                          "props": {
+                            "image": "{{photo}}"
+                          }
+                        },
+                        {
+                          "id": "pst-name",
+                          "type": "text",
+                          "props": {
+                            "text": "{{name}}",
+                            "width": "full"
+                          }
+                        },
+                        {
+                          "id": "pst-role",
+                          "type": "text",
+                          "props": {
+                            "text": "{{title}}",
+                            "width": "full"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

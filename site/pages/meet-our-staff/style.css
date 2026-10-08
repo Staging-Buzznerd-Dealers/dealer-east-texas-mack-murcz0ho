@@ -1,0 +1,3 @@
+/* Meet Our Staff: header on the 1200px container. */
+.bz-sharedsection[data-bz-section="pg-form-head"] .bz-row[data-bz-node="pfh-row"] { max-width: 1200px; }
+.bz-sharedsection[data-bz-section="pg-form-head"] .bz-block[data-bz-node="pfh-h"] h1 { margin-bottom: 0; }

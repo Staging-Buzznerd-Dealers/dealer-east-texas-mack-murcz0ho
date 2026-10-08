@@ -1,0 +1,6 @@
+/* The form band is styled site-wide (custom code), because the form pages share it. */
+.bz-sharedsection[data-bz-section="pg-form-head"] .bz-block[data-bz-node="pfh-h"] h1 { margin-bottom: 0; }
+.bz-section[data-bz-node="form-band"] { padding-bottom: 160px; }
+.bz-section[data-bz-node="form-band"] .bz-btn[type="submit"] { text-transform: uppercase; letter-spacing: 0.5px; }
+.bz-section[data-bz-node="form-band"] .bz-block[data-bz-node="form-note"] p { margin: 0 0 32px; font-size: 13px; font-style: italic; color: var(--muted); }
+@media (max-width: 640px) { .bz-section[data-bz-node="form-band"] { padding-bottom: 40px; } }

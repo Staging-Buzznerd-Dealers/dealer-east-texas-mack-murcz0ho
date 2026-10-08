@@ -287,5 +287,77 @@
       "footer": null,
       "utilityNav": null
     }
+  },
+  {
+    "slug": "meet-our-staff",
+    "title": "Meet Our Staff",
+    "description": "Meet the East Texas Mack team in Longview, TX: leadership, truck sales, parts and service.",
+    "path": "/meet-our-staff",
+    "out": "meet-our-staff/index.html",
+    "dir": "meet-our-staff",
+    "status": "published",
+    "seo": {
+      "ogImage": null,
+      "noindex": false
+    },
+    "templates": {
+      "header": null,
+      "footer": null,
+      "utilityNav": null
+    }
+  },
+  {
+    "slug": "careers",
+    "title": "Careers",
+    "description": "Build a long-term career at East Texas Mack in Longview, TX: diesel technicians, parts specialists, service advisors, sales and administration.",
+    "path": "/careers",
+    "out": "careers/index.html",
+    "dir": "careers",
+    "status": "published",
+    "seo": {
+      "ogImage": null,
+      "noindex": false
+    },
+    "templates": {
+      "header": null,
+      "footer": null,
+      "utilityNav": null
+    }
+  },
+  {
+    "slug": "get-a-quote",
+    "title": "Get a Quote",
+    "description": "Request a commercial truck quote from East Texas Mack in Longview, TX.",
+    "path": "/get-a-quote",
+    "out": "get-a-quote/index.html",
+    "dir": "get-a-quote",
+    "status": "published",
+    "seo": {
+      "ogImage": null,
+      "noindex": false
+    },
+    "templates": {
+      "header": null,
+      "footer": null,
+      "utilityNav": null
+    }
+  },
+  {
+    "slug": "location",
+    "title": "Location",
+    "description": "East Texas Mack is a full-service Mack truck dealership at 2934 State Highway 31 N, Longview, TX, serving East Texas and surrounding regions.",
+    "path": "/location",
+    "out": "location/index.html",
+    "dir": "location",
+    "status": "published",
+    "seo": {
+      "ogImage": null,
+      "noindex": false
+    },
+    "templates": {
+      "header": null,
+      "footer": null,
+      "utilityNav": null
+    }
   }
 ]
