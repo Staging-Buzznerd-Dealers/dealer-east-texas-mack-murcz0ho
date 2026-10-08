@@ -377,5 +377,77 @@
       "footer": null,
       "utilityNav": null
     }
+  },
+  {
+    "slug": "how-was-your-experience",
+    "title": "How Was Your Experience",
+    "description": "Tell East Texas Mack how we did: rate your experience and leave feedback.",
+    "path": "/how-was-your-experience",
+    "out": "how-was-your-experience/index.html",
+    "dir": "how-was-your-experience",
+    "status": "published",
+    "seo": {
+      "ogImage": null,
+      "noindex": false
+    },
+    "templates": {
+      "header": null,
+      "footer": null,
+      "utilityNav": null
+    }
+  },
+  {
+    "slug": "news-specials",
+    "title": "News & Specials",
+    "description": "News, specials and updates from East Texas Mack in Longview, TX.",
+    "path": "/news-specials",
+    "out": "news-specials/index.html",
+    "dir": "news-specials",
+    "status": "published",
+    "seo": {
+      "ogImage": null,
+      "noindex": false
+    },
+    "templates": {
+      "header": null,
+      "footer": null,
+      "utilityNav": null
+    }
+  },
+  {
+    "slug": "holiday-slide-ideas",
+    "title": "Holiday Slide Ideas",
+    "description": "Holiday promotional slide ideas for East Texas Mack.",
+    "path": "/holiday-slide-ideas",
+    "out": "holiday-slide-ideas/index.html",
+    "dir": "holiday-slide-ideas",
+    "status": "published",
+    "seo": {
+      "ogImage": null,
+      "noindex": false
+    },
+    "templates": {
+      "header": null,
+      "footer": null,
+      "utilityNav": null
+    }
+  },
+  {
+    "slug": "terms-of-service",
+    "title": "Terms of Service",
+    "description": "The terms that govern your use of the East Texas Mack website.",
+    "path": "/terms-of-service",
+    "out": "terms-of-service/index.html",
+    "dir": "terms-of-service",
+    "status": "published",
+    "seo": {
+      "ogImage": null,
+      "noindex": false
+    },
+    "templates": {
+      "header": null,
+      "footer": null,
+      "utilityNav": null
+    }
   }
 ]

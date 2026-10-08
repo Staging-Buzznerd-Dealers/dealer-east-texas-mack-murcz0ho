@@ -1,0 +1,140 @@
+{
+  "id": "how-was-your-experience",
+  "name": "How Was Your Experience",
+  "status": "live",
+  "surfaces": [
+    "page"
+  ],
+  "intent": "feedback",
+  "submitLabel": "Submit",
+  "successMessage": "Thank you for your feedback — it helps us keep improving.",
+  "consent": {
+    "enabled": false,
+    "required": false,
+    "text": ""
+  },
+  "fields": [
+    {
+      "id": "hw-rating",
+      "type": "radio",
+      "label": "How would you rate your experience with us?",
+      "required": true,
+      "options": [
+        {
+          "value": "good",
+          "label": "Good"
+        },
+        {
+          "value": "bad",
+          "label": "Bad"
+        }
+      ]
+    },
+    {
+      "id": "hw-name",
+      "type": "single_line",
+      "label": "Your Name",
+      "required": false,
+      "logic": {
+        "logic": "OR",
+        "action": "show",
+        "rules": [
+          {
+            "fieldId": "hw-rating",
+            "operator": "is",
+            "value": "good"
+          },
+          {
+            "fieldId": "hw-rating",
+            "operator": "is",
+            "value": "bad"
+          }
+        ]
+      }
+    },
+    {
+      "id": "hw-email",
+      "type": "email",
+      "label": "Email Address",
+      "required": false,
+      "logic": {
+        "logic": "OR",
+        "action": "show",
+        "rules": [
+          {
+            "fieldId": "hw-rating",
+            "operator": "is",
+            "value": "good"
+          },
+          {
+            "fieldId": "hw-rating",
+            "operator": "is",
+            "value": "bad"
+          }
+        ]
+      }
+    },
+    {
+      "id": "hw-more-good",
+      "type": "paragraph",
+      "label": "Glad to hear it! Would you mind sharing a few words about your experience?",
+      "required": false,
+      "logic": {
+        "logic": "OR",
+        "action": "show",
+        "rules": [
+          {
+            "fieldId": "hw-rating",
+            "operator": "is",
+            "value": "good"
+          }
+        ]
+      },
+      "help": "Your feedback helps us keep improving."
+    },
+    {
+      "id": "hw-more-bad",
+      "type": "paragraph",
+      "label": "We're sorry to hear that. Please tell us what went wrong.",
+      "required": false,
+      "logic": {
+        "logic": "OR",
+        "action": "show",
+        "rules": [
+          {
+            "fieldId": "hw-rating",
+            "operator": "is",
+            "value": "bad"
+          }
+        ]
+      },
+      "help": "Our team will do its best to make it right."
+    }
+  ],
+  "notifications": [
+    {
+      "id": "hw-bad",
+      "name": "Bad experience",
+      "logic": "AND",
+      "rules": [
+        {
+          "fieldId": "hw-rating",
+          "operator": "is",
+          "value": "bad"
+        }
+      ],
+      "targetType": "role",
+      "roleId": "sales-manager",
+      "scopeMode": "dynamic"
+    },
+    {
+      "id": "hw-default",
+      "name": "Default",
+      "logic": "AND",
+      "rules": [],
+      "targetType": "role",
+      "roleId": "marketing-manager",
+      "scopeMode": "dynamic"
+    }
+  ]
+}

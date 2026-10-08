@@ -1,0 +1,80 @@
+{
+  "version": 2,
+  "nodes": [
+    {
+      "id": "head",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "pg-form-head",
+        "values": {
+          "trail": [],
+          "crumb": "News & Specials",
+          "headline": "News & Specials"
+        }
+      }
+    },
+    {
+      "id": "news",
+      "type": "section",
+      "props": {
+        "width": "full",
+        "background": "card",
+        "paddingY": 0
+      },
+      "styles": {
+        "base": {
+          "paddingTop": 70,
+          "paddingBottom": 70,
+          "paddingLeft": 40,
+          "paddingRight": 40
+        },
+        "tablet": {
+          "paddingLeft": 24,
+          "paddingRight": 24
+        },
+        "mobile": {
+          "paddingTop": 44,
+          "paddingBottom": 44,
+          "paddingLeft": 16,
+          "paddingRight": 16
+        }
+      },
+      "children": [
+        {
+          "id": "news-row",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "stackOn": "never"
+          },
+          "styles": {
+            "base": {
+              "maxWidth": 1200,
+              "marginLeft": "auto",
+              "marginRight": "auto"
+            }
+          },
+          "children": [
+            {
+              "id": "news-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "news-list",
+                  "type": "postsList",
+                  "props": {
+                    "count": 6,
+                    "showDates": false
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

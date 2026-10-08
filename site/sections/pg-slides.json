@@ -1,0 +1,176 @@
+{
+  "version": 2,
+  "id": "pg-slides",
+  "name": "Slide gallery",
+  "description": "A heading and a row of photo tiles, each with a caption across the bottom.",
+  "css": "[data-bz-section=\"pg-slides\"] .bz-block { padding-block: 0; }\n[data-bz-section=\"pg-slides\"] .bz-headingblock h2 { font-size: 26px; margin: 0 0 32px; color: var(--ink); }\n[data-bz-section=\"pg-slides\"] .bz-col[data-bz-node^=\"pls-tile\"] { position: relative; overflow: hidden; border-radius: 8px; min-height: 230px; display: flex; flex-direction: column; justify-content: flex-end; background: var(--ink); }\n[data-bz-section=\"pg-slides\"] .bz-col[data-bz-node^=\"pls-tile\"]::after { content: \"\"; position: absolute; inset: 0; background: linear-gradient(0deg, rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.15)); pointer-events: none; }\n[data-bz-section=\"pg-slides\"] .bz-block--image { position: absolute; inset: 0; }\n[data-bz-section=\"pg-slides\"] .bz-block--image .bz-container, [data-bz-section=\"pg-slides\"] .bz-block--image .bz-figure { height: 100%; margin: 0; padding: 0; max-width: none; }\n[data-bz-section=\"pg-slides\"] .bz-block--image img { width: 100%; height: 100%; object-fit: cover; border-radius: 0; display: block; }\n[data-bz-section=\"pg-slides\"] .bz-block[data-bz-node^=\"pls-cap\"] { position: relative; z-index: 1; padding: 24px; text-align: center; }\n[data-bz-section=\"pg-slides\"] .bz-block[data-bz-node^=\"pls-cap\"] p { margin: 0; font: 700 22px / 1.2 var(--font-heading); text-transform: uppercase; color: var(--card); }\n[data-bz-section=\"pg-slides\"] .bz-col--bg-accent .bz-block[data-bz-node^=\"pls-cap\"] p { color: #ff8a3d; }\n[data-bz-section=\"pg-slides\"] .bz-col--bg-accent { background: var(--ink); }",
+  "props": [
+    {
+      "key": "bg",
+      "type": "select",
+      "label": "Background",
+      "options": [
+        {
+          "value": "card",
+          "label": "White"
+        },
+        {
+          "value": "paper",
+          "label": "Sand"
+        }
+      ],
+      "default": "card"
+    },
+    {
+      "key": "span",
+      "type": "number",
+      "label": "Tile width (out of 12)",
+      "default": 4
+    },
+    {
+      "key": "heading",
+      "type": "text",
+      "label": "Heading"
+    },
+    {
+      "key": "slides",
+      "type": "list",
+      "label": "Tiles",
+      "fields": [
+        {
+          "key": "image",
+          "type": "image",
+          "label": "Photo"
+        },
+        {
+          "key": "caption",
+          "type": "text",
+          "label": "Caption"
+        },
+        {
+          "key": "tone",
+          "type": "select",
+          "label": "Caption colour",
+          "options": [
+            {
+              "value": "none",
+              "label": "White"
+            },
+            {
+              "value": "accent",
+              "label": "Orange"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "id": "pls",
+      "type": "section",
+      "props": {
+        "width": "full",
+        "background": "{{bg}}",
+        "paddingY": 0
+      },
+      "styles": {
+        "base": {
+          "paddingTop": 70,
+          "paddingBottom": 70,
+          "paddingLeft": 40,
+          "paddingRight": 40
+        },
+        "tablet": {
+          "paddingLeft": 24,
+          "paddingRight": 24
+        },
+        "mobile": {
+          "paddingTop": 44,
+          "paddingBottom": 44,
+          "paddingLeft": 16,
+          "paddingRight": 16
+        }
+      },
+      "children": [
+        {
+          "id": "pls-head",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "stackOn": "never"
+          },
+          "styles": {
+            "base": {
+              "maxWidth": 1200,
+              "marginLeft": "auto",
+              "marginRight": "auto"
+            }
+          },
+          "children": [
+            {
+              "id": "pls-head-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "pls-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "{{heading}}",
+                    "headingLevel": 2
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "pls-grid",
+          "type": "row",
+          "props": {
+            "gap": 5,
+            "stackOn": "mobile"
+          },
+          "styles": {
+            "base": {
+              "maxWidth": 1200,
+              "marginLeft": "auto",
+              "marginRight": "auto"
+            }
+          },
+          "children": [
+            {
+              "id": "pls-tile",
+              "type": "column",
+              "props": {
+                "span": "{{span}}",
+                "background": "{{tone}}",
+                "repeat": "slides"
+              },
+              "children": [
+                {
+                  "id": "pls-img",
+                  "type": "image",
+                  "props": {
+                    "image": "{{image}}"
+                  }
+                },
+                {
+                  "id": "pls-cap",
+                  "type": "text",
+                  "props": {
+                    "text": "{{caption}}",
+                    "width": "full"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

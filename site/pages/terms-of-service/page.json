@@ -1,0 +1,341 @@
+{
+  "version": 2,
+  "nodes": [
+    {
+      "id": "head",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "pg-form-head",
+        "values": {
+          "trail": [],
+          "crumb": "Terms of Service",
+          "headline": "Terms of Service",
+          "note": "Last Updated: 03/19/2026"
+        }
+      }
+    },
+    {
+      "id": "terms",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "pg-legal",
+        "values": {
+          "intro": [
+            {
+              "text": "These Terms of Service (\"Terms\") govern your access to and use of the website located at <a href=\"https://www.easttexasmack.com\">https://www.easttexasmack.com</a>/(the \"Site\"), which is operated by East Texas Mack (\"Company,\" \"we,\" \"us,\" or \"our\")."
+            },
+            {
+              "text": "By accessing or using the Site, you agree to be bound by these Terms. If you do not agree, you must not access or use the Site."
+            }
+          ],
+          "sections": [
+            {
+              "slug": "s1",
+              "heading": "1. Who We Are and What the Site Provides",
+              "copy": [
+                {
+                  "text": "The Site provides information about our dealership, products, services, inventory, promotions, and other online features (collectively, the \"Services\"). The Services are provided for informational and business purposes only and may be updated, modified, or discontinued at any time."
+                },
+                {
+                  "text": "Certain features of the Site, including scheduling tools, chat features, payment services, lead forms, inventory feeds, or other integrations, may be operated or supported by third parties and may be subject to additional terms, conditions, or policies."
+                }
+              ]
+            },
+            {
+              "slug": "s2",
+              "heading": "2. Eligibility and Authority",
+              "copy": [
+                {
+                  "text": "You must be at least the age of majority in your state or province of residence to use the Site."
+                },
+                {
+                  "text": "If you are accessing or using the Site on behalf of a business or other legal entity, you represent and warrant that you have the authority to bind that entity to these Terms."
+                }
+              ]
+            },
+            {
+              "slug": "s3",
+              "heading": "3. Acceptable Use",
+              "copy": [
+                {
+                  "text": "You agree not to use the Site in any manner that:"
+                },
+                {
+                  "bullets": [
+                    {
+                      "item": "Violates any applicable law or regulation"
+                    },
+                    {
+                      "item": "Infringes or misappropriates intellectual property, privacy, or other rights"
+                    },
+                    {
+                      "item": "Attempts to gain unauthorized access to systems, accounts, or data"
+                    },
+                    {
+                      "item": "Interferes with or disrupts the security or operation of the Site"
+                    },
+                    {
+                      "item": "Uploads or transmits malware, viruses, or harmful code"
+                    },
+                    {
+                      "item": "Uses automated means to scrape, crawl, or harvest data without permission"
+                    },
+                    {
+                      "item": "Submits false, misleading, or fraudulent information"
+                    },
+                    {
+                      "item": "Harasses, abuses, defames, threatens, or discriminates against others"
+                    }
+                  ]
+                },
+                {
+                  "text": "We reserve the right to suspend or terminate access to the Site for violations of these Terms."
+                }
+              ]
+            },
+            {
+              "slug": "s4",
+              "heading": "4. Information Accuracy and No Reliance",
+              "copy": [
+                {
+                  "text": "We strive to keep Site content accurate and current; however, the Site may contain errors, omissions, or outdated information, including information related to:"
+                },
+                {
+                  "bullets": [
+                    {
+                      "item": "Pricing or promotions"
+                    },
+                    {
+                      "item": "Inventory or availability"
+                    },
+                    {
+                      "item": "Specifications or descriptions"
+                    },
+                    {
+                      "item": "Financing, leasing, or service offerings"
+                    }
+                  ]
+                },
+                {
+                  "text": "Content on the Site is provided for general informational purposes only and should not be relied upon as final or binding. We may update or correct information at any time without notice."
+                }
+              ]
+            },
+            {
+              "slug": "s5",
+              "heading": "5. Inventory, Pricing, and Availability Disclaimer",
+              "copy": [
+                {
+                  "text": "Inventory listings and related details are provided for convenience and may not reflect real-time availability. Prices, incentives, specifications, and availability are subject to change and verification at the dealership."
+                },
+                {
+                  "text": "The Site may include third-party inventory feeds or integrations. We are not responsible for delays, inaccuracies, or errors caused by third-party systems."
+                }
+              ]
+            },
+            {
+              "slug": "s6",
+              "heading": "6. Quotes, Leads, and Communications",
+              "copy": [
+                {
+                  "text": "When you submit a form, request information, schedule an appointment, or otherwise contact us through the Site, you agree that:"
+                },
+                {
+                  "bullets": [
+                    {
+                      "item": "The information you provide is accurate and current"
+                    },
+                    {
+                      "item": "We may contact you using the contact information you provide, including by phone, email, or text message, to respond to your request and provide relevant information about our products or services"
+                    }
+                  ]
+                },
+                {
+                  "text": "You may opt out of marketing communications at any time by following the instructions included in the message or by contacting us directly. Opting out of marketing communications does not affect transactional or service-related communications."
+                }
+              ]
+            },
+            {
+              "slug": "s7",
+              "heading": "7. Third-Party Services and Links",
+              "copy": [
+                {
+                  "text": "The Site may contain links to third-party websites, tools, or services. We do not control and are not responsible for the content, policies, or practices of third parties."
+                },
+                {
+                  "text": "Your use of third-party services is at your own risk and may be governed by the third party's terms and policies."
+                }
+              ]
+            },
+            {
+              "slug": "s8",
+              "heading": "8. Intellectual Property",
+              "copy": [
+                {
+                  "text": "All content on the Site, including text, images, graphics, logos, videos, designs, and software, is owned by the Company or its licensors and is protected by intellectual property laws."
+                },
+                {
+                  "text": "You may access and use the Site for your personal, non-commercial use only. You may not reproduce, distribute, modify, or exploit Site content without prior written permission."
+                }
+              ]
+            },
+            {
+              "slug": "s9",
+              "heading": "9. User Submissions",
+              "copy": [
+                {
+                  "text": "If you submit reviews, comments, photos, feedback, ideas, or other materials (\"Submissions\"), you grant the Company a non-exclusive, worldwide, royalty-free license to use, reproduce, modify, display, and distribute such Submissions for business and marketing purposes."
+                },
+                {
+                  "text": "You represent that you have the rights necessary to provide the Submissions and that they do not violate any law or third-party rights."
+                },
+                {
+                  "text": "We are not obligated to review, publish, or retain Submissions and may remove them at any time."
+                }
+              ]
+            },
+            {
+              "slug": "s10",
+              "heading": "10. Privacy",
+              "copy": [
+                {
+                  "text": "Our collection and use of personal information is governed by our Privacy Policy, available at: <a href=\"#\">Privacy Policy</a>."
+                }
+              ]
+            },
+            {
+              "slug": "s11",
+              "heading": "11. Accessibility",
+              "copy": [
+                {
+                  "text": "We are committed to providing an accessible online experience. If you experience difficulty accessing content or features on the Site, <a href=\"#\">please contact us</a>."
+                }
+              ]
+            },
+            {
+              "slug": "s12",
+              "heading": "12. Disclaimer of Warranties",
+              "copy": [
+                {
+                  "text": "The Site and Services are provided on an \"as is\" and \"as available\" basis. To the fullest extent permitted by law, we disclaim all warranties, express or implied, including warranties of merchantability, fitness for a particular purpose, non-infringement, and availability."
+                },
+                {
+                  "text": "We do not guarantee that the Site will be uninterrupted, secure, error-free, or free of harmful components."
+                }
+              ]
+            },
+            {
+              "slug": "s13",
+              "heading": "13. Limitation of Liability",
+              "copy": [
+                {
+                  "text": "To the fullest extent permitted by law, the Company and its officers, directors, employees, affiliates, agents, contractors, suppliers, and service providers shall not be liable for any indirect, incidental, consequential, special, punitive, or exemplary damages arising out of or related to your use of the Site or Services."
+                },
+                {
+                  "text": "If liability cannot be excluded, it will be limited to the maximum extent permitted by applicable law."
+                }
+              ]
+            },
+            {
+              "slug": "s14",
+              "heading": "14. Indemnification",
+              "copy": [
+                {
+                  "text": "You agree to indemnify and hold harmless the Company and its officers, directors, employees, affiliates, agents, contractors, suppliers, and service providers from any claims, liabilities, damages, or expenses (including reasonable attorneys' fees) arising out of:"
+                },
+                {
+                  "bullets": [
+                    {
+                      "item": "Your use of the Site"
+                    },
+                    {
+                      "item": "Your violation of these Terms"
+                    },
+                    {
+                      "item": "Your violation of any law or third-party rights"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "slug": "s15",
+              "heading": "15. Dispute Resolution, Arbitration, and Class Action Waiver",
+              "copy": [
+                {
+                  "text": "Please read this section carefully. It affects your legal rights."
+                },
+                {
+                  "text": "To the fullest extent permitted by law, any dispute arising out of or relating to these Terms or your use of the Site shall be resolved through binding arbitration, rather than in court, except for claims eligible for small claims court."
+                },
+                {
+                  "text": "Arbitration will be administered by the American Arbitration Association (AAA) under its applicable rules."
+                },
+                {
+                  "text": "Unless otherwise required by law, arbitration will take place in Gregg County, Texas or may be conducted remotely."
+                },
+                {
+                  "text": "You agree that disputes will be brought on an individual basis only and waive any right to participate in a class action, class arbitration, or representative proceeding."
+                },
+                {
+                  "text": "By agreeing to these Terms, you waive the right to a trial by jury."
+                },
+                {
+                  "text": "If any portion of this section is found unenforceable, that portion will be severed and the remainder will remain in effect."
+                }
+              ]
+            },
+            {
+              "slug": "s16",
+              "heading": "16. Time Limit to Bring Claims",
+              "copy": [
+                {
+                  "text": "To the fullest extent permitted by law, any claim arising out of or relating to these Terms or the Site must be brought within one (1) year after the claim arises."
+                }
+              ]
+            },
+            {
+              "slug": "s17",
+              "heading": "17. Termination",
+              "copy": [
+                {
+                  "text": "We may suspend or terminate access to the Site at any time, with or without notice, if we believe these Terms have been violated or the Site has been misused."
+                },
+                {
+                  "text": "Provisions intended to survive termination shall survive, including disclaimers, limitation of liability, indemnification, and dispute resolution."
+                }
+              ]
+            },
+            {
+              "slug": "s18",
+              "heading": "18. Governing Law",
+              "copy": [
+                {
+                  "text": "These Terms shall be governed by the laws of the State of Texas, without regard to conflict of law principles."
+                }
+              ]
+            },
+            {
+              "slug": "s19",
+              "heading": "19. Changes to These Terms",
+              "copy": [
+                {
+                  "text": "We may update these Terms from time to time. Updates will be posted on this page with a revised \"Last Updated\" date. Continued use of the Site after changes are posted constitutes acceptance of the updated Terms."
+                }
+              ]
+            },
+            {
+              "slug": "s20",
+              "heading": "20. Contact Us",
+              "copy": [
+                {
+                  "text": "If you have questions about these Terms, please contact: <a href=\"mailto:easttexasmack2024@gmail.com\">easttexasmack2024@gmail.com</a>"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

@@ -1,9 +1,152 @@
 {
   "slug": "welcome",
-  "title": "Welcome to our new site",
-  "date": "2026-08-01",
-  "description": "A faster site, live inventory, and easier ways to reach the right department.",
-  "coverImage": null,
+  "title": "Welcome to Our New Website Powered by Buzznerd Trucks",
+  "date": "2024-07-16",
+  "description": "East Texas Mack is a Mack Truck dealership in Longview, Texas. We have over 40 years of experience...",
+  "coverImage": "/images/pages/post-welcome.jpg",
   "status": "published",
-  "body": "<p>We have rebuilt our website around live inventory. Every truck, trailer and part you see is what is actually on the lot, updated straight from our system.</p><p>Browse what is in stock, or get in touch and we will help you find the right unit.</p>"
+  "version": 2,
+  "css": "[data-bz-node=\"post-h\"] h3 { font-size: 22px; margin: 0 0 16px; }\n[data-bz-node^=\"post-p\"] p { font-size: 18px; line-height: 1.75; color: #2a2b2f; margin: 0 0 24px; }\n[data-bz-node=\"post-logos\"] { margin-top: 24px; }\n[data-bz-node=\"post-logos\"] img { object-fit: contain; }",
+  "nodes": [
+    {
+      "id": "post-band",
+      "type": "section",
+      "props": {
+        "width": "full",
+        "background": "card",
+        "paddingY": 0
+      },
+      "styles": {
+        "base": {
+          "paddingTop": 0,
+          "paddingBottom": 80,
+          "paddingLeft": 40,
+          "paddingRight": 40
+        },
+        "tablet": {
+          "paddingLeft": 24,
+          "paddingRight": 24
+        },
+        "mobile": {
+          "paddingBottom": 48,
+          "paddingLeft": 16,
+          "paddingRight": 16
+        }
+      },
+      "children": [
+        {
+          "id": "post-row",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "align": "start",
+            "stackOn": "tablet"
+          },
+          "styles": {
+            "base": {
+              "maxWidth": 820,
+              "marginLeft": "auto",
+              "marginRight": "auto"
+            }
+          },
+          "children": [
+            {
+              "id": "post-text",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "post-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "Welcome To Our New Website",
+                    "headingLevel": 3
+                  }
+                },
+                {
+                  "id": "post-p1",
+                  "type": "text",
+                  "props": {
+                    "text": "East Texas Mack is a Mack Truck dealership in Longview, Texas. We have over 40 years of experience and specialize in serving the refuse, construction, and off-road sectors. Our services include a Mack factory-trained service department, knowledgeable parts department, and flexible financing with competitive rates.",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "post-p2",
+                  "type": "text",
+                  "props": {
+                    "text": "We understand the importance of your truck repair needs. That's why we have a comprehensive body shop to meet all your repair requirements. At East Texas Mack, we aim to deliver excellent customer service and build long-term relationships with our clients. You are not just a customer at East Texas Mack; you are part of our family.",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "post-p3",
+                  "type": "text",
+                  "props": {
+                    "text": "For our new site we've collaborated with our web partner <a href=\"https://www.buzznerd.com/\">Buzznerd.com</a>. Buzznerd has extensive technical experience in web design and internet marketing, and we are proud to utilize their expertise in showcasing our trucks and services.",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "post-logos",
+                  "type": "row",
+                  "props": {
+                    "gap": 4,
+                    "align": "center",
+                    "stackOn": "never"
+                  },
+                  "children": [
+                    {
+                      "id": "post-logo-a",
+                      "type": "column",
+                      "props": {
+                        "span": 3
+                      },
+                      "children": [
+                        {
+                          "id": "post-est",
+                          "type": "image",
+                          "props": {
+                            "image": {
+                              "src": "/images/pages/post-est-logo.jpg",
+                              "alt": "East Texas Mack",
+                              "width": 300,
+                              "height": 300
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "id": "post-logo-b",
+                      "type": "column",
+                      "props": {
+                        "span": 5
+                      },
+                      "children": [
+                        {
+                          "id": "post-bn",
+                          "type": "image",
+                          "props": {
+                            "image": {
+                              "src": "/images/pages/buzznerd-logo.png",
+                              "alt": "Buzznerd",
+                              "width": 1089,
+                              "height": 227
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
 }

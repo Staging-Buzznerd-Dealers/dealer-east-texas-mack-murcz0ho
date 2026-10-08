@@ -1,0 +1,139 @@
+{
+  "version": 2,
+  "nodes": [
+    {
+      "id": "head",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "pg-form-head",
+        "values": {
+          "trail": [],
+          "crumb": "Holiday Slide Ideas",
+          "headline": "Holiday Slide Ideas"
+        }
+      }
+    },
+    {
+      "id": "halloween",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "pg-slides",
+        "values": {
+          "bg": "card",
+          "span": 4,
+          "heading": "Halloween",
+          "slides": [
+            {
+              "image": {
+                "src": "/images/pages/holiday-halloween-1.jpg",
+                "alt": "Halloween slide idea 1",
+                "width": 1600,
+                "height": 1067
+              },
+              "caption": "Happy Halloween",
+              "tone": "accent"
+            },
+            {
+              "image": {
+                "src": "/images/pages/holiday-halloween-2.jpg",
+                "alt": "Halloween slide idea 2",
+                "width": 1600,
+                "height": 1067
+              },
+              "caption": "Happy Halloween",
+              "tone": "accent"
+            },
+            {
+              "image": {
+                "src": "/images/pages/holiday-halloween-3.jpg",
+                "alt": "Halloween slide idea 3",
+                "width": 1600,
+                "height": 1067
+              },
+              "caption": "Happy Halloween",
+              "tone": "accent"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "thanksgiving",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "pg-slides",
+        "values": {
+          "bg": "paper",
+          "span": 6,
+          "heading": "Thanksgiving",
+          "slides": [
+            {
+              "image": {
+                "src": "/images/pages/holiday-thanksgiving-1.jpg",
+                "alt": "Thanksgiving slide idea 1",
+                "width": 1600,
+                "height": 1069
+              },
+              "caption": "Happy Thanksgiving",
+              "tone": "none"
+            },
+            {
+              "image": {
+                "src": "/images/pages/holiday-thanksgiving-2.jpg",
+                "alt": "Thanksgiving slide idea 2",
+                "width": 1067,
+                "height": 1600
+              },
+              "caption": "Happy Thanksgiving",
+              "tone": "none"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "christmas",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "pg-slides",
+        "values": {
+          "bg": "card",
+          "span": 4,
+          "heading": "Christmas",
+          "slides": [
+            {
+              "image": {
+                "src": "/images/pages/holiday-christmas.jpg",
+                "alt": "Christmas slide idea 1",
+                "width": 1067,
+                "height": 1600
+              },
+              "caption": "Merry Christmas",
+              "tone": "none"
+            },
+            {
+              "image": {
+                "src": "/images/pages/holiday-christmas.jpg",
+                "alt": "Christmas slide idea 2",
+                "width": 1067,
+                "height": 1600
+              },
+              "caption": "Merry Christmas",
+              "tone": "none"
+            },
+            {
+              "image": {
+                "src": "/images/pages/holiday-christmas.jpg",
+                "alt": "Christmas slide idea 3",
+                "width": 1067,
+                "height": 1600
+              },
+              "caption": "Merry Christmas",
+              "tone": "none"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}
