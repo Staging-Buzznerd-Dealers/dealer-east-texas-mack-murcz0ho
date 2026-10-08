@@ -374,6 +374,11 @@
               "a": "Our long-term customer relationships, industry recognition, fleet expertise, and exclusive focus on Mack trucks help distinguish our dealership from general heavy-duty truck providers."
             }
           ]
+        },
+        "snapshots": {
+          "pf-faq": {
+            "items": []
+          }
         }
       }
     },
