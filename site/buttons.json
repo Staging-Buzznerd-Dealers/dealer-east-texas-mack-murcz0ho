@@ -48,8 +48,7 @@
   {
     "id": "book-service",
     "label": "Schedule Service →",
-    "url": "/contact#form-request-info",
-    "formId": "request-info",
+    "url": "/service-appointments",
     "style": "link",
     "intent": "book-service",
     "newTab": false,
@@ -58,7 +57,7 @@
   {
     "id": "shop-parts",
     "label": "Shop Parts →",
-    "url": "/store/parts",
+    "url": "/parts",
     "style": "link",
     "intent": "shop-parts",
     "newTab": false,
@@ -113,7 +112,7 @@
   {
     "id": "about-us",
     "label": "About Us",
-    "url": "/#about",
+    "url": "/about-us",
     "style": "link",
     "intent": "about",
     "newTab": false,

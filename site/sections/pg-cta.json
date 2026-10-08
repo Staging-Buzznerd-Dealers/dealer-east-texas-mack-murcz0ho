@@ -3,7 +3,7 @@
   "id": "pg-cta",
   "name": "Call-to-action band",
   "description": "Navy band: heading, short paragraph, the rooftop city and phone from Locations, a dot-separated list of points and one button.",
-  "css": "[data-bz-section=\"pg-cta\"] .bz-section { color: var(--card); text-align: center; }\n[data-bz-section=\"pg-cta\"] .bz-headingblock h2 { font-size: 32px; margin: 0 0 16px; color: var(--card); }\n[data-bz-section=\"pg-cta\"] [data-bz-node=\"pcta-body\"] p { font-size: 17px; line-height: 1.5; color: rgba(255, 255, 255, 0.85); max-width: 620px; margin: 0 auto; }\n[data-bz-section=\"pg-cta\"] [data-bz-node^=\"pcta-line\"] p { font-size: 17px; line-height: 1.5; color: rgba(255, 255, 255, 0.85); max-width: 620px; margin: 0 auto 24px; }\n[data-bz-section=\"pg-cta\"] .bz-block[data-bz-node=\"pcta-body\"]:not(:has(p)) { display: none; }\n[data-bz-section=\"pg-cta\"] .bz-col[data-bz-node=\"pcta-points\"] { display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 14px; margin-bottom: 28px; }\n[data-bz-section=\"pg-cta\"] [data-bz-node^=\"pcta-point\"] p { font-size: 14px; line-height: normal; color: #c9cbd0; margin: 0; }\n[data-bz-section=\"pg-cta\"] [data-bz-node^=\"pcta-point\"] + [data-bz-node^=\"pcta-point\"] p::before { content: \"•\"; margin-right: 14px; color: rgba(255, 255, 255, 0.55); }\n[data-bz-section=\"pg-cta\"] .bz-btns { justify-content: center; margin: 0; }\n[data-bz-section=\"pg-cta\"] .bz-btn { font: 700 16px / normal var(--font-body); padding: 16px 32px; background: var(--card); color: var(--accent-dark); border-color: var(--card); }",
+  "css": "[data-bz-section=\"pg-cta\"] .bz-section { color: var(--card); text-align: center; }\n[data-bz-section=\"pg-cta\"] .bz-headingblock h2 { font-size: 32px; margin: 0 0 16px; color: var(--card); }\n[data-bz-section=\"pg-cta\"] [data-bz-node=\"pcta-body\"] p { font-size: 17px; line-height: 1.5; color: rgba(255, 255, 255, 0.85); max-width: 620px; margin: 0 auto; }\n[data-bz-section=\"pg-cta\"] [data-bz-node^=\"pcta-line\"] p { font-size: 17px; line-height: 1.5; color: rgba(255, 255, 255, 0.85); max-width: 620px; margin: 0 auto 24px; }\n[data-bz-section=\"pg-cta\"] .bz-block[data-bz-node=\"pcta-body\"]:not(:has(p)) { display: none; }\n[data-bz-section=\"pg-cta\"] .bz-col[data-bz-node=\"pcta-points\"] { display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 14px; margin-bottom: 28px; }\n[data-bz-section=\"pg-cta\"] [data-bz-node^=\"pcta-point\"] p { font-size: 14px; line-height: normal; color: #c9cbd0; margin: 0; }\n[data-bz-section=\"pg-cta\"] [data-bz-node^=\"pcta-point\"] + [data-bz-node^=\"pcta-point\"] p::before { content: \"•\"; margin-right: 14px; color: rgba(255, 255, 255, 0.55); }\n[data-bz-section=\"pg-cta\"] .bz-btns { justify-content: center; margin: 0; }\n[data-bz-section=\"pg-cta\"] .bz-btn { font: 700 16px / normal var(--font-body); padding: 16px 32px; }\n[data-bz-section=\"pg-cta\"] .bz-btn--secondary { background: var(--card); color: var(--accent-dark); border-color: var(--card); }",
   "props": [
     {
       "key": "heading",
@@ -59,6 +59,22 @@
       "type": "url",
       "label": "Button goes to",
       "default": "/contact"
+    },
+    {
+      "key": "ctaLook",
+      "type": "select",
+      "label": "Button colour",
+      "options": [
+        {
+          "value": "secondary",
+          "label": "White"
+        },
+        {
+          "value": "primary",
+          "label": "Red"
+        }
+      ],
+      "default": "secondary"
     }
   ],
   "nodes": [
@@ -175,7 +191,7 @@
                       {
                         "label": "{{ctaLabel}}",
                         "url": "{{ctaUrl}}",
-                        "style": "secondary",
+                        "style": "{{ctaLook}}",
                         "intent": "contact"
                       }
                     ],

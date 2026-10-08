@@ -1,0 +1,4 @@
+/* Parts — the "why" statistics are centred cards. */
+.bz-sharedsection[data-bz-node="why"] .bz-col[data-bz-node^="pc-body"] { text-align: center; }
+.bz-sharedsection[data-bz-node="why"] .bz-col[data-bz-node^="pc-body"] p { margin-inline: auto; }
+.bz-sharedsection[data-bz-node="why"] .bz-block[data-bz-node^="pc-num"] p { font-size: 26px; }

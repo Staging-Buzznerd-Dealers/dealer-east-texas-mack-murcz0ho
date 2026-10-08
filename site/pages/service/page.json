@@ -1,0 +1,474 @@
+{
+  "version": 2,
+  "nodes": [
+    {
+      "id": "hero",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "pg-hero",
+        "values": {
+          "crumb": "Service",
+          "eyebrow": "Service",
+          "headline": "Heavy-Duty Truck Service & Repair in Longview, TX",
+          "subhead": "Fast Turnaround. Certified Technicians. Built for Fleet Uptime.",
+          "body": "At East Texas Mack, we provide complete truck service and repair solutions for fleets, municipalities, owner-operators, and over-the-road trucking operations across East Texas. Our operation is engineered around a single priority: keeping your trucks on the road and minimizing downtime. To keep your fleet moving, we back our shop with aggressive turnaround commitments, delivering scheduled preventative maintenance completed within the same day, rapid diagnostic evaluations for vehicles arriving before noon, and complex major engine repairs completed in as little as 24 hours depending on component availability. We also offer fully dispatched mobile repair support and customized fleet maintenance programs.",
+          "image": {
+            "src": "/images/pages/service-hero.jpg",
+            "alt": "Mack Anthem truck",
+            "width": 1024,
+            "height": 751
+          }
+        }
+      }
+    },
+    {
+      "id": "intro",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "pg-text",
+        "values": {
+          "bg": "card",
+          "copy": [
+            {
+              "text": "Proper diagnostics, preventative scheduling, and high-standard repairs form the backbone of a resilient fleet strategy, preventing minor component fatigue from cascading into catastrophic failure on the highway."
+            }
+          ],
+          "links": [
+            {
+              "label": "Explore Fleet Maintenance Strategies",
+              "url": "/fleet-maintenance-strategies",
+              "style": "primary"
+            },
+            {
+              "label": "View Mack MP Engine Guide",
+              "url": "/mack-mp-engine-guide",
+              "style": "link"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "capabilities",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "pg-text",
+        "values": {
+          "bg": "paper",
+          "eyebrow": "Capabilities",
+          "heading": "Complete Truck Service Capabilities",
+          "copy": [
+            {
+              "text": "Our certified facility services Mack trucks along with all heavy-duty commercial makes and models across demanding regional industries. We specialize in supporting high-duty-cycle operations, including refuse and waste management, heavy construction haulers, oilfield support fleets, municipal utility vehicles, and long-haul over-the-road trucking fleets. Our factory-trained technicians handle every tier of maintenance, ranging from routine fluid inspections, precision wheel alignments, advanced electronic troubleshooting, and engine overhauls to on-site mobile repair, custom fabrication, body shop repairs, and structured fleet maintenance support."
+            }
+          ],
+          "links": [
+            {
+              "label": "View Truck Parts Department",
+              "url": "/parts",
+              "style": "link"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "services",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "pg-cards",
+        "values": {
+          "bg": "card",
+          "look": "center",
+          "span": 6,
+          "eyebrow": "Our Services",
+          "heading": "What We Service",
+          "cards": [
+            {
+              "title": "Preventative Maintenance",
+              "copy": [
+                {
+                  "text": "Structured preventative care is the most effective defense against unbudgeted roadside breakdowns and early component wear. Our comprehensive maintenance programs encompass routine oil and filter replacements, thorough brake and suspension geometry checks, precision wheel alignments, cooling system pressure testing, and advanced emissions monitoring."
+                }
+              ],
+              "link1Label": "Explore Preventative Maintenance Strategies",
+              "link1Url": "/preventative-maintenance-planning"
+            },
+            {
+              "title": "Diagnostics & Troubleshooting",
+              "copy": [
+                {
+                  "text": "When a vehicle arrives at our Longview shop before noon, our team initiates same-day diagnostic procedures utilizing factory-grade fault code analysis, advanced electronic diagnostics, and real-time system performance evaluation to deliver accurate, permanent fixes on the first visit."
+                }
+              ],
+              "link1Label": "Explore Mack Engine Diagnostics",
+              "link1Url": "/engine-diagnostics-guide"
+            },
+            {
+              "title": "Emissions System Service (DPF & SCR)",
+              "copy": [
+                {
+                  "text": "Our specialized emissions services include Diesel Particulate Filter (DPF) cleaning and forced regeneration, selective catalytic reduction (SCR) system diagnostics, Diesel Exhaust Fluid (DEF) quality testing, and sensor line repair, protecting full engine output and long-term fuel efficiency."
+                }
+              ],
+              "link1Label": "Explore Fleet Uptime Strategies",
+              "link1Url": "/fleet-uptime-strategies"
+            },
+            {
+              "title": "Engine Repair & Major Component Work",
+              "copy": [
+                {
+                  "text": "We handle complete engine rebuilds, high-pressure fuel system servicing, turbocharger assembly replacements, cooling system overhauls, and aftertreatment rebuilds, with typical turnarounds as fast as 24 hours on qualifying repairs."
+                }
+              ],
+              "link1Label": "Compare Truck Parts Strategies",
+              "link1Url": "/oem-vs-aftermarket-parts"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "fabrication",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "pg-split",
+        "values": {
+          "bg": "ink",
+          "sides": [
+            {
+              "eyebrow": "Fabrication",
+              "heading": "Fabrication & Body Shop",
+              "copy": [
+                {
+                  "text": "Beyond mechanical repairs, our Longview facility features a full-service commercial body shop built to manage severe structural and cosmetic repairs. Equipped with two full-size paint booths and dedicated fabrication bays, our body shop specialists handle everything from cab alignment and structural frame repair to custom metal fabrication. We also provide specialized mounting capabilities for any commercial truck body, including dump bodies, roll-off systems, and custom vocational equipment."
+                }
+              ]
+            },
+            {
+              "panel": "card",
+              "image": {
+                "src": "/images/pages/service-fabrication.jpg",
+                "alt": "Mack chassis cab truck",
+                "width": 800,
+                "height": 500
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "mobile",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "pg-text",
+        "values": {
+          "bg": "card",
+          "eyebrow": "On-Site Support",
+          "heading": "Mobile Truck Repair & On-Site Service",
+          "copy": [
+            {
+              "text": "When bringing a truck to our shop isn't practical, our fleet of mobile service units brings certified shop capabilities directly to your job site, yard, or roadside location. We operate two fully equipped mobile service trucks capable of handling emergency roadside repairs, scheduled fleet yard maintenance, and diagnostic troubleshooting. By completing the majority of repairs directly on-site without requiring transport back to the shop, we eliminate towing expenses and drastically cut operational disruption."
+            }
+          ],
+          "links": [
+            {
+              "label": "Explore Fleet Maintenance Planning",
+              "url": "/fleet-maintenance-strategies",
+              "style": "link"
+            }
+          ],
+          "boxes": [
+            {
+              "title": "Fleet Maintenance & Uptime Solutions",
+              "text": "We partner closely with commercial fleet operators to simplify long-term asset management through tailored support programs. Our services include full-service leasing plans, customized Mack Service Contracts, and priority service scheduling designed to streamline routine upkeep, flatten unexpected repair costs, and sustain high uptime across your entire roster of trucks.",
+              "linkLabel": "View Fleet Maintenance Guide",
+              "linkUrl": "/fleet-maintenance-strategies",
+              "link2Label": "Learn About Parts Reliability",
+              "link2Url": "/oem-vs-aftermarket-parts"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "why",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "pg-cards",
+        "values": {
+          "bg": "paper",
+          "span": 4,
+          "eyebrow": "Why Choose Us",
+          "heading": "Why East Texas Mack",
+          "cards": [
+            {
+              "title": "Certified Expertise",
+              "copy": [
+                {
+                  "text": "Our service bay is powered by highly trained master technicians holding specialized credentials, including Mack Master Technician certifications, Cummins Certified status, Allison Transmission certifications, and Mack Uptime Certified specialization."
+                }
+              ]
+            },
+            {
+              "title": "Largest Service Capacity in the Region",
+              "copy": [
+                {
+                  "text": "22 dedicated service bays and 6 specialized fabrication bays — one of the largest single-location commercial service operations in East Texas."
+                }
+              ],
+              "number": "22 + 6"
+            },
+            {
+              "title": "Built for Commercial Fleets",
+              "copy": [
+                {
+                  "text": "Approximately 80% of our daily customer volume serves commercial fleet operations across refuse, construction, oil and gas, municipal services, and over-the-road transportation."
+                }
+              ],
+              "number": "80%"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "process",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "pg-cards",
+        "values": {
+          "bg": "ink",
+          "span": 5,
+          "eyebrow": "Process",
+          "heading": "Our Service Process",
+          "cards": [
+            {
+              "title": "Schedule or Arrival",
+              "copy": [
+                {
+                  "text": "Schedule service in advance or arrive early for same-day diagnostics."
+                }
+              ],
+              "number": "1"
+            },
+            {
+              "title": "Diagnostics",
+              "copy": [
+                {
+                  "text": "Identify the root cause of the issue."
+                }
+              ],
+              "number": "2"
+            },
+            {
+              "title": "Repair Plan",
+              "copy": [
+                {
+                  "text": "Receive a clear scope and timeline for repairs."
+                }
+              ],
+              "number": "3"
+            },
+            {
+              "title": "Service Execution",
+              "copy": [
+                {
+                  "text": "Repairs are completed by certified technicians."
+                }
+              ],
+              "number": "4"
+            },
+            {
+              "title": "Return to Operation",
+              "copy": [
+                {
+                  "text": "Your truck is tested and prepared to return to operation safely and efficiently."
+                }
+              ],
+              "number": "5"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "resources",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "pg-cards",
+        "values": {
+          "bg": "card",
+          "span": 3,
+          "eyebrow": "Resources",
+          "heading": "Explore Our Truck Service & Fleet Maintenance Resources",
+          "cards": [
+            {
+              "title": "Mack MP Engine Maintenance Guide",
+              "copy": [
+                {
+                  "text": "Learn how preventative maintenance reduces major engine failures and improves reliability."
+                }
+              ],
+              "link1Label": "Explore Mack MP Engine Guide",
+              "link1Url": "/mack-mp-engine-guide"
+            },
+            {
+              "title": "Fleet Maintenance Strategy Guide",
+              "copy": [
+                {
+                  "text": "Improve uptime with proactive fleet maintenance planning and scheduling."
+                }
+              ],
+              "link1Label": "Explore Fleet Maintenance Strategies",
+              "link1Url": "/fleet-maintenance-strategies"
+            },
+            {
+              "title": "OEM vs Aftermarket Parts Guide",
+              "copy": [
+                {
+                  "text": "Compare replacement part strategies and long-term reliability considerations."
+                }
+              ],
+              "link1Label": "Compare OEM vs Aftermarket Parts",
+              "link1Url": "/oem-vs-aftermarket-parts"
+            },
+            {
+              "title": "Heavy-Duty Truck Parts Support",
+              "copy": [
+                {
+                  "text": "Explore available replacement components and parts availability."
+                }
+              ],
+              "link1Label": "View Truck Parts Department",
+              "link1Url": "/parts"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "coverage",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "pg-text",
+        "values": {
+          "bg": "paper",
+          "eyebrow": "Coverage",
+          "heading": "Serving Longview & East Texas",
+          "addressLine": {
+            "source": "locations"
+          },
+          "copy": [
+            {
+              "text": "We serve customers across:"
+            }
+          ],
+          "chips": [
+            {
+              "label": "Longview"
+            },
+            {
+              "label": "Tyler"
+            },
+            {
+              "label": "Kilgore"
+            },
+            {
+              "label": "Marshall"
+            },
+            {
+              "label": "Sulphur Springs"
+            },
+            {
+              "label": "Mt. Pleasant"
+            },
+            {
+              "label": "Paris"
+            },
+            {
+              "label": "Surrounding East Texas region"
+            }
+          ],
+          "copyAfter": [
+            {
+              "text": "Our service reach extends up to 150 miles, including mobile truck service, fleet support, and parts delivery."
+            }
+          ],
+          "links": [
+            {
+              "label": "View Service Locations",
+              "url": "/locations",
+              "style": "link"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "cta",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "pg-cta",
+        "values": {
+          "heading": "Schedule Truck Service",
+          "body": "If your truck is experiencing performance issues, warning lights, or downtime concerns, our team is ready to help.",
+          "phoneLine": {
+            "source": "locations"
+          },
+          "points": [
+            {
+              "label": "Same-day diagnostics"
+            },
+            {
+              "label": "Mobile service"
+            },
+            {
+              "label": "Fleet maintenance programs"
+            },
+            {
+              "label": "Engine repair support"
+            },
+            {
+              "label": "Alignment services"
+            }
+          ],
+          "ctaLabel": "Schedule Truck Service →",
+          "ctaUrl": "/service-appointments"
+        }
+      }
+    },
+    {
+      "id": "faq",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "pg-faq",
+        "values": {
+          "items": [
+            {
+              "q": "How quickly can you diagnose a truck issue?",
+              "a": "We provide same-day diagnostics for trucks that arrive before noon."
+            },
+            {
+              "q": "Do you offer same-day service?",
+              "a": "Yes. Preventative maintenance can typically be completed the same day when scheduled."
+            },
+            {
+              "q": "Do you provide mobile repair services?",
+              "a": "Yes. Our mobile service trucks are equipped to handle most repairs on-site."
+            },
+            {
+              "q": "What types of fleets do you support?",
+              "a": "We primarily serve refuse, construction, oil & gas, municipal, and over-the-road fleets."
+            },
+            {
+              "q": "What makes your shop different?",
+              "a": "We combine certified technicians, large service capacity, mobile support, fabrication capabilities, and fast turnaround times to support demanding fleet operations."
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

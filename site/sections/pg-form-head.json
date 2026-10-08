@@ -1,0 +1,158 @@
+{
+  "version": 2,
+  "id": "pg-form-head",
+  "name": "Form page header",
+  "description": "Dark header for a form page: breadcrumb trail, H1 and an optional one-line note. The form itself sits in the band below.",
+  "css": "[data-bz-section=\"pg-form-head\"] .bz-block { padding-block: 0; }\n[data-bz-section=\"pg-form-head\"] .bz-block p { margin: 0; }\n[data-bz-section=\"pg-form-head\"] .bz-col[data-bz-node=\"pfh-crumbs\"] { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin-bottom: 16px; font-size: 13px; line-height: normal; color: var(--copy-on-dark); }\n[data-bz-section=\"pg-form-head\"] .bz-col[data-bz-node=\"pfh-crumbs\"] p { font-size: 13px; line-height: normal; color: var(--copy-on-dark); }\n[data-bz-section=\"pg-form-head\"] .bz-col[data-bz-node=\"pfh-crumbs\"] a { color: inherit; text-decoration: none; }\n[data-bz-section=\"pg-form-head\"] .bz-col[data-bz-node=\"pfh-crumbs\"] a:hover { color: var(--card); }\n[data-bz-section=\"pg-form-head\"] .bz-block[data-bz-node^=\"pfh-\"] { display: flex; align-items: baseline; }\n[data-bz-section=\"pg-form-head\"] .bz-block[data-bz-node^=\"pfh-trail\"]::after { content: \"/\"; margin-left: 8px; }\n[data-bz-section=\"pg-form-head\"] .bz-block[data-bz-node=\"pfh-home\"]::after { content: \"/\"; margin-left: 8px; }\n[data-bz-section=\"pg-form-head\"] .bz-block[data-bz-node=\"pfh-current\"] p { color: var(--card); }\n[data-bz-section=\"pg-form-head\"] [data-bz-node=\"pfh-h\"] h1 { font-size: 36px; line-height: normal; margin: 0 0 12px; color: var(--card); }\n[data-bz-section=\"pg-form-head\"] [data-bz-node=\"pfh-note\"] p { font-size: 15px; line-height: 1.5; color: #c9cbd0; max-width: 780px; }\n@media (max-width: 640px) { [data-bz-section=\"pg-form-head\"] [data-bz-node=\"pfh-h\"] h1 { font-size: 30px; } }",
+  "props": [
+    {
+      "key": "trail",
+      "type": "list",
+      "label": "Breadcrumb pages between Home and this page",
+      "fields": [
+        {
+          "key": "label",
+          "type": "text",
+          "label": "Page"
+        },
+        {
+          "key": "url",
+          "type": "url",
+          "label": "Link"
+        }
+      ]
+    },
+    {
+      "key": "crumb",
+      "type": "text",
+      "label": "Breadcrumb (this page)"
+    },
+    {
+      "key": "headline",
+      "type": "text",
+      "label": "Heading (H1)"
+    },
+    {
+      "key": "note",
+      "type": "textarea",
+      "label": "Note under the heading"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "pfh",
+      "type": "section",
+      "props": {
+        "width": "full",
+        "background": "ink",
+        "paddingY": 0
+      },
+      "styles": {
+        "base": {
+          "paddingTop": 32,
+          "paddingBottom": 48,
+          "paddingLeft": 40,
+          "paddingRight": 40
+        },
+        "tablet": {
+          "paddingLeft": 24,
+          "paddingRight": 24
+        },
+        "mobile": {
+          "paddingTop": 40,
+          "paddingBottom": 40,
+          "paddingLeft": 20,
+          "paddingRight": 20
+        }
+      },
+      "children": [
+        {
+          "id": "pfh-row",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "stackOn": "never"
+          },
+          "styles": {
+            "base": {
+              "maxWidth": 900,
+              "marginLeft": "auto",
+              "marginRight": "auto"
+            }
+          },
+          "children": [
+            {
+              "id": "pfh-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "pfh-crumbs-row",
+                  "type": "row",
+                  "props": {
+                    "gap": 0,
+                    "stackOn": "never"
+                  },
+                  "children": [
+                    {
+                      "id": "pfh-crumbs",
+                      "type": "column",
+                      "props": {
+                        "span": 12
+                      },
+                      "children": [
+                        {
+                          "id": "pfh-home",
+                          "type": "text",
+                          "props": {
+                            "text": "<a href=\"/\">Home</a>",
+                            "width": "full"
+                          }
+                        },
+                        {
+                          "id": "pfh-trail",
+                          "type": "text",
+                          "props": {
+                            "text": "<a href=\"{{url}}\">{{label}}</a>",
+                            "width": "full",
+                            "repeat": "trail"
+                          }
+                        },
+                        {
+                          "id": "pfh-current",
+                          "type": "text",
+                          "props": {
+                            "text": "{{crumb}}",
+                            "width": "full"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "pfh-h",
+                  "type": "heading",
+                  "props": {
+                    "text": "{{headline}}",
+                    "headingLevel": 1
+                  }
+                },
+                {
+                  "id": "pfh-note",
+                  "type": "text",
+                  "props": {
+                    "text": "{{note}}",
+                    "width": "full"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

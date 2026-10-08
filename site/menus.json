@@ -20,20 +20,20 @@
         {
           "id": "parts",
           "label": "Parts",
-          "type": "inventory",
+          "type": "page",
           "ref": "parts"
         },
         {
           "id": "service",
           "label": "Service",
-          "type": "url",
-          "url": "/service"
+          "type": "page",
+          "ref": "service"
         },
         {
           "id": "about",
           "label": "About Us",
-          "type": "url",
-          "url": "/#about"
+          "type": "page",
+          "ref": "about-us"
         }
       ]
     },
@@ -92,14 +92,14 @@
         {
           "id": "fq-about",
           "label": "About Us",
-          "type": "url",
-          "url": "/#about"
+          "type": "page",
+          "ref": "about-us"
         },
         {
           "id": "fq-service",
           "label": "Service",
-          "type": "url",
-          "url": "/service"
+          "type": "page",
+          "ref": "service"
         },
         {
           "id": "fq-financing",
