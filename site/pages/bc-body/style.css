@@ -1,0 +1,15 @@
+/* Header and intro sit on the 1200px container used by the handoff (the form-page header defaults to 900px). */
+.bz-sharedsection[data-bz-section="pg-form-head"] .bz-row[data-bz-node="pfh-row"] { max-width: 1200px; }
+.bz-sharedsection[data-bz-section="pg-form-head"] .bz-block[data-bz-node="pfh-h"] h1 { margin-bottom: 0; }
+.bz-sharedsection[data-bz-section="pg-form-head"] .bz-section { padding-bottom: 48px; }
+.bz-sharedsection[data-bz-section="pg-split"] .bz-headingblock h2 { font-size: 32px; margin-bottom: 24px; }
+.bz-sharedsection[data-bz-node="intro"] .bz-section { padding-top: 90px; padding-bottom: 160px; }
+.bz-sharedsection[data-bz-node="intro"] .bz-row[data-bz-node="ps-row"] { max-width: 1200px; margin-left: auto; margin-right: auto; column-gap: 60px; }
+.bz-sharedsection[data-bz-node="intro"] .bz-figure img { height: 420px; border-radius: 8px; }
+.bz-sharedsection[data-bz-node="intro"] .bz-btn--primary { font-size: 15px; font-weight: 700; letter-spacing: 0.5px; text-transform: uppercase; padding: 16px 32px; }
+@media (max-width: 900px) { .bz-sharedsection[data-bz-node="intro"] .bz-section { padding-top: 56px; padding-bottom: 56px; } .bz-sharedsection[data-bz-node="intro"] .bz-figure img { height: 280px; } }
+
+/* B&C Body: the quote is set larger and italic. */
+.bz-sharedsection[data-bz-node="intro"] .copy__p { font-size: 19px; line-height: 1.7; margin-bottom: 32px; color: var(--copy); }
+
+@media (max-width: 1100px) { .bz-sharedsection[data-bz-section="pg-split"] .bz-row[data-bz-node="ps-row"] { column-gap: 0; row-gap: 24px; } }

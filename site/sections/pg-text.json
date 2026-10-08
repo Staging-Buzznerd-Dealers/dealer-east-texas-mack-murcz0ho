@@ -120,6 +120,11 @@
               "label": "Bullet"
             }
           ]
+        },
+        {
+          "key": "box",
+          "type": "boolean",
+          "label": "Show in a sand box (first line bold)"
         }
       ]
     },
@@ -307,7 +312,8 @@
                     "note": "{{note}}",
                     "bars": "{{bars}}",
                     "bullets": "{{bullets}}",
-                    "repeat": "copy"
+                    "repeat": "copy",
+                    "box": "{{box}}"
                   }
                 },
                 {

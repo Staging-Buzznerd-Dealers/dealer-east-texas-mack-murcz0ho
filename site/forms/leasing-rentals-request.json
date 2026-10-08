@@ -1,0 +1,117 @@
+{
+  "id": "leasing-rentals-request",
+  "name": "Leasing & Rentals Request",
+  "status": "live",
+  "surfaces": [
+    "page"
+  ],
+  "intent": "rental-request",
+  "submitLabel": "Submit",
+  "successMessage": "Thanks — our leasing and rental team has your request and will be in touch shortly.",
+  "consent": {
+    "enabled": true,
+    "required": true,
+    "text": "I agree to be contacted about leasing or rental by phone, text or email, and I consent to the dealership using the licence details above to process this request."
+  },
+  "fields": [
+    {
+      "id": "lr-first",
+      "type": "first_name",
+      "label": "First name",
+      "required": true,
+      "width": "half"
+    },
+    {
+      "id": "lr-last",
+      "type": "last_name",
+      "label": "Last name",
+      "required": true,
+      "width": "half"
+    },
+    {
+      "id": "lr-email",
+      "type": "email",
+      "label": "Email",
+      "required": true,
+      "width": "half"
+    },
+    {
+      "id": "lr-phone",
+      "type": "phone",
+      "label": "Phone",
+      "required": true,
+      "width": "half"
+    },
+    {
+      "id": "lr-street",
+      "type": "single_line",
+      "label": "Street address",
+      "required": true
+    },
+    {
+      "id": "lr-city",
+      "type": "single_line",
+      "label": "City",
+      "required": true
+    },
+    {
+      "id": "lr-state",
+      "type": "single_line",
+      "label": "State / Province / Region",
+      "required": true,
+      "width": "half"
+    },
+    {
+      "id": "lr-zip",
+      "type": "single_line",
+      "label": "ZIP / Postal code",
+      "required": true,
+      "width": "half"
+    },
+    {
+      "id": "lr-birthday",
+      "type": "date",
+      "label": "Birthday",
+      "required": true,
+      "width": "half"
+    },
+    {
+      "id": "lr-dl",
+      "type": "single_line",
+      "label": "Driver's license #",
+      "required": true,
+      "width": "half"
+    },
+    {
+      "id": "lr-dl-exp",
+      "type": "date",
+      "label": "Driver's license expiration date",
+      "required": true,
+      "width": "half"
+    },
+    {
+      "id": "lr-dl-state",
+      "type": "single_line",
+      "label": "Driver's license state",
+      "required": true,
+      "width": "half"
+    },
+    {
+      "id": "lr-message",
+      "type": "paragraph",
+      "label": "Comments/Questions",
+      "required": false
+    }
+  ],
+  "notifications": [
+    {
+      "id": "lr-default",
+      "name": "Default",
+      "logic": "AND",
+      "rules": [],
+      "targetType": "role",
+      "roleId": "sales-manager",
+      "scopeMode": "dynamic"
+    }
+  ]
+}

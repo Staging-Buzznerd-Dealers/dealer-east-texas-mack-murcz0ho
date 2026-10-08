@@ -215,5 +215,77 @@
       "footer": null,
       "utilityNav": null
     }
+  },
+  {
+    "slug": "paint-bodyshop",
+    "title": "Paint & Bodyshop",
+    "description": "East Texas Mack's body shop in Longview, TX: four professionally trained PPG technicians for commercial truck paint and collision repair.",
+    "path": "/paint-bodyshop",
+    "out": "paint-bodyshop/index.html",
+    "dir": "paint-bodyshop",
+    "status": "published",
+    "seo": {
+      "ogImage": null,
+      "noindex": false
+    },
+    "templates": {
+      "header": null,
+      "footer": null,
+      "utilityNav": null
+    }
+  },
+  {
+    "slug": "bc-body",
+    "title": "B&C Body Company",
+    "description": "B&C Body Company, one of the largest Galbreath Hoist dealers in the nation, at East Texas Mack in Longview, TX.",
+    "path": "/bc-body",
+    "out": "bc-body/index.html",
+    "dir": "bc-body",
+    "status": "published",
+    "seo": {
+      "ogImage": null,
+      "noindex": false
+    },
+    "templates": {
+      "header": null,
+      "footer": null,
+      "utilityNav": null
+    }
+  },
+  {
+    "slug": "rigging-fabrication",
+    "title": "Rigging & Fabrication",
+    "description": "Custom rigging and fabrication in Longview, TX: vacuum trucks, heavy haul winch trucks, gin pole trucks, wet-line kits and roll-off mounting.",
+    "path": "/rigging-fabrication",
+    "out": "rigging-fabrication/index.html",
+    "dir": "rigging-fabrication",
+    "status": "published",
+    "seo": {
+      "ogImage": null,
+      "noindex": false
+    },
+    "templates": {
+      "header": null,
+      "footer": null,
+      "utilityNav": null
+    }
+  },
+  {
+    "slug": "leasing-rentals-request",
+    "title": "Leasing & Rentals Request",
+    "description": "Request commercial truck leasing or rental from East Texas Mack in Longview, TX.",
+    "path": "/leasing-rentals-request",
+    "out": "leasing-rentals-request/index.html",
+    "dir": "leasing-rentals-request",
+    "status": "published",
+    "seo": {
+      "ogImage": null,
+      "noindex": false
+    },
+    "templates": {
+      "header": null,
+      "footer": null,
+      "utilityNav": null
+    }
   }
 ]

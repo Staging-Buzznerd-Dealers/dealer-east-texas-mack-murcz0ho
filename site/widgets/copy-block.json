@@ -37,8 +37,13 @@
           "label": "Bullet"
         }
       ]
+    },
+    {
+      "key": "box",
+      "type": "boolean",
+      "label": "Show in a sand box (first line bold)"
     }
   ],
-  "html": "{{#if text}}<p class=\"copy__p{{#if label}} copy__p--label{{/if}}{{#if note}} copy__p--note{{/if}}\">{{&text}}</p>{{/if}}{{#if bullets}}<ul class=\"copy__ul{{#if bars}} copy__ul--bars{{/if}}\">{{#each bullets}}<li>{{&item}}</li>{{/each}}</ul>{{/if}}",
-  "css": ".copy__p { margin: 0 0 16px; font-size: 16px; line-height: 1.7; color: var(--copy, #4a4d52); }\n.copy__p--label { margin-bottom: 14px; font-weight: 600; line-height: 1.3; }\n.copy__p--note { margin-bottom: 14px; font-size: 14px; font-weight: 700; line-height: 1.4; color: var(--accent); }\n.copy__ul { margin: 0 0 16px; padding-left: 20px; font-size: 16px; line-height: 1.8; color: var(--copy, #4a4d52); }\n.copy__ul--bars { list-style: none; padding-left: 0; display: flex; flex-direction: column; gap: 14px; margin-bottom: 24px; }\n.copy__ul--bars li { padding-left: 18px; border-left: 2px solid var(--accent); font-size: 17px; line-height: 1.2; }"
+  "html": "{{#if text}}<p class=\"copy__p{{#if label}} copy__p--label{{/if}}{{#if note}} copy__p--note{{/if}}{{#if box}} copy__p--box{{/if}}\">{{&text}}</p>{{/if}}{{#if bullets}}<ul class=\"copy__ul{{#if bars}} copy__ul--bars{{/if}}\">{{#each bullets}}<li>{{&item}}</li>{{/each}}</ul>{{/if}}",
+  "css": ".copy__p { margin: 0 0 16px; font-size: 16px; line-height: 1.7; color: var(--copy, #4a4d52); }\n.copy__p--label { margin-bottom: 14px; font-weight: 600; line-height: 1.3; }\n.copy__p--note { margin-bottom: 14px; font-size: 14px; font-weight: 700; line-height: 1.4; color: var(--accent); }\n.copy__ul { margin: 0 0 16px; padding-left: 20px; font-size: 16px; line-height: 1.8; color: var(--copy, #4a4d52); }\n.copy__ul--bars { list-style: none; padding-left: 0; display: flex; flex-direction: column; gap: 14px; margin-bottom: 24px; }\n.copy__ul--bars li { padding-left: 18px; border-left: 2px solid var(--accent); font-size: 17px; line-height: 1.2; }\n.copy__p--box { margin: 0 0 32px; padding: 28px 32px; border-radius: var(--radius-card); background: var(--band-tan, #f2f0eb); font-size: 15px; line-height: 1.2; color: var(--copy, #4a4d52); }\n.copy__p--box strong { display: block; margin-bottom: 12px; font-weight: 600; color: var(--ink); }"
 }
