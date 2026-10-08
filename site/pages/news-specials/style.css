@@ -1,0 +1,7 @@
+/* News & Specials: header on the 1200px container, post cards left-aligned. */
+.bz-sharedsection[data-bz-section="pg-form-head"] .bz-row[data-bz-node="pfh-row"] { max-width: 1200px; }
+.bz-sharedsection[data-bz-section="pg-form-head"] .bz-block[data-bz-node="pfh-h"] h1 { margin-bottom: 0px; }
+.bz-section[data-bz-node="news"] .bz-card.bz-post { max-width: 380px; border-radius: 8px; box-shadow: 0 4px 18px rgba(0, 0, 0, 0.06); overflow: hidden; }
+.bz-section[data-bz-node="news"] .bz-card.bz-post img { width: 100%; height: 220px; object-fit: cover; display: block; }
+.bz-section[data-bz-node="news"] { padding-bottom: 160px; }
+@media (max-width: 640px) { .bz-section[data-bz-node="news"] { padding-bottom: 56px; } }

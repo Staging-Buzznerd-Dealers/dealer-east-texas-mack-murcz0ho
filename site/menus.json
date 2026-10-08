@@ -128,8 +128,8 @@
         {
           "id": "terms",
           "label": "Terms of Use",
-          "type": "url",
-          "url": "/terms-of-use"
+          "type": "page",
+          "ref": "terms-of-service"
         },
         {
           "id": "accessibility",

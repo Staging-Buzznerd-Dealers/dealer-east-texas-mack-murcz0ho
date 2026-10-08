@@ -1,0 +1,4 @@
+/* The form band is styled site-wide (custom code), because the form pages share it. */
+.bz-sharedsection[data-bz-section="pg-form-head"] .bz-row[data-bz-node="pfh-row"] { max-width: 900px; }
+.bz-sharedsection[data-bz-section="pg-form-head"] .bz-block[data-bz-node="pfh-h"] h1 { margin-bottom: 0px; }
+.bz-section[data-bz-node="form-band"] .bz-btn[type="submit"] { text-transform: uppercase; letter-spacing: 0.5px; }
