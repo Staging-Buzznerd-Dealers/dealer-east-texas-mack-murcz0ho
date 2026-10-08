@@ -112,7 +112,7 @@
   {
     "id": "about-us",
     "label": "About Us",
-    "url": "/#about",
+    "url": "/about-us",
     "style": "link",
     "intent": "about",
     "newTab": false,

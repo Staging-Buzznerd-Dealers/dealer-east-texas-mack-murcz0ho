@@ -179,6 +179,10 @@
             {
               "value": "primary",
               "label": "Red button"
+            },
+            {
+              "value": "secondary",
+              "label": "Outlined button"
             }
           ]
         }

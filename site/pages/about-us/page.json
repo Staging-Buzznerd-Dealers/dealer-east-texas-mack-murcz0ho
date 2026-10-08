@@ -1,0 +1,394 @@
+{
+  "version": 2,
+  "nodes": [
+    {
+      "id": "hero",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "pg-banner",
+        "values": {
+          "crumb": "About Us",
+          "eyebrow": "About Us",
+          "headline": "About East Texas Mack",
+          "subhead": "Serving East Texas Since 1976",
+          "tagline": "East Texas Mack has been a trusted provider of Mack trucks, certified service, and high-volume parts logistics for businesses across Longview and the broader East Texas region for nearly five decades.",
+          "image": {
+            "src": "/images/pages/about-hero.jpg",
+            "alt": "Mack truck",
+            "width": 1024,
+            "height": 576
+          }
+        }
+      }
+    },
+    {
+      "id": "intro",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "pg-text",
+        "values": {
+          "bg": "card",
+          "copy": [
+            {
+              "text": "Founded in 1975, with current ownership assuming leadership in 1976, our dealership has built its standing on long-term client relationships, operational reliability, and deep commercial trucking expertise. Today, we continue to power the businesses that keep East Texas moving, delivering dedicated commercial solutions for regional fleets, municipalities, and independent owner-operators."
+            },
+            {
+              "text": "Our full-service operation integrates heavy-duty commercial truck sales, master-certified shop service and diagnostic repairs, genuine OEM and premium aftermarket parts support, flexible in-house truck financing, and proactive fleet maintenance planning under one roof."
+            },
+            {
+              "text": "Explore our complete truck sales, service, and support capabilities and browse available commercial truck inventory through our New Trucks Page."
+            }
+          ],
+          "links": [
+            {
+              "label": "Explore Truck Services",
+              "url": "/service",
+              "style": "primary"
+            },
+            {
+              "label": "Browse New Mack Trucks",
+              "url": "/new-trucks",
+              "style": "secondary"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "offer",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "pg-cards",
+        "values": {
+          "bg": "ink",
+          "look": "center",
+          "span": 3,
+          "eyebrow": "What We Offer",
+          "heading": "A Full-Service Mack Truck Dealership",
+          "intro": "East Texas Mack provides complete operational backing for heavy-duty commercial trucking across East Texas.",
+          "cards": [
+            {
+              "title": "Commercial Truck Sales",
+              "copy": [
+                {
+                  "text": "We maintain a deep inventory of new and pre-owned Mack commercial trucks, offering both immediate on-lot availability and accelerated factory custom ordering options. Our sales team works consultatively to recommend precision chassis, axle, and powertrain configurations tailored to your vocational applications, duty cycles, and fleet management goals."
+                }
+              ],
+              "link1Label": "Browse New Truck Inventory",
+              "link1Url": "/store/inventory?condition=new",
+              "link2Label": "Browse Used Trucks",
+              "link2Url": "/used-trucks"
+            },
+            {
+              "title": "Service & Repair Department",
+              "copy": [
+                {
+                  "text": "Our certified service bays deliver comprehensive maintenance and diagnostic care, including routine preventative servicing, advanced electronic troubleshooting, complete engine overhauls, major drivetrain repairs, and mobile roadside support. Structured preventative service and master diagnostics are essential for avoiding catastrophic failures and protecting fleet uptime."
+                }
+              ],
+              "link1Label": "Explore Truck Service & Repair",
+              "link1Url": "/service",
+              "link2Label": "View Fleet Maintenance Guide",
+              "link2Url": "/fleet-maintenance-strategies"
+            },
+            {
+              "title": "Parts Department",
+              "copy": [
+                {
+                  "text": "Housing over $3 million in local inventory, our high-volume parts warehouse supplies genuine OEM Mack parts alongside high-grade aftermarket components. Backed by a 95% fill rate and same-day regional delivery routes, our parts specialists ensure operators get accurate replacement components quickly."
+                }
+              ],
+              "link1Label": "Compare OEM vs Aftermarket Parts",
+              "link1Url": "/oem-vs-aftermarket-parts",
+              "link2Label": "View Truck Parts Department",
+              "link2Url": "/parts"
+            },
+            {
+              "title": "Financing & Leasing",
+              "copy": [
+                {
+                  "text": "We simplify capital acquisition by offering customized commercial truck loans, flexible in-house leasing structures, multi-unit fleet financing, and preferred lending programs through Mack Financial Services. Our finance team builds payment structures that respect seasonal cash flow and long-term strategy."
+                }
+              ],
+              "link1Label": "Explore Truck Financing",
+              "link1Url": "/financing"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "serve",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "pg-split",
+        "values": {
+          "bg": "paper",
+          "sides": [
+            {
+              "eyebrow": "Who We Serve",
+              "heading": "Built for Fleet Operations",
+              "copy": [
+                {
+                  "text": "Our entire facility layout and operational workflow are purpose-built to support high-duty-cycle commercial fleets and high-utilization transport operations. Fleet accounts represent approximately 80% of our active customer volume, giving our staff specialized experience across demanding industries, including refuse and waste management, aggregate and heavy construction, oil and gas logistics, municipal utility services, and regional freight transportation."
+                },
+                {
+                  "text": "Long-term fleet success relies on proactive maintenance scheduling, rapid parts availability, and maximizing asset availability."
+                }
+              ],
+              "links": [
+                {
+                  "label": "Explore Fleet Maintenance Strategies",
+                  "url": "/fleet-maintenance-strategies",
+                  "style": "primary"
+                },
+                {
+                  "label": "View Truck Service Department",
+                  "url": "/service",
+                  "style": "secondary"
+                }
+              ]
+            },
+            {
+              "panel": "none",
+              "image": {
+                "src": "/images/pages/about-fleet.jpg",
+                "alt": "Mack dump truck at a construction site",
+                "width": 1024,
+                "height": 751
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "facility",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "pg-split",
+        "values": {
+          "bg": "card",
+          "sides": [
+            {
+              "eyebrow": "Our Facility",
+              "heading": "Facility & Team",
+              "copy": [
+                {
+                  "text": "Our flagship Longview facility represents one of the largest single-location commercial truck operations in East Texas, custom-designed to manage high vehicle volume and complex fabrication tasks without operational delays. Our 75-member team includes 11 full-time master-certified mechanics and 8 specialized welder/fabricators working across 22 dedicated service bays and 6 full-scale fabrication bays."
+                },
+                {
+                  "text": "Our shop features factory-certified technicians holding advanced credentials in Mack powertrain and chassis control, Cummins diesel engines, and Allison automatic transmissions. From service advisors and parts counter experts to sales specialists and finance managers, our team works in total alignment to support the entire lifecycle of your equipment."
+                }
+              ]
+            },
+            {
+              "panel": "none",
+              "image": {
+                "src": "/images/pages/about-facility.jpg",
+                "alt": "Mack chassis cab truck",
+                "width": 1024,
+                "height": 751
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "stats",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "pg-cards",
+        "values": {
+          "bg": "card",
+          "look": "end",
+          "span": 3,
+          "cards": [
+            {
+              "title": "Employees",
+              "copy": [],
+              "number": "75"
+            },
+            {
+              "title": "Service Bays",
+              "copy": [],
+              "number": "22"
+            },
+            {
+              "title": "Fabrication Bays",
+              "copy": [],
+              "number": "6"
+            },
+            {
+              "title": "Technicians + Welder/Fabricators",
+              "copy": [],
+              "number": "11 + 8"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "expertise",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "pg-text",
+        "values": {
+          "bg": "card",
+          "copy": [
+            {
+              "text": "Our team includes certified professionals with expertise across:"
+            }
+          ],
+          "chips": [
+            {
+              "label": "Mack Powertrain & Chassis Control"
+            },
+            {
+              "label": "Cummins Diesel Engines"
+            },
+            {
+              "label": "Allison Automatic Transmissions"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "team",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "pg-text",
+        "values": {
+          "bg": "paper",
+          "eyebrow": "Our People",
+          "heading": "Meet Our Team",
+          "copy": [
+            {
+              "text": "The people behind East Texas Mack are what make our dealership successful."
+            },
+            {
+              "text": "Our experienced staff includes certified technicians, parts specialists, sales professionals, service advisors, administrative personnel, and support teams dedicated to helping customers maximize uptime and operational performance."
+            },
+            {
+              "text": "Many of our employees have spent years and in some cases decades supporting Mack truck owners and commercial fleet operators throughout East Texas."
+            },
+            {
+              "text": "Their experience, technical expertise, and commitment to customer service help ensure that every customer receives knowledgeable support throughout the ownership lifecycle."
+            }
+          ],
+          "links": [
+            {
+              "label": "Explore Truck Service Department",
+              "url": "/service",
+              "style": "link"
+            },
+            {
+              "label": "View Parts Department",
+              "url": "/parts",
+              "style": "link"
+            },
+            {
+              "label": "Contact Our Team",
+              "url": "/contact",
+              "style": "link"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "recognition",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "pg-split",
+        "values": {
+          "bg": "ink",
+          "sides": [
+            {
+              "eyebrow": "Recognition",
+              "heading": "Recognized Industry Leadership",
+              "copy": [
+                {
+                  "text": "As one of the largest single-point Mack dealerships by sales volume in North America, East Texas Mack maintains a long-standing reputation for retail and service excellence. Being dedicated exclusively to the Mack brand allows our dealership to deliver unmatched brand specialization, technical precision, and inventory depth that general heavy-duty truck centers cannot match."
+                }
+              ]
+            },
+            {
+              "panel": "none",
+              "image": {
+                "src": "/images/pages/about-recognition.jpg",
+                "alt": "Mack truck lineup in showroom with bulldog emblem",
+                "width": 1024,
+                "height": 459
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "award",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "pg-text",
+        "values": {
+          "bg": "ink",
+          "boxes": [
+            {
+              "title": "Mack North American Distributor of the Year Awards",
+              "text": "East Texas Mack has been honored as the <strong>Mack Trucks North American Distributor of the Year three times (2000, 2008, and 2013)</strong>. This prestigious distinction recognizes top-performing Mack distributors across North America, evaluating performance across new truck sales volume, customer satisfaction ratings, service bay efficiency, parts inventory management, facility standards, dealership leadership, and community involvement.",
+              "linkLabel": "View Full-Service Dealership Support",
+              "linkUrl": "/service"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "faq",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "pg-faq",
+        "values": {
+          "items": [
+            {
+              "q": "When was East Texas Mack founded?",
+              "a": "East Texas Mack was founded in 1975, with current ownership established in 1976."
+            },
+            {
+              "q": "What types of customers do you serve?",
+              "a": "We primarily support fleet operations including refuse, construction, oil & gas, logistics, and municipal customers."
+            },
+            {
+              "q": "Do you only sell Mack trucks?",
+              "a": "Yes. We are dedicated exclusively to Mack trucks, allowing us to provide specialized expertise and support."
+            },
+            {
+              "q": "How large is your operation?",
+              "a": "We operate with 75 employees, 22 service bays, and a full fabrication facility."
+            },
+            {
+              "q": "What makes East Texas Mack different?",
+              "a": "Our long-term customer relationships, industry recognition, fleet expertise, and exclusive focus on Mack trucks help distinguish our dealership from general heavy-duty truck providers."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "cta",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "pg-cta",
+        "values": {
+          "heading": "Contact Us",
+          "body": "Call us at 903-758-9994 or come by today and experience our superior service and selection! We look forward to serving you!",
+          "ctaLabel": "Contact Us",
+          "ctaUrl": "/contact"
+        }
+      }
+    }
+  ]
+}

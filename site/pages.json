@@ -197,5 +197,23 @@
       "footer": null,
       "utilityNav": null
     }
+  },
+  {
+    "slug": "about-us",
+    "title": "About East Texas Mack",
+    "path": "/about-us",
+    "out": "about-us/index.html",
+    "dir": "about-us",
+    "status": "published",
+    "description": "East Texas Mack — a full-service Mack truck dealership in Longview, TX serving East Texas fleets since 1976: sales, certified service, parts and financing, with 22 service bays and a 75-member team.",
+    "seo": {
+      "ogImage": null,
+      "noindex": false
+    },
+    "templates": {
+      "header": null,
+      "footer": null,
+      "utilityNav": null
+    }
   }
 ]
