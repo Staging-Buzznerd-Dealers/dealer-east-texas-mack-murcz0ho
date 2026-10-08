@@ -1,0 +1,14 @@
+/* Careers: these bands run at 17px copy / 30px headings. */
+.bz-sharedsection[data-bz-section^="pg-"] .bz-headingblock h2 { font-size: 30px; }
+.bz-sharedsection[data-bz-node="intro"] .bz-row[data-bz-node="pt-row"], .bz-sharedsection[data-bz-node="culture"] .bz-row[data-bz-node="pt-row"] { max-width: 820px; }
+.bz-sharedsection[data-bz-node="intro"] .copy__p { font-size: 18px; line-height: 1.65; }
+.bz-sharedsection[data-bz-node="culture"] .copy__p, .bz-sharedsection[data-bz-node="benefits"] .copy__p, .bz-sharedsection[data-bz-node="facility"] .copy__p, .bz-sharedsection[data-bz-node="growth"] .copy__p:not(.copy__p--label) { font-size: 17px; line-height: 1.6; }
+.bz-sharedsection[data-bz-node="hero"] [data-bz-node="ph-sub"] h2 { font-size: 20px; text-transform: uppercase; }
+.bz-sharedsection[data-bz-node="roles"] .bz-btn--link { font-size: 13px; }
+.bz-sharedsection[data-bz-node="roles"] [data-bz-node="pc-intro"] p { font-size: 17px; max-width: 780px; }
+.bz-sharedsection[data-bz-node="growth"] .copy__p--label { font: 700 18px / 1.2 var(--font-heading); text-transform: uppercase; color: var(--card); margin: 28px 0 14px; }
+.bz-sharedsection[data-bz-node="growth"] .copy__ul--bars li { font-size: 15px; line-height: 1.35; }
+.bz-sharedsection[data-bz-node="apply"] .bz-btn { text-transform: uppercase; letter-spacing: 0.5px; font-size: 15px; }
+.bz-sharedsection[data-bz-node="apply"] [data-bz-node="pcta-body"] p { max-width: 620px; margin-bottom: 32px; }
+.bz-sharedsection[data-bz-node="faq"] .bz-row[data-bz-node="pf-row"] { max-width: 820px; }
+@media (max-width: 1100px) { .bz-sharedsection[data-bz-section="pg-split"] .bz-row[data-bz-node="ps-row"] { column-gap: 0; row-gap: 32px; } }

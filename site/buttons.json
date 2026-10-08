@@ -11,8 +11,8 @@
   {
     "id": "request-quote",
     "label": "Get a Quote",
-    "url": "/contact#form-request-a-quote",
-    "formId": "request-a-quote",
+    "url": "/get-a-quote",
+    "formId": "get-a-quote",
     "style": "primary",
     "intent": "get-quote",
     "newTab": false,
@@ -66,8 +66,8 @@
   {
     "id": "leasing-quote",
     "label": "Get a Quote →",
-    "url": "/contact#form-rental-request",
-    "formId": "rental-request",
+    "url": "/leasing-rentals-request",
+    "formId": "leasing-rentals-request",
     "style": "link",
     "intent": "rental-request",
     "newTab": false,

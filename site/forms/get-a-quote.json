@@ -1,0 +1,101 @@
+{
+  "id": "get-a-quote",
+  "name": "Get a Quote",
+  "status": "live",
+  "surfaces": [
+    "page"
+  ],
+  "intent": "request-quote",
+  "submitLabel": "Submit",
+  "successMessage": "Thanks — our sales team has your quote request and will be in touch shortly.",
+  "consent": {
+    "enabled": true,
+    "required": false,
+    "text": "Subscribe to Newsletter"
+  },
+  "fields": [
+    {
+      "id": "gq-first",
+      "type": "first_name",
+      "label": "First name",
+      "required": true,
+      "width": "half"
+    },
+    {
+      "id": "gq-last",
+      "type": "last_name",
+      "label": "Last name",
+      "required": true,
+      "width": "half"
+    },
+    {
+      "id": "gq-email",
+      "type": "email",
+      "label": "Email",
+      "required": true
+    },
+    {
+      "id": "gq-phone",
+      "type": "phone",
+      "label": "Phone",
+      "required": false,
+      "width": "half"
+    },
+    {
+      "id": "gq-cell",
+      "type": "phone",
+      "label": "Cell phone",
+      "required": false,
+      "width": "half"
+    },
+    {
+      "id": "gq-work",
+      "type": "phone",
+      "label": "Work phone",
+      "required": false
+    },
+    {
+      "id": "gq-make",
+      "type": "single_line",
+      "label": "Vehicle make",
+      "required": false,
+      "width": "half"
+    },
+    {
+      "id": "gq-model",
+      "type": "single_line",
+      "label": "Vehicle model",
+      "required": false,
+      "width": "half"
+    },
+    {
+      "id": "gq-year",
+      "type": "single_line",
+      "label": "Vehicle year",
+      "required": false
+    },
+    {
+      "id": "gq-acc",
+      "type": "single_line",
+      "label": "Added accessories",
+      "required": false
+    },
+    {
+      "id": "gq-msg",
+      "type": "paragraph",
+      "label": "Comments/Questions",
+      "required": false
+    }
+  ],
+  "notifications": [
+    {
+      "id": "gq-default",
+      "name": "Default",
+      "logic": "AND",
+      "rules": [],
+      "targetType": "role",
+      "roleId": "sales-manager",
+      "scopeMode": "dynamic"
+    }
+  ]
+}

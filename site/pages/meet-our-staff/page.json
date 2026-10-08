@@ -1,0 +1,208 @@
+{
+  "version": 2,
+  "nodes": [
+    {
+      "id": "head",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "pg-form-head",
+        "values": {
+          "trail": [],
+          "crumb": "Meet Our Staff",
+          "headline": "Meet Our Staff"
+        }
+      }
+    },
+    {
+      "id": "directory",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "pg-staff",
+        "values": {
+          "groups": [
+            {
+              "heading": "Leadership",
+              "people": [
+                {
+                  "name": "Drew Bankston",
+                  "title": "President",
+                  "photo": {
+                    "src": "/images/pages/staff-bankston.jpg",
+                    "alt": "Drew Bankston",
+                    "width": 375,
+                    "height": 471
+                  }
+                },
+                {
+                  "name": "David Carroum",
+                  "title": "Vice President - Sales",
+                  "photo": {
+                    "src": "/images/pages/staff-carroum.jpg",
+                    "alt": "David Carroum",
+                    "width": 375,
+                    "height": 471
+                  }
+                },
+                {
+                  "name": "Twyla Sims",
+                  "title": "Parts Manager",
+                  "photo": {
+                    "src": "/images/pages/staff-sims.jpg",
+                    "alt": "Twyla Sims",
+                    "width": 375,
+                    "height": 471
+                  }
+                },
+                {
+                  "name": "Alan Adams",
+                  "title": "Service Manager",
+                  "photo": {
+                    "src": "/images/pages/staff-adams.jpg",
+                    "alt": "Alan Adams",
+                    "width": 375,
+                    "height": 471
+                  }
+                },
+                {
+                  "name": "James Coates",
+                  "title": "Body Shop Manager",
+                  "photo": {
+                    "src": "/images/pages/staff-sims.jpg",
+                    "alt": "James Coates",
+                    "width": 375,
+                    "height": 471
+                  }
+                },
+                {
+                  "name": "Debbie Adams",
+                  "title": "Office Manager",
+                  "photo": {
+                    "src": "/images/staff-placeholder.svg",
+                    "alt": "Photo coming soon",
+                    "width": 200,
+                    "height": 200
+                  }
+                }
+              ]
+            },
+            {
+              "heading": "Truck Sales",
+              "people": [
+                {
+                  "name": "Rhett Rieken",
+                  "title": "Truck Sales",
+                  "photo": {
+                    "src": "/images/staff-placeholder.svg",
+                    "alt": "Photo coming soon",
+                    "width": 200,
+                    "height": 200
+                  }
+                },
+                {
+                  "name": "Jim Lewis",
+                  "title": "B&C Body Company",
+                  "photo": {
+                    "src": "/images/staff-placeholder.svg",
+                    "alt": "Photo coming soon",
+                    "width": 200,
+                    "height": 200
+                  }
+                }
+              ]
+            },
+            {
+              "heading": "Parts Department",
+              "people": [
+                {
+                  "name": "James Bullard",
+                  "title": "Assistant Parts Manager",
+                  "photo": {
+                    "src": "/images/staff-placeholder.svg",
+                    "alt": "Photo coming soon",
+                    "width": 200,
+                    "height": 200
+                  }
+                },
+                {
+                  "name": "Jason McDaniel",
+                  "title": "Outside Parts Sales",
+                  "photo": {
+                    "src": "/images/pages/staff-mcdaniel.jpg",
+                    "alt": "Jason McDaniel",
+                    "width": 375,
+                    "height": 471
+                  }
+                },
+                {
+                  "name": "Philip Richardson",
+                  "title": "Outside Parts Sales",
+                  "photo": {
+                    "src": "/images/pages/staff-richardson.jpg",
+                    "alt": "Philip Richardson",
+                    "width": 375,
+                    "height": 471
+                  }
+                },
+                {
+                  "name": "Sean Stevens",
+                  "title": "Outside Parts Sales",
+                  "photo": {
+                    "src": "/images/pages/staff-stevens.jpg",
+                    "alt": "Sean Stevens",
+                    "width": 375,
+                    "height": 471
+                  }
+                },
+                {
+                  "name": "Ricky Murphy",
+                  "title": "Outside Parts Sales",
+                  "photo": {
+                    "src": "/images/pages/staff-murphy.jpg",
+                    "alt": "Ricky Murphy",
+                    "width": 375,
+                    "height": 471
+                  }
+                }
+              ]
+            },
+            {
+              "heading": "Service Department",
+              "people": [
+                {
+                  "name": "David Blalack",
+                  "title": "Service Advisor",
+                  "photo": {
+                    "src": "/images/staff-placeholder.svg",
+                    "alt": "Photo coming soon",
+                    "width": 200,
+                    "height": 200
+                  }
+                },
+                {
+                  "name": "Michael Blalock",
+                  "title": "Service Advisor",
+                  "photo": {
+                    "src": "/images/staff-placeholder.svg",
+                    "alt": "Photo coming soon",
+                    "width": 200,
+                    "height": 200
+                  }
+                },
+                {
+                  "name": "Traci Gray",
+                  "title": "Assistant Service Manager",
+                  "photo": {
+                    "src": "/images/staff-placeholder.svg",
+                    "alt": "Photo coming soon",
+                    "width": 200,
+                    "height": 200
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

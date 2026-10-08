@@ -1,0 +1,267 @@
+{
+  "version": 2,
+  "nodes": [
+    {
+      "id": "hero",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "pg-hero",
+        "values": {
+          "crumb": "Careers",
+          "eyebrow": "Careers",
+          "headline": "Careers at East Texas Mack",
+          "subhead": "Build a Long-Term Career in the Heavy-Duty Truck Industry",
+          "body": "At East Texas Mack, we are far more than a commercial dealership — we are a dedicated team supporting the essential transportation networks that keep East Texas moving. We continuously recruit motivated, driven professionals who want to establish a stable, lifelong career in the heavy-duty trucking industry. Whether your expertise lies in precision diesel diagnostics, parts warehousing logistics, commercial fleet sales, or dealership administration, we offer the culture and tools for your long-term success.",
+          "image": {
+            "src": "/images/pages/careers-hero.jpg",
+            "alt": "Mack Anthem truck",
+            "width": 1024,
+            "height": 751
+          }
+        }
+      }
+    },
+    {
+      "id": "intro",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "pg-text",
+        "values": {
+          "bg": "card",
+          "copy": [
+            {
+              "text": "We foster a supportive, family-oriented work environment grounded in stability, professional growth, and mutual respect. Our exceptional culture speaks for itself: approximately 40% of our team has been with us for over 10 years, demonstrating our commitment to long-term leadership and employee retention. Working here means gaining daily, hands-on experience with cutting-edge heavy equipment and next-generation powertrain systems alongside industry veterans."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "benefits",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "pg-split",
+        "values": {
+          "bg": "paper",
+          "sides": [
+            {
+              "eyebrow": "Benefits & Compensation",
+              "heading": "Benefits & Compensation",
+              "copy": [
+                {
+                  "text": "We invest heavily in our workforce by providing a highly competitive compensation and benefits package designed to safeguard your health, well-being, and long-term financial security. Our employees enjoy comprehensive medical, dental, and vision health coverage, along with a company-matching 401(k) retirement plan to help build future wealth."
+                },
+                {
+                  "text": "To support work-life balance, we offer generous paid time off (PTO) and paid company holiday schedules. Furthermore, our performance-driven environment rewards dedication with lucrative monthly and annual departmental bonuses, paired with fully paid manufacturer training programs that propel your career forward."
+                }
+              ]
+            },
+            {
+              "panel": "none",
+              "image": {
+                "src": "/images/pages/careers-logs.jpg",
+                "alt": "Mack truck hauling logs",
+                "width": 1024,
+                "height": 576
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "roles",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "pg-cards",
+        "values": {
+          "bg": "card",
+          "look": "center",
+          "span": 6,
+          "eyebrow": "Open Roles",
+          "heading": "Current Career Opportunities",
+          "intro": "We partner with Hireology to streamline our application process and get qualified candidates into our hiring pipeline quickly. We regularly recruit top-tier talent across four core dealership divisions.",
+          "cards": [
+            {
+              "title": "Diesel Technicians",
+              "copy": [
+                {
+                  "text": "Diesel technicians at East Texas Mack work inside a state-of-the-art 22-bay facility equipped with factory diagnostic tools. Working on premier Class 8 trucks and advanced powertrains, technicians perform routine preventative maintenance, complex engine overhauls, advanced electrical troubleshooting, emissions system servicing, and major component rebuilds."
+                }
+              ],
+              "link1Label": "Apply for Diesel Technician Positions via Hireology",
+              "link1Url": "#"
+            },
+            {
+              "title": "Parts Specialists",
+              "copy": [
+                {
+                  "text": "Our high-volume parts department serves as the backbone for regional fleets, owner-operators, and internal service bays. Parts specialists manage technical parts identification, inventory control, warehousing logistics, commercial order fulfillment, and regional delivery routing."
+                }
+              ],
+              "link1Label": "Apply for Parts Specialist Positions via Hireology",
+              "link1Url": "#"
+            },
+            {
+              "title": "Service Advisors & Operational Support",
+              "copy": [
+                {
+                  "text": "Service advisors and shop support staff represent our vital front line, serving as the link between commercial clients and shop floor mechanics. They translate customer needs into clear service tickets, schedule heavy-duty repair workflows, track turnaround timelines, and maintain transparent communication."
+                }
+              ]
+            },
+            {
+              "title": "Sales & Administrative Professionals",
+              "copy": [
+                {
+                  "text": "We seek proactive, relationship-focused professionals for commercial truck sales, asset financing, and dealership administrative roles. These team members drive business growth by coordinating fleet financing, managing corporate client relationships, and supporting new/used truck acquisitions."
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "growth",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "pg-split",
+        "values": {
+          "bg": "ink",
+          "sides": [
+            {
+              "eyebrow": "Growth",
+              "heading": "Training, Certification & Career Growth",
+              "copy": [
+                {
+                  "text": "We don't just fill open positions; we invest heavily in your long-term career progression. We provide structured, paid advancement pathways for team members dedicated to mastering commercial truck technology. Employees gain full access to paid manufacturer training modules, sponsored Mack certification tracks, and continuous hands-on advancement opportunities."
+                },
+                {
+                  "text": "Typical Technician Career Path",
+                  "label": true,
+                  "bars": true,
+                  "bullets": [
+                    {
+                      "item": "<strong>1. Entry-Level / PM Technician:</strong> Master fundamental fleet maintenance routines, fluid checks, and basic component inspections."
+                    },
+                    {
+                      "item": "<strong>2. Mack Certified Technician:</strong> Earn specialized factory credentials in advanced engine, electrical, and emissions system diagnostics."
+                    },
+                    {
+                      "item": "<strong>3. Master Technician:</strong> Become a senior technical authority capable of solving complex system failures and configuring custom equipment specs."
+                    },
+                    {
+                      "item": "<strong>4. Shop Foreman:</strong> Transition into operational dealership leadership, managing shop floor safety, technician assignment, and workflow efficiency."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "panel": "card",
+              "image": {
+                "src": "/images/pages/careers-dump.jpg",
+                "alt": "Mack dump truck",
+                "width": 800,
+                "height": 500
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "culture",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "pg-text",
+        "values": {
+          "bg": "card",
+          "eyebrow": "Culture",
+          "heading": "What We Look For & Work Environment",
+          "copy": [
+            {
+              "text": "Our most successful team members share a common set of professional values: they are self-motivated, take personal pride in precision workmanship, and approach challenges as analytical problem solvers. Because fleet uptime is a collective effort, we value team-oriented professionals who possess a strong customer-first focus and understand that returning a truck safely to the road impacts real-world logistics."
+            },
+            {
+              "text": "At East Texas Mack, your work directly supports regional infrastructure, supply chains, and municipal operations. You will thrive in a fast-paced environment where shop safety, technical accuracy, and team camaraderie intersect every day."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "facility",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "pg-split",
+        "values": {
+          "bg": "paper",
+          "sides": [
+            {
+              "eyebrow": "Our Facility",
+              "heading": "Located in Longview, TX",
+              "copy": [
+                {
+                  "text": "2934 State Highway 31 N, Longview, TX 75603"
+                },
+                {
+                  "text": "(903) 758-9994"
+                },
+                {
+                  "text": "All career opportunities are stationed out of our flagship Longview facility. Located along major transportation routes, our campus proudly serves commercial clients throughout Longview, Tyler, Kilgore, Marshall, and the surrounding East Texas region."
+                }
+              ]
+            },
+            {
+              "panel": "none",
+              "image": {
+                "src": "/images/pages/careers-facility.jpg",
+                "alt": "Mack Pinnacle truck",
+                "width": 1024,
+                "height": 769
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "apply",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "pg-cta",
+        "values": {
+          "heading": "Apply Today",
+          "body": "Ready to trade a simple job for a rewarding, lifelong career in the commercial truck industry? Click below to view our active job listings on our official Hireology portal and submit your application online today. 2934 State Highway 31 N, Longview, TX — (903) 758-9994",
+          "ctaLabel": "View Current Openings & Apply via Hireology",
+          "ctaUrl": "#"
+        }
+      }
+    },
+    {
+      "id": "faq",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "pg-faq",
+        "values": {
+          "items": [
+            {
+              "q": "Do you offer formal training for entry-level diesel technicians?",
+              "a": "Yes. We actively support the next generation of mechanics by providing sponsored, paid manufacturer training programs and clear certification pathways through Mack's official factory curriculum."
+            },
+            {
+              "q": "What core benefits are included in your compensation packages?",
+              "a": "We provide full health insurance options, a company-matching 401(k) retirement plan, generous paid time off (PTO), and competitive monthly/annual performance bonuses tied directly to departmental success."
+            },
+            {
+              "q": "Is there actual room for long-term upward mobility at the dealership?",
+              "a": "Absolutely. With nearly 40% of our workforce celebrating over a decade of continuous employment at East Texas Mack, our dealership is built on promoting from within and fostering long-term career stability."
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

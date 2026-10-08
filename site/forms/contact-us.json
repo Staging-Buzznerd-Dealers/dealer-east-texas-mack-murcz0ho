@@ -1,0 +1,61 @@
+{
+  "id": "contact-us",
+  "name": "Contact Us",
+  "status": "live",
+  "surfaces": [
+    "page"
+  ],
+  "intent": "contact",
+  "submitLabel": "Submit",
+  "successMessage": "Thanks — we have your message and the right person on our team will be in touch.",
+  "consent": {
+    "enabled": true,
+    "required": false,
+    "text": "Subscribe to Newsletter"
+  },
+  "fields": [
+    {
+      "id": "cu-first",
+      "type": "first_name",
+      "label": "First name",
+      "required": true,
+      "width": "half"
+    },
+    {
+      "id": "cu-last",
+      "type": "last_name",
+      "label": "Last name",
+      "required": true,
+      "width": "half"
+    },
+    {
+      "id": "cu-email",
+      "type": "email",
+      "label": "Email",
+      "required": true
+    },
+    {
+      "id": "cu-phone",
+      "type": "phone",
+      "label": "Phone",
+      "required": false
+    },
+    {
+      "id": "cu-msg",
+      "type": "paragraph",
+      "label": "Questions or Comments",
+      "required": false
+    }
+  ],
+  "notifications": [
+    {
+      "id": "cu-default",
+      "name": "Default",
+      "logic": "AND",
+      "rules": [],
+      "targetType": "role",
+      "roleId": "sales-manager",
+      "scopeMode": "dynamic"
+    }
+  ]
+}

@@ -44,8 +44,8 @@
         {
           "id": "u-careers",
           "label": "Careers",
-          "type": "url",
-          "url": "/careers"
+          "type": "page",
+          "ref": "careers"
         },
         {
           "id": "u-contact",
@@ -110,8 +110,8 @@
         {
           "id": "fq-rigging",
           "label": "Rigging & Fabrication",
-          "type": "url",
-          "url": "/rigging-fabrication"
+          "type": "page",
+          "ref": "rigging-fabrication"
         }
       ]
     },

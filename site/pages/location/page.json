@@ -1,0 +1,413 @@
+{
+  "version": 2,
+  "nodes": [
+    {
+      "id": "hero",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "pg-hero",
+        "values": {
+          "crumb": "<a href=\"/about-us\">About Us</a> / Locations",
+          "eyebrow": "Location",
+          "headline": "Your Mack Truck Dealer Serving East Texas & Surrounding Regions",
+          "subhead": "",
+          "body": "East Texas Mack is a premier full-service commercial truck dealership located in Longview, Texas. We provide comprehensive truck sales, certified service, high-capacity parts delivery, and tailored commercial financing for commercial trucking operations across the region. Strategically positioned between Dallas and the Louisiana border with direct access to major trucking corridors like I-20, our location serves as a vital operational hub.",
+          "image": {
+            "src": "/images/pages/location-hero.jpg",
+            "alt": "Mack trucks at a construction site",
+            "width": 1024,
+            "height": 576
+          }
+        }
+      }
+    },
+    {
+      "id": "intro",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "pg-text",
+        "values": {
+          "bg": "card",
+          "copy": [
+            {
+              "text": "Our dealership is engineered to keep your assets moving by combining deep on-lot inventory, rapid service bay turnarounds, regional mobile service dispatch, and dedicated fleet management support. We support a wide spectrum of commercial haulers, including owner-operators, municipal fleets, heavy construction contractors, oilfield logistics, refuse operations, and regional freight carriers."
+            }
+          ],
+          "links": [
+            {
+              "label": "About East Texas Mack",
+              "url": "/about-us",
+              "style": "primary"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "where",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "pg-split",
+        "values": {
+          "bg": "paper",
+          "sides": [
+            {
+              "eyebrow": "Our Location",
+              "heading": "2934 State Highway 31 N, Longview, TX 75603",
+              "copy": [
+                {
+                  "text": "Phone: (903) 758-9994"
+                },
+                {
+                  "text": "Our Longview facility is centrally positioned to support commercial trucking operations across East Texas and surrounding regional freight lanes."
+                }
+              ],
+              "links": [
+                {
+                  "label": "Contact East Texas Mack",
+                  "url": "/contact",
+                  "style": "primary"
+                }
+              ]
+            },
+            {
+              "panel": "none",
+              "image": {
+                "src": "/images/map.png",
+                "alt": "Map showing East Texas Mack location",
+                "width": 1000,
+                "height": 600
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "hours",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "pg-cards",
+        "values": {
+          "bg": "card",
+          "look": "end",
+          "span": 4,
+          "eyebrow": "Hours",
+          "heading": "Hours of Operation",
+          "cards": [
+            {
+              "title": "Sales, Service & Parts",
+              "copy": [
+                {
+                  "text": "Monday – Friday: 7:30 AM – 5:00 PM"
+                }
+              ]
+            },
+            {
+              "title": "Parts Department (Saturday)",
+              "copy": [
+                {
+                  "text": "Saturday: 8:00 AM – 12:00 PM"
+                }
+              ]
+            },
+            {
+              "title": "After-Hours Support",
+              "copy": [
+                {
+                  "text": "Parts call-outs are available by request, ensuring critical components remain accessible when urgent operational breakdowns occur outside normal business hours."
+                }
+              ]
+            }
+          ],
+          "links": [
+            {
+              "label": "View Truck Service & Repair",
+              "url": "/service",
+              "style": "link"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "coverage",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "pg-split",
+        "values": {
+          "bg": "ink",
+          "sides": [
+            {
+              "eyebrow": "Coverage",
+              "heading": "Serving East Texas & Beyond",
+              "copy": [
+                {
+                  "text": "Our Longview facility serves as the primary service and supply center for commercial fleets operating across a wide 150-mile regional radius. We regularly support operators across Longview, Tyler, Kilgore, Marshall, Sulphur Springs, Mt. Pleasant, Paris, and the broader East Texas territory. Fleet managers and independent operators routinely travel to our facility because of our massive single-location service capacity, extensive OEM and aftermarket parts availability, robust new truck inventory, and specialized Mack-certified technical expertise."
+                }
+              ],
+              "links": [
+                {
+                  "label": "Browse New Mack Trucks",
+                  "url": "/store/inventory?condition=new",
+                  "style": "link"
+                },
+                {
+                  "label": "Browse Used Trucks",
+                  "url": "/used-trucks",
+                  "style": "link"
+                }
+              ]
+            },
+            {
+              "panel": "card",
+              "image": {
+                "src": "/images/pages/location-chassis.jpg",
+                "alt": "Mack chassis cab truck",
+                "width": 800,
+                "height": 500
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "mobile",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "pg-split",
+        "values": {
+          "bg": "card",
+          "sides": [
+            {
+              "panel": "none",
+              "image": {
+                "src": "/images/pages/location-logs.jpg",
+                "alt": "Mack truck hauling logs",
+                "width": 1024,
+                "height": 576
+              }
+            },
+            {
+              "eyebrow": "Beyond Our Lot",
+              "heading": "Mobile Service & Regional Support",
+              "copy": [
+                {
+                  "text": "Operational support from East Texas Mack extends far beyond our physical showroom walls. To minimize costly vehicle towing and limit downtime, our fully equipped mobile service trucks travel up to 150 miles to perform on-site fleet maintenance, diagnostic troubleshooting, and emergency repairs directly at your job site or yard. Complementing our mobile mechanics, our dedicated parts delivery fleet operates five days a week across the region, delivering critical replacement components straight to your shop."
+                }
+              ],
+              "links": [
+                {
+                  "label": "Explore Truck Service & Repair",
+                  "url": "/service",
+                  "style": "link"
+                },
+                {
+                  "label": "View Truck Parts Department",
+                  "url": "/parts",
+                  "style": "link"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "why",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "pg-cards",
+        "values": {
+          "bg": "paper",
+          "look": "start",
+          "span": 4,
+          "eyebrow": "Why Here",
+          "heading": "Why Our Longview Location Matters",
+          "cards": [
+            {
+              "title": "Central Regional Access Point",
+              "copy": [
+                {
+                  "text": "Located with immediate connectivity to Interstate 20 and major regional highways, our dealership acts as a crucial repair and dispatch point for commercial traffic traveling across East Texas, enabling rapid response times and efficient same-day parts delivery."
+                }
+              ]
+            },
+            {
+              "title": "Built for Commercial Fleet Operations",
+              "copy": [
+                {
+                  "text": "Our facility infrastructure is custom-built to handle high-volume commercial demands, supporting construction, refuse handling, oilfield services, municipal utilities, and regional freight transport with long-term maintenance planning and custom component configurations."
+                }
+              ],
+              "link1Label": "Explore Fleet Maintenance Strategies",
+              "link1Url": "/fleet-maintenance-strategies"
+            },
+            {
+              "title": "Full-Service Capability in One Location",
+              "copy": [
+                {
+                  "text": "We eliminate the hassle of juggling multiple vendors by housing complete commercial truck solutions under one roof — sales, service, parts, and financing without leaving our campus."
+                }
+              ],
+              "link1Label": "Explore Truck Financing",
+              "link1Url": "/financing"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "ahead",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "pg-text",
+        "values": {
+          "bg": "ink",
+          "eyebrow": "Looking Ahead",
+          "heading": "Regional Coverage & Future Growth",
+          "copy": [
+            {
+              "text": "East Texas Mack remains deeply committed to growing alongside the expanding commercial transport sector in East Texas. To better serve regional logistics networks, our strategic roadmaps include expanding operational footprints along the I-30 corridor, increasing mobile service unit density, broadening our warehouse parts stocking capacity, and evaluating strategic acquisition opportunities. Our overarching goal is to continually lower operating costs and enhance uptime access for every commercial operator throughout East Texas."
+            }
+          ],
+          "links": [
+            {
+              "label": "About East Texas Mack",
+              "url": "/about-us",
+              "style": "link"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "resources",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "pg-cards",
+        "values": {
+          "bg": "card",
+          "look": "start",
+          "span": 4,
+          "eyebrow": "Resources",
+          "heading": "Explore Our Truck Sales, Service & Fleet Resources",
+          "cards": [
+            {
+              "title": "New Mack Truck Inventory",
+              "copy": [
+                {
+                  "text": "Browse Mack Pinnacle, Granite, LR, and TerraPro inventory."
+                }
+              ],
+              "link1Label": "Browse New Mack Trucks",
+              "link1Url": "/store/inventory?condition=new"
+            },
+            {
+              "title": "Truck Service & Diagnostics",
+              "copy": [
+                {
+                  "text": "Explore preventative maintenance, diagnostics, engine repair, and mobile service support."
+                }
+              ],
+              "link1Label": "Explore Truck Service & Repair",
+              "link1Url": "/service"
+            },
+            {
+              "title": "Heavy-Duty Truck Parts Department",
+              "copy": [
+                {
+                  "text": "View OEM and aftermarket truck parts inventory and regional delivery support."
+                }
+              ],
+              "link1Label": "View Truck Parts Department",
+              "link1Url": "/parts"
+            },
+            {
+              "title": "Used Commercial Truck Inventory",
+              "copy": [
+                {
+                  "text": "Explore inspected pre-owned commercial truck inventory."
+                }
+              ],
+              "link1Label": "Browse Used Trucks",
+              "link1Url": "/used-trucks"
+            },
+            {
+              "title": "Truck Financing & Leasing",
+              "copy": [
+                {
+                  "text": "Learn about financing approvals, leasing structures, and fleet purchasing solutions."
+                }
+              ],
+              "link1Label": "Explore Truck Financing",
+              "link1Url": "/financing"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "visit",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "pg-cta",
+        "values": {
+          "heading": "Visit East Texas Mack",
+          "body": "Whether you are purchasing a truck, scheduling service, or ordering parts, our Longview location is equipped to support your operation. Longview, TX — Phone: (903) 758-9994",
+          "points": [
+            {
+              "text": "New & used commercial truck sales"
+            },
+            {
+              "text": "Certified truck service, overhauls, and diagnostics"
+            },
+            {
+              "text": "Fleet maintenance contracts & mobile support"
+            },
+            {
+              "text": "OEM and aftermarket parts delivery"
+            },
+            {
+              "text": "Commercial financing & fleet capital programs"
+            }
+          ],
+          "ctaLabel": "Contact East Texas Mack",
+          "ctaUrl": "/contact"
+        }
+      }
+    },
+    {
+      "id": "faq",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "pg-faq",
+        "values": {
+          "items": [
+            {
+              "q": "Where is East Texas Mack located?",
+              "a": "We are located in Longview, Texas, at 2934 State Highway 31 N."
+            },
+            {
+              "q": "What areas do you serve?",
+              "a": "We serve customers across East Texas and surrounding regions, including Tyler, Marshall, and nearby regional markets."
+            },
+            {
+              "q": "Do you offer mobile service outside Longview?",
+              "a": "Yes. Our mobile service trucks can travel up to 150 miles to support customers on-site."
+            },
+            {
+              "q": "Do you deliver parts outside of Longview?",
+              "a": "Yes. We provide parts delivery across the region five days per week."
+            },
+            {
+              "q": "Why do customers travel to your location?",
+              "a": "Customers rely on our large inventory, service capacity, fleet expertise, and full-service capabilities to support their operations efficiently."
+            }
+          ]
+        }
+      }
+    }
+  ]
+}
