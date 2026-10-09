@@ -1,0 +1,7 @@
+/* Accessibility: a single narrow reading column. */
+.bz-sharedsection[data-bz-section="pg-form-head"] .bz-row[data-bz-node="pfh-row"] { max-width: 820px; }
+.bz-sharedsection[data-bz-section="pg-form-head"] .bz-block[data-bz-node="pfh-h"] h1 { margin-bottom: 0px; }
+.bz-sharedsection[data-bz-node="statement"] .bz-section { padding-top: 70px; padding-bottom: 160px; }
+.bz-sharedsection[data-bz-node="statement"] .copy__p { font-size: 18px; line-height: 1.55; margin-bottom: 24px; color: #2a2b2f; }
+.bz-sharedsection[data-bz-node="statement"] .copy__p a { color: var(--accent); text-decoration: underline; }
+@media (max-width: 640px) { .bz-sharedsection[data-bz-node="statement"] .bz-section { padding-bottom: 56px; } }
