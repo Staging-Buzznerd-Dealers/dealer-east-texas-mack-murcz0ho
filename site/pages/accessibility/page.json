@@ -1,0 +1,44 @@
+{
+  "version": 2,
+  "nodes": [
+    {
+      "id": "head",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "pg-form-head",
+        "values": {
+          "trail": [],
+          "crumb": "Accessibility",
+          "headline": "Accessibility"
+        }
+      }
+    },
+    {
+      "id": "statement",
+      "type": "sharedSection",
+      "props": {
+        "sectionId": "pg-text",
+        "values": {
+          "bg": "card",
+          "copy": [
+            {
+              "text": "<strong>East Texas Mack</strong> is committed to ensuring our customers can readily access the products and services we provide, both in our physical locations and on our website. Our dealerships have voluntarily undertaken efforts to comply with the World Wide Web Consortium's Web Content Accessibility Guidelines 2.0, Level AA (\"WCAG2.0AA\"), a set of guidelines adopted by a private group designed to maximize the accessibility of web content."
+            },
+            {
+              "text": "Please note that our website may link to, or interface with, third-party websites that we do not control. These third-party vendors may not have undertaken the efforts that <strong>East Texas Mack</strong> has to comply with WCAG standards. In order to maximize accessibility w2.0AA with our customers, we are working with our vendors to encourage them to comply voluntarily with these standards."
+            },
+            {
+              "text": "As the law and accessibility standards continue to change, we strive to deliver the most update content online; please understand that our efforts to improve online accessibility are ongoing. We encourage you to report any accessibility issues you may encounter by contacting us at our <a href=\"/contact\">contact us</a> form."
+            },
+            {
+              "text": "We want to Thank You for your assistance in enhancing the accessibility of our website, and we look forward to serving you with your trucking needs."
+            },
+            {
+              "text": "If you wish to report an accessibility issue, have any questions, or need assistance, please <a href=\"/contact\">contact us.</a>"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

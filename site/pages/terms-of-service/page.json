@@ -199,7 +199,7 @@
               "heading": "10. Privacy",
               "copy": [
                 {
-                  "text": "Our collection and use of personal information is governed by our Privacy Policy, available at: <a href=\"#\">Privacy Policy</a>."
+                  "text": "Our collection and use of personal information is governed by our Privacy Policy, available at: <a href=\"/privacy-policy\">Privacy Policy</a>."
                 }
               ]
             },
@@ -208,7 +208,7 @@
               "heading": "11. Accessibility",
               "copy": [
                 {
-                  "text": "We are committed to providing an accessible online experience. If you experience difficulty accessing content or features on the Site, <a href=\"#\">please contact us</a>."
+                  "text": "We are committed to providing an accessible online experience. If you experience difficulty accessing content or features on the Site, <a href=\"/contact\">please contact us</a>."
                 }
               ]
             },

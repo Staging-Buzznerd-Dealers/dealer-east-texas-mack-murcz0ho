@@ -449,5 +449,41 @@
       "footer": null,
       "utilityNav": null
     }
+  },
+  {
+    "slug": "privacy-policy",
+    "title": "Privacy Policy",
+    "description": "How East Texas Mack collects, uses and shares personal information on its website.",
+    "path": "/privacy-policy",
+    "out": "privacy-policy/index.html",
+    "dir": "privacy-policy",
+    "status": "published",
+    "seo": {
+      "ogImage": null,
+      "noindex": false
+    },
+    "templates": {
+      "header": null,
+      "footer": null,
+      "utilityNav": null
+    }
+  },
+  {
+    "slug": "accessibility",
+    "title": "Accessibility",
+    "description": "East Texas Mack's commitment to website accessibility, and how to report an accessibility issue.",
+    "path": "/accessibility",
+    "out": "accessibility/index.html",
+    "dir": "accessibility",
+    "status": "published",
+    "seo": {
+      "ogImage": null,
+      "noindex": false
+    },
+    "templates": {
+      "header": null,
+      "footer": null,
+      "utilityNav": null
+    }
   }
 ]

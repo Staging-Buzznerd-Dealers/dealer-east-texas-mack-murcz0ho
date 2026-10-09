@@ -122,8 +122,8 @@
         {
           "id": "privacy",
           "label": "Privacy Policy",
-          "type": "url",
-          "url": "/privacy-policy"
+          "type": "page",
+          "ref": "privacy-policy"
         },
         {
           "id": "terms",
@@ -134,8 +134,8 @@
         {
           "id": "accessibility",
           "label": "Accessibility",
-          "type": "url",
-          "url": "/accessibility"
+          "type": "page",
+          "ref": "accessibility"
         }
       ]
     }
