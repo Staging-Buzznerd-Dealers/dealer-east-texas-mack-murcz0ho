@@ -322,7 +322,7 @@
           "links": [
             {
               "label": "View Locations",
-              "url": "/locations",
+              "url": "/location",
               "style": "link"
             }
           ]

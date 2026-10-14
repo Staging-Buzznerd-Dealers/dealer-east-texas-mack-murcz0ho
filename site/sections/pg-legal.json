@@ -195,8 +195,8 @@
                         {
                           "id": "plg-h",
                           "type": "heading",
-                          "anchor": "{{slug}}",
                           "props": {
+                            "anchor": "{{slug}}",
                             "text": "{{heading}}",
                             "headingLevel": 2
                           }
