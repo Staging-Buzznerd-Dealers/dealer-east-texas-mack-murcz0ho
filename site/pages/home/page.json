@@ -406,6 +406,50 @@
             "snapshot": {
               "listings": [
                 {
+                  "slug": "3-mack-legacy-granite",
+                  "href": "products/3-mack-legacy-granite",
+                  "title": "Mack Legacy Granite",
+                  "price": "$0",
+                  "facts": [
+                    {
+                      "label": "Make",
+                      "value": "Mack"
+                    },
+                    {
+                      "label": "Model",
+                      "value": "Granite®"
+                    }
+                  ],
+                  "image": {
+                    "src": "preview/47/granite_1__02__preview.jpg",
+                    "alt": "Mack Legacy Granite",
+                    "width": 600,
+                    "height": 400
+                  }
+                },
+                {
+                  "slug": "3-mack-lr-electric",
+                  "href": "products/3-mack-lr-electric",
+                  "title": "Mack LR Electric",
+                  "price": "$0",
+                  "facts": [
+                    {
+                      "label": "Make",
+                      "value": "Mack"
+                    },
+                    {
+                      "label": "Model",
+                      "value": "LR Electric"
+                    }
+                  ],
+                  "image": {
+                    "src": "preview/d4/lrelectric_2__preview.jpg",
+                    "alt": "Mack LR Electric",
+                    "width": 600,
+                    "height": 400
+                  }
+                },
+                {
                   "slug": "3-mack-anthem",
                   "href": "products/3-mack-anthem",
                   "title": "Mack Anthem®",
@@ -458,28 +502,6 @@
                   }
                 },
                 {
-                  "slug": "3-mack-legacy-granite",
-                  "href": "products/3-mack-legacy-granite",
-                  "title": "Mack Legacy Granite",
-                  "price": "$0",
-                  "facts": [
-                    {
-                      "label": "Make",
-                      "value": "Mack"
-                    },
-                    {
-                      "label": "Model",
-                      "value": "Granite®"
-                    }
-                  ],
-                  "image": {
-                    "src": "preview/47/granite_1__02__preview.jpg",
-                    "alt": "Mack Legacy Granite",
-                    "width": 600,
-                    "height": 400
-                  }
-                },
-                {
                   "slug": "3-mack-keystone",
                   "href": "products/3-mack-keystone",
                   "title": "Mack Keystone",
@@ -497,28 +519,6 @@
                   "image": {
                     "src": "preview/5b/keystone-1__preview.webp",
                     "alt": "Mack Keystone",
-                    "width": 600,
-                    "height": 400
-                  }
-                },
-                {
-                  "slug": "3-mack-lr-electric",
-                  "href": "products/3-mack-lr-electric",
-                  "title": "Mack LR Electric",
-                  "price": "$0",
-                  "facts": [
-                    {
-                      "label": "Make",
-                      "value": "Mack"
-                    },
-                    {
-                      "label": "Model",
-                      "value": "LR Electric"
-                    }
-                  ],
-                  "image": {
-                    "src": "preview/d4/lrelectric_2__preview.jpg",
-                    "alt": "Mack LR Electric",
                     "width": 600,
                     "height": 400
                   }
