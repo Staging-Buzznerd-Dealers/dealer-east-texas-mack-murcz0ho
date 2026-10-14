@@ -335,7 +335,7 @@
           "links": [
             {
               "label": "View Service Locations",
-              "url": "/locations",
+              "url": "/location",
               "style": "link"
             }
           ]

@@ -205,7 +205,7 @@
                 }
               ],
               "link1Label": "Request Custom Truck Information",
-              "link1Url": "/contact#form-request-a-quote"
+              "link1Url": "/get-a-quote"
             }
           ]
         }
@@ -430,7 +430,7 @@
           "links": [
             {
               "label": "View Locations",
-              "url": "/locations",
+              "url": "/location",
               "style": "link"
             }
           ]

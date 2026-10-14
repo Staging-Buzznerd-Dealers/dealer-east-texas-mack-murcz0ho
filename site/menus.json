@@ -17,9 +17,9 @@
         {
           "id": "leasing",
           "label": "Leasing & Rental",
-          "type": "url",
-          "ref": null,
-          "url": "/leasing-rentals-request",
+          "type": "page",
+          "ref": "leasing-rentals-request",
+          "url": null,
           "newTab": false,
           "children": []
         },
@@ -101,18 +101,18 @@
         {
           "id": "ft-leasing",
           "label": "Leasing & Rental",
-          "type": "url",
-          "ref": null,
-          "url": "/leasing-rental",
+          "type": "page",
+          "ref": "leasing-rentals-request",
+          "url": null,
           "newTab": false,
           "children": []
         },
         {
           "id": "ft-showroom",
           "label": "Showroom",
-          "type": "url",
-          "ref": null,
-          "url": "/showroom",
+          "type": "page",
+          "ref": "new-trucks",
+          "url": null,
           "newTab": false,
           "children": []
         }
