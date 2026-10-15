@@ -476,6 +476,28 @@
                   }
                 },
                 {
+                  "slug": "3-mack-keystone",
+                  "href": "products/3-mack-keystone",
+                  "title": "Mack Keystone",
+                  "price": "$0",
+                  "facts": [
+                    {
+                      "label": "Make",
+                      "value": "Mack"
+                    },
+                    {
+                      "label": "Model",
+                      "value": "Keystone"
+                    }
+                  ],
+                  "image": {
+                    "src": "preview/5b/keystone-1__preview.webp",
+                    "alt": "Mack Keystone",
+                    "width": 600,
+                    "height": 400
+                  }
+                },
+                {
                   "slug": "3-mack-granite",
                   "href": "products/3-mack-granite",
                   "title": "Mack Granite®",
@@ -497,28 +519,6 @@
                   "image": {
                     "src": "preview/c8/granight-3__preview.webp",
                     "alt": "Mack Granite®",
-                    "width": 600,
-                    "height": 400
-                  }
-                },
-                {
-                  "slug": "3-mack-keystone",
-                  "href": "products/3-mack-keystone",
-                  "title": "Mack Keystone",
-                  "price": "$0",
-                  "facts": [
-                    {
-                      "label": "Make",
-                      "value": "Mack"
-                    },
-                    {
-                      "label": "Model",
-                      "value": "Keystone"
-                    }
-                  ],
-                  "image": {
-                    "src": "preview/5b/keystone-1__preview.webp",
-                    "alt": "Mack Keystone",
                     "width": 600,
                     "height": 400
                   }
