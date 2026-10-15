@@ -33,26 +33,19 @@
       "id": "header",
       "type": "section",
       "props": {
-        "width": "full",
+        "width": "boxed",
         "paddingY": 0,
         "background": "ink"
       },
       "styles": {
         "base": {
           "paddingTop": 18,
-          "paddingBottom": 18,
-          "paddingLeft": 40,
-          "paddingRight": 40
+          "paddingBottom": 18
         },
-        "tablet": {
-          "paddingLeft": 24,
-          "paddingRight": 24
-        },
+        "tablet": {},
         "mobile": {
           "paddingTop": 14,
-          "paddingBottom": 14,
-          "paddingLeft": 20,
-          "paddingRight": 20
+          "paddingBottom": 14
         }
       },
       "children": [

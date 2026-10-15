@@ -41,7 +41,7 @@
       "id": "pb",
       "type": "section",
       "props": {
-        "width": "full",
+        "width": "boxed",
         "background": "ink",
         "paddingY": 0
       },
@@ -53,18 +53,11 @@
           "alignItems": "center",
           "minHeight": 460,
           "paddingTop": 32,
-          "paddingBottom": 32,
-          "paddingLeft": 40,
-          "paddingRight": 40
+          "paddingBottom": 32
         },
-        "tablet": {
-          "paddingLeft": 24,
-          "paddingRight": 24
-        },
+        "tablet": {},
         "mobile": {
-          "minHeight": 380,
-          "paddingLeft": 20,
-          "paddingRight": 20
+          "minHeight": 380
         }
       },
       "children": [

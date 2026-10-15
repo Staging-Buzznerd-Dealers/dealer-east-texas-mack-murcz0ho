@@ -194,7 +194,7 @@
       "id": "pc",
       "type": "section",
       "props": {
-        "width": "full",
+        "width": "boxed",
         "background": "{{bg}}",
         "align": "{{look}}",
         "paddingY": 0
@@ -202,19 +202,12 @@
       "styles": {
         "base": {
           "paddingTop": 90,
-          "paddingBottom": 90,
-          "paddingLeft": 40,
-          "paddingRight": 40
+          "paddingBottom": 90
         },
-        "tablet": {
-          "paddingLeft": 24,
-          "paddingRight": 24
-        },
+        "tablet": {},
         "mobile": {
           "paddingTop": 56,
-          "paddingBottom": 56,
-          "paddingLeft": 20,
-          "paddingRight": 20
+          "paddingBottom": 56
         }
       },
       "children": [

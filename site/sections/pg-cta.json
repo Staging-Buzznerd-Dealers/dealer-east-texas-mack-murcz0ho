@@ -82,26 +82,19 @@
       "id": "pcta",
       "type": "section",
       "props": {
-        "width": "full",
+        "width": "boxed",
         "background": "accent",
         "paddingY": 0
       },
       "styles": {
         "base": {
           "paddingTop": 80,
-          "paddingBottom": 80,
-          "paddingLeft": 40,
-          "paddingRight": 40
+          "paddingBottom": 80
         },
-        "tablet": {
-          "paddingLeft": 24,
-          "paddingRight": 24
-        },
+        "tablet": {},
         "mobile": {
           "paddingTop": 46,
-          "paddingBottom": 46,
-          "paddingLeft": 20,
-          "paddingRight": 20
+          "paddingBottom": 46
         }
       },
       "children": [

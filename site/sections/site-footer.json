@@ -77,25 +77,18 @@
       "id": "ft",
       "type": "section",
       "props": {
-        "width": "full",
+        "width": "boxed",
         "paddingY": 0
       },
       "styles": {
         "base": {
           "background": "inkDark",
           "paddingTop": 64,
-          "paddingBottom": 30,
-          "paddingLeft": 40,
-          "paddingRight": 40
+          "paddingBottom": 30
         },
-        "tablet": {
-          "paddingLeft": 24,
-          "paddingRight": 24
-        },
+        "tablet": {},
         "mobile": {
-          "paddingTop": 48,
-          "paddingLeft": 20,
-          "paddingRight": 20
+          "paddingTop": 48
         }
       },
       "children": [
