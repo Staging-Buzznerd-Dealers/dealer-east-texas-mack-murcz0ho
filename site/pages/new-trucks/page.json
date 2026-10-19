@@ -5,18 +5,18 @@
       "id": "hero",
       "type": "sharedSection",
       "props": {
-        "sectionId": "pg-hero",
+        "sectionId": "pg-banner",
         "values": {
           "crumb": "Mack Truck Dealer in Longview, TX",
           "eyebrow": "New Trucks",
           "headline": "Mack Truck Dealer in Longview, TX",
           "subhead": "In-Stock Inventory. Expert Guidance. Built for Your Application.",
-          "body": "At East Texas Mack, we maintain one of the region's largest selections of new Mack commercial trucks, featuring premium units ready for immediate job site deployment. Whether you are expanding a regional freight fleet, scaling a municipal refuse operation, or upgrading oilfield service rigs, our application-focused sales team works closely with you to match your business with the precise spec for the job.",
+          "tagline": "At East Texas Mack, we maintain one of the region's largest selections of new Mack commercial trucks, featuring premium units ready for immediate job site deployment. Whether you are expanding a regional freight fleet, scaling a municipal refuse operation, or upgrading oilfield service rigs, our application-focused sales team works closely with you to match your business with the precise spec for the job.",
           "image": {
-            "src": "/images/pages/new-truck-anthem.jpg",
-            "alt": "Mack Anthem truck",
-            "width": 1024,
-            "height": 751
+            "src": "/images/pages/hero-trucks.webp",
+            "alt": "Two Mack trucks parked outside a distribution warehouse",
+            "width": 1000,
+            "height": 500
           }
         }
       }

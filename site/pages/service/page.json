@@ -5,18 +5,18 @@
       "id": "hero",
       "type": "sharedSection",
       "props": {
-        "sectionId": "pg-hero",
+        "sectionId": "pg-banner",
         "values": {
           "crumb": "Service",
           "eyebrow": "Service",
           "headline": "Heavy-Duty Truck Service & Repair in Longview, TX",
           "subhead": "Fast Turnaround. Certified Technicians. Built for Fleet Uptime.",
-          "body": "At East Texas Mack, we provide complete truck service and repair solutions for fleets, municipalities, owner-operators, and over-the-road trucking operations across East Texas. Our operation is engineered around a single priority: keeping your trucks on the road and minimizing downtime. To keep your fleet moving, we back our shop with aggressive turnaround commitments, delivering scheduled preventative maintenance completed within the same day, rapid diagnostic evaluations for vehicles arriving before noon, and complex major engine repairs completed in as little as 24 hours depending on component availability. We also offer fully dispatched mobile repair support and customized fleet maintenance programs.",
+          "tagline": "At East Texas Mack, we provide complete truck service and repair solutions for fleets, municipalities, owner-operators, and over-the-road trucking operations across East Texas. Our operation is engineered around a single priority: keeping your trucks on the road and minimizing downtime. To keep your fleet moving, we back our shop with aggressive turnaround commitments, delivering scheduled preventative maintenance completed within the same day, rapid diagnostic evaluations for vehicles arriving before noon, and complex major engine repairs completed in as little as 24 hours depending on component availability. We also offer fully dispatched mobile repair support and customized fleet maintenance programs.",
           "image": {
-            "src": "/images/pages/service-hero.jpg",
-            "alt": "Mack Anthem truck",
-            "width": 1024,
-            "height": 751
+            "src": "/images/pages/hero-trucks.webp",
+            "alt": "Two Mack trucks parked outside a distribution warehouse",
+            "width": 1000,
+            "height": 500
           }
         }
       }

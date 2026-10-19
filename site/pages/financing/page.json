@@ -5,18 +5,18 @@
       "id": "hero",
       "type": "sharedSection",
       "props": {
-        "sectionId": "pg-hero",
+        "sectionId": "pg-banner",
         "values": {
           "crumb": "Finance",
           "eyebrow": "Finance",
           "headline": "Truck Financing in Longview, TX",
           "subhead": "Fast Approvals. Flexible Options. Built for Commercial Truck Buyers.",
-          "body": "At East Texas Mack, we provide comprehensive financing and leasing solutions for new and used commercial trucks across East Texas. Whether you are an independent owner-operator purchasing your first rig or a fleet manager acquiring multiple Class 8 tractors, our experienced finance specialists secure customized capital structures that align with your cash flow, tax strategy, and operational goals.",
+          "tagline": "At East Texas Mack, we provide comprehensive financing and leasing solutions for new and used commercial trucks across East Texas. Whether you are an independent owner-operator purchasing your first rig or a fleet manager acquiring multiple Class 8 tractors, our experienced finance specialists secure customized capital structures that align with your cash flow, tax strategy, and operational goals.",
           "image": {
-            "src": "/images/pages/finance-hero.jpg",
-            "alt": "Mack Anthem truck",
-            "width": 1363,
-            "height": 1000
+            "src": "/images/pages/hero-trucks.webp",
+            "alt": "Two Mack trucks parked outside a distribution warehouse",
+            "width": 1000,
+            "height": 500
           }
         }
       }
