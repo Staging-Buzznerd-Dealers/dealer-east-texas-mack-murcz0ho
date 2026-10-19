@@ -5,18 +5,18 @@
       "id": "hero",
       "type": "sharedSection",
       "props": {
-        "sectionId": "pg-hero",
+        "sectionId": "pg-banner",
         "values": {
           "crumb": "Used Commercial Trucks for Sale in Longview, TX",
           "eyebrow": "Pre-Owned Inventory",
           "headline": "Quality Pre-Owned Commercial Trucks in Longview, TX",
           "subhead": "Thoroughly Inspected. Ready for Work. Built for Fleet Reliability.",
-          "body": "At East Texas Mack, we offer a select inventory of high-quality pre-owned commercial trucks designed to give fleet operators and owner-operators a cost-effective alternative to new equipment. Every used truck on our Longview lot undergoes a rigorous technical inspection by our factory-certified mechanics before being cleared for sale. Whether you are expanding a regional haul fleet, replacing an out-of-service rig, or buying your first vocational truck, our used inventory delivers dependable performance without the new-asset price tag.",
+          "tagline": "At East Texas Mack, we offer a select inventory of high-quality pre-owned commercial trucks designed to give fleet operators and owner-operators a cost-effective alternative to new equipment. Every used truck on our Longview lot undergoes a rigorous technical inspection by our factory-certified mechanics before being cleared for sale. Whether you are expanding a regional haul fleet, replacing an out-of-service rig, or buying your first vocational truck, our used inventory delivers dependable performance without the new-asset price tag.",
           "image": {
-            "src": "/images/pages/used-commercial-hero.jpg",
-            "alt": "Mack Anthem truck",
-            "width": 1024,
-            "height": 751
+            "src": "/images/pages/hero-trucks.webp",
+            "alt": "Two Mack trucks parked outside a distribution warehouse",
+            "width": 1000,
+            "height": 500
           }
         }
       }

@@ -5,18 +5,18 @@
       "id": "hero",
       "type": "sharedSection",
       "props": {
-        "sectionId": "pg-hero",
+        "sectionId": "pg-banner",
         "values": {
           "crumb": "Parts",
           "eyebrow": "Parts",
           "headline": "Heavy-Duty Truck Parts in Longview, TX",
           "subhead": "OEM & Aftermarket Parts. Fast Availability. Built for Fleet Uptime.",
-          "body": "At East Texas Mack, we supply high-quality commercial truck parts for fleets, owner-operators, and vocational operations across East Texas. Our focus is simple: get you the right part fast and keep your trucks moving. To support high-demand regional operations, we maintain over $3 million in on-the-ground local inventory, achieving a consistent 95% parts fill rate. For urgent repair needs, we offer same-day regional delivery for orders placed before noon.",
+          "tagline": "At East Texas Mack, we supply high-quality commercial truck parts for fleets, owner-operators, and vocational operations across East Texas. Our focus is simple: get you the right part fast and keep your trucks moving. To support high-demand regional operations, we maintain over $3 million in on-the-ground local inventory, achieving a consistent 95% parts fill rate. For urgent repair needs, we offer same-day regional delivery for orders placed before noon.",
           "image": {
-            "src": "/images/pages/parts-hero.jpg",
-            "alt": "Mack Anthem truck",
-            "width": 1024,
-            "height": 751
+            "src": "/images/pages/hero-trucks.webp",
+            "alt": "Two Mack trucks parked outside a distribution warehouse",
+            "width": 1000,
+            "height": 500
           }
         }
       }

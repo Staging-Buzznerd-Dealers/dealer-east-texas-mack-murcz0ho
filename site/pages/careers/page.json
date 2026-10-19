@@ -5,18 +5,18 @@
       "id": "hero",
       "type": "sharedSection",
       "props": {
-        "sectionId": "pg-hero",
+        "sectionId": "pg-banner",
         "values": {
           "crumb": "Careers",
           "eyebrow": "Careers",
           "headline": "Careers at East Texas Mack",
           "subhead": "Build a Long-Term Career in the Heavy-Duty Truck Industry",
-          "body": "At East Texas Mack, we are far more than a commercial dealership — we are a dedicated team supporting the essential transportation networks that keep East Texas moving. We continuously recruit motivated, driven professionals who want to establish a stable, lifelong career in the heavy-duty trucking industry. Whether your expertise lies in precision diesel diagnostics, parts warehousing logistics, commercial fleet sales, or dealership administration, we offer the culture and tools for your long-term success.",
+          "tagline": "At East Texas Mack, we are far more than a commercial dealership — we are a dedicated team supporting the essential transportation networks that keep East Texas moving. We continuously recruit motivated, driven professionals who want to establish a stable, lifelong career in the heavy-duty trucking industry. Whether your expertise lies in precision diesel diagnostics, parts warehousing logistics, commercial fleet sales, or dealership administration, we offer the culture and tools for your long-term success.",
           "image": {
-            "src": "/images/pages/careers-hero.jpg",
-            "alt": "Mack Anthem truck",
-            "width": 1024,
-            "height": 751
+            "src": "/images/pages/hero-trucks.webp",
+            "alt": "Two Mack trucks parked outside a distribution warehouse",
+            "width": 1000,
+            "height": 500
           }
         }
       }

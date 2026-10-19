@@ -13,10 +13,10 @@
           "subhead": "Serving East Texas Since 1976",
           "tagline": "East Texas Mack has been a trusted provider of Mack trucks, certified service, and high-volume parts logistics for businesses across Longview and the broader East Texas region for nearly five decades.",
           "image": {
-            "src": "/images/pages/about-hero.jpg",
-            "alt": "Mack truck",
-            "width": 1024,
-            "height": 576
+            "src": "/images/pages/hero-trucks.webp",
+            "alt": "Two Mack trucks parked outside a distribution warehouse",
+            "width": 1000,
+            "height": 500
           }
         }
       }
