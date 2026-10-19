@@ -406,50 +406,6 @@
             "snapshot": {
               "listings": [
                 {
-                  "slug": "3-mack-legacy-granite",
-                  "href": "products/3-mack-legacy-granite",
-                  "title": "Mack Legacy Granite",
-                  "price": "$0",
-                  "facts": [
-                    {
-                      "label": "Make",
-                      "value": "Mack"
-                    },
-                    {
-                      "label": "Model",
-                      "value": "Granite®"
-                    }
-                  ],
-                  "image": {
-                    "src": "preview/47/granite_1__02__preview.jpg",
-                    "alt": "Mack Legacy Granite",
-                    "width": 600,
-                    "height": 400
-                  }
-                },
-                {
-                  "slug": "3-mack-lr-electric",
-                  "href": "products/3-mack-lr-electric",
-                  "title": "Mack LR Electric",
-                  "price": "$0",
-                  "facts": [
-                    {
-                      "label": "Make",
-                      "value": "Mack"
-                    },
-                    {
-                      "label": "Model",
-                      "value": "LR Electric"
-                    }
-                  ],
-                  "image": {
-                    "src": "preview/d4/lrelectric_2__preview.jpg",
-                    "alt": "Mack LR Electric",
-                    "width": 600,
-                    "height": 400
-                  }
-                },
-                {
                   "slug": "3-mack-anthem",
                   "href": "products/3-mack-anthem",
                   "title": "Mack Anthem®",
@@ -471,6 +427,54 @@
                   "image": {
                     "src": "preview/44/anthem_1__preview.jpg",
                     "alt": "Mack Anthem®",
+                    "width": 600,
+                    "height": 400
+                  }
+                },
+                {
+                  "slug": "3-mack-granite",
+                  "href": "products/3-mack-granite",
+                  "title": "Mack Granite®",
+                  "price": "$0",
+                  "facts": [
+                    {
+                      "label": "Make",
+                      "value": "Mack"
+                    },
+                    {
+                      "label": "Model",
+                      "value": "Granite®"
+                    },
+                    {
+                      "label": "Engine",
+                      "value": "MP®13 13 liter 540 hp max 1,950 lb-ft torque max Cummins X10™ 10 liter 450 hp max 1,650 lb-ft torque max"
+                    }
+                  ],
+                  "image": {
+                    "src": "preview/c8/granight-3__preview.webp",
+                    "alt": "Mack Granite®",
+                    "width": 600,
+                    "height": 400
+                  }
+                },
+                {
+                  "slug": "3-mack-legacy-granite",
+                  "href": "products/3-mack-legacy-granite",
+                  "title": "Mack Legacy Granite",
+                  "price": "$0",
+                  "facts": [
+                    {
+                      "label": "Make",
+                      "value": "Mack"
+                    },
+                    {
+                      "label": "Model",
+                      "value": "Granite®"
+                    }
+                  ],
+                  "image": {
+                    "src": "preview/47/granite_1__02__preview.jpg",
+                    "alt": "Mack Legacy Granite",
                     "width": 600,
                     "height": 400
                   }
@@ -498,9 +502,9 @@
                   }
                 },
                 {
-                  "slug": "3-mack-granite",
-                  "href": "products/3-mack-granite",
-                  "title": "Mack Granite®",
+                  "slug": "3-mack-lr-electric",
+                  "href": "products/3-mack-lr-electric",
+                  "title": "Mack LR Electric",
                   "price": "$0",
                   "facts": [
                     {
@@ -509,16 +513,12 @@
                     },
                     {
                       "label": "Model",
-                      "value": "Granite®"
-                    },
-                    {
-                      "label": "Engine",
-                      "value": "MP®13 13 liter 540 hp max 1,950 lb-ft torque max Cummins X10™ 10 liter 450 hp max 1,650 lb-ft torque max"
+                      "value": "LR Electric"
                     }
                   ],
                   "image": {
-                    "src": "preview/c8/granight-3__preview.webp",
-                    "alt": "Mack Granite®",
+                    "src": "preview/d4/lrelectric_2__preview.jpg",
+                    "alt": "Mack LR Electric",
                     "width": 600,
                     "height": 400
                   }
