@@ -1,0 +1,97 @@
+{
+  "id": "value-your-trade",
+  "name": "Value Your Trade",
+  "status": "live",
+  "surfaces": [
+    "page"
+  ],
+  "intent": "value-trade",
+  "submitLabel": "Submit",
+  "successMessage": "Thanks — our sales team has your trade-in details and will come back to you with a value.",
+  "consent": {
+    "enabled": false,
+    "required": false,
+    "text": ""
+  },
+  "fields": [
+    {
+      "id": "vt-first",
+      "type": "first_name",
+      "label": "First name",
+      "required": true,
+      "width": "half"
+    },
+    {
+      "id": "vt-last",
+      "type": "last_name",
+      "label": "Last name",
+      "required": true,
+      "width": "half"
+    },
+    {
+      "id": "vt-email",
+      "type": "email",
+      "label": "Email",
+      "required": true,
+      "width": "half"
+    },
+    {
+      "id": "vt-phone",
+      "type": "phone",
+      "label": "Phone",
+      "required": false,
+      "width": "half"
+    },
+    {
+      "id": "vt-make",
+      "type": "single_line",
+      "label": "Make",
+      "required": false,
+      "width": "half"
+    },
+    {
+      "id": "vt-model",
+      "type": "single_line",
+      "label": "Model",
+      "required": false,
+      "width": "half"
+    },
+    {
+      "id": "vt-year",
+      "type": "single_line",
+      "label": "Year",
+      "required": false,
+      "width": "half"
+    },
+    {
+      "id": "vt-miles",
+      "type": "single_line",
+      "label": "Miles",
+      "required": false,
+      "width": "half"
+    },
+    {
+      "id": "vt-acc",
+      "type": "single_line",
+      "label": "Added accessories",
+      "required": false
+    },
+    {
+      "id": "vt-msg",
+      "type": "paragraph",
+      "label": "Comments/Question",
+      "required": false
+    }
+  ],
+  "notifications": [
+    {
+      "id": "vt-default",
+      "name": "Default",
+      "logic": "AND",
+      "rules": [],
+      "targetType": "role",
+      "roleId": "sales-manager",
+      "scopeMode": "dynamic"
+    }
+  ]
+}

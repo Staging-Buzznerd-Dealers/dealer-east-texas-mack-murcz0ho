@@ -1,0 +1,67 @@
+{
+  "id": "schedule-a-test-ride",
+  "name": "Schedule a Test Ride",
+  "status": "live",
+  "surfaces": [
+    "page"
+  ],
+  "intent": "test-ride",
+  "submitLabel": "Submit",
+  "successMessage": "Thanks — our sales team has your request and will confirm your test ride shortly.",
+  "consent": {
+    "enabled": false,
+    "required": false,
+    "text": ""
+  },
+  "fields": [
+    {
+      "id": "tr-first",
+      "type": "first_name",
+      "label": "First name",
+      "required": true,
+      "width": "half"
+    },
+    {
+      "id": "tr-last",
+      "type": "last_name",
+      "label": "Last name",
+      "required": true,
+      "width": "half"
+    },
+    {
+      "id": "tr-email",
+      "type": "email",
+      "label": "Email",
+      "required": true
+    },
+    {
+      "id": "tr-phone",
+      "type": "phone",
+      "label": "Phone",
+      "required": true
+    },
+    {
+      "id": "tr-date",
+      "type": "date",
+      "label": "Date",
+      "required": true
+    },
+    {
+      "id": "tr-vehicle",
+      "type": "single_line",
+      "label": "Vehicle you want to drive",
+      "required": true
+    }
+  ],
+  "notifications": [
+    {
+      "id": "tr-default",
+      "name": "Default",
+      "logic": "AND",
+      "rules": [],
+      "targetType": "role",
+      "roleId": "sales-manager",
+      "scopeMode": "dynamic"
+    }
+  ]
+}
