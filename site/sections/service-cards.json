@@ -3,7 +3,7 @@
   "id": "service-cards",
   "name": "What we do",
   "description": "Dark band of numbered department cards — icon, title, one line and a link — under a heading with a link to all services.",
-  "css": "[data-bz-section=\"service-cards\"] .bz-block { padding-block: 0; }\n[data-bz-section=\"service-cards\"] .bz-block p { margin: 0; }\n[data-bz-section=\"service-cards\"] .bz-block .bz-eyebrow { color: #8fa3d1; font: 700 13px / 1.4 var(--font-body); letter-spacing: 1.5px; margin-bottom: 10px; }\n[data-bz-section=\"service-cards\"] [data-bz-node=\"svc-heading\"] h2 { max-width: 640px; margin: 0; }\n[data-bz-section=\"service-cards\"] .bz-btns { margin: 0; }\n[data-bz-section=\"service-cards\"] [data-bz-node=\"svc-all\"] .bz-btns { justify-content: flex-end; }\n[data-bz-section=\"service-cards\"] [data-bz-node^=\"svc-num\"] p { font: 400 14px / 1 var(--font-heading); color: var(--muted); }\n[data-bz-section=\"service-cards\"] [data-bz-node^=\"svc-icon\"] img { width: 44px; height: 44px; object-fit: contain; border-radius: 0; filter: brightness(0) invert(1); opacity: .9; }\n[data-bz-section=\"service-cards\"] [data-bz-node^=\"svc-title\"] h3 { font-size: 20px; margin: 0; color: var(--card); }\n[data-bz-section=\"service-cards\"] .bz-block[data-bz-node^=\"svc-desc\"] { flex: 1; }\n[data-bz-section=\"service-cards\"] [data-bz-node^=\"svc-desc\"] p { font-size: 14px; line-height: 1.5; color: #9a9da3; }\n[data-bz-section=\"service-cards\"] .bz-btn { font: 600 14px / 1.2 var(--font-body); }\n@media (max-width: 640px) { [data-bz-section=\"service-cards\"] [data-bz-node=\"svc-all\"] .bz-btns { justify-content: flex-start; } }",
+  "css": "[data-bz-section=\"service-cards\"] .bz-block { padding-block: 0; }\n[data-bz-section=\"service-cards\"] .bz-block p { margin: 0; }\n[data-bz-section=\"service-cards\"] .bz-block .bz-eyebrow { color: #8fa3d1; font: 700 13px / 1.4 var(--font-body); letter-spacing: 1.5px; margin-bottom: 10px; }\n[data-bz-section=\"service-cards\"] [data-bz-node=\"svc-heading\"] h2 { margin: 0; }\n/* One line from tablet up (it scales down to fit); on phones it wraps rather than shrinking to nothing. */\n@media (min-width: 641px) { [data-bz-section=\"service-cards\"] [data-bz-node=\"svc-heading\"] h2 { white-space: nowrap; } }\n@media (min-width: 641px) and (max-width: 1100px) { [data-bz-section=\"service-cards\"] [data-bz-node=\"svc-heading\"] h2 { font-size: 2.9vw; } }\n[data-bz-section=\"service-cards\"] .bz-btns { margin: 0; }\n[data-bz-section=\"service-cards\"] [data-bz-node=\"svc-all\"] .bz-btns { justify-content: flex-end; }\n[data-bz-section=\"service-cards\"] [data-bz-node^=\"svc-num\"] p { font: 400 14px / 1 var(--font-heading); color: var(--muted); }\n[data-bz-section=\"service-cards\"] [data-bz-node^=\"svc-icon\"] img { width: 44px; height: 44px; object-fit: contain; border-radius: 0; filter: brightness(0) invert(1); opacity: .9; }\n[data-bz-section=\"service-cards\"] [data-bz-node^=\"svc-title\"] h3 { font-size: 20px; margin: 0; color: var(--card); }\n[data-bz-section=\"service-cards\"] .bz-block[data-bz-node^=\"svc-desc\"] { flex: 1; }\n[data-bz-section=\"service-cards\"] [data-bz-node^=\"svc-desc\"] p { font-size: 14px; line-height: 1.5; color: #9a9da3; }\n[data-bz-section=\"service-cards\"] .bz-btn { font: 600 14px / 1.2 var(--font-body); }\n@media (max-width: 640px) { [data-bz-section=\"service-cards\"] [data-bz-node=\"svc-all\"] .bz-btns { justify-content: flex-start; } }",
   "props": [
     {
       "key": "eyebrow",
@@ -94,7 +94,10 @@
           },
           "styles": {
             "base": {
-              "marginBottom": 48
+              "marginBottom": 48,
+              "maxWidth": 1280,
+              "marginLeft": "auto",
+              "marginRight": "auto"
             }
           },
           "children": [
@@ -153,7 +156,10 @@
           "styles": {
             "base": {
               "gridColumns": "1fr 1fr 1fr 1fr",
-              "gap": 24
+              "gap": 24,
+              "maxWidth": 1280,
+              "marginLeft": "auto",
+              "marginRight": "auto"
             },
             "tablet": {
               "gridColumns": "1fr 1fr"

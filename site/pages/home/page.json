@@ -343,7 +343,10 @@
           },
           "styles": {
             "base": {
-              "marginBottom": 40
+              "marginBottom": 40,
+              "maxWidth": 1280,
+              "marginLeft": "auto",
+              "marginRight": "auto"
             }
           },
           "children": [
@@ -531,6 +534,13 @@
                   }
                 }
               ]
+            }
+          },
+          "styles": {
+            "base": {
+              "maxWidth": 1280,
+              "marginLeft": "auto",
+              "marginRight": "auto"
             }
           }
         }
