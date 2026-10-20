@@ -485,5 +485,41 @@
       "footer": null,
       "utilityNav": null
     }
+  },
+  {
+    "slug": "value-your-trade",
+    "title": "Value Your Trade",
+    "description": "Get a trade-in value for your truck from East Texas Mack in Longview, TX.",
+    "path": "/value-your-trade",
+    "out": "value-your-trade/index.html",
+    "dir": "value-your-trade",
+    "status": "published",
+    "seo": {
+      "ogImage": null,
+      "noindex": false
+    },
+    "templates": {
+      "header": null,
+      "footer": null,
+      "utilityNav": null
+    }
+  },
+  {
+    "slug": "schedule-a-test-ride",
+    "title": "Schedule a Test Ride",
+    "description": "Schedule a test ride in a Mack truck at East Texas Mack in Longview, TX.",
+    "path": "/schedule-a-test-ride",
+    "out": "schedule-a-test-ride/index.html",
+    "dir": "schedule-a-test-ride",
+    "status": "published",
+    "seo": {
+      "ogImage": null,
+      "noindex": false
+    },
+    "templates": {
+      "header": null,
+      "footer": null,
+      "utilityNav": null
+    }
   }
 ]

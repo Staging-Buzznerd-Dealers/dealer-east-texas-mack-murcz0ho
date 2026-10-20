@@ -14,67 +14,103 @@
       }
     },
     {
-      "id": "news",
-      "type": "section",
+      "id": "articles",
+      "type": "sharedSection",
       "props": {
-        "width": "full",
-        "background": "card",
-        "paddingY": 0
-      },
-      "styles": {
-        "base": {
-          "paddingTop": 70,
-          "paddingBottom": 70,
-          "paddingLeft": 40,
-          "paddingRight": 40
-        },
-        "tablet": {
-          "paddingLeft": 24,
-          "paddingRight": 24
-        },
-        "mobile": {
-          "paddingTop": 44,
-          "paddingBottom": 44,
-          "paddingLeft": 16,
-          "paddingRight": 16
-        }
-      },
-      "children": [
-        {
-          "id": "news-row",
-          "type": "row",
-          "props": {
-            "gap": 0,
-            "stackOn": "never"
-          },
-          "styles": {
-            "base": {
-              "maxWidth": 1200,
-              "marginLeft": "auto",
-              "marginRight": "auto"
-            }
-          },
-          "children": [
+        "sectionId": "pg-cards",
+        "values": {
+          "bg": "card",
+          "look": "end",
+          "span": 4,
+          "cards": [
             {
-              "id": "news-col",
-              "type": "column",
-              "props": {
-                "span": 12
+              "image": {
+                "src": "/images/pages/news-mp-engine.png",
+                "alt": "Mack MP Engine Maintenance Guide",
+                "width": 800,
+                "height": 500
               },
-              "children": [
+              "kicker": "Maintenance",
+              "title": "Mack MP Engine Maintenance Guide",
+              "copy": [
                 {
-                  "id": "news-list",
-                  "type": "postsList",
-                  "props": {
-                    "count": 6,
-                    "showDates": false
-                  }
+                  "text": "Mack MP Engine Maintenance & Failure Prevention for Fleet Operators. How to maximize engine life, reduce downtime, and prevent costly repairs."
                 }
-              ]
+              ],
+              "link1Label": "Read More »",
+              "link1Url": "/mack-mp-engine-guide"
+            },
+            {
+              "image": {
+                "src": "/images/pages/news-parts-warehouse.webp",
+                "alt": "OEM vs Aftermarket Parts for Mack Trucks: A Practical Guide",
+                "width": 1280,
+                "height": 853
+              },
+              "kicker": "Parts",
+              "title": "OEM vs Aftermarket Parts for Mack Trucks: A Practical Guide",
+              "copy": [
+                {
+                  "text": "A practical guide for fleet operators on how to choose the right parts for their Mack trucks."
+                }
+              ],
+              "link1Label": "Read More »",
+              "link1Url": "/oem-vs-aftermarket-parts"
+            },
+            {
+              "image": {
+                "src": "/images/pages/news-fleet-strategies.png",
+                "alt": "Fleet Maintenance Strategies for East Texas Trucking Operations",
+                "width": 1024,
+                "height": 576
+              },
+              "kicker": "Fleet",
+              "title": "Fleet Maintenance Strategies for East Texas Trucking Operations",
+              "copy": [
+                {
+                  "text": "How to reduce downtime, control costs, and improve fleet reliability for East Texas trucking operations."
+                }
+              ],
+              "link1Label": "Read More »",
+              "link1Url": "/fleet-maintenance-strategies"
+            },
+            {
+              "image": {
+                "src": "/images/pages/news-engine-repair.png",
+                "alt": "Mack Engine Repair & Performance Optimization Guide",
+                "width": 1024,
+                "height": 751
+              },
+              "kicker": "Service",
+              "title": "Mack Engine Repair & Performance Optimization Guide",
+              "copy": [
+                {
+                  "text": "A guide for fleet operators on how to improve engine performance, reduce downtime, and extend Mack engine life."
+                }
+              ],
+              "link1Label": "Read More »",
+              "link1Url": "/engine-diagnostics-guide"
+            },
+            {
+              "image": {
+                "src": "/images/pages/post-welcome.jpg",
+                "alt": "Welcome to Our New Website Powered by Buzznerd Trucks",
+                "width": 1024,
+                "height": 545
+              },
+              "kicker": "East Texas",
+              "title": "Welcome to Our New Website Powered by Buzznerd Trucks",
+              "copy": [
+                {
+                  "text": "East Texas Mack is a Mack Truck dealership in Longview, Texas. We have over 40 years of experience..."
+                }
+              ],
+              "link1Label": "Read More »",
+              "link1Url": "/blog/welcome"
             }
           ]
         }
-      ]
+      }
     }
   ]
 }

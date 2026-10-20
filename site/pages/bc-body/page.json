@@ -40,10 +40,10 @@
             {
               "panel": "none",
               "image": {
-                "src": "/images/pages/bc-body.jpg",
-                "alt": "B&C Body Company Mack trucks",
-                "width": 1024,
-                "height": 683
+                "src": "/images/pages/bc-body-galbreath.png",
+                "alt": "B&C Body Company Galbreath hoist-equipped Mack trucks at East Texas Mack",
+                "width": 640,
+                "height": 480
               }
             }
           ]
