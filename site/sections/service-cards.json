@@ -60,7 +60,7 @@
       "id": "svc",
       "type": "section",
       "props": {
-        "width": "full",
+        "width": "boxed",
         "background": "ink",
         "paddingY": 0,
         "anchor": "services"
@@ -68,19 +68,12 @@
       "styles": {
         "base": {
           "paddingTop": 90,
-          "paddingBottom": 90,
-          "paddingLeft": 40,
-          "paddingRight": 40
+          "paddingBottom": 90
         },
-        "tablet": {
-          "paddingLeft": 24,
-          "paddingRight": 24
-        },
+        "tablet": {},
         "mobile": {
           "paddingTop": 64,
-          "paddingBottom": 64,
-          "paddingLeft": 20,
-          "paddingRight": 20
+          "paddingBottom": 64
         }
       },
       "children": [
@@ -94,10 +87,7 @@
           },
           "styles": {
             "base": {
-              "marginBottom": 48,
-              "maxWidth": 1280,
-              "marginLeft": "auto",
-              "marginRight": "auto"
+              "marginBottom": 48
             }
           },
           "children": [
@@ -156,10 +146,7 @@
           "styles": {
             "base": {
               "gridColumns": "1fr 1fr 1fr 1fr",
-              "gap": 24,
-              "maxWidth": 1280,
-              "marginLeft": "auto",
-              "marginRight": "auto"
+              "gap": 24
             },
             "tablet": {
               "gridColumns": "1fr 1fr"
