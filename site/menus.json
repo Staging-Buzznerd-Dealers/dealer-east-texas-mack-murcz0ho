@@ -66,15 +66,6 @@
               "url": null,
               "newTab": false,
               "children": []
-            },
-            {
-              "id": "inv-quote",
-              "label": "Get A Quote",
-              "type": "page",
-              "ref": "get-a-quote",
-              "url": null,
-              "newTab": false,
-              "children": []
             }
           ]
         },
