@@ -39,7 +39,7 @@
           "links": [
             {
               "label": "Explore Fleet Maintenance Strategies",
-              "url": "/fleet-maintenance-strategies",
+              "url": "/blog/fleet-maintenance-strategies",
               "style": "primary"
             },
             {
@@ -84,7 +84,7 @@
                 }
               ],
               "link1Label": "Explore Fleet Planning Strategies",
-              "link1Url": "/fleet-maintenance-strategies"
+              "link1Url": "/blog/fleet-maintenance-strategies"
             }
           ]
         }
@@ -109,7 +109,7 @@
               "links": [
                 {
                   "label": "View Fleet Maintenance Guide",
-                  "url": "/fleet-maintenance-strategies",
+                  "url": "/blog/fleet-maintenance-strategies",
                   "style": "link"
                 },
                 {
@@ -274,7 +274,7 @@
               "links": [
                 {
                   "label": "Explore Fleet Strategy Guide",
-                  "url": "/fleet-maintenance-strategies",
+                  "url": "/blog/fleet-maintenance-strategies",
                   "style": "link"
                 }
               ]
@@ -368,7 +368,7 @@
                 }
               ],
               "link1Label": "Explore Fleet Maintenance Strategies",
-              "link1Url": "/fleet-maintenance-strategies"
+              "link1Url": "/blog/fleet-maintenance-strategies"
             },
             {
               "title": "New Mack Truck Inventory",

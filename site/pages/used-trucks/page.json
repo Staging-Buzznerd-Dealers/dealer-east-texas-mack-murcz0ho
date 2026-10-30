@@ -65,7 +65,7 @@
             },
             {
               "label": "Explore Fleet Maintenance Strategies",
-              "url": "/fleet-maintenance-strategies",
+              "url": "/blog/fleet-maintenance-strategies",
               "style": "link"
             }
           ]
@@ -170,7 +170,7 @@
                 "height": 500
               },
               "link1Label": "Explore Fleet Maintenance Guide",
-              "link1Url": "/fleet-maintenance-strategies"
+              "link1Url": "/blog/fleet-maintenance-strategies"
             },
             {
               "title": "Dump Trucks",
@@ -245,7 +245,7 @@
               "links": [
                 {
                   "label": "Explore Engine Diagnostics Guide",
-                  "url": "/engine-diagnostics-guide",
+                  "url": "/blog/mack-engine-repair",
                   "style": "link"
                 },
                 {
@@ -345,7 +345,7 @@
               "links": [
                 {
                   "label": "View Fleet Maintenance Guide",
-                  "url": "/fleet-maintenance-strategies",
+                  "url": "/blog/fleet-maintenance-strategies",
                   "style": "link"
                 },
                 {
@@ -405,7 +405,7 @@
           "links": [
             {
               "label": "Explore Engine Diagnostics Guide",
-              "url": "/engine-diagnostics-guide",
+              "url": "/blog/mack-engine-repair",
               "style": "link"
             },
             {

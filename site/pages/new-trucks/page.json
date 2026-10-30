@@ -39,7 +39,7 @@
           "links": [
             {
               "label": "Explore Fleet Maintenance Strategies",
-              "url": "/fleet-maintenance-strategies",
+              "url": "/blog/fleet-maintenance-strategies",
               "style": "primary"
             },
             {
@@ -161,7 +161,7 @@
               },
               "kicker": "Refuse & Municipal",
               "link1Label": "Explore Fleet Maintenance Strategies",
-              "link1Url": "/fleet-maintenance-strategies"
+              "link1Url": "/blog/fleet-maintenance-strategies"
             }
           ]
         }
@@ -231,7 +231,7 @@
           "links": [
             {
               "label": "Explore Fleet Maintenance Guide",
-              "url": "/fleet-maintenance-strategies",
+              "url": "/blog/fleet-maintenance-strategies",
               "style": "link"
             },
             {
@@ -364,7 +364,7 @@
                 }
               ],
               "link1Label": "Explore Fleet Maintenance Strategies",
-              "link1Url": "/fleet-maintenance-strategies"
+              "link1Url": "/blog/fleet-maintenance-strategies"
             },
             {
               "title": "Truck Financing & Leasing Options",

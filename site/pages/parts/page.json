@@ -36,12 +36,12 @@
           "links": [
             {
               "label": "Explore Fleet Maintenance Strategies",
-              "url": "/fleet-maintenance-strategies",
+              "url": "/blog/fleet-maintenance-strategies",
               "style": "link"
             },
             {
               "label": "View Mack MP Engine Guide",
-              "url": "/mack-mp-engine-guide",
+              "url": "/blog/mack-mp-engine-maintenance",
               "style": "link"
             }
           ]
@@ -95,7 +95,7 @@
                 }
               ],
               "link1Label": "Explore Mack MP Engine Guide",
-              "link1Url": "/mack-mp-engine-guide"
+              "link1Url": "/blog/mack-mp-engine-maintenance"
             },
             {
               "title": "Emissions System Parts (DPF & SCR)",
@@ -125,7 +125,7 @@
                 }
               ],
               "link1Label": "Compare OEM vs Aftermarket Parts",
-              "link1Url": "/oem-vs-aftermarket-parts"
+              "link1Url": "/blog/oem-vs-aftermarket-parts-guide"
             }
           ]
         }
@@ -185,7 +185,7 @@
           "links": [
             {
               "label": "View Fleet Maintenance Guide",
-              "url": "/fleet-maintenance-strategies",
+              "url": "/blog/fleet-maintenance-strategies",
               "style": "link"
             }
           ]
