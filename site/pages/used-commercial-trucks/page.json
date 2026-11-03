@@ -356,7 +356,7 @@
               "perk2": null,
               "perk3": null,
               "departments": "Store",
-              "hours": "Store: 07:00–17:00 Mon–Fri, 07:00–12:00 Sat",
+              "hours": "Store: 07:00 AM - 05:00 PM Mon–Fri, 07:00 AM - 12:00 PM Sat",
               "phone2": null,
               "phone2Url": null,
               "phone3": null,
@@ -381,14 +381,14 @@
                   "phone": null,
                   "phoneUrl": null,
                   "email": null,
-                  "hours": "07:00–17:00 Mon–Fri, 07:00–12:00 Sat"
+                  "hours": "07:00 AM - 05:00 PM Mon–Fri, 07:00 AM - 12:00 PM Sat"
                 }
               ],
               "hoursRows": [
                 {
                   "department": "Store",
                   "key": "store",
-                  "summary": "07:00–17:00 Mon–Fri, 07:00–12:00 Sat",
+                  "summary": "07:00 AM - 05:00 PM Mon–Fri, 07:00 AM - 12:00 PM Sat",
                   "days": [
                     {
                       "day": "Sunday",
@@ -399,42 +399,42 @@
                     },
                     {
                       "day": "Monday",
-                      "hours": "07:00–17:00",
+                      "hours": "07:00 AM - 05:00 PM",
                       "opensAt": "07:00",
                       "closesAt": "17:00",
                       "closed": false
                     },
                     {
                       "day": "Tuesday",
-                      "hours": "07:00–17:00",
+                      "hours": "07:00 AM - 05:00 PM",
                       "opensAt": "07:00",
                       "closesAt": "17:00",
                       "closed": false
                     },
                     {
                       "day": "Wednesday",
-                      "hours": "07:00–17:00",
+                      "hours": "07:00 AM - 05:00 PM",
                       "opensAt": "07:00",
                       "closesAt": "17:00",
                       "closed": false
                     },
                     {
                       "day": "Thursday",
-                      "hours": "07:00–17:00",
+                      "hours": "07:00 AM - 05:00 PM",
                       "opensAt": "07:00",
                       "closesAt": "17:00",
                       "closed": false
                     },
                     {
                       "day": "Friday",
-                      "hours": "07:00–17:00",
+                      "hours": "07:00 AM - 05:00 PM",
                       "opensAt": "07:00",
                       "closesAt": "17:00",
                       "closed": false
                     },
                     {
                       "day": "Saturday",
-                      "hours": "07:00–12:00",
+                      "hours": "07:00 AM - 12:00 PM",
                       "opensAt": "07:00",
                       "closesAt": "12:00",
                       "closed": false
@@ -505,7 +505,7 @@
               "perk2": null,
               "perk3": null,
               "departments": "Store",
-              "hours": "Store: 07:00–17:00 Mon–Fri, 07:00–12:00 Sat",
+              "hours": "Store: 07:00 AM - 05:00 PM Mon–Fri, 07:00 AM - 12:00 PM Sat",
               "phone2": null,
               "phone2Url": null,
               "phone3": null,
@@ -530,14 +530,14 @@
                   "phone": null,
                   "phoneUrl": null,
                   "email": null,
-                  "hours": "07:00–17:00 Mon–Fri, 07:00–12:00 Sat"
+                  "hours": "07:00 AM - 05:00 PM Mon–Fri, 07:00 AM - 12:00 PM Sat"
                 }
               ],
               "hoursRows": [
                 {
                   "department": "Store",
                   "key": "store",
-                  "summary": "07:00–17:00 Mon–Fri, 07:00–12:00 Sat",
+                  "summary": "07:00 AM - 05:00 PM Mon–Fri, 07:00 AM - 12:00 PM Sat",
                   "days": [
                     {
                       "day": "Sunday",
@@ -548,42 +548,42 @@
                     },
                     {
                       "day": "Monday",
-                      "hours": "07:00–17:00",
+                      "hours": "07:00 AM - 05:00 PM",
                       "opensAt": "07:00",
                       "closesAt": "17:00",
                       "closed": false
                     },
                     {
                       "day": "Tuesday",
-                      "hours": "07:00–17:00",
+                      "hours": "07:00 AM - 05:00 PM",
                       "opensAt": "07:00",
                       "closesAt": "17:00",
                       "closed": false
                     },
                     {
                       "day": "Wednesday",
-                      "hours": "07:00–17:00",
+                      "hours": "07:00 AM - 05:00 PM",
                       "opensAt": "07:00",
                       "closesAt": "17:00",
                       "closed": false
                     },
                     {
                       "day": "Thursday",
-                      "hours": "07:00–17:00",
+                      "hours": "07:00 AM - 05:00 PM",
                       "opensAt": "07:00",
                       "closesAt": "17:00",
                       "closed": false
                     },
                     {
                       "day": "Friday",
-                      "hours": "07:00–17:00",
+                      "hours": "07:00 AM - 05:00 PM",
                       "opensAt": "07:00",
                       "closesAt": "17:00",
                       "closed": false
                     },
                     {
                       "day": "Saturday",
-                      "hours": "07:00–12:00",
+                      "hours": "07:00 AM - 12:00 PM",
                       "opensAt": "07:00",
                       "closesAt": "12:00",
                       "closed": false
