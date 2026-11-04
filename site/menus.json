@@ -16,8 +16,8 @@
             {
               "id": "inv-showroom",
               "label": "Showroom",
-              "type": "page",
-              "ref": "new-trucks",
+              "type": "inventory",
+              "ref": "showrooms",
               "url": null,
               "newTab": false,
               "children": []
@@ -304,8 +304,8 @@
         {
           "id": "ft-showroom",
           "label": "Showroom",
-          "type": "page",
-          "ref": "new-trucks",
+          "type": "inventory",
+          "ref": "showrooms",
           "url": null,
           "newTab": false,
           "children": []
