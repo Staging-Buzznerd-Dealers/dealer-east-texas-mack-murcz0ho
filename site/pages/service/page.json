@@ -36,12 +36,12 @@
           "links": [
             {
               "label": "Explore Fleet Maintenance Strategies",
-              "url": "/fleet-maintenance-strategies",
+              "url": "/blog/fleet-maintenance-strategies",
               "style": "primary"
             },
             {
               "label": "View Mack MP Engine Guide",
-              "url": "/mack-mp-engine-guide",
+              "url": "/blog/mack-mp-engine-maintenance",
               "style": "link"
             }
           ]
@@ -102,7 +102,7 @@
                 }
               ],
               "link1Label": "Explore Mack Engine Diagnostics",
-              "link1Url": "/engine-diagnostics-guide"
+              "link1Url": "/blog/mack-engine-repair"
             },
             {
               "title": "Emissions System Service (DPF & SCR)",
@@ -122,7 +122,7 @@
                 }
               ],
               "link1Label": "Compare Truck Parts Strategies",
-              "link1Url": "/oem-vs-aftermarket-parts"
+              "link1Url": "/blog/oem-vs-aftermarket-parts-guide"
             }
           ]
         }
@@ -175,7 +175,7 @@
           "links": [
             {
               "label": "Explore Fleet Maintenance Planning",
-              "url": "/fleet-maintenance-strategies",
+              "url": "/blog/fleet-maintenance-strategies",
               "style": "link"
             }
           ],
@@ -184,9 +184,9 @@
               "title": "Fleet Maintenance & Uptime Solutions",
               "text": "We partner closely with commercial fleet operators to simplify long-term asset management through tailored support programs. Our services include full-service leasing plans, customized Mack Service Contracts, and priority service scheduling designed to streamline routine upkeep, flatten unexpected repair costs, and sustain high uptime across your entire roster of trucks.",
               "linkLabel": "View Fleet Maintenance Guide",
-              "linkUrl": "/fleet-maintenance-strategies",
+              "linkUrl": "/blog/fleet-maintenance-strategies",
               "link2Label": "Learn About Parts Reliability",
-              "link2Url": "/oem-vs-aftermarket-parts"
+              "link2Url": "/blog/oem-vs-aftermarket-parts-guide"
             }
           ]
         }
@@ -312,7 +312,7 @@
                 }
               ],
               "link1Label": "Explore Mack MP Engine Guide",
-              "link1Url": "/mack-mp-engine-guide"
+              "link1Url": "/blog/mack-mp-engine-maintenance"
             },
             {
               "title": "Fleet Maintenance Strategy Guide",
@@ -322,7 +322,7 @@
                 }
               ],
               "link1Label": "Explore Fleet Maintenance Strategies",
-              "link1Url": "/fleet-maintenance-strategies"
+              "link1Url": "/blog/fleet-maintenance-strategies"
             },
             {
               "title": "OEM vs Aftermarket Parts Guide",
@@ -332,7 +332,7 @@
                 }
               ],
               "link1Label": "Compare OEM vs Aftermarket Parts",
-              "link1Url": "/oem-vs-aftermarket-parts"
+              "link1Url": "/blog/oem-vs-aftermarket-parts-guide"
             },
             {
               "title": "Heavy-Duty Truck Parts Support",

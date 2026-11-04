@@ -1,0 +1,282 @@
+{
+  "version": 2,
+  "id": "pg-article",
+  "name": "Article body",
+  "description": "The body of a long-form blog post: a subtitle, then headings, sub-headings, paragraphs and bullet lists in order, a key-takeaways box and a dark call-to-action box.",
+  "css": "[data-bz-section=\"pg-article\"] .bz-block { padding-block: 0; }\n[data-bz-section=\"pg-article\"] [data-bz-node=\"pa-lead\"] p { margin: 0 0 32px; font-size: 20px; line-height: 1.5; font-weight: 600; color: var(--ink); }\n[data-bz-section=\"pg-article\"] [data-bz-node=\"pa-lead\"]:not(:has(p)) { display: none; }\n[data-bz-section=\"pg-article\"] .bz-headingblock h2 { margin: 44px 0 18px; font: 700 28px / 1.25 var(--font-heading); text-transform: none; color: var(--ink); }\n[data-bz-section=\"pg-article\"] .bz-headingblock h3 { margin: 28px 0 12px; font: 600 22px / 1.3 var(--font-heading); text-transform: none; color: var(--ink); }\n[data-bz-section=\"pg-article\"] .bz-block .copy__p { margin: 0 0 22px; font-size: 18px; line-height: 1.75; color: #2a2b2f; }\n[data-bz-section=\"pg-article\"] .bz-block .copy__ul { margin: 0 0 22px; padding-left: 22px; display: flex; flex-direction: column; gap: 8px; font-size: 18px; line-height: 1.6; color: #2a2b2f; }\n[data-bz-section=\"pg-article\"] .bz-block .copy__p a { color: var(--accent); text-decoration: underline; }\n[data-bz-section=\"pg-article\"] .bz-col[data-bz-node=\"pa-take\"] { margin: 44px 0 32px; padding: 32px; border-radius: 10px; background: var(--paper); }\n[data-bz-section=\"pg-article\"] [data-bz-node=\"pa-take-h\"] h3 { margin: 0 0 16px; font: 700 20px / 1.3 var(--font-heading); text-transform: none; }\n[data-bz-section=\"pg-article\"] .bz-col[data-bz-node=\"pa-take\"] .copy__ul { margin: 0; font-size: 16px; }\n[data-bz-section=\"pg-article\"] .bz-col[data-bz-node=\"pa-cta\"] { margin: 0 0 56px; padding: 36px; border-radius: 10px; background: var(--ink); }\n[data-bz-section=\"pg-article\"] [data-bz-node=\"pa-cta-h\"] h3 { margin: 0 0 14px; font: 700 22px / 1.3 var(--font-heading); text-transform: none; color: var(--card); }\n[data-bz-section=\"pg-article\"] .bz-col[data-bz-node=\"pa-cta\"] .copy__p { margin: 0 0 20px; font-size: 16px; line-height: 1.6; color: #cfd2d6; }\n[data-bz-section=\"pg-article\"] .bz-col[data-bz-node=\"pa-cta\"] .bz-btns { margin: 4px 0 0; }\n[data-bz-section=\"pg-article\"] .bz-col[data-bz-node=\"pa-cta\"] .bz-btn--primary { background: var(--accent); color: var(--card); font: 600 14px / 1 var(--font-body); padding: 14px 28px; border-radius: 4px; text-transform: none; letter-spacing: 0; }\n@media (max-width: 640px) { [data-bz-section=\"pg-article\"] .bz-headingblock h2 { font-size: 24px; } [data-bz-section=\"pg-article\"] .bz-col[data-bz-node=\"pa-take\"], [data-bz-section=\"pg-article\"] .bz-col[data-bz-node=\"pa-cta\"] { padding: 24px; } }",
+  "props": [
+    {
+      "key": "lead",
+      "type": "text",
+      "label": "Subtitle under the title"
+    },
+    {
+      "key": "body",
+      "type": "list",
+      "label": "Article (in order: heading, sub-heading, paragraph, bullets — fill one per row)",
+      "fields": [
+        {
+          "key": "heading",
+          "type": "text",
+          "label": "Heading"
+        },
+        {
+          "key": "subheading",
+          "type": "text",
+          "label": "Sub-heading"
+        },
+        {
+          "key": "text",
+          "type": "textarea",
+          "label": "Paragraph"
+        },
+        {
+          "key": "bullets",
+          "type": "list",
+          "label": "Bullets",
+          "fields": [
+            {
+              "key": "item",
+              "type": "text",
+              "label": "Bullet"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "takeawaysTitle",
+      "type": "text",
+      "label": "Key takeaways title"
+    },
+    {
+      "key": "takeaways",
+      "type": "list",
+      "label": "Key takeaways",
+      "fields": [
+        {
+          "key": "item",
+          "type": "text",
+          "label": "Takeaway"
+        }
+      ]
+    },
+    {
+      "key": "ctaTitle",
+      "type": "text",
+      "label": "Call-to-action title"
+    },
+    {
+      "key": "ctaCopy",
+      "type": "list",
+      "label": "Call-to-action text",
+      "fields": [
+        {
+          "key": "text",
+          "type": "textarea",
+          "label": "Paragraph"
+        }
+      ]
+    },
+    {
+      "key": "ctaLabel",
+      "type": "text",
+      "label": "Button text"
+    },
+    {
+      "key": "ctaUrl",
+      "type": "url",
+      "label": "Button goes to"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "pa",
+      "type": "section",
+      "props": {
+        "width": "full",
+        "background": "card",
+        "paddingY": 0
+      },
+      "styles": {
+        "base": {
+          "paddingTop": 8,
+          "paddingBottom": 80,
+          "paddingLeft": 40,
+          "paddingRight": 40
+        },
+        "tablet": {
+          "paddingLeft": 24,
+          "paddingRight": 24
+        },
+        "mobile": {
+          "paddingBottom": 48,
+          "paddingLeft": 16,
+          "paddingRight": 16
+        }
+      },
+      "children": [
+        {
+          "id": "pa-row",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "stackOn": "never"
+          },
+          "styles": {
+            "base": {
+              "maxWidth": 820,
+              "marginLeft": "auto",
+              "marginRight": "auto"
+            }
+          },
+          "children": [
+            {
+              "id": "pa-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "pa-lead",
+                  "type": "text",
+                  "props": {
+                    "text": "{{lead}}",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "pa-items",
+                  "type": "row",
+                  "props": {
+                    "gap": 0,
+                    "stackOn": "never"
+                  },
+                  "children": [
+                    {
+                      "id": "pa-item",
+                      "type": "column",
+                      "props": {
+                        "span": 12,
+                        "repeat": "body"
+                      },
+                      "children": [
+                        {
+                          "id": "pa-h2",
+                          "type": "heading",
+                          "props": {
+                            "text": "{{heading}}",
+                            "headingLevel": 2
+                          }
+                        },
+                        {
+                          "id": "pa-h3",
+                          "type": "heading",
+                          "props": {
+                            "text": "{{subheading}}",
+                            "headingLevel": 3
+                          }
+                        },
+                        {
+                          "id": "pa-copy",
+                          "type": "copy-block",
+                          "props": {
+                            "text": "{{text}}",
+                            "bullets": "{{bullets}}"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "pa-take-row",
+                  "type": "row",
+                  "props": {
+                    "gap": 0,
+                    "stackOn": "never"
+                  },
+                  "children": [
+                    {
+                      "id": "pa-take",
+                      "type": "column",
+                      "props": {
+                        "span": 12
+                      },
+                      "children": [
+                        {
+                          "id": "pa-take-h",
+                          "type": "heading",
+                          "props": {
+                            "text": "{{takeawaysTitle}}",
+                            "headingLevel": 3
+                          }
+                        },
+                        {
+                          "id": "pa-take-list",
+                          "type": "copy-block",
+                          "props": {
+                            "bullets": "{{takeaways}}"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "pa-cta-row",
+                  "type": "row",
+                  "props": {
+                    "gap": 0,
+                    "stackOn": "never"
+                  },
+                  "children": [
+                    {
+                      "id": "pa-cta",
+                      "type": "column",
+                      "props": {
+                        "span": 12
+                      },
+                      "children": [
+                        {
+                          "id": "pa-cta-h",
+                          "type": "heading",
+                          "props": {
+                            "text": "{{ctaTitle}}",
+                            "headingLevel": 3
+                          }
+                        },
+                        {
+                          "id": "pa-cta-copy",
+                          "type": "copy-block",
+                          "props": {
+                            "text": "{{text}}",
+                            "repeat": "ctaCopy"
+                          }
+                        },
+                        {
+                          "id": "pa-cta-btn",
+                          "type": "buttons",
+                          "props": {
+                            "items": [
+                              {
+                                "label": "{{ctaLabel}}",
+                                "url": "{{ctaUrl}}",
+                                "style": "primary"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

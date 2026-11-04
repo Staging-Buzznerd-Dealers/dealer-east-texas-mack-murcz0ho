@@ -89,7 +89,7 @@
               "link1Label": "Explore Truck Service & Repair",
               "link1Url": "/service",
               "link2Label": "View Fleet Maintenance Guide",
-              "link2Url": "/fleet-maintenance-strategies"
+              "link2Url": "/blog/fleet-maintenance-strategies"
             },
             {
               "title": "Parts Department",
@@ -99,7 +99,7 @@
                 }
               ],
               "link1Label": "Compare OEM vs Aftermarket Parts",
-              "link1Url": "/oem-vs-aftermarket-parts",
+              "link1Url": "/blog/oem-vs-aftermarket-parts-guide",
               "link2Label": "View Truck Parts Department",
               "link2Url": "/parts"
             },
@@ -139,7 +139,7 @@
               "links": [
                 {
                   "label": "Explore Fleet Maintenance Strategies",
-                  "url": "/fleet-maintenance-strategies",
+                  "url": "/blog/fleet-maintenance-strategies",
                   "style": "primary"
                 },
                 {

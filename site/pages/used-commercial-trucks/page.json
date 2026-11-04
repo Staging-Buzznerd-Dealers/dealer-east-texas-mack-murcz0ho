@@ -36,7 +36,7 @@
           "links": [
             {
               "label": "Explore Fleet Maintenance Strategies",
-              "url": "/fleet-maintenance-strategies",
+              "url": "/blog/fleet-maintenance-strategies",
               "style": "primary"
             },
             {
@@ -139,7 +139,7 @@
           "links": [
             {
               "label": "Explore Engine Diagnostics Guide",
-              "url": "/engine-diagnostics-guide",
+              "url": "/blog/mack-engine-repair",
               "style": "link"
             }
           ]
@@ -296,7 +296,7 @@
                 }
               ],
               "link1Label": "Explore Fleet Maintenance Strategies",
-              "link1Url": "/fleet-maintenance-strategies"
+              "link1Url": "/blog/fleet-maintenance-strategies"
             }
           ]
         }
