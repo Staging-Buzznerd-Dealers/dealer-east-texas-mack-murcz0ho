@@ -88,18 +88,9 @@
             },
             {
               "id": "lease-finance",
-              "label": "Financing",
+              "label": "Leasing & Rentals Inventory",
               "type": "page",
-              "ref": "financing",
-              "url": null,
-              "newTab": false,
-              "children": []
-            },
-            {
-              "id": "lease-credit",
-              "label": "Finance Credit Application",
-              "type": "page",
-              "ref": "finance-credit-application",
+              "ref": "",
               "url": null,
               "newTab": false,
               "children": []
@@ -128,15 +119,6 @@
               "label": "Parts Request",
               "type": "page",
               "ref": "parts-request",
-              "url": null,
-              "newTab": false,
-              "children": []
-            },
-            {
-              "id": "parts-shop",
-              "label": "Shop Parts Online",
-              "type": "inventory",
-              "ref": "parts",
               "url": null,
               "newTab": false,
               "children": []
