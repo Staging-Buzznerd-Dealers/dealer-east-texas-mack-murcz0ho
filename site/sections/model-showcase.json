@@ -1,0 +1,274 @@
+{
+  "version": 2,
+  "id": "model-showcase",
+  "name": "Model showcase",
+  "description": "A model picker: one model on stage with arrows, its name, what it is for and an Explore button, and a row of model thumbnails underneath that select it.",
+  "css": "[data-bz-section=\"model-showcase\"] .bz-block { padding-block: 0; }\n[data-bz-section=\"model-showcase\"] .bz-headingblock h2 { margin: 0 0 14px; text-align: center; }\n[data-bz-section=\"model-showcase\"] [data-bz-node=\"ms-intro\"] p { margin: 0 auto 44px; max-width: 640px; text-align: center; font-size: 17px; line-height: 1.6; color: var(--copy); }\n/* The stage: one model at a time, a scroll-snap rail driven by the carousel behaviour. Without script it is a normal swipeable strip. */\n[data-bz-section=\"model-showcase\"] .bz-row[data-bz-node=\"ms-stage\"] { --bz-slide: 100%; gap: 0; scrollbar-width: none; padding-bottom: 0; }\n[data-bz-section=\"model-showcase\"] .bz-row[data-bz-node=\"ms-stage\"]::-webkit-scrollbar { display: none; }\n[data-bz-section=\"model-showcase\"] .bz-col[data-bz-node^=\"ms-slide\"] { display: flex; flex-direction: column; align-items: center; text-align: center; padding: 0 64px; }\n[data-bz-section=\"model-showcase\"] .bz-block--image { width: 100%; }\n[data-bz-section=\"model-showcase\"] .bz-block--image .bz-figure { margin: 0; }\n[data-bz-section=\"model-showcase\"] .bz-col[data-bz-node^=\"ms-slide\"] .bz-block--image img { display: block; width: 100%; max-width: 760px; height: 400px; margin: 0 auto; object-fit: cover; border-radius: 10px; }\n[data-bz-section=\"model-showcase\"] [data-bz-node^=\"ms-name\"] h3 { margin: 28px 0 6px; font: 700 40px / 1.1 var(--font-heading); letter-spacing: 0; color: var(--ink); }\n[data-bz-section=\"model-showcase\"] [data-bz-node^=\"ms-kind\"] p { margin: 0 0 24px; font: 500 15px / 1.4 var(--font-body); letter-spacing: 0.18em; text-transform: uppercase; color: var(--muted); }\n[data-bz-section=\"model-showcase\"] [data-bz-node^=\"ms-explore\"] .bz-btns { margin: 0; justify-content: center; }\n[data-bz-section=\"model-showcase\"] [data-bz-node^=\"ms-explore\"] .bz-btn { padding: 14px 30px; font: 700 14px / 1 var(--font-body); letter-spacing: 0.5px; text-transform: uppercase; }\n/* Arrows sit either side of the stage photo: a zero-height row above the stage whose two buttons are placed at the photo's mid-line. */\n[data-bz-section=\"model-showcase\"] .bz-row[data-bz-node=\"ms-arrows\"] { position: relative; display: block; height: 0; z-index: 3; }\n[data-bz-section=\"model-showcase\"] .bz-row[data-bz-node=\"ms-arrows\"] > .bz-col { position: absolute; top: 200px; transform: translateY(-50%); grid-column: auto; width: auto; }\n[data-bz-section=\"model-showcase\"] .bz-col[data-bz-node=\"ms-prev-col\"] { left: 0; }\n[data-bz-section=\"model-showcase\"] .bz-col[data-bz-node=\"ms-next-col\"] { right: 0; }\n[data-bz-section=\"model-showcase\"] .bz-row[data-bz-node=\"ms-arrows\"] .bz-btns { margin: 0; }\n[data-bz-section=\"model-showcase\"] .bz-row[data-bz-node=\"ms-arrows\"] .bz-btn { width: 44px; height: 44px; padding: 0; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font: 400 26px / 1 var(--font-body); background: var(--card); color: var(--ink); border: 1px solid var(--line); box-shadow: 0 2px 10px rgba(0, 0, 0, 0.12); }\n[data-bz-section=\"model-showcase\"] .bz-row[data-bz-node=\"ms-arrows\"] .bz-btn:hover { background: var(--ink); color: var(--card); }\n[data-bz-section=\"model-showcase\"][data-bz-at-start] [data-bz-part~=\"prev\"], [data-bz-section=\"model-showcase\"][data-bz-at-end] [data-bz-part~=\"next\"] { opacity: 0.35; pointer-events: none; }\n/* The model row: a tile per model; the selected one is outlined. */\n[data-bz-section=\"model-showcase\"] .bz-row[data-bz-node=\"ms-tiles\"] { display: flex; flex-wrap: nowrap; gap: 20px; margin-top: 40px; justify-content: center; }\n[data-bz-section=\"model-showcase\"] .bz-row[data-bz-node=\"ms-tiles\"] > .bz-col { flex: 1 1 0; min-width: 0; max-width: 300px; grid-column: auto; }\n[data-bz-section=\"model-showcase\"] .bz-col[data-bz-node^=\"ms-tile\"] { border-radius: 8px; overflow: hidden; background: var(--paper); border: 2px solid transparent; transition: border-color 0.15s ease, box-shadow 0.15s ease; }\n[data-bz-section=\"model-showcase\"] .bz-col[data-bz-node^=\"ms-tile\"][data-active] { border-color: var(--accent); box-shadow: 0 6px 18px rgba(0, 0, 0, 0.14); }\n[data-bz-section=\"model-showcase\"] .bz-col[data-bz-node^=\"ms-tile\"] .bz-block--image img { display: block; width: 100%; height: 120px; object-fit: cover; border-radius: 0; opacity: 0.8; transition: opacity 0.15s ease; }\n[data-bz-section=\"model-showcase\"] .bz-col[data-bz-node^=\"ms-tile\"][data-active] .bz-block--image img, [data-bz-section=\"model-showcase\"] .bz-col[data-bz-node^=\"ms-tile\"]:hover .bz-block--image img { opacity: 1; }\n[data-bz-section=\"model-showcase\"] [data-bz-node^=\"ms-tile-name\"] p { margin: 0; padding: 10px 8px 12px; text-align: center; font: 700 13px / 1.2 var(--font-body); letter-spacing: 0.06em; text-transform: uppercase; color: var(--ink); }\n@media (max-width: 900px) {\n  [data-bz-section=\"model-showcase\"] .bz-col[data-bz-node^=\"ms-slide\"] { padding: 0; }\n  [data-bz-section=\"model-showcase\"] .bz-col[data-bz-node^=\"ms-slide\"] .bz-block--image img { height: 280px; }\n  [data-bz-section=\"model-showcase\"] .bz-row[data-bz-node=\"ms-arrows\"] > .bz-col { top: 140px; }\n  [data-bz-section=\"model-showcase\"] .bz-row[data-bz-node=\"ms-tiles\"] { overflow-x: auto; justify-content: flex-start; scroll-snap-type: x mandatory; padding-bottom: 6px; }\n  [data-bz-section=\"model-showcase\"] .bz-row[data-bz-node=\"ms-tiles\"] > .bz-col { flex: 0 0 150px; scroll-snap-align: start; }\n  [data-bz-section=\"model-showcase\"] .bz-col[data-bz-node^=\"ms-tile\"] .bz-block--image img { height: 84px; }\n  [data-bz-section=\"model-showcase\"] [data-bz-node^=\"ms-name\"] h3 { font-size: 30px; }\n}\n@media (max-width: 640px) { [data-bz-section=\"model-showcase\"] .bz-row[data-bz-node=\"ms-arrows\"] .bz-btn { width: 38px; height: 38px; font-size: 22px; } }",
+  "js": "// Model picker: thumbnails select the model shown in the rail (the carousel behaviour supplies the arrows and scrolling).\n// Without script the thumbnails are plain links that jump to each model.\ndocument.querySelectorAll('[data-bz-section=\"model-showcase\"]').forEach(function (root) {\n  var track = root.querySelector('[data-bz-part~=\"track\"]');\n  if (!track) return;\n  var slides = [].slice.call(track.querySelectorAll('[data-bz-part~=\"slide\"]'));\n  var tiles = [].slice.call(root.querySelectorAll('.bz-col[data-bz-node^=\"ms-tile-\"]'));\n  if (!slides.length || tiles.length !== slides.length) return;\n  function current() { var w = slides[0].offsetWidth || track.clientWidth; return Math.max(0, Math.min(slides.length - 1, Math.round(track.scrollLeft / w))); }\n  function mark() {\n    var i = current();\n    tiles.forEach(function (tile, n) {\n      if (n === i) { tile.setAttribute('data-active', ''); tile.querySelector('a').setAttribute('aria-current', 'true'); }\n      else { tile.removeAttribute('data-active'); tile.querySelector('a').removeAttribute('aria-current'); }\n    });\n  }\n  tiles.forEach(function (tile, n) {\n    tile.querySelector('a').addEventListener('click', function (event) {\n      event.preventDefault();\n      var reduced = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;\n      track.scrollTo({ left: slides[n].offsetLeft - track.offsetLeft, behavior: reduced ? 'auto' : 'smooth' });\n    });\n  });\n  track.addEventListener('scroll', function () { window.requestAnimationFrame(mark); }, { passive: true });\n  window.addEventListener('resize', mark, { passive: true });\n  mark();\n});",
+  "props": [
+    {
+      "key": "eyebrow",
+      "type": "text",
+      "label": "Label above the heading",
+      "default": "Our Trucks"
+    },
+    {
+      "key": "heading",
+      "type": "text",
+      "label": "Heading",
+      "default": "Explore the Mack Lineup"
+    },
+    {
+      "key": "intro",
+      "type": "textarea",
+      "label": "Short intro under the heading"
+    },
+    {
+      "key": "models",
+      "type": "list",
+      "label": "Models",
+      "fields": [
+        {
+          "key": "slug",
+          "type": "text",
+          "label": "Link name (lower-case, no spaces, e.g. anthem)"
+        },
+        {
+          "key": "name",
+          "type": "text",
+          "label": "Model name"
+        },
+        {
+          "key": "kind",
+          "type": "text",
+          "label": "What it is for (e.g. On-highway / Long-haul)"
+        },
+        {
+          "key": "image",
+          "type": "image",
+          "label": "Photo (large and thumbnail)"
+        },
+        {
+          "key": "url",
+          "type": "url",
+          "label": "Explore button goes to"
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "id": "ms",
+      "type": "section",
+      "props": {
+        "width": "boxed",
+        "background": "card",
+        "paddingY": 0,
+        "behaviour": "carousel",
+        "behaviourOptions": "{\"label\":\"Mack models\",\"perMove\":1}"
+      },
+      "styles": {
+        "base": {
+          "paddingTop": 90,
+          "paddingBottom": 90
+        },
+        "mobile": {
+          "paddingTop": 56,
+          "paddingBottom": 56
+        }
+      },
+      "children": [
+        {
+          "id": "ms-head",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "stackOn": "never"
+          },
+          "children": [
+            {
+              "id": "ms-head-col",
+              "type": "column",
+              "props": {
+                "span": 12
+              },
+              "children": [
+                {
+                  "id": "ms-h",
+                  "type": "heading",
+                  "props": {
+                    "eyebrow": "{{eyebrow}}",
+                    "text": "{{heading}}",
+                    "headingLevel": 2,
+                    "align": "center"
+                  }
+                },
+                {
+                  "id": "ms-intro",
+                  "type": "text",
+                  "props": {
+                    "text": "{{intro}}",
+                    "width": "full"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "ms-arrows",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "stackOn": "never"
+          },
+          "children": [
+            {
+              "id": "ms-prev-col",
+              "type": "column",
+              "props": {
+                "span": 1
+              },
+              "children": [
+                {
+                  "id": "ms-prev",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "label": "‹",
+                        "url": "#",
+                        "style": "secondary"
+                      }
+                    ],
+                    "part": "prev"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "ms-next-col",
+              "type": "column",
+              "props": {
+                "span": 1
+              },
+              "children": [
+                {
+                  "id": "ms-next",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "label": "›",
+                        "url": "#",
+                        "style": "secondary"
+                      }
+                    ],
+                    "part": "next"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "ms-stage",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "stackOn": "never",
+            "part": "track"
+          },
+          "children": [
+            {
+              "id": "ms-slide",
+              "type": "column",
+              "props": {
+                "span": 12,
+                "part": "slide",
+                "repeat": "models",
+                "anchor": "model-{{slug}}"
+              },
+              "children": [
+                {
+                  "id": "ms-photo",
+                  "type": "image",
+                  "props": {
+                    "image": "{{image}}",
+                    "url": "{{url}}"
+                  }
+                },
+                {
+                  "id": "ms-name",
+                  "type": "heading",
+                  "props": {
+                    "text": "{{name}}",
+                    "headingLevel": 3,
+                    "align": "center"
+                  }
+                },
+                {
+                  "id": "ms-kind",
+                  "type": "text",
+                  "props": {
+                    "text": "{{kind}}",
+                    "width": "full"
+                  }
+                },
+                {
+                  "id": "ms-explore",
+                  "type": "buttons",
+                  "props": {
+                    "items": [
+                      {
+                        "label": "Explore {{name}}",
+                        "url": "{{url}}",
+                        "style": "primary"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "ms-tiles",
+          "type": "row",
+          "props": {
+            "gap": 0,
+            "stackOn": "never"
+          },
+          "children": [
+            {
+              "id": "ms-tile",
+              "type": "column",
+              "props": {
+                "span": 1,
+                "repeat": "models"
+              },
+              "children": [
+                {
+                  "id": "ms-tile-photo",
+                  "type": "image",
+                  "props": {
+                    "image": "{{image}}",
+                    "url": "#model-{{slug}}"
+                  }
+                },
+                {
+                  "id": "ms-tile-name",
+                  "type": "text",
+                  "props": {
+                    "text": "{{name}}",
+                    "width": "full"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
