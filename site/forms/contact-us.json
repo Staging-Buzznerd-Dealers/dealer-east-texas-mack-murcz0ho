@@ -9,7 +9,7 @@
   "submitLabel": "Submit",
   "successMessage": "Thanks — we have your message and the right person on our team will be in touch.",
   "consent": {
-    "enabled": true,
+    "enabled": false,
     "required": false,
     "text": "Subscribe to Newsletter"
   },
@@ -57,5 +57,6 @@
       "roleId": "sales-manager",
       "scopeMode": "dynamic"
     }
-  ]
+  ],
+  "updatedAt": "2026-11-13T13:36:49.396Z"
 }
