@@ -9,7 +9,7 @@
   "submitLabel": "Submit",
   "successMessage": "Thanks — our parts team has your request and will be in touch shortly.",
   "consent": {
-    "enabled": true,
+    "enabled": false,
     "required": false,
     "text": "Subscribe to Newsletter"
   },
@@ -145,5 +145,6 @@
       "roleId": "parts-manager",
       "scopeMode": "dynamic"
     }
-  ]
+  ],
+  "updatedAt": "2026-11-13T13:41:45.598Z"
 }
