@@ -4,29 +4,65 @@
   "status": "live",
   "system": true,
   "pdpContext": true,
-  "surfaces": ["pdp", "partsPdp", "page", "brand"],
+  "surfaces": [
+    "pdp",
+    "partsPdp",
+    "page",
+    "brand"
+  ],
   "intent": "get-quote",
   "submitLabel": "Request a quote",
   "successMessage": "Thanks — your quote request is with the sales team.",
   "consent": {
-    "enabled": true,
+    "enabled": false,
     "required": true,
     "text": "I agree to be contacted about this quote by phone, text or email."
   },
   "fields": [
-    { "id": "rq-name", "type": "full_name", "label": "Full name", "required": true },
-    { "id": "rq-company", "type": "single_line", "label": "Company", "required": false },
-    { "id": "rq-email", "type": "email", "label": "Email", "required": true },
-    { "id": "rq-phone", "type": "phone", "label": "Phone", "required": true },
-    { "id": "rq-qty", "type": "number", "label": "How many units?", "required": false },
+    {
+      "id": "rq-name",
+      "type": "full_name",
+      "label": "Full name",
+      "required": true
+    },
+    {
+      "id": "rq-company",
+      "type": "single_line",
+      "label": "Company",
+      "required": false
+    },
+    {
+      "id": "rq-email",
+      "type": "email",
+      "label": "Email",
+      "required": true
+    },
+    {
+      "id": "rq-phone",
+      "type": "phone",
+      "label": "Phone",
+      "required": true
+    },
+    {
+      "id": "rq-qty",
+      "type": "number",
+      "label": "How many units?",
+      "required": false
+    },
     {
       "id": "rq-trade",
       "type": "radio",
       "label": "Do you have a trade-in?",
       "required": false,
       "options": [
-        { "value": "yes", "label": "Yes" },
-        { "value": "no", "label": "No" }
+        {
+          "value": "yes",
+          "label": "Yes"
+        },
+        {
+          "value": "no",
+          "label": "No"
+        }
       ]
     },
     {
@@ -37,10 +73,21 @@
       "logic": {
         "logic": "AND",
         "action": "show",
-        "rules": [{ "fieldId": "rq-trade", "operator": "is", "value": "yes" }]
+        "rules": [
+          {
+            "fieldId": "rq-trade",
+            "operator": "is",
+            "value": "yes"
+          }
+        ]
       }
     },
-    { "id": "rq-message", "type": "paragraph", "label": "Anything else?", "required": false }
+    {
+      "id": "rq-message",
+      "type": "paragraph",
+      "label": "Anything else?",
+      "required": false
+    }
   ],
   "notifications": [
     {
@@ -52,5 +99,6 @@
       "roleId": "sales-manager",
       "scopeMode": "dynamic"
     }
-  ]
+  ],
+  "updatedAt": "2026-11-13T13:42:50.553Z"
 }
