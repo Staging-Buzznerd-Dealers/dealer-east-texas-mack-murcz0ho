@@ -4,20 +4,46 @@
   "status": "live",
   "system": true,
   "pdpContext": true,
-  "surfaces": ["pdp", "page"],
+  "surfaces": [
+    "pdp",
+    "page"
+  ],
   "intent": "schedule-visit",
   "submitLabel": "Request this time",
   "successMessage": "Thanks — the branch will confirm the time with you shortly.",
   "consent": {
-    "enabled": true,
+    "enabled": false,
     "required": true,
     "text": "I agree to be contacted about this visit by phone, text or email."
   },
   "fields": [
-    { "id": "sv-name", "type": "full_name", "label": "Full name", "required": true },
-    { "id": "sv-email", "type": "email", "label": "Email", "required": true, "width": "half" },
-    { "id": "sv-phone", "type": "phone", "label": "Phone", "required": true, "width": "half" },
-    { "id": "sv-date", "type": "date", "label": "Preferred date", "required": true, "width": "half" },
+    {
+      "id": "sv-name",
+      "type": "full_name",
+      "label": "Full name",
+      "required": true
+    },
+    {
+      "id": "sv-email",
+      "type": "email",
+      "label": "Email",
+      "required": true,
+      "width": "half"
+    },
+    {
+      "id": "sv-phone",
+      "type": "phone",
+      "label": "Phone",
+      "required": true,
+      "width": "half"
+    },
+    {
+      "id": "sv-date",
+      "type": "date",
+      "label": "Preferred date",
+      "required": true,
+      "width": "half"
+    },
     {
       "id": "sv-time",
       "type": "dropdown",
@@ -25,12 +51,26 @@
       "required": false,
       "width": "half",
       "options": [
-        { "value": "morning", "label": "Morning" },
-        { "value": "midday", "label": "Midday" },
-        { "value": "afternoon", "label": "Afternoon" }
+        {
+          "value": "morning",
+          "label": "Morning"
+        },
+        {
+          "value": "midday",
+          "label": "Midday"
+        },
+        {
+          "value": "afternoon",
+          "label": "Afternoon"
+        }
       ]
     },
-    { "id": "sv-message", "type": "paragraph", "label": "Anything we should know?", "required": false }
+    {
+      "id": "sv-message",
+      "type": "paragraph",
+      "label": "Anything we should know?",
+      "required": false
+    }
   ],
   "notifications": [
     {
@@ -42,5 +82,6 @@
       "roleId": "salesperson",
       "scopeMode": "dynamic"
     }
-  ]
+  ],
+  "updatedAt": "2026-11-13T13:47:09.378Z"
 }
