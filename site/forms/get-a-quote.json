@@ -9,7 +9,7 @@
   "submitLabel": "Submit",
   "successMessage": "Thanks — our sales team has your quote request and will be in touch shortly.",
   "consent": {
-    "enabled": true,
+    "enabled": false,
     "required": false,
     "text": "Subscribe to Newsletter"
   },
@@ -97,5 +97,6 @@
       "roleId": "sales-manager",
       "scopeMode": "dynamic"
     }
-  ]
+  ],
+  "updatedAt": "2026-11-13T13:38:44.146Z"
 }
