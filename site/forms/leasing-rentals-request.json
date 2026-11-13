@@ -9,7 +9,7 @@
   "submitLabel": "Submit",
   "successMessage": "Thanks — our leasing and rental team has your request and will be in touch shortly.",
   "consent": {
-    "enabled": true,
+    "enabled": false,
     "required": true,
     "text": "I agree to be contacted about leasing or rental by phone, text or email, and I consent to the dealership using the licence details above to process this request."
   },
@@ -113,5 +113,6 @@
       "roleId": "sales-manager",
       "scopeMode": "dynamic"
     }
-  ]
+  ],
+  "updatedAt": "2026-11-13T13:39:50.994Z"
 }
