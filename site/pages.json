@@ -187,7 +187,7 @@
     "path": "/finance-credit-application",
     "out": "finance-credit-application/index.html",
     "dir": "finance-credit-application",
-    "status": "published",
+    "status": "draft",
     "seo": {
       "ogImage": null,
       "noindex": false
