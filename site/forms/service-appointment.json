@@ -9,7 +9,7 @@
   "submitLabel": "Submit",
   "successMessage": "Thanks — our service department has your request and will confirm your appointment.",
   "consent": {
-    "enabled": true,
+    "enabled": false,
     "required": false,
     "text": "Subscribe to Newsletter"
   },
@@ -149,5 +149,6 @@
       "roleId": "service-advisor",
       "scopeMode": "dynamic"
     }
-  ]
+  ],
+  "updatedAt": "2026-11-13T13:47:30.843Z"
 }
