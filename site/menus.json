@@ -468,15 +468,15 @@
     },
     {
       "id": "footer-credit",
-      "name": "Footer — Credit",
+      "name": "Footer — Powered by",
       "items": [
         {
           "id": "fc-buzznerd",
-          "label": "Powered by Buzznerd Trucks",
-          "type": "post",
-          "ref": "welcome",
-          "url": null,
-          "newTab": false,
+          "label": "Buzznerd",
+          "type": "url",
+          "ref": null,
+          "url": "https://www.buzznerd.com/",
+          "newTab": true,
           "children": []
         }
       ]
