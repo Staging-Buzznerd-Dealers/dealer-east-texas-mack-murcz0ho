@@ -217,84 +217,66 @@
       ]
     },
     {
-      "id": "brands",
-      "type": "section",
+      "id": "models",
+      "type": "sharedSection",
       "props": {
-        "width": "boxed",
-        "paddingY": 0
-      },
-      "styles": {
-        "base": {
-          "background": "#f2f0eb",
-          "paddingTop": 64,
-          "paddingBottom": 64
-        },
-        "mobile": {
-          "paddingTop": 48,
-          "paddingBottom": 48
-        }
-      },
-      "children": [
-        {
-          "id": "brands-h",
-          "type": "heading",
-          "props": {
-            "eyebrow": "Brands We Carry",
-            "text": "Our Brands",
-            "headingLevel": 2,
-            "align": "center"
-          },
-          "styles": {
-            "base": {
-              "marginBottom": 40
+        "sectionId": "model-showcase",
+        "values": {
+          "eyebrow": "Our Trucks",
+          "heading": "Explore the Mack Lineup",
+          "intro": "East Texas Mack sells and services Mack only. Pick a model to see what it is built for.",
+          "models": [
+            {
+              "slug": "anthem",
+              "name": "Mack Anthem®",
+              "kind": "On-Highway / Long-Haul",
+              "image": {
+                "src": "/images/pages/new-truck-anthem.jpg",
+                "alt": "Mack Anthem highway tractor",
+                "width": 1024,
+                "height": 751
+              },
+              "url": "/store/showrooms"
+            },
+            {
+              "slug": "keystone",
+              "name": "Mack Keystone™",
+              "kind": "Vocational / On-Highway",
+              "image": {
+                "src": "/images/pages/model-keystone.jpg",
+                "alt": "Mack Keystone vocational tractor",
+                "width": 1024,
+                "height": 576
+              },
+              "url": "/store/showrooms"
+            },
+            {
+              "slug": "granite",
+              "name": "Mack Granite®",
+              "kind": "Severe-Duty / Vocational",
+              "image": {
+                "src": "/images/pages/model-granite.jpg",
+                "alt": "Mack Granite severe-duty truck",
+                "width": 1024,
+                "height": 576
+              },
+              "url": "/store/showrooms"
+            },
+            {
+              "slug": "lr-terrapro",
+              "name": "Mack LR & TerraPro®",
+              "kind": "Refuse / Municipal",
+              "image": {
+                "src": "/images/pages/model-terrapro.jpg",
+                "alt": "Mack LR and TerraPro refuse truck",
+                "width": 457,
+                "height": 437
+              },
+              "url": "/store/showrooms"
             }
-          }
-        },
-        {
-          "id": "brands-logos",
-          "type": "logoStrip",
-          "props": {
-            "logos": [
-              {
-                "name": "Mack",
-                "image": {
-                  "src": "/images/logo-mack.png",
-                  "alt": "Mack",
-                  "width": 778,
-                  "height": 431
-                }
-              },
-              {
-                "name": "Volvo",
-                "image": {
-                  "src": "/images/logo-volvo.png",
-                  "alt": "Volvo",
-                  "width": 777,
-                  "height": 387
-                }
-              },
-              {
-                "name": "Isuzu",
-                "image": {
-                  "src": "/images/logo-isuzu.png",
-                  "alt": "Isuzu",
-                  "width": 780,
-                  "height": 387
-                }
-              },
-              {
-                "name": "Hino",
-                "image": {
-                  "src": "/images/logo-hino.png",
-                  "alt": "Hino",
-                  "width": 780,
-                  "height": 387
-                }
-              }
-            ]
-          }
+          ]
         }
-      ]
+      }
     },
     {
       "id": "featured-band",
