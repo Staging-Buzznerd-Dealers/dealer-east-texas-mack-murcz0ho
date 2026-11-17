@@ -480,6 +480,30 @@
           "children": []
         }
       ]
+    },
+    {
+      "id": "footer-social",
+      "name": "Footer — Social media",
+      "items": [
+        {
+          "id": "fs-facebook",
+          "label": "Facebook",
+          "type": "url",
+          "ref": null,
+          "url": "https://www.facebook.com/pages/East-Texas-Mack-Sales-Inc/126365940752072",
+          "newTab": true,
+          "children": []
+        },
+        {
+          "id": "fs-instagram",
+          "label": "Instagram",
+          "type": "url",
+          "ref": null,
+          "url": "https://www.instagram.com/easttexasmack/",
+          "newTab": true,
+          "children": []
+        }
+      ]
     }
   ]
 }
