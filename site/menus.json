@@ -269,6 +269,34 @@
       "name": "Utility bar",
       "items": [
         {
+          "id": "call-now",
+          "label": "Call Now",
+          "type": "url",
+          "ref": null,
+          "url": "tel:+19037589994",
+          "newTab": false,
+          "children": [
+            {
+              "id": "call-main",
+              "label": "Main: (903) 758-9994",
+              "type": "url",
+              "ref": null,
+              "url": "tel:+19037589994",
+              "newTab": false,
+              "children": []
+            },
+            {
+              "id": "call-toll",
+              "label": "Toll Free: 800-441-8505",
+              "type": "url",
+              "ref": null,
+              "url": "tel:+18004418505",
+              "newTab": false,
+              "children": []
+            }
+          ]
+        },
+        {
           "id": "u-careers",
           "label": "Careers",
           "type": "page",
@@ -402,40 +430,6 @@
           "url": null,
           "newTab": false,
           "children": []
-        }
-      ]
-    },
-    {
-      "id": "call",
-      "name": "Call Now (header)",
-      "items": [
-        {
-          "id": "call-now",
-          "label": "Call Now",
-          "type": "url",
-          "ref": null,
-          "url": "tel:+19037589994",
-          "newTab": false,
-          "children": [
-            {
-              "id": "call-main",
-              "label": "Main: (903) 758-9994",
-              "type": "url",
-              "ref": null,
-              "url": "tel:+19037589994",
-              "newTab": false,
-              "children": []
-            },
-            {
-              "id": "call-toll",
-              "label": "Toll Free: 800-441-8505",
-              "type": "url",
-              "ref": null,
-              "url": "tel:+18004418505",
-              "newTab": false,
-              "children": []
-            }
-          ]
         }
       ]
     },
