@@ -11,7 +11,8 @@
           "crumb": "Paint & Bodyshop",
           "headline": "Paint & Bodyshop"
         }
-      }
+      },
+      "children": []
     },
     {
       "id": "intro",
@@ -52,7 +53,8 @@
             }
           ]
         }
-      }
+      },
+      "children": []
     }
   ]
 }
