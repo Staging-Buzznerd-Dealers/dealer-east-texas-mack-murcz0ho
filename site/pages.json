@@ -181,24 +181,6 @@
     }
   },
   {
-    "slug": "finance-credit-application",
-    "title": "Finance Credit Application",
-    "description": "Apply for commercial truck financing with East Texas Mack — individual and business credit applications for new and used truck purchases.",
-    "path": "/finance-credit-application",
-    "out": "finance-credit-application/index.html",
-    "dir": "finance-credit-application",
-    "status": "draft",
-    "seo": {
-      "ogImage": null,
-      "noindex": false
-    },
-    "templates": {
-      "header": null,
-      "footer": null,
-      "utilityNav": null
-    }
-  },
-  {
     "slug": "about-us",
     "title": "About East Texas Mack",
     "path": "/about-us",

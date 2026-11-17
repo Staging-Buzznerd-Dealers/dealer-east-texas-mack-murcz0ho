@@ -58,7 +58,7 @@
               "heading": "2934 State Highway 31 N, Longview, TX 75603",
               "copy": [
                 {
-                  "text": "Phone:<a href=\" (903) 758-9994\"> (903) 758-9994</a>"
+                  "text": "Phone: <a href=\"tel:+19037589994\">(903) 758-9994</a>"
                 },
                 {
                   "text": "Our Longview facility is centrally positioned to support commercial trucking operations across East Texas and surrounding regional freight lanes."
@@ -238,7 +238,9 @@
                 {
                   "text": "Located with immediate connectivity to Interstate 20 and major regional highways, our dealership acts as a crucial repair and dispatch point for commercial traffic traveling across East Texas, enabling rapid response times and efficient same-day parts delivery."
                 }
-              ]
+              ],
+              "link1Label": "View Truck Service Department",
+              "link1Url": "/service"
             },
             {
               "title": "Built for Commercial Fleet Operations",
@@ -364,7 +366,7 @@
         "sectionId": "pg-cta",
         "values": {
           "heading": "Visit East Texas Mack",
-          "body": "Whether you are purchasing a truck, scheduling service, or ordering parts, our Longview location is equipped to support your operation. Longview, TX — Phone:<a href=\" (903) 758-9994\"> (903) 758-9994</a>",
+          "body": "Whether you are purchasing a truck, scheduling service, or ordering parts, our Longview location is equipped to support your operation. Longview, TX — Phone: <a href=\"tel:+19037589994\">(903) 758-9994</a>",
           "points": [
             {
               "text": "New & used commercial truck sales"

@@ -2,3 +2,8 @@
 .bz-sharedsection[data-bz-node="why"] .bz-col[data-bz-node^="pc-body"] { text-align: center; }
 .bz-sharedsection[data-bz-node="why"] .bz-col[data-bz-node^="pc-body"] p { margin-inline: auto; }
 .bz-sharedsection[data-bz-node="why"] .bz-block[data-bz-node^="pc-num"] p { font-size: 26px; }
+
+/* Parts — the intro line and "Complete Truck Parts Inventory" are two white bands back to back, so their
+   paddings used to add up to ~160px of dead space. Drop the intro's bottom padding and tighten the next top. */
+.bz-sharedsection[data-bz-node="intro"] .bz-section { padding-bottom: 0; }
+.bz-sharedsection[data-bz-node="inventory"] .bz-section { padding-top: 40px; }
