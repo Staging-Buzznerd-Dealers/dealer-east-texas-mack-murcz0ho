@@ -1,1 +1,10 @@
 /* The form band is styled site-wide (custom code), because three pages share it. */
+
+/* Parts Request — section headings. The form builder has no heading field, so each heading is drawn above the
+   first row of its group: "Type of Vehicle" over make/model/year/VIN, "Parts Needed" over the part number. */
+.bz-section[data-bz-node="form-band"] .bz-form[data-bz-form="parts-request"] :is([data-bz-field="pr-make"], [data-bz-field="pr-model"], [data-bz-field="pr-partno"]) { position: relative; margin-top: 36px; }
+.bz-section[data-bz-node="form-band"] .bz-form[data-bz-form="parts-request"] :is([data-bz-field="pr-make"], [data-bz-field="pr-partno"])::before { position: absolute; left: 0; top: -36px; font: 700 20px / 1.2 var(--font-heading); letter-spacing: 0.3px; text-transform: uppercase; color: var(--ink); white-space: nowrap; }
+.bz-section[data-bz-node="form-band"] .bz-form[data-bz-form="parts-request"] [data-bz-field="pr-make"]::before { content: "Type of Vehicle"; }
+.bz-section[data-bz-node="form-band"] .bz-form[data-bz-form="parts-request"] [data-bz-field="pr-partno"]::before { content: "Parts Needed"; }
+/* Below 436px the half-width pair stacks, so the second field must not keep the heading's top margin. */
+@media (max-width: 435px) { .bz-section[data-bz-node="form-band"] .bz-form[data-bz-form="parts-request"] [data-bz-field="pr-model"] { margin-top: 0; } }

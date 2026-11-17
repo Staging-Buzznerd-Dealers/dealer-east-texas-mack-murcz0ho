@@ -4,3 +4,13 @@
 .bz-section[data-bz-node="form-band"] .bz-btn[type="submit"] { text-transform: uppercase; letter-spacing: 0.5px; }
 .bz-section[data-bz-node="form-band"] .bz-block[data-bz-node="form-note"] p { margin: 0 0 32px; font-size: 13px; font-style: italic; color: var(--muted); }
 @media (max-width: 640px) { .bz-section[data-bz-node="form-band"] { padding-bottom: 40px; } }
+
+/* Get a Quote — section headings. The form builder has no heading field, so each group's heading is drawn
+   above the first row of that group: "Personal Information" over name/email/phones, "Type of Vehicle" over
+   make/model/year/accessories. Both fields of a half-width pair take the same margin so the row stays aligned. */
+.bz-section[data-bz-node="form-band"] .bz-form[data-bz-form="get-a-quote"] :is([data-bz-field="gq-first"], [data-bz-field="gq-last"], [data-bz-field="gq-make"], [data-bz-field="gq-model"]) { position: relative; margin-top: 36px; }
+.bz-section[data-bz-node="form-band"] .bz-form[data-bz-form="get-a-quote"] :is([data-bz-field="gq-first"], [data-bz-field="gq-make"])::before { position: absolute; left: 0; top: -36px; font: 700 20px / 1.2 var(--font-heading); letter-spacing: 0.3px; text-transform: uppercase; color: var(--ink); white-space: nowrap; }
+.bz-section[data-bz-node="form-band"] .bz-form[data-bz-form="get-a-quote"] [data-bz-field="gq-first"]::before { content: "Personal Information"; }
+.bz-section[data-bz-node="form-band"] .bz-form[data-bz-form="get-a-quote"] [data-bz-field="gq-make"]::before { content: "Type of Vehicle"; }
+/* Below 436px the half-width pair stacks, so the second field must not keep the heading's top margin. */
+@media (max-width: 435px) { .bz-section[data-bz-node="form-band"] .bz-form[data-bz-form="get-a-quote"] :is([data-bz-field="gq-last"], [data-bz-field="gq-model"]) { margin-top: 0; } }

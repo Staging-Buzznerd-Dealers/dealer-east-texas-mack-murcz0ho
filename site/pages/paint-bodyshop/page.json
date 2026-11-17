@@ -30,7 +30,7 @@
                   "text": "Our 4 professionally trained PPG technicians are the best in the business."
                 },
                 {
-                  "text": "<strong>Body Shop Manager: James Coates</strong>Please call or visit us today for a quote.",
+                  "text": "<strong>Body Shop Manager: James Coates</strong>Please call or <a href=\"/location\">visit us</a> today for a quote.",
                   "box": true
                 }
               ],
