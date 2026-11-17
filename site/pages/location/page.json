@@ -19,7 +19,8 @@
             "height": 576
           }
         }
-      }
+      },
+      "children": []
     },
     {
       "id": "intro",
@@ -41,7 +42,8 @@
             }
           ]
         }
-      }
+      },
+      "children": []
     },
     {
       "id": "where",
@@ -56,7 +58,7 @@
               "heading": "2934 State Highway 31 N, Longview, TX 75603",
               "copy": [
                 {
-                  "text": "Phone: (903) 758-9994"
+                  "text": "Phone:<a href=\" (903) 758-9994\"> (903) 758-9994</a>"
                 },
                 {
                   "text": "Our Longview facility is centrally positioned to support commercial trucking operations across East Texas and surrounding regional freight lanes."
@@ -81,7 +83,8 @@
             }
           ]
         }
-      }
+      },
+      "children": []
     },
     {
       "id": "hours",
@@ -128,7 +131,8 @@
             }
           ]
         }
-      }
+      },
+      "children": []
     },
     {
       "id": "coverage",
@@ -170,7 +174,8 @@
             }
           ]
         }
-      }
+      },
+      "children": []
     },
     {
       "id": "mobile",
@@ -212,7 +217,8 @@
             }
           ]
         }
-      }
+      },
+      "children": []
     },
     {
       "id": "why",
@@ -256,7 +262,8 @@
             }
           ]
         }
-      }
+      },
+      "children": []
     },
     {
       "id": "ahead",
@@ -280,7 +287,8 @@
             }
           ]
         }
-      }
+      },
+      "children": []
     },
     {
       "id": "resources",
@@ -346,7 +354,8 @@
             }
           ]
         }
-      }
+      },
+      "children": []
     },
     {
       "id": "visit",
@@ -355,7 +364,7 @@
         "sectionId": "pg-cta",
         "values": {
           "heading": "Visit East Texas Mack",
-          "body": "Whether you are purchasing a truck, scheduling service, or ordering parts, our Longview location is equipped to support your operation. Longview, TX — Phone: (903) 758-9994",
+          "body": "Whether you are purchasing a truck, scheduling service, or ordering parts, our Longview location is equipped to support your operation. Longview, TX — Phone:<a href=\" (903) 758-9994\"> (903) 758-9994</a>",
           "points": [
             {
               "text": "New & used commercial truck sales"
@@ -376,7 +385,8 @@
           "ctaLabel": "Contact East Texas Mack",
           "ctaUrl": "/contact"
         }
-      }
+      },
+      "children": []
     },
     {
       "id": "faq",
@@ -412,7 +422,8 @@
             "items": []
           }
         }
-      }
+      },
+      "children": []
     }
   ]
 }
