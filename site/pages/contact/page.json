@@ -11,7 +11,8 @@
           "crumb": "Contact Us",
           "headline": "Contact Us"
         }
-      }
+      },
+      "children": []
     },
     {
       "id": "info",
@@ -349,6 +350,9 @@
                       ],
                       "brandFacets": [],
                       "perkFacets": []
+                    },
+                    "config": {
+                      "mapProvider": "google"
                     }
                   }
                 }
